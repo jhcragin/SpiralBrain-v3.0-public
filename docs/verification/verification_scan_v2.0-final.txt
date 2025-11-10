@@ -1,0 +1,5 @@
+SpiralBrain v2.0 Narrative Verification Scan (final)
+Exclusions: code fences; lines containing path separators ("/" or "\"); "$env:"; tokens: "spiralcortex_core", "spiral_brain_core", any "spiralcortex_*"); generic "_core".
+Targets: docs/architecture, docs/performance, docs/history
+
+Zero narrative hits found. All remaining occurrences are identifiers, metrics, or explicit paths by construction of the exclusions.

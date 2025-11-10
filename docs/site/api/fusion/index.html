@@ -1,0 +1,2560 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Multi-sector cognitive analysis platform">
+      
+      
+        <meta name="author" content="SpiralCortex Team">
+      
+      
+      
+        <link rel="prev" href="../../architecture/decision-records/005-security-first-approach/">
+      
+      
+        <link rel="next" href="../../development/api/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Fusion API - SpiralCortex</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#spiralcortex-api-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="SpiralCortex" class="md-header__button md-logo" aria-label="SpiralCortex" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SpiralCortex
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Fusion API
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SpiralCortex" class="md-nav__button md-logo" aria-label="SpiralCortex" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SpiralCortex
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Architecture
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Decision Records
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Decision Records
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/decision-records/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    README
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/decision-records/001-multi-modal-fusion-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Multi-modal Fusion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/decision-records/002-ethical-governance-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ethical Governance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/decision-records/003-neural-network-selection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Neural Network Selection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/decision-records/004-real-time-performance-optimization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Performance Optimization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/decision-records/005-security-first-approach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Security Approach
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    API Documentation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            API Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Fusion API
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fusion API
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      Base URL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentication
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fusion-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Fusion API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 Fusion API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-fuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /fuse
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="POST /fuse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Body
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response Fields
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emotional-analysis-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Emotional Analysis API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 Emotional Analysis API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-emotionanalyze" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /emotion/analyze
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="POST /emotion/analyze">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-body_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Body
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risk-analysis-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧮 Risk Analysis API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧮 Risk Analysis API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-riskanalyze" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /risk/analyze
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="POST /risk/analyze">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-body_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Body
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ethical-governance-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚖️ Ethical Governance API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚖️ Ethical Governance API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-ethicsassess" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /ethics/assess
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="POST /ethics/assess">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-body_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Body
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitoring-metrics-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Monitoring &amp; Metrics API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Monitoring &amp; Metrics API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-health" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /health
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GET /health">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#response_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /metrics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GET /metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#response_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /status
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GET /status">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#response_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batch-processing-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Batch Processing API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 Batch Processing API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-batchfuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /batch/fuse
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="POST /batch/fuse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-body_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Body
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Configuration API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Configuration API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-configupdate" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /config/update
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-policiesupdate" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /policies/update
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Error Handling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Error Handling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-error-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Error Codes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rate-limiting" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Rate Limiting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#webhook-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Webhook Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📈 Webhook Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-webhooksregister" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /webhooks/register
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported Events
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Development API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Development
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/debugging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Debugging
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/profiling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Profiling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Deployment
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Deployment
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Ethics
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Ethics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Use Cases
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Use Cases
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../use-cases/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Performance
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Performance
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../performance/benchmarks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Benchmarks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Patent
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Patent
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patent/comprehensive_portfolio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Comprehensive Portfolio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patent/patent_application_summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Application Summary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../patent/individual_inventor_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Individual Inventor Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      Base URL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentication
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fusion-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Fusion API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 Fusion API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-fuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /fuse
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="POST /fuse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Body
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response Fields
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emotional-analysis-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Emotional Analysis API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 Emotional Analysis API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-emotionanalyze" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /emotion/analyze
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="POST /emotion/analyze">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-body_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Body
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risk-analysis-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧮 Risk Analysis API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧮 Risk Analysis API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-riskanalyze" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /risk/analyze
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="POST /risk/analyze">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-body_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Body
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ethical-governance-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚖️ Ethical Governance API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚖️ Ethical Governance API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-ethicsassess" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /ethics/assess
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="POST /ethics/assess">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-body_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Body
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitoring-metrics-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Monitoring &amp; Metrics API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Monitoring &amp; Metrics API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-health" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /health
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GET /health">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#response_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /metrics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GET /metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#response_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /status
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GET /status">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#response_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batch-processing-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Batch Processing API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 Batch Processing API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-batchfuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /batch/fuse
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="POST /batch/fuse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-body_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Body
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Configuration API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Configuration API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-configupdate" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /config/update
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-policiesupdate" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /policies/update
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Error Handling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Error Handling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-error-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Error Codes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rate-limiting" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Rate Limiting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#webhook-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Webhook Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📈 Webhook Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-webhooksregister" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /webhooks/register
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported Events
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="spiralcortex-api-reference">🔌 SpiralCortex API Reference</h1>
+<h2 id="overview">Overview</h2>
+<p>SpiralCortex provides a unified REST API that combines emotional intelligence, analytical reasoning, and ethical governance. All endpoints return JSON responses with comprehensive metadata.</p>
+<h2 id="base-url">Base URL</h2>
+<div class="highlight"><pre><span></span><code>https://your-domain.com/api/v1/cortex/
+</code></pre></div>
+<h2 id="authentication">Authentication</h2>
+<p>Currently open access. Enterprise deployments should implement API key authentication.</p>
+<hr />
+<h2 id="fusion-api">🔄 Fusion API</h2>
+<p>The core cognitive fusion endpoint that combines all intelligence modalities.</p>
+<h3 id="post-fuse">POST <code>/fuse</code></h3>
+<p>Unifies emotional, analytical, and ethical processing into a single cognitive decision.</p>
+<h4 id="request-body">Request Body</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Market analysis text or context&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;dataset_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;day_trader|hodler|miner|defi_user|large_portfolio&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;context&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Optional additional context&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;metadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;user_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;optional_user_identifier&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;session_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;optional_session_tracking&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;risk_tolerance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;low|medium|high&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="parameters">Parameters</h4>
+<ul>
+<li><code>text</code> (string): Primary input text for analysis</li>
+<li><code>dataset_type</code> (string): Context type for adaptive weighting optimization</li>
+<li><code>context</code> (string, optional): Additional situational context</li>
+<li><code>metadata</code> (object, optional): Additional processing metadata</li>
+</ul>
+<h4 id="response">Response</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;fused_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.734</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;confidence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.892</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;cognitive_metrics&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;emotional_valence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.732</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;metacognitive_stability&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.845</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;coherence_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.678</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;analytical_metrics&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;risk_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.423</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;confidence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.876</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ensemble_consensus&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.789</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;recommendation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Moderately favorable - proceed with caution&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;explanation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Analysis shows balanced market conditions with moderate risk...&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;ethical_assessment&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;moral_valence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.123</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ethical_dimensions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;harm_minimization&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.856</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fairness&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.734</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;transparency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.923</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;autonomy&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.645</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;volatility_control&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.789</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;long_term_welfare&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.567</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;justification&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Decision maintains ethical balance with moderate risk consideration&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;confidence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.834</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;modulation_details&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;original_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.733</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;ethical_adjustment&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.001</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;gamma&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.015</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;dimension_adjustments&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;governance_evaluation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;compliant&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;violations_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;actions_applied&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">    </span><span class="nt">&quot;recommendations&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">&quot;All governance policies satisfied.&quot;</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;processing_metadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;total_latency_ms&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.2</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;components_used&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;emotion&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;risk&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;ethics&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;adaptive_weights&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;emotion&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.45</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;risk&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.55</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="response-fields">Response Fields</h4>
+<ul>
+<li><code>fused_score</code> (float): Final cognitive decision score [0.0, 1.0]</li>
+<li><code>confidence</code> (float): Overall confidence in the fusion result [0.0, 1.0]</li>
+<li><code>cognitive_metrics</code> (object): Raw emotional intelligence outputs</li>
+<li><code>analytical_metrics</code> (object): Raw risk analysis outputs</li>
+<li><code>recommendation</code> (string): Human-readable action guidance</li>
+<li><code>ethical_assessment</code> (object): Complete ethical evaluation with justification</li>
+<li><code>governance_evaluation</code> (object): Policy compliance and actions taken</li>
+</ul>
+<hr />
+<h2 id="emotional-analysis-api">🧠 Emotional Analysis API</h2>
+<p>Direct access to SpiralBrain-Nexus emotional intelligence capabilities.</p>
+<h3 id="post-emotionanalyze">POST <code>/emotion/analyze</code></h3>
+<p>Performs deep emotional analysis using SEC (Symbolic-Emotional Calibration).</p>
+<h4 id="request-body_1">Request Body</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Text to analyze for emotional content&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;include_sec&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;include_biofeedback&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="response_1">Response</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;emotional_valence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.723</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;sec_dimensions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;arousal&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.645</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;valence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.723</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;dominance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.567</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;anger&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.123</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;fear&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.234</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;joy&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.456</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;sadness&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.089</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;surprise&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.312</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;metacognitive_metrics&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;stability&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.834</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;coherence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.756</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;attention_entropy&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.423</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;pathway_activations&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;creative&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.645</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;reasoning&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.723</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;attention&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.567</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;vision&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.234</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;justification&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Analysis shows positive emotional valence with moderate arousal...&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;confidence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.892</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="risk-analysis-api">🧮 Risk Analysis API</h2>
+<p>Direct access to SpiralCode-X analytical and risk assessment capabilities.</p>
+<h3 id="post-riskanalyze">POST <code>/risk/analyze</code></h3>
+<p>Performs comprehensive risk analysis with ensemble intelligence.</p>
+<h4 id="request-body_2">Request Body</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;transaction_data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">...</span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;market_conditions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">...</span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;user_profile&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;analysis_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;comprehensive&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;include_ensemble&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="response_2">Response</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;risk_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.423</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;confidence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.876</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;ensemble_breakdown&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;day_trader_model&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.456</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;hodler_model&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.389</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;market_model&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.412</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;consensus_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.423</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;risk_dimensions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;market_volatility&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.678</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;liquidity_risk&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.345</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;counterparty_risk&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.234</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;regulatory_risk&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.123</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;recommendations&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;Consider position sizing limits&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Monitor volatility thresholds&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;active_learning_feedback&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;model_updated&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;improvement_margin&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.023</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="ethical-governance-api">⚖️ Ethical Governance API</h2>
+<p>Access to the ethical regulator and governance policy system.</p>
+<h3 id="post-ethicsassess">POST <code>/ethics/assess</code></h3>
+<p>Evaluates ethical context and governance compliance.</p>
+<h4 id="request-body_3">Request Body</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;decision_context&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Description of decision scenario&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;stakeholders&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;market&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;regulators&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;potential_impacts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;financial&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;emotional&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;societal&quot;</span><span class="p">]</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;policies_to_check&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;all&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="response_3">Response</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;moral_valence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.123</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;ethical_dimensions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;harm_minimization&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.856</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;fairness&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.734</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;transparency&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.923</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;autonomy&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.645</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;volatility_control&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.789</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;long_term_welfare&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.567</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;governance_status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;compliant&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;policy_violations&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">  </span><span class="nt">&quot;justification&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Decision maintains ethical balance with appropriate safeguards...&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;recommended_actions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;Ensure transparent communication&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Monitor for unintended consequences&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;audit_trail&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;assessment_timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-10-12T20:30:00Z&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;policies_evaluated&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;confidence_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.834</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="monitoring-metrics-api">📊 Monitoring &amp; Metrics API</h2>
+<p>Access to system performance and health metrics.</p>
+<h3 id="get-health">GET <code>/health</code></h3>
+<p>Basic health check endpoint.</p>
+<h4 id="response_4">Response</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;healthy&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-10-12T20:30:00Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;v24.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;components&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;fusion_engine&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;operational&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;emotional_ai&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;operational&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;analytical_ai&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;operational&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ethical_regulator&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;operational&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="get-metrics">GET <code>/metrics</code></h3>
+<p>Prometheus-compatible metrics endpoint.</p>
+<h4 id="response_5">Response</h4>
+<div class="highlight"><pre><span></span><code># HELP spiralcortex_fusion_request_duration_seconds Time spent processing fusion requests
+# TYPE spiralcortex_fusion_request_duration_seconds histogram
+spiralcortex_fusion_request_duration_seconds_bucket{le=&quot;0.1&quot;} 12543
+spiralcortex_fusion_request_duration_seconds_bucket{le=&quot;0.5&quot;} 12843
+...
+
+# HELP spiralcortex_fused_score_distribution Distribution of fusion scores
+# TYPE spiralcortex_fused_score_distribution histogram
+spiralcortex_fused_score_distribution_bucket{le=&quot;0.2&quot;} 1234
+...
+</code></pre></div>
+<h3 id="get-status">GET <code>/status</code></h3>
+<p>Detailed system status and performance metrics.</p>
+<h4 id="response_6">Response</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;system_status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;operational&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;uptime_seconds&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">345600</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;performance_metrics&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;average_latency_ms&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.2</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;requests_per_second&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">45.6</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;error_rate&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.001</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;accuracy_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.827</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;component_status&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;spiralbrain_nexus&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;healthy&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;last_update&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-10-12T20:29:45Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;performance_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.945</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;spiralcode_x&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;healthy&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;last_update&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-10-12T20:29:50Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;performance_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.912</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;ethical_regulator&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;healthy&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;last_update&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-10-12T20:29:47Z&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;performance_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.978</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;active_alerts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="batch-processing-api">📋 Batch Processing API</h2>
+<p>For high-throughput processing of multiple items.</p>
+<h3 id="post-batchfuse">POST <code>/batch/fuse</code></h3>
+<p>Process multiple fusion requests in a single call.</p>
+<h4 id="request-body_4">Request Body</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;requests&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;request_1&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;First analysis...&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;dataset_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;day_trader&quot;</span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;request_2&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Second analysis...&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;dataset_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;hodler&quot;</span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;parallel_processing&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;include_detailed_metrics&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="response_7">Response</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;batch_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;batch_12345&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;total_requests&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;processed_requests&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;results&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;request_1&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fused_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.734</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;confidence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.892</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;request_2&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;fused_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.623</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;confidence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.845</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;success&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;batch_metrics&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;total_latency_ms&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">2.1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;average_latency_ms&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.05</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;success_rate&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="configuration-api">🔧 Configuration API</h2>
+<p>Runtime configuration management (admin access required).</p>
+<h3 id="get-config">GET <code>/config</code></h3>
+<p>Retrieve current system configuration.</p>
+<h3 id="post-configupdate">POST <code>/config/update</code></h3>
+<p>Update system configuration parameters.</p>
+<h3 id="post-policiesupdate">POST <code>/policies/update</code></h3>
+<p>Update ethical governance policies.</p>
+<hr />
+<h2 id="error-handling">📊 Error Handling</h2>
+<p>All endpoints follow consistent error response format:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;error&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;VALIDATION_ERROR&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Invalid dataset_type provided&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;details&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dataset_type&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;provided_value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;invalid_type&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;allowed_values&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;day_trader&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;hodler&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;miner&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;defi_user&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;large_portfolio&quot;</span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;request_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;req_12345&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-10-12T20:30:00Z&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="common-error-codes">Common Error Codes</h3>
+<ul>
+<li><code>VALIDATION_ERROR</code>: Invalid request parameters</li>
+<li><code>PROCESSING_ERROR</code>: Internal processing failure</li>
+<li><code>RATE_LIMITED</code>: Too many requests</li>
+<li><code>SERVICE_UNAVAILABLE</code>: Component temporarily unavailable</li>
+</ul>
+<hr />
+<h2 id="rate-limiting">🔒 Rate Limiting</h2>
+<ul>
+<li><strong>Standard Tier</strong>: 100 requests/minute</li>
+<li><strong>Premium Tier</strong>: 1000 requests/minute</li>
+<li><strong>Enterprise Tier</strong>: Unlimited</li>
+</ul>
+<p>Rate limit headers included in all responses:
+<div class="highlight"><pre><span></span><code>X-RateLimit-Limit: 100
+X-RateLimit-Remaining: 87
+X-RateLimit-Reset: 1634067600
+</code></pre></div></p>
+<hr />
+<h2 id="webhook-integration">📈 Webhook Integration</h2>
+<p>Configure webhooks for real-time notifications.</p>
+<h3 id="post-webhooksregister">POST <code>/webhooks/register</code></h3>
+<p>Register a webhook endpoint for specific events.</p>
+<h3 id="supported-events">Supported Events</h3>
+<ul>
+<li><code>fusion_completed</code>: When fusion analysis finishes</li>
+<li><code>ethical_violation</code>: When governance policies are violated</li>
+<li><code>performance_degraded</code>: When system performance drops</li>
+<li><code>model_updated</code>: When models are automatically retrained</li>
+</ul>
+<p>This comprehensive API provides access to SpiralCortex's unified cognitive intelligence capabilities, combining emotional understanding, analytical rigor, and ethical responsibility into production-ready endpoints.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "generated_at": "2025-10-13T01:20:48.563187",
+  "suite": "SpiralCortex Phase 23.x \u2013 in-process benchmark",
+  "results": [
+    {
+      "dataset": "hodler,day_trader,miner,defi_user,large_portfolio",
+      "n_samples": 50,
+      "nexus_acc_proxy": 0.512721,
+      "codex_acc_proxy": 0.809333,
+      "cortex_acc_proxy": 0.743787,
+      "cortex_lift_vs_best": -0.065546,
+      "latency_ms": {
+        "nexus_mean": 1.687,
+        "codex_mean": 0.128,
+        "cortex_mean": 3.557
+      }
+    }
+  ],
+  "summary": {
+    "datasets_tested": 1,
+    "cortex_overall_proxy": 0.743787,
+    "baseline_best_overall_proxy": 0.809333,
+    "overall_lift": -0.065546,
+    "latency_ms": {
+      "nexus_mean": 1.687,
+      "codex_mean": 0.128,
+      "cortex_mean": 3.557
+    }
+  }
+}

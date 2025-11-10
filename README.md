@@ -1291,7 +1291,9 @@ python -m pytest
 
 ## 📄 **License**
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+**Patent Notice:** Portions of this work are covered by U.S. Provisional Patent Application No. 63/846,150. Distribution under this license does not grant rights to the proprietary components listed under "Proprietary Components (Private)".
 
 ---
 

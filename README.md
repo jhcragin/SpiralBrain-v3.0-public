@@ -22,11 +22,12 @@ This public repository contains:
 - Spiral coherence manifold for elastic cognition
 - Central Coordination Nexus (CCN)
 - Regulatory learning systems
-- Empirical validation across 43 cognitive benchmarks
+- Empirical validation across a comprehensive cognitive benchmark suite
 
 ## Reproducibility
 
 For complete reproducibility instructions, see the [Journal Submission Package](https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/publication_package) which includes:
+*Results in this repository correspond directly to figures and analyses reported in the manuscript.*
 - Detailed methodology
 - Benchmark specifications
 - Validation protocols

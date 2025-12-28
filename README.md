@@ -28,6 +28,9 @@ This public repository contains:
 
 For complete reproducibility instructions, see the [Journal Submission Package](https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/publication_package) which includes:
 *Results in this repository correspond directly to figures and analyses reported in the manuscript.*
+
+*The `scripts/` directory contains the figure-generation and analysis scripts used to produce the results reported in the manuscript. The `results/` directory contains the corresponding benchmark outputs and summaries.*
+
 - Detailed methodology
 - Benchmark specifications
 - Validation protocols

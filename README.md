@@ -31,6 +31,13 @@ For complete reproducibility instructions, see the [Journal Submission Package](
 
 *The `scripts/` directory contains the figure-generation and analysis scripts used to produce the results reported in the manuscript. The `results/` directory contains the corresponding benchmark outputs and summaries.*
 
+**Dependencies:** numpy, matplotlib, scipy, seaborn
+
+**To regenerate publication figures:**
+```
+python scripts/generate_publication_figures.py
+```
+
 - Detailed methodology
 - Benchmark specifications
 - Validation protocols

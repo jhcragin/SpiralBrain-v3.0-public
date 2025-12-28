@@ -1,0 +1,98 @@
+{
+  "individual_results": {
+    "day_trading": {
+      "scenario": "day_trading",
+      "transaction_count": 450,
+      "cognitive_confidence": 1.0,
+      "total_realized_gains": 0.0,
+      "total_tax_liability": 0.0,
+      "short_term_gains": 0.0,
+      "long_term_gains": 0.0,
+      "pattern_detection": {
+        "day_trading_patterns": 2,
+        "volatility_patterns": 1,
+        "cyclical_patterns": 1,
+        "anomaly_patterns": 0
+      },
+      "accuracy_indicators": {
+        "cognitive_consistency": 1.0,
+        "pattern_recognition_score": 0.8,
+        "calculation_precision": 0.8,
+        "complexity_handling": 1.0
+      }
+    },
+    "volatile_market": {
+      "scenario": "volatile_market",
+      "transaction_count": 200,
+      "cognitive_confidence": 1.0,
+      "total_realized_gains": 0.0,
+      "total_tax_liability": 0.0,
+      "short_term_gains": 0.0,
+      "long_term_gains": 0.0,
+      "pattern_detection": {
+        "day_trading_patterns": 2,
+        "volatility_patterns": 1,
+        "cyclical_patterns": 1,
+        "anomaly_patterns": 0
+      },
+      "accuracy_indicators": {
+        "cognitive_consistency": 1.0,
+        "pattern_recognition_score": 0.8,
+        "calculation_precision": 0.8,
+        "complexity_handling": 1.0
+      }
+    },
+    "simple_holding": {
+      "scenario": "simple_holding",
+      "transaction_count": 4,
+      "cognitive_confidence": 0.14,
+      "total_realized_gains": 0.0,
+      "total_tax_liability": 0.0,
+      "short_term_gains": 0.0,
+      "long_term_gains": 0.0,
+      "pattern_detection": {
+        "day_trading_patterns": 2,
+        "volatility_patterns": 1,
+        "cyclical_patterns": 1,
+        "anomaly_patterns": 0
+      },
+      "accuracy_indicators": {
+        "cognitive_consistency": 0.14,
+        "pattern_recognition_score": 0.8,
+        "calculation_precision": 0.8,
+        "complexity_handling": 1.0
+      }
+    }
+  },
+  "overall_metrics": {
+    "total_scenarios": 3,
+    "avg_cognitive_confidence": 0.7133333333333334,
+    "avg_pattern_recognition": 0.8000000000000002,
+    "avg_calculation_precision": 0.8000000000000002,
+    "scenario_breakdown": {
+      "day_trading": {
+        "cognitive_confidence": 1.0,
+        "accuracy_score": 0.9
+      },
+      "volatile_market": {
+        "cognitive_confidence": 1.0,
+        "accuracy_score": 0.9
+      },
+      "simple_holding": {
+        "cognitive_confidence": 0.14,
+        "accuracy_score": 0.685
+      }
+    },
+    "overall_accuracy_improvement": 0.7653333333333334
+  },
+  "timestamp": "2025-12-21T21:49:47.064876",
+  "test_summary": "Enhanced Codex accuracy validation complete",
+  "codex_triangle": {
+    "last_norm": 0.85,
+    "last_derivative": 0.02,
+    "stability_score": 0.88,
+    "clips_applied": 0,
+    "last_clip_factor": 1.0,
+    "unified_brain_active": false
+  }
+}

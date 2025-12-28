@@ -1,0 +1,883 @@
+======================================================================
+SpiralCortex v3.0 Benchmark Run - 2025-11-26_23-07-58
+======================================================================
+
+
+======================================================================
+[BENCHMARK 1/17] benchmarks/benchmark_suite.py
+Started: 23:07:58
+======================================================================
+
+[COMPLETED] Duration: 0.08s
+Exit code: 0
+
+======================================================================
+[BENCHMARK 2/17] benchmarks/benchmark_unified_cognition.py
+Started: 23:07:58
+======================================================================
+🧠 EMOJI PIPELINE: Using direct brain module imports (normal mode)
+🧠 SpiralCortex Unified Cognition Benchmark
+==================================================
+âœ… Loaded 16 test cases from unified dataset
+
+ðŸ”„ Running full_integration configuration...
+   ðŸ“Š Coherence: 0.806 ± 0.022
+   ðŸŽ¯ Confidence: 0.350 ± 0.086
+
+ðŸ”„ Running no_emotion configuration...
+   ðŸ“Š Coherence: 0.807 ± 0.020
+   ðŸŽ¯ Confidence: 0.343 ± 0.080
+
+ðŸ”„ Running no_physiology configuration...
+   ðŸ“Š Coherence: 0.805 ± 0.023
+   ðŸŽ¯ Confidence: 0.353 ± 0.090
+
+ðŸ”„ Running logical_only configuration...
+   ðŸ“Š Coherence: 0.806 ± 0.022
+   ðŸŽ¯ Confidence: 0.347 ± 0.088
+
+ðŸŽ¯ BENCHMARK COMPLETE
+==================================================
+ðŸ“Š Cognitive Coherence Score (CCS): 0.806
+🧠 CCS Interpretation: Exceptional multimodal integration - subsystems highly coherent
+âš¡ Multimodal Benefit: -0.001 (-0.1%)
+ðŸ’š Emotional Integration: -0.002
+❤️  Physiological Integration: +0.001
+
+ðŸ“„ Reports saved:
+   â€¢ data/benchmark_unified_cognition_report.json
+   â€¢ data/benchmark_unified_cognition_summary.csv
+
+[COMPLETED] Duration: 2.07s
+Exit code: 0
+
+======================================================================
+[BENCHMARK 3/17] benchmarks/benchmark_comparison.py
+Started: 23:08:00
+======================================================================
+🔍 Codex Benchmark Comparison Analysis
+============================================================
+❌ Benchmark report not found: benchmarks/results/cryptotax_benchmark_report_20251005_192832.json
+❌ Benchmark report not found: benchmarks/results/cryptotax_benchmark_report_20250924_005840.json
+❌ Could not load benchmark reports
+
+[COMPLETED] Duration: 0.07s
+Exit code: 0
+
+======================================================================
+[BENCHMARK 4/17] benchmarks/enhanced_pathways_validation.py
+Started: 23:08:00
+======================================================================
+2025-11-26 23:08:01,055 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-26 23:08:03,400 - domains.blockchain.schemas - INFO - Unified brain v3.0 initialized for schema validation
+2025-11-26 23:08:03,507 - domains.blockchain.stream_service - INFO - Unified brain v3.0 initialized for stream service
+2025-11-26 23:08:03,516 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-26 23:08:03,519 - domains.blockchain - INFO - Unified brain v3.0 initialized for blockchain domain
+2025-11-26 23:08:03,519 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-26 23:08:03,519 - domains.blockchain.audit_logger - INFO - Unified brain v3.0 initialized for audit logger
+2025-11-26 23:08:03,519 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-26 23:08:03,519 - domains.blockchain.audit_logger - INFO - Compliance gateway initialized for audit logging
+2025-11-26 23:08:03,528 - domains.blockchain.etherscan_provider - INFO - Unified brain v3.0 initialized for Etherscan provider
+2025-11-26 23:08:03,528 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-26 23:08:03,528 - domains.blockchain.etherscan_provider - INFO - Compliance gateway initialized
+2025-11-26 23:08:03,528 - domains.blockchain.metrics_collector - INFO - Unified brain v3.0 initialized for metrics collector
+2025-11-26 23:08:03,598 - domains.blockchain.risk_rules - INFO - Unified brain v3.0 initialized for risk assessment
+2025-11-26 23:08:03,605 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-26 23:08:03,605 - domains.blockchain.schemas - INFO - Unified brain v3.0 initialized for schema validation
+2025-11-26 23:08:03,605 - domains.blockchain.risk_rules - INFO - Unified brain v3.0 initialized for risk assessment
+2025-11-26 23:08:03,605 - domains.blockchain.service - INFO - Unified brain v3.0 initialized for blockchain service
+2025-11-26 23:08:03,613 - domains.blockchain.wallet_parser - INFO - Unified brain v3.0 initialized for wallet parsing
+2025-11-26 23:08:03,613 - domains.blockchain - INFO - Blockchain domain initialized with 11/11 components
+2025-11-26 23:08:03,613 - domains.blockchain - INFO - Unified brain v3.0 cognitive capabilities active
+✅ Loaded expanded training data: 6 categories
+🧪 Tax Pattern Recognition: Testing Enhanced Pathways with Attention Mechanisms
+===========================================================================
+🎯 Enhanced Pattern Recognition: Specialized Pathways Added
+   - PatternRecognitionPathway (weight: 3.2) - Complex sequences
+   - TradingPatternPathway (weight: 2.8) - Day trading
+   - Target: 70-80% accuracy to match commercial tax software
+🎯 Enhanced Attention: EnhancedAttentionPathway Added
+   - EnhancedAttentionPathway (weight: 1.0) - Stability and focus
+   - Features: Multi-scale attention, adaptive stabilization, scenario adaptation
+
+🎯 Validating day_trading_scenarios...
+   ✅ 100 tests, 100.0% accuracy
+
+🎯 Validating volatile_market_scenarios...
+   ✅ 100 tests, 100.0% accuracy
+
+🎯 Validating complex_sequence_scenarios...
+   ✅ 100 tests, 0.0% accuracy
+
+🎯 Validating edge_case_scenarios...
+   ✅ 100 tests, 90.0% accuracy
+
+📊 Tax Pattern Recognition Results (With Attention Mechanisms):
+   Overall Accuracy: 72.5%
+   Total Tests: 400
+   Target (70-80%): ✅ ACHIEVED
+🎉 SUCCESS: Attention-enabled system reached 72.5%
+   → Commercial tax software performance achieved
+
+📄 Validation report saved to enhanced_pathways_validation_report.md
+
+[COMPLETED] Duration: 4.13s
+Exit code: 0
+
+======================================================================
+[BENCHMARK 5/17] benchmarks/attention_mechanisms_validation.py
+Started: 23:08:04
+======================================================================
+2025-11-26 23:08:05,093 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-26 23:08:07,383 - domains.blockchain.schemas - INFO - Unified brain v3.0 initialized for schema validation
+2025-11-26 23:08:07,482 - domains.blockchain.stream_service - INFO - Unified brain v3.0 initialized for stream service
+2025-11-26 23:08:07,493 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-26 23:08:07,493 - domains.blockchain - INFO - Unified brain v3.0 initialized for blockchain domain
+2025-11-26 23:08:07,505 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-26 23:08:07,505 - domains.blockchain.audit_logger - INFO - Unified brain v3.0 initialized for audit logger
+2025-11-26 23:08:07,505 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-26 23:08:07,508 - domains.blockchain.audit_logger - INFO - Compliance gateway initialized for audit logging
+2025-11-26 23:08:07,510 - domains.blockchain.etherscan_provider - INFO - Unified brain v3.0 initialized for Etherscan provider
+2025-11-26 23:08:07,510 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-26 23:08:07,510 - domains.blockchain.etherscan_provider - INFO - Compliance gateway initialized
+2025-11-26 23:08:07,512 - domains.blockchain.metrics_collector - INFO - Unified brain v3.0 initialized for metrics collector
+2025-11-26 23:08:07,582 - domains.blockchain.risk_rules - INFO - Unified brain v3.0 initialized for risk assessment
+2025-11-26 23:08:07,588 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-26 23:08:07,589 - domains.blockchain.schemas - INFO - Unified brain v3.0 initialized for schema validation
+2025-11-26 23:08:07,591 - domains.blockchain.risk_rules - INFO - Unified brain v3.0 initialized for risk assessment
+2025-11-26 23:08:07,593 - domains.blockchain.service - INFO - Unified brain v3.0 initialized for blockchain service
+2025-11-26 23:08:07,593 - domains.blockchain.wallet_parser - INFO - Unified brain v3.0 initialized for wallet parsing
+2025-11-26 23:08:07,593 - domains.blockchain - INFO - Blockchain domain initialized with 11/11 components
+2025-11-26 23:08:07,593 - domains.blockchain - INFO - Unified brain v3.0 cognitive capabilities active
+✅ Loaded expanded training data: 6 categories
+🧪 Attention Optimization: Testing Enhanced Attention + Optimized Pathways
+===========================================================================
+🎯 Enhanced Pattern Recognition: Specialized Pathways Added
+   - PatternRecognitionPathway (weight: 3.2) - Complex sequences
+   - TradingPatternPathway (weight: 2.8) - Day trading
+   - Target: 70-80% accuracy to match commercial tax software
+🎯 Enhanced Attention: EnhancedAttentionPathway Added
+   - EnhancedAttentionPathway (weight: 2.5) - Stability and focus
+   - Features: Multi-scale attention, adaptive stabilization, scenario adaptation
+
+🎯 Validating day_trading_scenarios with Phase 3 optimizations...
+   ✅ 100 tests, 100.0% accuracy
+   🛡️ Stability: 0 stabilizations applied
+
+🎯 Validating volatile_market_scenarios with Phase 3 optimizations...
+   ✅ 100 tests, 100.0% accuracy
+   🛡️ Stability: 0 stabilizations applied
+
+🎯 Validating complex_sequence_scenarios with Phase 3 optimizations...
+   ✅ 100 tests, 100.0% accuracy
+   🛡️ Stability: 0 stabilizations applied
+
+🎯 Validating edge_case_scenarios with Phase 3 optimizations...
+   ✅ 100 tests, 100.0% accuracy
+   🛡️ Stability: 0 stabilizations applied
+
+📊 Attention Optimization Results (Same Test - With Attention):
+   Overall Accuracy: 100.0%
+   Improvement vs Baseline: +50.0%
+   Target (70%): ✅ ACHIEVED
+   Stability Events: 0 adaptive stabilizations
+🎉 SUCCESS: Attention mechanisms boosted accuracy from baseline by +50.0%
+
+📄 Phase 3 validation report saved to attention_mechanisms_validation_report.md
+
+[COMPLETED] Duration: 3.97s
+Exit code: 0
+
+======================================================================
+[BENCHMARK 6/17] benchmarks/quantum_emotional_fusion_validation.py
+Started: 23:08:08
+======================================================================
+2025-11-26 23:08:09,043 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-26 23:08:11,402 - domains.blockchain.schemas - INFO - Unified brain v3.0 initialized for schema validation
+2025-11-26 23:08:11,511 - domains.blockchain.stream_service - INFO - Unified brain v3.0 initialized for stream service
+2025-11-26 23:08:11,522 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-26 23:08:11,524 - domains.blockchain - INFO - Unified brain v3.0 initialized for blockchain domain
+2025-11-26 23:08:11,528 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-26 23:08:11,529 - domains.blockchain.audit_logger - INFO - Unified brain v3.0 initialized for audit logger
+2025-11-26 23:08:11,529 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-26 23:08:11,529 - domains.blockchain.audit_logger - INFO - Compliance gateway initialized for audit logging
+2025-11-26 23:08:11,533 - domains.blockchain.etherscan_provider - INFO - Unified brain v3.0 initialized for Etherscan provider
+2025-11-26 23:08:11,533 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-26 23:08:11,533 - domains.blockchain.etherscan_provider - INFO - Compliance gateway initialized
+2025-11-26 23:08:11,535 - domains.blockchain.metrics_collector - INFO - Unified brain v3.0 initialized for metrics collector
+2025-11-26 23:08:11,610 - domains.blockchain.risk_rules - INFO - Unified brain v3.0 initialized for risk assessment
+2025-11-26 23:08:11,612 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-26 23:08:11,616 - domains.blockchain.schemas - INFO - Unified brain v3.0 initialized for schema validation
+2025-11-26 23:08:11,618 - domains.blockchain.risk_rules - INFO - Unified brain v3.0 initialized for risk assessment
+2025-11-26 23:08:11,620 - domains.blockchain.service - INFO - Unified brain v3.0 initialized for blockchain service
+2025-11-26 23:08:11,622 - domains.blockchain.wallet_parser - INFO - Unified brain v3.0 initialized for wallet parsing
+2025-11-26 23:08:11,622 - domains.blockchain - INFO - Blockchain domain initialized with 11/11 components
+2025-11-26 23:08:11,622 - domains.blockchain - INFO - Unified brain v3.0 cognitive capabilities active
+🔬 Phase 13 Mini-Benchmark Validation
+==================================================
+📊 Generating 200 ambiguous scenarios...
+🏗️  Running Phase 12 baseline...
+🧠 Running Phase 13 quantum-emotional fusion...
+📈 Calculating performance metrics...
+
+================================================================================
+VALIDATION RESULTS
+================================================================================
+
+Scenarios tested: 200
+Ambiguity level: High (confidence near 0.5)
+
+Metric                    Phase 12     Phase 13     Improvement 
+--------------------------------------------------------------
+Expected Calibration Error 0.0597     0.0584     🟢↓0.0013
+Accuracy                  0.5250     0.5250     🔴↑0.0000
+Uncertainty-Weighted Acc  0.4441     0.5245     🟢↑0.0804
+Average Uncertainty       0.0345     0.5284     🔴↑0.4939
+
+🎯 TARGET ACHIEVEMENT CHECK:
+Uncertainty-weighted accuracy improvement: 8.0%
+Target: ≥ +7.0% improvement
+✅ TARGET ACHIEVED: Uncertainty-weighted accuracy improved by ≥7%
+
+ECE: 0.0584
+Target: ≤ 0.05
+❌ TARGET NOT MET: ECE > 0.05
+
+💾 Detailed results saved to: benchmarks/results/quantum_emotional_fusion_results_20251126_230811.json
+
+[COMPLETED] Duration: 3.55s
+Exit code: 0
+
+======================================================================
+[BENCHMARK 7/17] benchmarks/performance_benchmark.py
+Started: 23:08:12
+======================================================================
+2025-11-26 23:08:14,134 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-26 23:08:14,896 - domains.blockchain.schemas - INFO - Unified brain v3.0 initialized for schema validation
+2025-11-26 23:08:15,007 - domains.blockchain.stream_service - INFO - Unified brain v3.0 initialized for stream service
+2025-11-26 23:08:15,086 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-26 23:08:15,086 - domains.blockchain - INFO - Unified brain v3.0 initialized for blockchain domain
+2025-11-26 23:08:15,086 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-26 23:08:15,086 - domains.blockchain.audit_logger - INFO - Unified brain v3.0 initialized for audit logger
+2025-11-26 23:08:15,086 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-26 23:08:15,086 - domains.blockchain.audit_logger - INFO - Compliance gateway initialized for audit logging
+2025-11-26 23:08:15,086 - domains.blockchain.etherscan_provider - INFO - Unified brain v3.0 initialized for Etherscan provider
+2025-11-26 23:08:15,086 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-26 23:08:15,086 - domains.blockchain.etherscan_provider - INFO - Compliance gateway initialized
+2025-11-26 23:08:15,103 - domains.blockchain.metrics_collector - INFO - Unified brain v3.0 initialized for metrics collector
+2025-11-26 23:08:15,103 - domains.blockchain.risk_rules - INFO - Unified brain v3.0 initialized for risk assessment
+2025-11-26 23:08:15,103 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-26 23:08:15,103 - domains.blockchain.schemas - INFO - Unified brain v3.0 initialized for schema validation
+2025-11-26 23:08:15,103 - domains.blockchain.risk_rules - INFO - Unified brain v3.0 initialized for risk assessment
+2025-11-26 23:08:15,103 - domains.blockchain.service - INFO - Unified brain v3.0 initialized for blockchain service
+2025-11-26 23:08:15,103 - domains.blockchain.wallet_parser - INFO - Unified brain v3.0 initialized for wallet parsing
+2025-11-26 23:08:15,103 - domains.blockchain - INFO - Blockchain domain initialized with 11/11 components
+2025-11-26 23:08:15,103 - domains.blockchain - INFO - Unified brain v3.0 cognitive capabilities active
+✅ Transformers library available for Falcon 180B integration
+🚀 Starting SpiralCode-X Performance Benchmarks
+============================================================
+
+📊 Testing Model Initialization Performance...
+   ✅ Created 100 models in 5.689s
+   ⚡ 17.6 models/second
+   💾 5.4 MB memory used
+
+📊 Testing Model Update Performance...
+   ✅ 1000/1000 updates successful
+   ⚡ 747.2 updates/second
+   ⏱️ 1.34 ms/update
+   🧠 Processing modes: {'subconscious': 5, 'conscious': 995}
+   🛡️ Stabilization: 0 elastic, 0 resets
+
+📊 Testing Pathway Processing Performance...
+   ReasoningPathway: 109999 ops/sec
+   AttentionPathway: 134891 ops/sec
+   MemoryPathway: 305183 ops/sec
+   FinancialAnalysisPathway: 48342 ops/sec
+
+📊 Testing Scalability with Different State Dimensions...
+   Dim   4: 6029.8 ops/sec,   0.0 MB,  0.17 ms/update
+   Dim   8: 6232.4 ops/sec,   0.0 MB,  0.16 ms/update
+   Dim  16: 5821.1 ops/sec,   0.0 MB,  0.17 ms/update
+   Dim  32: 5659.8 ops/sec,   0.2 MB,  0.18 ms/update
+   Dim  64: 6058.6 ops/sec,   0.3 MB,  0.17 ms/update
+   Dim 128: 5429.1 ops/sec,   0.2 MB,  0.18 ms/update
+
+📊 Testing Crypto Platform Performance...
+🔗 Connecting to unified SpiralBrain v3.0 architecture...
+✅ Connected to unified cognitive substrate
+Traceback (most recent call last):
+  File "C:\Users\johnc\source\repos\SpiralBrain-v3.0\benchmarks\performance_benchmark.py", line 675, in <module>
+    main()
+  File "C:\Users\johnc\source\repos\SpiralBrain-v3.0\benchmarks\performance_benchmark.py", line 671, in main
+    return run(suite_mode=False)  # Allow output when run directly
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johnc\source\repos\SpiralBrain-v3.0\benchmarks\performance_benchmark.py", line 635, in run
+    results = benchmark.run_all_benchmarks()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johnc\source\repos\SpiralBrain-v3.0\benchmarks\performance_benchmark.py", line 79, in run_all_benchmarks
+    self.benchmark_crypto_platform()
+  File "C:\Users\johnc\source\repos\SpiralBrain-v3.0\benchmarks\performance_benchmark.py", line 315, in benchmark_crypto_platform
+    platform = CryptoAIPlatform(state_dim=16)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\johnc\source\repos\SpiralBrain-v3.0\domains\crypto_platform\cryptoai_platform.py", line 646, in __init__
+    self.tax_analyzer = EnhancedCryptoTaxAnalyzer(state_dim=state_dim)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: EnhancedCryptoTaxAnalyzer.__init__() got an unexpected keyword argument 'state_dim'
+
+[COMPLETED] Duration: 13.35s
+Exit code: 1
+
+======================================================================
+[BENCHMARK 8/17] benchmarks/market_validation_system.py
+Started: 23:08:25
+======================================================================
+🔬 Initializing Market Validation Engine...
+🧪 Loaded 6 test case categories
+✅ Market validation engine initialized
+🎯 Validation targets:
+  • 95%+ accuracy on tax calculations
+  • <2s response time for analysis
+  • 99%+ compliance detection rate
+  • Support for 1000+ concurrent users
+🎯 Phase 4 Market Validation System initialized!
+🔬 Validation Capabilities:
+  • Real market data testing
+  • Accuracy validation (95%+ target)
+  • Performance benchmarking
+  • Compliance testing
+  • Stress testing
+  • Enterprise feature validation
+📊 Sample validation report created: sample_validation_report
+.1%
+.1%
+🎉 Market validation system ready for Phase 4 enterprise testing!
+
+[COMPLETED] Duration: 0.45s
+Exit code: 0
+
+======================================================================
+[BENCHMARK 9/17] benchmarks/benchmark_codex.py
+Started: 23:08:25
+======================================================================
+
+============================================================
+SpiralCortex v3.0 - Benchmark Suite
+============================================================
+
+Running 4 benchmarks...
+
+[codex] model_initialization... 2025-11-26 23:08:26,449 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-26 23:08:29,670 - domains.blockchain.schemas - INFO - Unified brain v3.0 initialized for schema validation
+2025-11-26 23:08:29,838 - domains.blockchain.stream_service - INFO - Unified brain v3.0 initialized for stream service
+2025-11-26 23:08:29,851 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-26 23:08:29,855 - domains.blockchain - INFO - Unified brain v3.0 initialized for blockchain domain
+2025-11-26 23:08:29,857 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-26 23:08:29,862 - domains.blockchain.audit_logger - INFO - Unified brain v3.0 initialized for audit logger
+2025-11-26 23:08:29,862 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-26 23:08:29,862 - domains.blockchain.audit_logger - INFO - Compliance gateway initialized for audit logging
+2025-11-26 23:08:29,868 - domains.blockchain.etherscan_provider - INFO - Unified brain v3.0 initialized for Etherscan provider
+2025-11-26 23:08:29,868 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-26 23:08:29,868 - domains.blockchain.etherscan_provider - INFO - Compliance gateway initialized
+2025-11-26 23:08:29,871 - domains.blockchain.metrics_collector - INFO - Unified brain v3.0 initialized for metrics collector
+2025-11-26 23:08:29,956 - domains.blockchain.risk_rules - INFO - Unified brain v3.0 initialized for risk assessment
+2025-11-26 23:08:29,959 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-26 23:08:29,964 - domains.blockchain.schemas - INFO - Unified brain v3.0 initialized for schema validation
+2025-11-26 23:08:29,966 - domains.blockchain.risk_rules - INFO - Unified brain v3.0 initialized for risk assessment
+2025-11-26 23:08:29,968 - domains.blockchain.service - INFO - Unified brain v3.0 initialized for blockchain service
+2025-11-26 23:08:29,971 - domains.blockchain.wallet_parser - INFO - Unified brain v3.0 initialized for wallet parsing
+2025-11-26 23:08:29,971 - domains.blockchain - INFO - Blockchain domain initialized with 11/11 components
+2025-11-26 23:08:29,971 - domains.blockchain - INFO - Unified brain v3.0 cognitive capabilities active
+✓ (3982.3ms)
+  📊 imported: True
+  📊 has_model_class: True
+
+[codex] multipath_core... ✓ (0.0ms)
+  📊 imported: True
+  📊 module_name: codex.core.scx_multipath_core
+  📊 has_pathway_class: True
+  📊 pathway_classes_count: 27
+  📊 pathway_update_success: True
+  📊 pathway_learning_success: True
+  📊 aggregation_success: True
+  📊 total_pathway_types: 27
+
+[codex] adaptive_pathways... ✓ (2.0ms)
+  📊 imported: True
+  📊 module_name: AdaptivePathwayManager
+  📊 has_manager_class: True
+  📊 pathways_initialized: 3
+  📊 insights_available: True
+  📊 adaptation_rate: 0.1
+  📊 weight_history_tracked: False
+  📊 adaptation_log_entries: 0
+
+[codex] limbic_modulation... ✓ (6.6ms)
+  📊 limbic_modulation_active: True
+  📊 exploration_bias: -0.30000000000000004
+  📊 stability_bias: 0.09999999999999998
+  📊 creativity_boost: 0.0
+  📊 attention_modulation: 1.0
+  📊 reasoning_modulated: True
+
+
+============================================================
+Summary
+============================================================
+
+CODEX         4/ 4 passed  (3991ms)
+
+TOTAL         4/ 4 passed  (3991ms)
+
+✓ All benchmarks passed!
+
+[COMPLETED] Duration: 4.59s
+Exit code: 0
+
+======================================================================
+[BENCHMARK 10/17] benchmarks/benchmark_nexus.py
+Started: 23:08:30
+======================================================================
+
+============================================================
+SpiralCortex v3.0 - Benchmark Suite
+============================================================
+
+Running 4 benchmarks...
+
+[nexus] engine_initialization... 🧠 EMOJI PIPELINE: Using direct brain module imports (normal mode)
+   ✅ MultiPathwayBrain initialized with homeostasis
+   ✅ UnifiedEmotionalIntelligence initialized
+✅ Complete SpiralBrain organism initialized
+   🧠 Pathways: 8
+   🛡️  Homeostasis: Active (Tri-Band Elastic)
+   ❤️  Emotion: Enabled
+   🎯 CCN: Enabled
+   Ready for unified cognitive processing
+✓ (5122.6ms)
+  📊 brain_loaded: True
+  📊 load_time_seconds: 0.329
+  📊 process_time_seconds: 0.026
+  📊 has_result: True
+
+[nexus] biofeedback_hardware... ✓ (1247.5ms)
+  📊 module_loaded: True
+  📊 load_time_seconds: 0.0
+  📊 available_components: ['PhysiologicalSignals']
+  📊 module_name: nexus.biofeedback_hardware
+
+[nexus] emotional_memory... ✓ (218.7ms)
+  📊 module_loaded: True
+  📊 load_time_seconds: 0.0
+  📊 available_functions: []
+  📊 module_name: nexus.emotional_memory_log
+
+[nexus] limbic_integration... ✓ (0.0ms)
+  📊 limbic_initialized: True
+  📊 primary_emotion: neutral
+  📊 emotional_intensity: 0.5
+  📊 curiosity_drive: 0.5
+  📊 hazard_score: 0.0
+  📊 attention_modulation: 1.0
+  📊 dream_mode: False
+  📊 homeostasis_active: True
+
+
+============================================================
+Summary
+============================================================
+
+NEXUS         4/ 4 passed  (6589ms)
+
+TOTAL         4/ 4 passed  (6589ms)
+
+✓ All benchmarks passed!
+
+[COMPLETED] Duration: 7.57s
+Exit code: 0
+
+======================================================================
+[BENCHMARK 11/17] benchmarks/benchmark_sensus.py
+Started: 23:08:38
+======================================================================
+
+============================================================
+SpiralCortex v3.0 - Benchmark Suite
+============================================================
+
+Running 3 benchmarks...
+
+[sensus] engine_initialization... ✓ (1243.0ms)
+  📊 imported: True
+  📊 has_engine_class: False
+
+[sensus] api_interface... ✓ (0.0ms)
+  📊 imported: False
+
+[sensus] limbic_perception... ✓ (4.3ms)
+  📊 limbic_perception_active: False
+  📊 error: 'lambda_coupling'
+
+
+============================================================
+Summary
+============================================================
+
+SENSUS        3/ 3 passed  (1247ms)
+
+TOTAL         3/ 3 passed  (1247ms)
+
+✓ All benchmarks passed!
+
+[COMPLETED] Duration: 1.53s
+Exit code: 0
+
+======================================================================
+[BENCHMARK 12/17] benchmarks/benchmark_cortex.py
+Started: 23:08:39
+======================================================================
+
+============================================================
+SpiralCortex v3.0 - Benchmark Suite
+============================================================
+
+Running 5 benchmarks...
+
+[cortex] cognitive_bridge... 🧠 EMOJI PIPELINE: Using direct brain module imports (normal mode)
+✓ (1302.2ms)
+  📊 imported: False
+  📊 error: No module named 'cortex.adapters'
+
+[cortex] identity_manager... ✓ (0.0ms)
+  📊 imported: False
+
+[cortex] meta_observer... ✓ (0.0ms)
+  📊 imported: False
+
+[cortex] ethics_pipeline... ✓ (0.0ms)
+  📊 imported: False
+
+[cortex] limbic_homeostasis... ✓ (0.0ms)
+  📊 homeostasis_active: False
+
+
+============================================================
+Summary
+============================================================
+
+CORTEX        5/ 5 passed  (1302ms)
+
+TOTAL         5/ 5 passed  (1302ms)
+
+✓ All benchmarks passed!
+
+[COMPLETED] Duration: 1.59s
+Exit code: 0
+
+======================================================================
+[BENCHMARK 13/17] benchmarks/crypto_tax_benchmark.py
+Started: 23:08:41
+======================================================================
+2025-11-26 23:08:41,892 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-26 23:08:43,919 - domains.blockchain.schemas - INFO - Unified brain v3.0 initialized for schema validation
+2025-11-26 23:08:44,017 - domains.blockchain.stream_service - INFO - Unified brain v3.0 initialized for stream service
+2025-11-26 23:08:44,096 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-26 23:08:44,098 - domains.blockchain - INFO - Unified brain v3.0 initialized for blockchain domain
+2025-11-26 23:08:44,100 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-26 23:08:44,104 - domains.blockchain.audit_logger - INFO - Unified brain v3.0 initialized for audit logger
+2025-11-26 23:08:44,104 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-26 23:08:44,104 - domains.blockchain.audit_logger - INFO - Compliance gateway initialized for audit logging
+2025-11-26 23:08:44,107 - domains.blockchain.etherscan_provider - INFO - Unified brain v3.0 initialized for Etherscan provider
+2025-11-26 23:08:44,107 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-26 23:08:44,107 - domains.blockchain.etherscan_provider - INFO - Compliance gateway initialized
+2025-11-26 23:08:44,109 - domains.blockchain.metrics_collector - INFO - Unified brain v3.0 initialized for metrics collector
+2025-11-26 23:08:44,111 - domains.blockchain.risk_rules - INFO - Unified brain v3.0 initialized for risk assessment
+2025-11-26 23:08:44,113 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-26 23:08:44,115 - domains.blockchain.schemas - INFO - Unified brain v3.0 initialized for schema validation
+2025-11-26 23:08:44,115 - domains.blockchain.risk_rules - INFO - Unified brain v3.0 initialized for risk assessment
+2025-11-26 23:08:44,115 - domains.blockchain.service - INFO - Unified brain v3.0 initialized for blockchain service
+2025-11-26 23:08:44,115 - domains.blockchain.wallet_parser - INFO - Unified brain v3.0 initialized for wallet parsing
+2025-11-26 23:08:44,115 - domains.blockchain - INFO - Blockchain domain initialized with 11/11 components
+2025-11-26 23:08:44,115 - domains.blockchain - INFO - Unified brain v3.0 cognitive capabilities active
+C:\Users\johnc\source\repos\SpiralBrain-v3.0\benchmarks\crypto_tax_benchmark.py:34: DeprecationWarning: codex.tax_engine is deprecated and has moved to domains.tax. This compatibility shim will be removed in v2.1 (February 2026). Update imports: from domains.tax import ...
+  from codex.tax_engine.crypto_tax_analyzer import CryptoTaxAnalyzer
+C:\Users\johnc\source\repos\SpiralBrain-v3.0\codex\tax_engine\crypto_tax_analyzer.py:191: RuntimeWarning: invalid value encountered in log1p
+  np.log1p(value) / 10.0,  # Log-scaled value
+🚀 Running Full CryptoTax Benchmark Suite
+============================================================
+🏃 Running benchmark on hodler dataset (8 transactions)
+✅ hodler: 8 tx, 0.02s, accuracy: 0.010
+🏃 Running benchmark on day_trader dataset (266 transactions)
+✅ day_trader: 266 tx, 1.06s, accuracy: 0.008
+🏃 Running benchmark on miner dataset (370 transactions)
+✅ miner: 370 tx, 1.60s, accuracy: 0.408
+🏃 Running benchmark on defi_user dataset (19 transactions)
+✅ defi_user: 19 tx, 0.06s, accuracy: 0.408
+🏃 Running benchmark on volatile_market dataset (113 transactions)
+❌ volatile_market: Failed - input_vector contains NaN or infinite values
+🏃 Running benchmark on large_portfolio dataset (1200 transactions)
+✅ large_portfolio: 1200 tx, 4.12s, accuracy: 0.489
+
+📊 Comparative Analysis
+----------------------------------------
+
+HODLER:
+   SpiralCode-X Tax: $0.00
+   Cognitive Confidence: 0.304
+   vs fifo_baseline: 0.000 accuracy improvement
+   vs average_cost: 0.000 accuracy improvement
+   vs simple_pattern: 0.000 accuracy improvement
+
+DAY_TRADER:
+   SpiralCode-X Tax: $0.00
+   Cognitive Confidence: 0.301
+   vs fifo_baseline: 0.000 accuracy improvement
+   vs average_cost: 0.000 accuracy improvement
+   vs simple_pattern: 0.000 accuracy improvement
+
+MINER:
+   SpiralCode-X Tax: $3,723.55
+   Cognitive Confidence: 0.300
+   vs fifo_baseline: 0.000 accuracy improvement
+   vs average_cost: 0.000 accuracy improvement
+   vs simple_pattern: 0.000 accuracy improvement
+
+DEFI_USER:
+   SpiralCode-X Tax: $21,262.38
+   Cognitive Confidence: 0.300
+   vs fifo_baseline: 0.000 accuracy improvement
+   vs average_cost: 0.000 accuracy improvement
+   vs simple_pattern: 0.000 accuracy improvement
+
+LARGE_PORTFOLIO:
+   SpiralCode-X Tax: $3,478,622.33
+   Cognitive Confidence: 0.304
+   vs fifo_baseline: 0.000 accuracy improvement
+   vs average_cost: 0.000 accuracy improvement
+   vs simple_pattern: 0.000 accuracy improvement
+
+🏆 Industry Benchmark Comparison
+----------------------------------------
+Market Position: Needs Improvement
+Competitive Advantages: 0
+Competitive Disadvantages: 2
+Strategic Recommendations: 4
+Industry comparison report: industry_comparison_report_20251126_230857.json
+
+📈 Benchmark Suite Complete!
+   Datasets tested: 5
+   Average accuracy: 0.265
+   Average stability: 0.226
+   Average scalability: 0.800
+
+💾 Benchmark report exported to: ../results/cryptotax_benchmark_report_20251126_230905.json
+
+[COMPLETED] Duration: 24.73s
+Exit code: 0
+
+======================================================================
+[BENCHMARK 14/17] nexus/validation/clinical_validation.py
+Started: 23:09:05
+======================================================================
+🧠 EMOJI PIPELINE: Using direct brain module imports (normal mode)
+
+[COMPLETED] Duration: 5.9s
+Exit code: 0
+
+======================================================================
+[BENCHMARK 15/17] nexus/validation/benchmark_spiralcode_nexus.py
+Started: 23:09:11
+======================================================================
+MuJoCo not available or disabled - using mock simulation
+Haystack not available - install with: pip install farm-haystack
+🧠 EMOJI PIPELINE: Using direct brain module imports (normal mode)
+🔧 Setting up MultiPathwayBrain with real virtual adapters...
+✅ Brain initialized with 3 pathways + 2 virtual adapters
+🚀 Starting Comprehensive SpiralCode-Nexus Benchmark
+============================================================
+⚡ Benchmarking inference speed (50 runs)...
+   Warming up...
+   Running 50 benchmark iterations...
+   Progress: 20/50
+   Progress: 40/50
+📏 Benchmarking scalability across state dimensions...
+   Testing dimension 64...
+   Testing dimension 128...
+   Testing dimension 256...
+   Testing dimension 512...
+🔌 Benchmarking virtual adapter performance...
+   Testing MuJoCo physics adapter...
+   Testing Haystack memory adapter...
+   Testing Vision perception adapter...
+
+================================================================================
+🎯 SPIRALCODE-NEXUS BENCHMARK RESULTS
+================================================================================
+
+⚡ INFERENCE PERFORMANCE:
+  Total time: 6.12 s
+  Mean latency: 15.87 ms
+  Median latency: 14.78 ms
+  Throughput: 8.2 inferences/s
+  Latency range: 3.90–28.36 ms (std 5.31 ms)
+
+💾 MEMORY USAGE:
+  Avg RSS: 501.0 MB
+  Avg VMS: 946.8 MB
+  Peak RSS: 502.4 MB
+
+🧠 PATHWAY PERFORMANCE:
+  Reasoning: avg_confidence: 0.502, std_confidence: 0.001, avg_activity: 0.174, std_activity: 0.011, avg_efficiency: 0.500, std_efficiency: 0.000, avg_attention_entropy: -0.025, std_attention_entropy: 0.097, avg_homeostasis_applied: 1.000, std_homeostasis_applied: 0.000, avg_safety_gain: 0.050, std_safety_gain: 0.000, avg_vision_available: 0.000, std_vision_available: 0.000
+  Attention: avg_confidence: 0.500, std_confidence: 0.001, avg_activity: 0.159, std_activity: 0.015, avg_efficiency: 0.500, std_efficiency: 0.000, avg_attention_entropy: 0.000, std_attention_entropy: 0.127, avg_homeostasis_applied: 1.000, std_homeostasis_applied: 0.000, avg_safety_gain: 0.050, std_safety_gain: 0.000, avg_vision_available: 0.000, std_vision_available: 0.000
+  Vision: avg_vision_available: 1.000, std_vision_available: 0.000, avg_vision_processed: 1.000, std_vision_processed: 0.000
+  Creative: avg_confidence: 0.497, std_confidence: 0.001, avg_activity: 0.119, std_activity: 0.009, avg_efficiency: 0.500, std_efficiency: 0.000, avg_attention_entropy: 0.005, std_attention_entropy: 0.104, avg_homeostasis_applied: 1.000, std_homeostasis_applied: 0.000, avg_safety_gain: 0.050, std_safety_gain: 0.000, avg_vision_available: 0.000, std_vision_available: 0.000
+
+🔌 VIRTUAL ADAPTER PERFORMANCE:
+  MuJoCo Physics:
+    Mean latency: 0.00 ms (std 0.00 ms)
+    Range: 0.00–0.00 ms
+  Haystack Memory:
+    Mean latency: 0.00 ms (std 0.00 ms)
+    Range: 0.00–0.00 ms
+  Vision Perception:
+    Mean latency: 3.70 ms (std 4.53 ms)
+    Range: 0.00–15.67 ms
+    Gate strength (avg): 0.500
+    Activation rate: 100.00%
+
+📏 SCALABILITY (State Dimension Impact):
+  Dim  64: mean latency 1.13 ms, throughput 886.75 inferences/s
+  Dim 128: mean latency 2.30 ms, throughput 435.13 inferences/s
+  Dim 256: mean latency 2.54 ms, throughput 394.06 inferences/s
+  Dim 512: mean latency 2.07 ms, throughput 483.08 inferences/s
+
+💻 SYSTEM INFO:
+  Device: cpu
+  PyTorch: 2.8.0+cpu
+  Python: 3.12.10
+  Total memory: 32326 MB
+
+📁 Results saved to: C:\Users\johnc\source\repos\SpiralBrain-v3.0\nexus\validation\benchmark_results\benchmark_results_20251127_050923.json
+
+================================================================================
+
+✅ Benchmark completed successfully!
+📊 Results show configurable performance metrics
+
+[COMPLETED] Duration: 12.01s
+Exit code: 0
+
+======================================================================
+[BENCHMARK 16/17] sensus/validation/metacognitive_integration_benchmarks.py
+Started: 23:09:23
+======================================================================
+🧪 Phase 4 Benchmark Suite Demo
+🧪 SpiralSensus Benchmark Suite initialized
+🚀 Starting comprehensive SpiralSensus benchmark...
+📊 Running baseline: adaptive_challenge_0
+💥 Baseline contradiction injected at step 12
+🌀 Running enhanced: adaptive_challenge_0
+🧠 AveragingRegulator initialized with 0 prior sessions
+SensusBridgeInterface initialized: benchmark_adaptive_challenge_0
+Reflective callback registered for SpiralCortex integration
+Thresholds updated: coherence=0.85, stability=0.75
+💥 Enhanced contradiction injected at step 12
+✅ Completed adaptive_challenge_0
+📊 Running baseline: stable_processing_0
+🌀 Running enhanced: stable_processing_0
+🧠 AveragingRegulator initialized with 0 prior sessions
+SensusBridgeInterface initialized: benchmark_stable_processing_0
+Reflective callback registered for SpiralCortex integration
+Thresholds updated: coherence=0.85, stability=0.75
+✅ Completed stable_processing_0
+📊 Running baseline: adaptive_challenge_1
+💥 Baseline contradiction injected at step 12
+🌀 Running enhanced: adaptive_challenge_1
+🧠 AveragingRegulator initialized with 0 prior sessions
+SensusBridgeInterface initialized: benchmark_adaptive_challenge_1
+Reflective callback registered for SpiralCortex integration
+Thresholds updated: coherence=0.85, stability=0.75
+💥 Enhanced contradiction injected at step 12
+✅ Completed adaptive_challenge_1
+📊 Running baseline: coherence_challenge_0
+💥 Baseline contradiction injected at step 15
+🌀 Running enhanced: coherence_challenge_0
+🧠 AveragingRegulator initialized with 0 prior sessions
+SensusBridgeInterface initialized: benchmark_coherence_challenge_0
+Reflective callback registered for SpiralCortex integration
+Thresholds updated: coherence=0.85, stability=0.75
+💥 Enhanced contradiction injected at step 15
+✅ Completed coherence_challenge_0
+📊 Running baseline: stability_stress_0
+🌀 Running enhanced: stability_stress_0
+🧠 AveragingRegulator initialized with 0 prior sessions
+SensusBridgeInterface initialized: benchmark_stability_stress_0
+Reflective callback registered for SpiralCortex integration
+Thresholds updated: coherence=0.85, stability=0.75
+✅ Completed stability_stress_0
+📊 Running baseline: adaptive_challenge_2
+💥 Baseline contradiction injected at step 12
+🌀 Running enhanced: adaptive_challenge_2
+🧠 AveragingRegulator initialized with 0 prior sessions
+SensusBridgeInterface initialized: benchmark_adaptive_challenge_2
+Reflective callback registered for SpiralCortex integration
+Thresholds updated: coherence=0.85, stability=0.75
+💥 Enhanced contradiction injected at step 12
+✅ Completed adaptive_challenge_2
+
+🧪 SpiralSensus Benchmark Report
+==================================================
+
+Test Configuration:
+- Scenarios: 6
+- Timestamp: 2025-11-26T23:09:25.249744
+
+Performance Improvements:
+- Coherence: +474.6%
+- Stability: +21.4%
+- Recovery Time: +95.8% (faster)
+- Processing Overhead: +2047.4%
+
+Metacognitive Activity:
+- Average Reflections per Scenario: 16.7
+- Reflection Rate: 33.3% of steps
+
+Baseline Performance:
+- Average Coherence: 0.167
+- Average Stability: 0.632
+- Average Recovery Time: 23.8 steps
+
+Enhanced Performance:
+- Average Coherence: 0.958
+- Average Stability: 0.767
+- Average Recovery Time: 1.0 steps
+
+Statistical Significance:
+- Coherence improvement t-stat: 14.16
+- Stability improvement t-stat: 1.60
+- Recovery improvement t-stat: -2.98
+
+Conclusion:
+✅ SIGNIFICANT coherence improvement detected
+✅ SIGNIFICANT stability improvement detected
+✅ SIGNIFICANT recovery improvement detected
+
+📊 Benchmark results exported to: spiralsensus_benchmark_20251126_230925.json
+
+[COMPLETED] Duration: 1.63s
+Exit code: 0
+
+======================================================================
+[BENCHMARK 17/17] sensus/validation/benchmark_suite.py
+Started: 23:09:25
+======================================================================
+Traceback (most recent call last):
+  File "C:\Users\johnc\source\repos\SpiralBrain-v3.0\sensus\validation\benchmark_suite.py", line 16, in <module>
+    class SpiralSensusBenchmarkSuite:
+  File "C:\Users\johnc\source\repos\SpiralBrain-v3.0\sensus\validation\benchmark_suite.py", line 22, in SpiralSensusBenchmarkSuite
+    def __init__(self, sensus_engine: SpiralSensusEngine):
+                                      ^^^^^^^^^^^^^^^^^^
+NameError: name 'SpiralSensusEngine' is not defined
+
+[COMPLETED] Duration: 1.53s
+Exit code: 1

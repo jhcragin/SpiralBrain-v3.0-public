@@ -1,0 +1,35 @@
+======================================================================
+SpiralCortex v2.0 Benchmark Summary
+Run timestamp: 2025-11-21_22-27-58
+======================================================================
+
+Overall Results:
+  PASS:     16 /  17
+  WARN:      1 /  17
+  SKIP:      0 /  17
+  TIMEOUT:   0 /  17
+  ERROR:     0 /  17
+
+Total execution time: 96.35s
+
+======================================================================
+Individual Benchmark Results:
+======================================================================
+
+[PASS   ]    0.1s - benchmarks/benchmark_suite.py
+[PASS   ]    3.1s - benchmarks/benchmark_unified_cognition.py
+[PASS   ]    0.1s - benchmarks/benchmark_comparison.py
+[PASS   ]    2.4s - benchmarks/enhanced_pathways_validation.py
+[PASS   ]    2.4s - benchmarks/attention_mechanisms_validation.py
+[PASS   ]    1.8s - benchmarks/quantum_emotional_fusion_validation.py
+[PASS   ]   19.8s - benchmarks/performance_benchmark.py
+[PASS   ]    0.5s - benchmarks/market_validation_system.py
+[PASS   ]    2.0s - benchmarks/benchmark_codex.py
+[PASS   ]   10.9s - benchmarks/benchmark_nexus.py
+[PASS   ]    2.1s - benchmarks/benchmark_sensus.py
+[PASS   ]    3.2s - benchmarks/benchmark_cortex.py
+[PASS   ]   23.0s - benchmarks/crypto_tax_benchmark.py
+[PASS   ]    6.2s - nexus/validation/clinical_validation.py
+[PASS   ]   15.0s - nexus/validation/benchmark_spiralcode_nexus.py
+[PASS   ]    1.8s - sensus/validation/metacognitive_integration_benchmarks.py
+[WARN   ]    1.7s - sensus/validation/benchmark_suite.py

@@ -1,0 +1,62 @@
+{
+  "scarcity": {
+    "sdi": 0.015941795162187966,
+    "mpi": {
+      "slope_diff": 0.4992689166202794,
+      "significant_change": true
+    },
+    "hps": {
+      "viability_maintained": true
+    },
+    "verdicts": {
+      "sdi_supported": false,
+      "mpi_supported": true,
+      "hps_supported": true
+    }
+  },
+  "emotional": {
+    "sdi": 0.8930513488891019,
+    "mpi": {
+      "slope_diff": 0.4853416810734652,
+      "significant_change": true
+    },
+    "hps": {
+      "viability_maintained": false
+    },
+    "verdicts": {
+      "sdi_supported": true,
+      "mpi_supported": true,
+      "hps_supported": false
+    }
+  },
+  "cognitive": {
+    "sdi": 0.7900071311859151,
+    "mpi": {
+      "slope_diff": 0.5184484932557603,
+      "significant_change": true
+    },
+    "hps": {
+      "viability_maintained": true
+    },
+    "verdicts": {
+      "sdi_supported": true,
+      "mpi_supported": true,
+      "hps_supported": true
+    }
+  },
+  "temporal": {
+    "sdi": 0.8865504587532,
+    "mpi": {
+      "slope_diff": 0.29043845659260525,
+      "significant_change": true
+    },
+    "hps": {
+      "viability_maintained": false
+    },
+    "verdicts": {
+      "sdi_supported": true,
+      "mpi_supported": true,
+      "hps_supported": false
+    }
+  }
+}

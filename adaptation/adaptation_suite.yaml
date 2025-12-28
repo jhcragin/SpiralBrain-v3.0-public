@@ -1,0 +1,73 @@
+suite_name: SpiralBrain_Adaptation_Suite_v1
+description: >
+  Unified experimental harness for testing SpiralBrain's cross-environment adaptation,
+  self-reflective optimization, and identity preservation.
+
+environments:
+  - id: WinCPU
+    python: "3.12"
+    torch: "cpu"
+    autosave: true
+    notes: "Baseline Windows 11 environment with VS Code autosave active."
+
+  - id: UbuntuGPU
+    python: "3.10"
+    torch: "cuda:12.4"
+    autosave: false
+    notes: "Clean Ubuntu 22.04 environment with CUDA acceleration."
+
+  - id: EnvDrift
+    python: "3.11"
+    torch: "cpu"
+    fault_injection:
+      - PATH_jitter: true
+      - outdated_numpy: true
+      - autosave_conflict: true
+    notes: "Adversarial setup for environment brittleness testing."
+
+protocols:
+  - name: CrossEnv_Adaptation
+    type: ABAprime
+    description: >
+      Verifies genuine adaptation by returning to baseline after environment shift.
+    metrics: [R_t, lambda_star, I_id]
+
+  - name: Reflection_Ablation
+    arms: [Rplus, Rminus]
+    description: >
+      Tests whether introspection (reflection) drives optimization.
+    metrics: [G_ref, Delta_t_diag, lambda_drift]
+
+  - name: StretchFlexFlipRestart
+    type: BehavioralPhenotype
+    description: >
+      Quantifies the model's organic comfort-seeking dynamics across time.
+    metrics: [strategy_entropy, flip_latency, recovery_quality]
+
+  - name: ObserverEffect_Trial
+    type: Paired
+    description: >
+      Measures changes in cognitive coherence under observation vs silence.
+    metrics: [Phi_obs_silent_ratio, SEC_stability_CV]
+
+analysis:
+  statistical_model: mixed_effects
+  significance_threshold: 0.05
+  correction_method: Holm-Bonferroni
+  plots:
+    - ResilienceCurve_Rt
+    - ReflectionGain_Gref
+    - IdentitySimilarity_Iid
+    - ObserverEffect_Ratio
+    - BehavioralEntropy_Hs
+
+logging:
+  format: jsonl
+  output_dir: logs/adaptation_runs
+  autosave_interval: 100
+  schema_file: logging_schema.json
+
+meta:
+  author: "SpiralCortex Research Lab"
+  version: "1.0"
+  created: "2025-11-04"

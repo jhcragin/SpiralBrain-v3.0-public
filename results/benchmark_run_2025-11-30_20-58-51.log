@@ -1,0 +1,454 @@
+======================================================================
+SpiralCortex v3.0 Benchmark Run - 2025-11-30_20-58-51
+======================================================================
+
+
+======================================================================
+[BENCHMARK 1/14] benchmarks/benchmark_suite_v3_0.py
+Started: 20:58:51
+======================================================================
+
+============================================================
+SpiralCortex v3.0 - Benchmark Suite
+============================================================
+
+Running 0 benchmarks...
+
+
+============================================================
+Summary
+============================================================
+
+
+TOTAL         0/ 0 passed  (0ms)
+
+✓ All benchmarks passed!
+
+[COMPLETED] Duration: 0.08s
+Exit code: 0
+
+======================================================================
+[BENCHMARK 2/14] benchmarks/benchmark_unified_cognition.py
+Started: 20:58:51
+======================================================================
+🧠 EMOJI PIPELINE: Using direct brain module imports (normal mode)
+🧠 SpiralCortex Unified Cognition Benchmark
+==================================================
+âœ… Loaded 16 test cases from unified dataset
+
+ðŸ”„ Running full_integration configuration...
+   ðŸ“Š Coherence: 0.808 ± 0.020
+   ðŸŽ¯ Confidence: 0.340 ± 0.078
+
+ðŸ”„ Running no_emotion configuration...
+   ðŸ“Š Coherence: 0.808 ± 0.020
+   ðŸŽ¯ Confidence: 0.339 ± 0.079
+
+ðŸ”„ Running no_physiology configuration...
+   ðŸ“Š Coherence: 0.807 ± 0.020
+   ðŸŽ¯ Confidence: 0.344 ± 0.081
+
+ðŸ”„ Running logical_only configuration...
+   ðŸ“Š Coherence: 0.807 ± 0.021
+   ðŸŽ¯ Confidence: 0.345 ± 0.083
+
+ðŸŽ¯ BENCHMARK COMPLETE
+==================================================
+ðŸ“Š Cognitive Coherence Score (CCS): 0.808
+🧠 CCS Interpretation: Exceptional multimodal integration - subsystems highly coherent
+âš¡ Multimodal Benefit: 0.001 (0.2%)
+ðŸ’š Emotional Integration: -0.000
+❤️  Physiological Integration: +0.001
+
+ðŸ“„ Reports saved:
+   â€¢ data/benchmark_unified_cognition_report.json
+   â€¢ data/benchmark_unified_cognition_summary.csv
+
+[COMPLETED] Duration: 5.31s
+Exit code: 0
+
+======================================================================
+[BENCHMARK 3/14] benchmarks/benchmark_comparison.py
+Started: 20:58:57
+======================================================================
+🔍 Codex Benchmark Comparison Analysis
+============================================================
+❌ Benchmark report not found: benchmarks/results/cryptotax_benchmark_report_20251005_192832.json
+❌ Benchmark report not found: benchmarks/results/cryptotax_benchmark_report_20250924_005840.json
+❌ Could not load benchmark reports
+
+[COMPLETED] Duration: 0.08s
+Exit code: 0
+
+======================================================================
+[BENCHMARK 4/14] benchmarks/enhanced_pathways_validation.py
+Started: 20:58:57
+======================================================================
+2025-11-30 20:58:57,695 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+✅ Brain Core Homeostasis Engine initialized
+✅ Vector shape invariant enforced: INTERNAL_STATE_DIM = 128
+🧠 Cognitive Learning Engine initialized
+🔄 Adaptive Pathway Manager initialized
+🧠 Continuous learning system initialized
+🧠 Communication Homeostasis v1.0 initialized
+📊 Regulating 8 pathways: ['Reasoning', 'Attention', 'InductiveMemory', 'DeductiveMemory', 'Creative', 'Analytical', 'Social', 'Temporal']
+🧠 Communication Homeostasis v1.0 initialized
+✅ Adaptive Neurodivergent Regulator initialized
+2025-11-30 20:59:04,369 - emotional_intelligence.emotional_intelligence - INFO - Unified Emotional Intelligence System initialized
+2025-11-30 20:59:04,388 - domains.blockchain.schemas - INFO - Unified brain v3.0 initialized for schema validation
+✅ Brain Core Homeostasis Engine initialized
+✅ Vector shape invariant enforced: INTERNAL_STATE_DIM = 128
+🧠 Cognitive Learning Engine initialized
+🔄 Adaptive Pathway Manager initialized
+🧠 Continuous learning system initialized
+🧠 Communication Homeostasis v1.0 initialized
+📊 Regulating 8 pathways: ['Reasoning', 'Attention', 'InductiveMemory', 'DeductiveMemory', 'Creative', 'Analytical', 'Social', 'Temporal']
+🧠 Communication Homeostasis v1.0 initialized
+✅ Adaptive Neurodivergent Regulator initialized
+2025-11-30 20:59:05,105 - emotional_intelligence.emotional_intelligence - INFO - Unified Emotional Intelligence System initialized
+2025-11-30 20:59:05,120 - domains.blockchain.stream_service - INFO - Unified brain v3.0 initialized for stream service
+✅ Brain Core Homeostasis Engine initialized
+✅ Vector shape invariant enforced: INTERNAL_STATE_DIM = 128
+🧠 Cognitive Learning Engine initialized
+🔄 Adaptive Pathway Manager initialized
+🧠 Continuous learning system initialized
+🧠 Communication Homeostasis v1.0 initialized
+📊 Regulating 8 pathways: ['Reasoning', 'Attention', 'InductiveMemory', 'DeductiveMemory', 'Creative', 'Analytical', 'Social', 'Temporal']
+🧠 Communication Homeostasis v1.0 initialized
+✅ Adaptive Neurodivergent Regulator initialized
+2025-11-30 20:59:05,754 - emotional_intelligence.emotional_intelligence - INFO - Unified Emotional Intelligence System initialized
+2025-11-30 20:59:05,766 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+✅ Brain Core Homeostasis Engine initialized
+✅ Vector shape invariant enforced: INTERNAL_STATE_DIM = 128
+🧠 Cognitive Learning Engine initialized
+🔄 Adaptive Pathway Manager initialized
+🧠 Continuous learning system initialized
+🧠 Communication Homeostasis v1.0 initialized
+📊 Regulating 8 pathways: ['Reasoning', 'Attention', 'InductiveMemory', 'DeductiveMemory', 'Creative', 'Analytical', 'Social', 'Temporal']
+🧠 Communication Homeostasis v1.0 initialized
+✅ Adaptive Neurodivergent Regulator initialized
+2025-11-30 20:59:06,364 - emotional_intelligence.emotional_intelligence - INFO - Unified Emotional Intelligence System initialized
+2025-11-30 20:59:06,379 - domains.blockchain - INFO - Unified brain v3.0 initialized for blockchain domain
+✅ Brain Core Homeostasis Engine initialized
+✅ Vector shape invariant enforced: INTERNAL_STATE_DIM = 128
+🧠 Cognitive Learning Engine initialized
+🔄 Adaptive Pathway Manager initialized
+🧠 Continuous learning system initialized
+🧠 Communication Homeostasis v1.0 initialized
+📊 Regulating 8 pathways: ['Reasoning', 'Attention', 'InductiveMemory', 'DeductiveMemory', 'Creative', 'Analytical', 'Social', 'Temporal']
+🧠 Communication Homeostasis v1.0 initialized
+✅ Adaptive Neurodivergent Regulator initialized
+2025-11-30 20:59:07,136 - emotional_intelligence.emotional_intelligence - INFO - Unified Emotional Intelligence System initialized
+2025-11-30 20:59:07,151 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+✅ Brain Core Homeostasis Engine initialized
+✅ Vector shape invariant enforced: INTERNAL_STATE_DIM = 128
+🧠 Cognitive Learning Engine initialized
+🔄 Adaptive Pathway Manager initialized
+🧠 Continuous learning system initialized
+🧠 Communication Homeostasis v1.0 initialized
+📊 Regulating 8 pathways: ['Reasoning', 'Attention', 'InductiveMemory', 'DeductiveMemory', 'Creative', 'Analytical', 'Social', 'Temporal']
+🧠 Communication Homeostasis v1.0 initialized
+✅ Adaptive Neurodivergent Regulator initialized
+2025-11-30 20:59:07,587 - emotional_intelligence.emotional_intelligence - INFO - Unified Emotional Intelligence System initialized
+2025-11-30 20:59:07,606 - domains.blockchain.audit_logger - INFO - Unified brain v3.0 initialized for audit logger
+2025-11-30 20:59:07,606 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-30 20:59:07,606 - domains.blockchain.audit_logger - INFO - Compliance gateway initialized for audit logging
+✅ Brain Core Homeostasis Engine initialized
+✅ Vector shape invariant enforced: INTERNAL_STATE_DIM = 128
+🧠 Cognitive Learning Engine initialized
+🔄 Adaptive Pathway Manager initialized
+🧠 Continuous learning system initialized
+🧠 Communication Homeostasis v1.0 initialized
+📊 Regulating 8 pathways: ['Reasoning', 'Attention', 'InductiveMemory', 'DeductiveMemory', 'Creative', 'Analytical', 'Social', 'Temporal']
+🧠 Communication Homeostasis v1.0 initialized
+✅ Adaptive Neurodivergent Regulator initialized
+2025-11-30 20:59:08,182 - emotional_intelligence.emotional_intelligence - INFO - Unified Emotional Intelligence System initialized
+✅ Brain Core Homeostasis Engine initialized
+✅ Vector shape invariant enforced: INTERNAL_STATE_DIM = 128
+🧠 Cognitive Learning Engine initialized
+🔄 Adaptive Pathway Manager initialized
+🧠 Continuous learning system initialized
+🧠 Communication Homeostasis v1.0 initialized
+📊 Regulating 8 pathways: ['Reasoning', 'Attention', 'InductiveMemory', 'DeductiveMemory', 'Creative', 'Analytical', 'Social', 'Temporal']
+🧠 Communication Homeostasis v1.0 initialized
+✅ Adaptive Neurodivergent Regulator initialized
+2025-11-30 20:59:08,778 - emotional_intelligence.emotional_intelligence - INFO - Unified Emotional Intelligence System initialized
+2025-11-30 20:59:08,794 - domains.blockchain.etherscan_provider - INFO - Unified brain v3.0 initialized for Etherscan provider
+2025-11-30 20:59:08,794 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-30 20:59:08,794 - domains.blockchain.etherscan_provider - INFO - Compliance gateway initialized
+✅ Brain Core Homeostasis Engine initialized
+✅ Vector shape invariant enforced: INTERNAL_STATE_DIM = 128
+🧠 Cognitive Learning Engine initialized
+🔄 Adaptive Pathway Manager initialized
+🧠 Continuous learning system initialized
+🧠 Communication Homeostasis v1.0 initialized
+📊 Regulating 8 pathways: ['Reasoning', 'Attention', 'InductiveMemory', 'DeductiveMemory', 'Creative', 'Analytical', 'Social', 'Temporal']
+🧠 Communication Homeostasis v1.0 initialized
+✅ Adaptive Neurodivergent Regulator initialized
+2025-11-30 20:59:09,387 - emotional_intelligence.emotional_intelligence - INFO - Unified Emotional Intelligence System initialized
+2025-11-30 20:59:09,404 - domains.blockchain.metrics_collector - INFO - Unified brain v3.0 initialized for metrics collector
+✅ Brain Core Homeostasis Engine initialized
+✅ Vector shape invariant enforced: INTERNAL_STATE_DIM = 128
+🧠 Cognitive Learning Engine initialized
+🔄 Adaptive Pathway Manager initialized
+🧠 Continuous learning system initialized
+🧠 Communication Homeostasis v1.0 initialized
+📊 Regulating 8 pathways: ['Reasoning', 'Attention', 'InductiveMemory', 'DeductiveMemory', 'Creative', 'Analytical', 'Social', 'Temporal']
+🧠 Communication Homeostasis v1.0 initialized
+✅ Adaptive Neurodivergent Regulator initialized
+2025-11-30 20:59:10,161 - emotional_intelligence.emotional_intelligence - INFO - Unified Emotional Intelligence System initialized
+2025-11-30 20:59:10,173 - domains.blockchain.risk_rules - INFO - Unified brain v3.0 initialized for risk assessment
+✅ Brain Core Homeostasis Engine initialized
+✅ Vector shape invariant enforced: INTERNAL_STATE_DIM = 128
+🧠 Cognitive Learning Engine initialized
+🔄 Adaptive Pathway Manager initialized
+🧠 Continuous learning system initialized
+🧠 Communication Homeostasis v1.0 initialized
+📊 Regulating 8 pathways: ['Reasoning', 'Attention', 'InductiveMemory', 'DeductiveMemory', 'Creative', 'Analytical', 'Social', 'Temporal']
+🧠 Communication Homeostasis v1.0 initialized
+✅ Adaptive Neurodivergent Regulator initialized
+2025-11-30 20:59:10,598 - emotional_intelligence.emotional_intelligence - INFO - Unified Emotional Intelligence System initialized
+2025-11-30 20:59:10,614 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+✅ Brain Core Homeostasis Engine initialized
+✅ Vector shape invariant enforced: INTERNAL_STATE_DIM = 128
+🧠 Cognitive Learning Engine initialized
+🔄 Adaptive Pathway Manager initialized
+🧠 Continuous learning system initialized
+🧠 Communication Homeostasis v1.0 initialized
+📊 Regulating 8 pathways: ['Reasoning', 'Attention', 'InductiveMemory', 'DeductiveMemory', 'Creative', 'Analytical', 'Social', 'Temporal']
+🧠 Communication Homeostasis v1.0 initialized
+✅ Adaptive Neurodivergent Regulator initialized
+2025-11-30 20:59:11,195 - emotional_intelligence.emotional_intelligence - INFO - Unified Emotional Intelligence System initialized
+2025-11-30 20:59:11,219 - domains.blockchain.schemas - INFO - Unified brain v3.0 initialized for schema validation
+✅ Brain Core Homeostasis Engine initialized
+✅ Vector shape invariant enforced: INTERNAL_STATE_DIM = 128
+🧠 Cognitive Learning Engine initialized
+🔄 Adaptive Pathway Manager initialized
+🧠 Continuous learning system initialized
+🧠 Communication Homeostasis v1.0 initialized
+📊 Regulating 8 pathways: ['Reasoning', 'Attention', 'InductiveMemory', 'DeductiveMemory', 'Creative', 'Analytical', 'Social', 'Temporal']
+🧠 Communication Homeostasis v1.0 initialized
+✅ Adaptive Neurodivergent Regulator initialized
+2025-11-30 20:59:11,778 - emotional_intelligence.emotional_intelligence - INFO - Unified Emotional Intelligence System initialized
+2025-11-30 20:59:11,799 - domains.blockchain.risk_rules - INFO - Unified brain v3.0 initialized for risk assessment
+✅ Brain Core Homeostasis Engine initialized
+✅ Vector shape invariant enforced: INTERNAL_STATE_DIM = 128
+🧠 Cognitive Learning Engine initialized
+🔄 Adaptive Pathway Manager initialized
+🧠 Continuous learning system initialized
+🧠 Communication Homeostasis v1.0 initialized
+📊 Regulating 8 pathways: ['Reasoning', 'Attention', 'InductiveMemory', 'DeductiveMemory', 'Creative', 'Analytical', 'Social', 'Temporal']
+🧠 Communication Homeostasis v1.0 initialized
+✅ Adaptive Neurodivergent Regulator initialized
+2025-11-30 20:59:12,364 - emotional_intelligence.emotional_intelligence - INFO - Unified Emotional Intelligence System initialized
+2025-11-30 20:59:12,379 - domains.blockchain.service - INFO - Unified brain v3.0 initialized for blockchain service
+✅ Brain Core Homeostasis Engine initialized
+✅ Vector shape invariant enforced: INTERNAL_STATE_DIM = 128
+🧠 Cognitive Learning Engine initialized
+🔄 Adaptive Pathway Manager initialized
+🧠 Continuous learning system initialized
+🧠 Communication Homeostasis v1.0 initialized
+📊 Regulating 8 pathways: ['Reasoning', 'Attention', 'InductiveMemory', 'DeductiveMemory', 'Creative', 'Analytical', 'Social', 'Temporal']
+🧠 Communication Homeostasis v1.0 initialized
+✅ Adaptive Neurodivergent Regulator initialized
+2025-11-30 20:59:12,960 - emotional_intelligence.emotional_intelligence - INFO - Unified Emotional Intelligence System initialized
+2025-11-30 20:59:12,976 - domains.blockchain.wallet_parser - INFO - Unified brain v3.0 initialized for wallet parsing
+2025-11-30 20:59:12,978 - domains.blockchain - INFO - Blockchain domain initialized with 11/11 components
+2025-11-30 20:59:12,978 - domains.blockchain - INFO - Unified brain v3.0 cognitive capabilities active
+🧠 EMOJI PIPELINE: Using direct brain module imports (normal mode)
+   ✅ MultiPathwayBrain initialized with homeostasis
+   ✅ UnifiedEmotionalIntelligence initialized
+
+🔍 Performing comprehensive brain health check...
+✅ Brain health check passed - all systems operational
+✅ Complete SpiralBrain organism initialized
+   🧠 Pathways: 8
+   🛡️  Homeostasis: Active (Tri-Band Elastic)
+   ❤️  Emotion: Enabled
+   🎯 CCN: Enabled
+   Ready for unified cognitive processing
+   ✅ MultiPathwayBrain initialized with homeostasis
+   ✅ UnifiedEmotionalIntelligence initialized
+
+🔍 Performing comprehensive brain health check...
+✅ Brain health check passed - all systems operational
+✅ Complete SpiralBrain organism initialized
+   🧠 Pathways: 8
+   🛡️  Homeostasis: Active (Tri-Band Elastic)
+   ❤️  Emotion: Enabled
+   🎯 CCN: Enabled
+   Ready for unified cognitive processing
+   ✅ MultiPathwayBrain initialized with homeostasis
+   ✅ UnifiedEmotionalIntelligence initialized
+
+🔍 Performing comprehensive brain health check...
+✅ Brain health check passed - all systems operational
+✅ Complete SpiralBrain organism initialized
+   🧠 Pathways: 8
+   🛡️  Homeostasis: Active (Tri-Band Elastic)
+   ❤️  Emotion: Enabled
+   🎯 CCN: Enabled
+   Ready for unified cognitive processing
+   ✅ MultiPathwayBrain initialized with homeostasis
+   ✅ UnifiedEmotionalIntelligence initialized
+
+🔍 Performing comprehensive brain health check...
+✅ Brain health check passed - all systems operational
+✅ Complete SpiralBrain organism initialized
+   🧠 Pathways: 8
+   🛡️  Homeostasis: Active (Tri-Band Elastic)
+   ❤️  Emotion: Enabled
+   🎯 CCN: Enabled
+   Ready for unified cognitive processing
+   ✅ MultiPathwayBrain initialized with homeostasis
+   ✅ UnifiedEmotionalIntelligence initialized
+
+🔍 Performing comprehensive brain health check...
+✅ Brain health check passed - all systems operational
+✅ Complete SpiralBrain organism initialized
+   🧠 Pathways: 8
+   🛡️  Homeostasis: Active (Tri-Band Elastic)
+   ❤️  Emotion: Enabled
+   🎯 CCN: Enabled
+   Ready for unified cognitive processing
+   ✅ MultiPathwayBrain initialized with homeostasis
+   ✅ UnifiedEmotionalIntelligence initialized
+
+🔍 Performing comprehensive brain health check...
+✅ Brain health check passed - all systems operational
+✅ Complete SpiralBrain organism initialized
+   🧠 Pathways: 8
+   🛡️  Homeostasis: Active (Tri-Band Elastic)
+   ❤️  Emotion: Enabled
+   🎯 CCN: Enabled
+   Ready for unified cognitive processing
+   ✅ MultiPathwayBrain initialized with homeostasis
+   ✅ UnifiedEmotionalIntelligence initialized
+
+🔍 Performing comprehensive brain health check...
+✅ Brain health check passed - all systems operational
+✅ Complete SpiralBrain organism initialized
+   🧠 Pathways: 8
+   🛡️  Homeostasis: Active (Tri-Band Elastic)
+   ❤️  Emotion: Enabled
+   🎯 CCN: Enabled
+   Ready for unified cognitive processing
+   ✅ MultiPathwayBrain initialized with homeostasis
+   ✅ UnifiedEmotionalIntelligence initialized
+
+🔍 Performing comprehensive brain health check...
+✅ Brain health check passed - all systems operational
+✅ Complete SpiralBrain organism initialized
+   🧠 Pathways: 8
+   🛡️  Homeostasis: Active (Tri-Band Elastic)
+   ❤️  Emotion: Enabled
+   🎯 CCN: Enabled
+   Ready for unified cognitive processing
+   ✅ MultiPathwayBrain initialized with homeostasis
+   ✅ UnifiedEmotionalIntelligence initialized
+
+🔍 Performing comprehensive brain health check...
+✅ Brain health check passed - all systems operational
+✅ Complete SpiralBrain organism initialized
+   🧠 Pathways: 8
+   🛡️  Homeostasis: Active (Tri-Band Elastic)
+   ❤️  Emotion: Enabled
+   🎯 CCN: Enabled
+   Ready for unified cognitive processing
+   ✅ MultiPathwayBrain initialized with homeostasis
+   ✅ UnifiedEmotionalIntelligence initialized
+
+🔍 Performing comprehensive brain health check...
+✅ Brain health check passed - all systems operational
+✅ Complete SpiralBrain organism initialized
+   🧠 Pathways: 8
+   🛡️  Homeostasis: Active (Tri-Band Elastic)
+   ❤️  Emotion: Enabled
+   🎯 CCN: Enabled
+   Ready for unified cognitive processing
+   ✅ MultiPathwayBrain initialized with homeostasis
+   ✅ UnifiedEmotionalIntelligence initialized
+
+🔍 Performing comprehensive brain health check...
+✅ Brain health check passed - all systems operational
+✅ Complete SpiralBrain organism initialized
+   🧠 Pathways: 8
+   🛡️  Homeostasis: Active (Tri-Band Elastic)
+   ❤️  Emotion: Enabled
+   🎯 CCN: Enabled
+   Ready for unified cognitive processing
+   ✅ MultiPathwayBrain initialized with homeostasis
+   ✅ UnifiedEmotionalIntelligence initialized
+
+🔍 Performing comprehensive brain health check...
+✅ Brain health check passed - all systems operational
+✅ Complete SpiralBrain organism initialized
+   🧠 Pathways: 8
+   🛡️  Homeostasis: Active (Tri-Band Elastic)
+   ❤️  Emotion: Enabled
+   🎯 CCN: Enabled
+   Ready for unified cognitive processing
+   ✅ MultiPathwayBrain initialized with homeostasis
+   ✅ UnifiedEmotionalIntelligence initialized
+
+🔍 Performing comprehensive brain health check...
+✅ Brain health check passed - all systems operational
+✅ Complete SpiralBrain organism initialized
+   🧠 Pathways: 8
+   🛡️  Homeostasis: Active (Tri-Band Elastic)
+   ❤️  Emotion: Enabled
+   🎯 CCN: Enabled
+   Ready for unified cognitive processing
+   ✅ MultiPathwayBrain initialized with homeostasis
+   ✅ UnifiedEmotionalIntelligence initialized
+
+🔍 Performing comprehensive brain health check...
+✅ Brain health check passed - all systems operational
+✅ Complete SpiralBrain organism initialized
+   🧠 Pathways: 8
+   🛡️  Homeostasis: Active (Tri-Band Elastic)
+   ❤️  Emotion: Enabled
+   🎯 CCN: Enabled
+   Ready for unified cognitive processing
+   ✅ MultiPathwayBrain initialized with homeostasis
+   ✅ UnifiedEmotionalIntelligence initialized
+
+🔍 Performing comprehensive brain health check...
+✅ Brain health check passed - all systems operational
+✅ Complete SpiralBrain organism initialized
+   🧠 Pathways: 8
+   🛡️  Homeostasis: Active (Tri-Band Elastic)
+   ❤️  Emotion: Enabled
+   🎯 CCN: Enabled
+   Ready for unified cognitive processing
+✅ Loaded expanded training data: 6 categories
+🧪 Tax Pattern Recognition: Testing Enhanced Pathways with Attention Mechanisms
+===========================================================================
+🎯 Enhanced Pattern Recognition: Specialized Pathways Added
+   - PatternRecognitionPathway (weight: 3.2) - Complex sequences
+   - TradingPatternPathway (weight: 2.8) - Day trading
+   - Target: 70-80% accuracy to match commercial tax software
+🎯 Enhanced Attention: EnhancedAttentionPathway Added
+   - EnhancedAttentionPathway (weight: 1.0) - Stability and focus
+   - Features: Multi-scale attention, adaptive stabilization, scenario adaptation
+
+🎯 Validating day_trading_scenarios...
+   ✅ 100 tests, 100.0% accuracy
+
+🎯 Validating volatile_market_scenarios...
+   ✅ 100 tests, 100.0% accuracy
+
+🎯 Validating complex_sequence_scenarios...
+   ✅ 100 tests, 0.0% accuracy
+
+🎯 Validating edge_case_scenarios...
+   ✅ 100 tests, 88.0% accuracy
+
+📊 Tax Pattern Recognition Results (With Attention Mechanisms):
+   Overall Accuracy: 72.0%
+   Total Tests: 400
+   Target (70-80%): ✅ ACHIEVED
+🎉 SUCCESS: Attention-enabled system reached 72.0%
+   → Commercial tax software performance achieved
+
+📄 Validation report saved to enhanced_pathways_validation_report.md

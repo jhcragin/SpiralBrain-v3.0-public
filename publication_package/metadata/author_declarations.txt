@@ -1,0 +1,16 @@
+AUTHOR DECLARATIONS
+
+1. Conflict of Interest Statement:
+The author declares no conflicts of interest.
+
+2. Funding Statement:
+This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.
+
+3. Data Availability Statement:
+All data, code, and materials supporting the findings of this study are available in the public GitHub repository: https://github.com/johncragin/SpiralBrain-v3.0
+
+4. Author Contributions:
+John Cragin: Conceptualization, Methodology, Software, Validation, Formal Analysis, Investigation, Resources, Data Curation, Writing - Original Draft, Writing - Review & Editing, Visualization, Project Administration.
+
+5. Acknowledgments:
+None.

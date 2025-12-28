@@ -1,0 +1,194 @@
+======================================================================
+SpiralCortex v3.0 Benchmark Run - 2025-11-27_23-13-53
+======================================================================
+
+
+======================================================================
+[BENCHMARK 1/17] benchmarks/benchmark_suite.py
+Started: 23:13:53
+======================================================================
+
+============================================================
+SpiralCortex v3.0 - Benchmark Suite
+============================================================
+
+Running 51 benchmarks...
+
+[codex] model_initialization... 2025-11-27 23:13:54,184 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-27 23:13:57,843 - domains.blockchain.schemas - INFO - Unified brain v3.0 initialized for schema validation
+2025-11-27 23:13:58,013 - domains.blockchain.stream_service - INFO - Unified brain v3.0 initialized for stream service
+2025-11-27 23:13:58,036 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-27 23:13:58,038 - domains.blockchain - INFO - Unified brain v3.0 initialized for blockchain domain
+2025-11-27 23:13:58,045 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-27 23:13:58,045 - domains.blockchain.audit_logger - INFO - Unified brain v3.0 initialized for audit logger
+2025-11-27 23:13:58,045 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-27 23:13:58,045 - domains.blockchain.audit_logger - INFO - Compliance gateway initialized for audit logging
+2025-11-27 23:13:58,056 - domains.blockchain.etherscan_provider - INFO - Unified brain v3.0 initialized for Etherscan provider
+2025-11-27 23:13:58,056 - codex.codex_core.compliance_gateway - INFO - 🔐 Compliance Gateway initialized
+2025-11-27 23:13:58,056 - domains.blockchain.etherscan_provider - INFO - Compliance gateway initialized
+2025-11-27 23:13:58,056 - domains.blockchain.metrics_collector - INFO - Unified brain v3.0 initialized for metrics collector
+2025-11-27 23:13:58,145 - domains.blockchain.risk_rules - INFO - Unified brain v3.0 initialized for risk assessment
+2025-11-27 23:13:58,145 - domains.blockchain.router - INFO - Unified brain v3.0 initialized for blockchain router
+2025-11-27 23:13:58,145 - domains.blockchain.schemas - INFO - Unified brain v3.0 initialized for schema validation
+2025-11-27 23:13:58,156 - domains.blockchain.risk_rules - INFO - Unified brain v3.0 initialized for risk assessment
+2025-11-27 23:13:58,156 - domains.blockchain.service - INFO - Unified brain v3.0 initialized for blockchain service
+2025-11-27 23:13:58,156 - domains.blockchain.wallet_parser - INFO - Unified brain v3.0 initialized for wallet parsing
+2025-11-27 23:13:58,156 - domains.blockchain - INFO - Blockchain domain initialized with 11/11 components
+2025-11-27 23:13:58,156 - domains.blockchain - INFO - Unified brain v3.0 cognitive capabilities active
+✓ (4632.0ms)
+  📊 imported: True
+  📊 has_model_class: True
+
+[codex] multipath_core... ✓ (9.9ms)
+  📊 imported: True
+  📊 module_name: codex.core.scx_multipath_core
+  📊 has_pathway_class: True
+  📊 pathway_classes_count: 27
+  📊 pathway_update_success: True
+  📊 pathway_learning_success: True
+  📊 aggregation_success: True
+  📊 total_pathway_types: 27
+
+[codex] adaptive_pathways... ✓ (2.9ms)
+  📊 imported: True
+  📊 module_name: AdaptivePathwayManager
+  📊 has_manager_class: True
+  📊 pathways_initialized: 3
+  📊 insights_available: True
+  📊 adaptation_rate: 0.1
+  📊 weight_history_tracked: False
+  📊 adaptation_log_entries: 0
+
+[codex] limbic_modulation... ✓ (0.7ms)
+  📊 limbic_modulation_active: True
+  📊 exploration_bias: -0.30000000000000004
+  📊 stability_bias: 0.09999999999999998
+  📊 creativity_boost: 0.0
+  📊 attention_modulation: 1.0
+  📊 reasoning_modulated: True
+
+[integrated] advanced_benchmarks... ✓ (27216.2ms)
+  📊 executed: True
+  📊 return_code: 0
+  📊 has_output: True
+  📊 has_errors: True
+  📊 execution_time: completed
+
+[integrated] attention_mechanisms... ✓ (4792.6ms)
+  📊 executed: True
+  📊 return_code: 0
+  📊 has_output: True
+  📊 has_errors: True
+
+[integrated] cognitive_validation... ✓ (544.5ms)
+  📊 executed: True
+  📊 return_code: 0
+  📊 has_output: True
+  📊 has_errors: False
+
+[integrated] enhanced_pathways... ✓ (4145.1ms)
+  📊 executed: True
+  📊 return_code: 0
+  📊 has_output: True
+  📊 has_errors: True
+
+[integrated] federated_benchmarking... ✓ (11487.7ms)
+  📊 executed: True
+  📊 return_code: 0
+  📊 has_output: True
+  📊 has_errors: False
+
+[integrated] hybrid_cognitive_evaluation... ✓ (5861.8ms)
+  📊 executed: True
+  📊 return_code: 0
+  📊 has_output: True
+  📊 has_errors: False
+
+[integrated] industry_comparison... ✓ (119.1ms)
+  📊 executed: True
+  📊 return_code: 0
+  📊 has_output: True
+  📊 has_errors: False
+
+[integrated] longitudinal_study... ✓ (8922.6ms)
+  📊 executed: True
+  📊 return_code: 0
+  📊 has_output: True
+  📊 has_errors: True
+
+[integrated] market_validation... ✓ (517.3ms)
+  📊 executed: True
+  📊 return_code: 0
+  📊 has_output: True
+  📊 has_errors: False
+
+[integrated] quantum_emotional_fusion... Exception in thread Thread-21 (_readerthread):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1075, in _bootstrap_inner
+Exception in thread Thread-20 (_readerthread):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1075, in _bootstrap_inner
+    self.run()
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1012, in run
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1599, in _readerthread
+    self._target(*self._args, **self._kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1599, in _readerthread
+    buffer.append(fh.read())
+                  ^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 23, in decode
+    buffer.append(fh.read())
+                  ^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x8f in position 139: character maps to <undefined>
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x90 in position 74: character maps to <undefined>
+✓ (4113.5ms)
+  📊 executed: False
+  📊 error: object of type 'NoneType' has no len()
+
+[integrated] robust_learning... ✓ (187.7ms)
+  📊 executed: True
+  📊 return_code: 0
+  📊 has_output: True
+  📊 has_errors: False
+
+[integrated] ether_benchmark... ✓ (184.9ms)
+  📊 executed: True
+  📊 return_code: 1
+  📊 has_output: True
+  📊 has_errors: True
+
+[integrated] phase3_execution... ✓ (308.9ms)
+  📊 executed: True
+  📊 return_code: 1
+  📊 has_output: False
+  📊 has_errors: True
+
+[integrated] observer_effect... Exception in thread Thread-29 (_readerthread):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1599, in _readerthread
+    buffer.append(fh.read())
+                  ^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x9d in position 860: character maps to <undefined>
+✓ (55228.1ms)
+  📊 executed: False
+  📊 error: object of type 'NoneType' has no len()
+
+[integrated] benchmark_analysis... forrtl: error (200): program aborting due to window-CLOSE event
+Image              PC                Routine            Line        Source             
+KERNELBASE.dll     00007FF8F1F0C24D  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF8F318E8D7  Unknown               Unknown  Unknown
+ntdll.dll          00007FF8F488C53C  Unknown               Unknown  Unknown

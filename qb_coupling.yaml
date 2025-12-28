@@ -1,0 +1,15 @@
+coupling:
+  lambda: 0.35
+  projection: "low_rank"
+  proj_rank: 16
+  grad_clip: 0.5
+reflective:
+  ema_alpha: 0.92
+  sec_gain: 0.6
+  replay:
+    enable: true
+    window: 256
+metrics:
+  record_phase_lock: true
+  compute_SI: true
+  compute_EI: true

@@ -1,0 +1,80 @@
+[
+  {
+    "crypto": "BTC",
+    "horizon_days": 1,
+    "spiralbrain_rank": 1,
+    "arima_rank": 3,
+    "xgboost_rank": 4,
+    "prophet_rank": 2,
+    "best_model": "SpiralBrain",
+    "best_mae": 1940.9640840271525,
+    "best_direction_accuracy": 53.84615384615385,
+    "spiralbrain_coherence_avg": 0.5,
+    "spiralbrain_adaptivity": 0.0
+  },
+  {
+    "crypto": "BTC",
+    "horizon_days": 7,
+    "spiralbrain_rank": 1,
+    "arima_rank": 3,
+    "xgboost_rank": 4,
+    "prophet_rank": 2,
+    "best_model": "SpiralBrain",
+    "best_mae": 2084.6376456473818,
+    "best_direction_accuracy": 55.932203389830505,
+    "spiralbrain_coherence_avg": 0.5,
+    "spiralbrain_adaptivity": 0.0
+  },
+  {
+    "crypto": "BTC",
+    "horizon_days": 30,
+    "spiralbrain_rank": 1,
+    "arima_rank": 2,
+    "xgboost_rank": 4,
+    "prophet_rank": 3,
+    "best_model": "SpiralBrain",
+    "best_mae": 1938.3261540285391,
+    "best_direction_accuracy": 61.111111111111114,
+    "spiralbrain_coherence_avg": 0.5,
+    "spiralbrain_adaptivity": 0.0
+  },
+  {
+    "crypto": "ETH",
+    "horizon_days": 1,
+    "spiralbrain_rank": 1,
+    "arima_rank": 3,
+    "xgboost_rank": 4,
+    "prophet_rank": 2,
+    "best_model": "SpiralBrain",
+    "best_mae": 102.68795483803628,
+    "best_direction_accuracy": 52.307692307692314,
+    "spiralbrain_coherence_avg": 0.5,
+    "spiralbrain_adaptivity": 0.0
+  },
+  {
+    "crypto": "ETH",
+    "horizon_days": 7,
+    "spiralbrain_rank": 1,
+    "arima_rank": 3,
+    "xgboost_rank": 4,
+    "prophet_rank": 2,
+    "best_model": "SpiralBrain",
+    "best_mae": 115.53343738686014,
+    "best_direction_accuracy": 50.847457627118644,
+    "spiralbrain_coherence_avg": 0.5,
+    "spiralbrain_adaptivity": 0.0
+  },
+  {
+    "crypto": "ETH",
+    "horizon_days": 30,
+    "spiralbrain_rank": 1,
+    "arima_rank": 2,
+    "xgboost_rank": 4,
+    "prophet_rank": 3,
+    "best_model": "SpiralBrain",
+    "best_mae": 111.76556916886462,
+    "best_direction_accuracy": 47.22222222222222,
+    "spiralbrain_coherence_avg": 0.5,
+    "spiralbrain_adaptivity": 0.0
+  }
+]

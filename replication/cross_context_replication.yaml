@@ -1,0 +1,60 @@
+analysis:
+  context_as_random_effect: true
+  correction_method: Holm-Bonferroni
+  significance_threshold: 0.05
+  statistical_model: mixed_effects
+description: Testing organic adaptation generalization across novel contexts
+environments:
+- ephemeral_fs: true
+  id: GoogleColab
+  latency_compensation: true
+  notes: Google Colab Pro - high latency, ephemeral filesystem, GPU acceleration
+  platform: linux
+  python: '3.10'
+  torch: cuda:11.8
+- deterministic: true
+  id: DockerContainer
+  isolated: true
+  notes: Docker container - deterministic, isolated, reproducible environment
+  platform: linux
+  python: '3.11'
+  torch: cpu
+- fault_injection:
+  - PATH_jitter: true
+  - outdated_numpy: true
+  - file_lock_conflicts: true
+  - memory_pressure: true
+  id: EnvDrift
+  notes: Adversarial environment - dependency conflicts, resource constraints
+  python: '3.11'
+  torch: cpu
+logging:
+  autosave_interval: 50
+  format: jsonl
+  output_dir: logs/cross_context_runs
+  schema_file: logging_schema.json
+meta:
+  author: SpiralCortex Research Lab
+  created: '2025-11-04'
+  purpose: Validate generalization of organic adaptation findings
+  version: '1.0'
+protocols:
+- description: Test adaptation generalization to novel environments
+  metrics:
+  - R_t
+  - lambda_star
+  - I_id
+  - G_ref
+  name: CrossContext_Adaptation
+  type: ABAprime
+- arms:
+  - Rplus
+  - Rminus
+  description: Verify reflection benefit persists across contexts
+  metrics:
+  - G_ref
+  - Delta_t_diag
+  - lambda_drift
+  - fault_recovery
+  name: Context_Reflection_Ablation
+suite_name: SpiralBrain_CrossContext_Replication_v1.0

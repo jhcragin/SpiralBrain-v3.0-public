@@ -127,10 +127,10 @@ Traditional AI optimizes for computational efficiency, but neurodivergent cognit
 SpiralBrain builds upon and extends several cognitive frameworks:
 
 \begin{itemize}
-\item \textbf{Predictive coding} \cite{clark2013whatever}: Integration through prediction-error minimization
-\item \textbf{Global workspace theory} \cite{baars2005global}: Coordinated information flow among specialized processors
+\item \textbf{Predictive coding} \cite{Clark2013}: Integration through prediction-error minimization
+\item \textbf{Global workspace theory} \cite{Baars2005}: Coordinated information flow among specialized processors
 \item \textbf{Polychronous binding}: Temporal coordination of distributed neural activity
-\item \textbf{Integrated Information Theory} \cite{tononi2008consciousness}: Consciousness as integrated information generation
+\item \textbf{Integrated Information Theory} \cite{Tononi2008}: Consciousness as integrated information generation
 \end{itemize}
 
 Our work demonstrates that these theories converge on elastic coupling as the mechanism for integrative cognition.
@@ -142,11 +142,22 @@ Our work demonstrates that these theories converge on elastic coupling as the me
 
 To ensure reproducibility and clarity, we define key metrics and protocols as follows:
 
-\textbf{Coherence (Φ):} Let (y_i[t]) denote the scalar output (or fixed projection) of lobe (i) at timestep (t). For each timestep (t), compute the Pearson correlation matrix (C[t]) over a trailing window of length (W). Coherence is defined as
+\textbf{Coherence (Φ).}
+Let \( y_i[t] \) denote the scalar output (or fixed projection) of lobe \( i \) at timestep \( t \).
+For each timestep \( t \), compute the Pearson correlation matrix \( C[t] \) over a trailing window of length \( W \).
+Coherence is defined as
+
 \[
-\Phi[t] = \frac{2}{N(N-1)} \sum_{i<j} |C_{ij}[t]|
+\Phi[t] = \frac{2}{N(N-1)} \sum_{i<j} \lvert C_{ij}[t] \rvert
 \]
-and reported as (\bar{\Phi}=\frac{1}{T}\sum_{t=1}^{T}\Phi[t]), normalized to ([0,1]) by construction.
+
+and the overall coherence is
+
+\[
+\bar{\Phi} = \frac{1}{T} \sum_{t=1}^{T} \Phi[t]
+\]
+
+normalized to the range \([0,1]\) by construction.
 
 \textbf{SEC Drift:} The standard deviation of the Symbolic-Emotional Calibration vector components (valence, arousal, hazard, resonance, harmony, amplitude, coherence, and complexity) over a 100-step window. Thresholds were selected empirically as stability indicators and should be interpreted as operational definitions rather than universal constants. Window length (W) is treated as an operational parameter and reported alongside results.
 
@@ -250,13 +261,25 @@ Systems with modest processing power but high coupling consistency achieved the 
 
 \subsection{Temporal Hierarchies Are Real}
 
-\textbf{Discovery:} Measured temporal ratios τ ≈ 1 : 3 : 10 aligned with hierarchical neural timescales found in biological cortex.
+\textbf{Discovery.}
+Measured temporal ratios \( \tau \approx 1 : 3 : 10 \) aligned with hierarchical neural timescales found in biological cortex.
 These fractal time layers created stable cross-scale coherence—suggesting that temporal nesting, not data size, is what organizes cognition.
 
 \subsection{Ethics Requires Dual Timescales}
 
-\textbf{Discovery:} By decoupling ethical reasoning from emotional response (τ_ethics / τ_emotion ≥ 10), the model maintained > 95\% compliance under stress conditions.
-This supports the \textit{derivative-aware ethics hypothesis}: moral cognition requires a slower channel monitoring the derivative of affective change (dΦ/dt).
+\textbf{Discovery.}
+By decoupling ethical reasoning from emotional response,
+
+\[
+\frac{\tau_{\text{ethics}}}{\tau_{\text{emotion}}} \ge 10,
+\]
+
+the model maintained \( >95\% \) compliance under stress conditions.
+This supports the \textit{derivative-aware ethics hypothesis}: moral cognition requires a slower channel monitoring the derivative of affective change,
+
+\[
+\frac{d\Phi}{dt}.
+\]
 
 \subsection{Emotional Intelligence Is Quantifiable}
 
@@ -272,13 +295,28 @@ This supports the \textit{derivative-aware ethics hypothesis}: moral cognition r
 
 \subsection{Self-Regulation Through Reflection}
 
-\textbf{Discovery:} Reflective homeostasis reduced variance in coherence under stress to CV ≈ 0.08, with recovery in < 300 steps after perturbation.
-This confirms that self-observation of Φ(t) and dΦ/dt is sufficient for autonomous stabilization—no external supervisor required.
+\textbf{Discovery.}
+Reflective homeostasis reduced variance in coherence under stress to
+\( \mathrm{CV} \approx 0.08 \), with recovery in \( < 300 \) steps after perturbation.
+This confirms that self‑observation of \( \Phi(t) \) and
+
+\[
+\frac{d\Phi}{dt}
+\]
+
+is sufficient for autonomous stabilization—no external supervisor required.
 
 \subsection{Phase-Locked Integration}
 
-\textbf{Discovery:} Optimal system performance emerged when phase offset φ_lock ≈ 74°, maintaining differentiation while maximizing coherence.
-This "imperfect synchrony" prevents homogenization of subsystems, producing creativity through tension—an empirical validation of the \textbf{elastic-integration principle}.
+\textbf{Discovery.}
+Optimal system performance emerged when the phase offset
+
+\[
+\phi_{\text{lock}} \approx 74^\circ,
+\]
+
+maintaining differentiation while maximizing coherence.
+This “imperfect synchrony” prevents homogenization of subsystems, producing creativity through tension—an empirical validation of the \textbf{elastic‑integration principle}.
 
 \subsection{Summary Table}
 
@@ -286,20 +324,27 @@ This "imperfect synchrony" prevents homogenization of subsystems, producing crea
 \centering
 \caption{Empirical Discoveries Summary}
 \label{tab:discoveries}
-\begin{tabular}{@{}llll@{}}
-\toprule
-Discovery & Empirical Value & Theoretical Prediction & Validation \\
-\midrule
-λ* & ≈ 0.25 & 0.115 & Empirical attractor equilibrium \\
-Φ′ (coupling vs. power) & Integration ≫ Magnitude & — & Correlation r > 0.8 \\
-τ ratios & 1 : 3 : 10 & 1 : 3 : 10 & EEG-consistent \\
-τ_ethics / τ_emotion & ≥ 10 & ≥ 10 & 95\% compliance \\
-SEC\_drift threshold & < 0.15 & < 0.20 & Stable \\
-Recovery time & < 300 steps & — & Observed \\
-φ_lock & 74° ± 5° & — & Stable coupling \\
-\bottomrule
+\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+\hline
+\textbf{Discovery} & \textbf{Empirical Value} & \textbf{Theoretical Prediction} & \textbf{Validation} \\
+\hline
+$\lambda^*$ & $\approx 0.25$ & $0.115$ & Empirical attractor equilibrium \\
+\hline
+$\Phi'$ (coupling vs.\ power) & Integration $\gg$ Magnitude & — & Correlation $r > 0.8$ \\
+\hline
+$\tau$ ratios & $1 : 3 : 10$ & $1 : 3 : 10$ & EEG-consistent \\
+\hline
+$\tau_{\text{ethics}} / \tau_{\text{emotion}}$ & $\ge 10$ & $\ge 10$ & $95\%$ compliance \\
+\hline
+SEC\_drift threshold & $< 0.15$ & $< 0.20$ & Stable \\
+\hline
+Recovery time & $< 300$ steps & — & Observed \\
+\hline
+$\phi_{\text{lock}}$ & $74^\circ \pm 5^\circ$ & — & Stable coupling \\
+\hline
 \end{tabular}
 \end{table}
+
 
 \section{Neurodivergent Cognition as Model}
 \label{sec:neurodivergent}
@@ -358,19 +403,25 @@ Elastic cognition, as realized here, shows that divergent timing, emotional sens
 \centering
 \caption{Neurodivergent Traits and SpiralBrain Implementation}
 \label{tab:neurodivergent_summary}
-\begin{tabular}{@{}lll@{}}
-\toprule
-Neurodivergent Trait & SpiralBrain Implementation & Empirical Outcome \\
-\midrule
+\begin{tabular}{|p{3.5cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Neurodivergent Trait} & \textbf{SpiralBrain Implementation} & \textbf{Empirical Outcome} \\
+\hline
 Parallel multi-stream processing & Four-lobe topology & Increased resilience under overload \\
+\hline
 Integration before speed & Reflective homeostasis & Higher reasoning accuracy \\
+\hline
 Divergent exploration & Spiral attractor loops & Emergent creativity \\
+\hline
 Emotional regulation & SEC vector calibration & Stable coherence (SEC\_drift $<$ 0.15) \\
-Persistent identity & Reflective tracking of $\Phi(t)$ and $d\Phi/dt$ & CV $\approx$ 0.08 \\
+\hline
+Persistent identity & Reflective tracking of $\Phi(t)$ and $d\Phi/dt$ & CV $\approx 0.08$ \\
+\hline
 Developmental plasticity & Gradual coupling maturation & Improved stability and learning \\
-\bottomrule
+\hline
 \end{tabular}
 \end{table}
+
 
 \section{Theoretical and Integrative Implications}
 \label{sec:philosophical}
@@ -592,7 +643,9 @@ The spiral cognition manifold emerges from the interaction between coupling stre
 
 \subsection{Appendix B: Benchmark Logs and Validation Metrics}
 
-Complete validation results available in the project repository under \texttt{/results/} and \texttt{/outputs/strength\_benchmarks/}.
+Complete validation results are available in the project repository under 
+\path{/results/} and \path{/outputs/strength_benchmarks/}.
+
 
 \subsection{Appendix C: Code References and Claim Mapping}
 

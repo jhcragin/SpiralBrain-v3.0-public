@@ -16,7 +16,7 @@ plt.style.use('seaborn-v0_8-paper')
 sns.set_palette("husl")
 
 # Create figures directory
-figures_dir = Path("docs/figures")
+figures_dir = Path("publication_package/figures")
 figures_dir.mkdir(exist_ok=True)
 
 def create_spiral_cognition_figure():

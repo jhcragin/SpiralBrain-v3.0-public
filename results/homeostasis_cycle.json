@@ -1,0 +1,313 @@
+{
+  "session_start": "2025-12-09T20:12:04.170276",
+  "ccs_baseline": 0.8,
+  "drift_threshold_high": 0.1,
+  "drift_threshold_low": 0.02,
+  "cycles": [
+    {
+      "timestamp": 1765332724.1697705,
+      "cycle": 1,
+      "ccs_current": 0.5504011904691044,
+      "ccs_baseline": 0.8,
+      "delta_ccs": 0.0,
+      "sec_drift": 0.112,
+      "phase_lock": 90.0,
+      "phase_lock_derivative": 0.0,
+      "epci": 1.0,
+      "sec_entropy": 2.413088434983062,
+      "recovery_time": 11,
+      "regulation_applied": false,
+      "regulation_strategy": "none",
+      "exploration_encouraged": false,
+      "emoji_sync_status": "\ud83d\udfe1",
+      "anomalies": [
+        "phase_lock_exceeded_90.0deg"
+      ]
+    },
+    {
+      "timestamp": 1765332724.333334,
+      "cycle": 2,
+      "ccs_current": 0.6256047928181074,
+      "ccs_baseline": 0.8,
+      "delta_ccs": 0.07520360234900303,
+      "sec_drift": 0.1857459639561334,
+      "phase_lock": 52.89878583926662,
+      "phase_lock_derivative": -18.55060708036669,
+      "epci": 0.9480430227589576,
+      "sec_entropy": 2.895505619168843,
+      "recovery_time": 12,
+      "regulation_applied": false,
+      "regulation_strategy": "none",
+      "exploration_encouraged": false,
+      "emoji_sync_status": "\ud83d\udfe1",
+      "anomalies": [
+        "high_sec_drift_0.186",
+        "phase_lock_exceeded_52.9deg"
+      ]
+    },
+    {
+      "timestamp": 1765332724.4948316,
+      "cycle": 3,
+      "ccs_current": 0.7117392681357368,
+      "ccs_baseline": 0.8,
+      "delta_ccs": 0.08613447531762941,
+      "sec_drift": 0.390889936132208,
+      "phase_lock": 53.26681591036403,
+      "phase_lock_derivative": -12.244394696545323,
+      "epci": 0.9544026518906783,
+      "sec_entropy": 3.1464393432283204,
+      "recovery_time": 13,
+      "regulation_applied": false,
+      "regulation_strategy": "none",
+      "exploration_encouraged": false,
+      "emoji_sync_status": "\ud83d\udfe1",
+      "anomalies": [
+        "high_sec_drift_0.391",
+        "phase_lock_exceeded_53.3deg"
+      ]
+    },
+    {
+      "timestamp": 1765332724.6683362,
+      "cycle": 4,
+      "ccs_current": 0.7288666824369213,
+      "ccs_baseline": 0.8,
+      "delta_ccs": 0.017127414301184474,
+      "sec_drift": 0.4356274388760544,
+      "phase_lock": 53.13311777306319,
+      "phase_lock_derivative": 0.07811064459885604,
+      "epci": 0.9617042417610394,
+      "sec_entropy": 3.1464393432283204,
+      "recovery_time": 14,
+      "regulation_applied": false,
+      "regulation_strategy": "none",
+      "exploration_encouraged": false,
+      "emoji_sync_status": "\ud83d\udfe1",
+      "anomalies": [
+        "high_sec_drift_0.436",
+        "phase_lock_exceeded_53.1deg"
+      ]
+    },
+    {
+      "timestamp": 1765332724.8356445,
+      "cycle": 5,
+      "ccs_current": 0.7614119943341823,
+      "ccs_baseline": 0.8,
+      "delta_ccs": 0.03254531189726095,
+      "sec_drift": 0.4966606747077238,
+      "phase_lock": 44.130982968405625,
+      "phase_lock_derivative": -3.0452776473194683,
+      "epci": 0.9616075216691286,
+      "sec_entropy": 3.090032775158785,
+      "recovery_time": 15,
+      "regulation_applied": false,
+      "regulation_strategy": "none",
+      "exploration_encouraged": false,
+      "emoji_sync_status": "\u26a0\ufe0f",
+      "anomalies": [
+        "high_sec_drift_0.497",
+        "phase_lock_exceeded_44.1deg"
+      ]
+    },
+    {
+      "timestamp": 1765332725.0032034,
+      "cycle": 6,
+      "ccs_current": 0.8,
+      "ccs_baseline": 0.8,
+      "delta_ccs": 0.03858800566581777,
+      "sec_drift": 0.595463254385825,
+      "phase_lock": 22.965660838671848,
+      "phase_lock_derivative": -10.055818978130448,
+      "epci": 0.9794029344567633,
+      "sec_entropy": 3.2028195296720883,
+      "recovery_time": 16,
+      "regulation_applied": false,
+      "regulation_strategy": "none",
+      "exploration_encouraged": false,
+      "emoji_sync_status": "\u26a0\ufe0f",
+      "anomalies": [
+        "high_sec_drift_0.595",
+        "phase_lock_exceeded_23.0deg"
+      ]
+    },
+    {
+      "timestamp": 1765332725.1743827,
+      "cycle": 7,
+      "ccs_current": 0.8,
+      "ccs_baseline": 0.8,
+      "delta_ccs": 0.0,
+      "sec_drift": 0.7368196175053168,
+      "phase_lock": 0.691106908487639,
+      "phase_lock_derivative": -14.479958686639328,
+      "epci": 0.9382636665057227,
+      "sec_entropy": 3.1898980940215917,
+      "recovery_time": 17,
+      "regulation_applied": false,
+      "regulation_strategy": "none",
+      "exploration_encouraged": false,
+      "emoji_sync_status": "\u26a0\ufe0f",
+      "anomalies": [
+        "high_sec_drift_0.737"
+      ]
+    },
+    {
+      "timestamp": 1765332725.3457198,
+      "cycle": 8,
+      "ccs_current": 0.8,
+      "ccs_baseline": 0.8,
+      "delta_ccs": 0.0,
+      "sec_drift": 0.9767600943689151,
+      "phase_lock": 0.8087180522953874,
+      "phase_lock_derivative": -7.3856475954588205,
+      "epci": 0.9299751524278043,
+      "sec_entropy": 3.2389012551599357,
+      "recovery_time": 18,
+      "regulation_applied": false,
+      "regulation_strategy": "none",
+      "exploration_encouraged": false,
+      "emoji_sync_status": "\u26a0\ufe0f",
+      "anomalies": [
+        "high_sec_drift_0.977"
+      ]
+    },
+    {
+      "timestamp": 1765332725.515551,
+      "cycle": 9,
+      "ccs_current": 0.8,
+      "ccs_baseline": 0.8,
+      "delta_ccs": 0.0,
+      "sec_drift": 1.2165592889198127,
+      "phase_lock": 0.7488253701497115,
+      "phase_lock_derivative": 0.019239487220690837,
+      "epci": 0.9545772836622716,
+      "sec_entropy": 3.2516291659451277,
+      "recovery_time": 19,
+      "regulation_applied": false,
+      "regulation_strategy": "none",
+      "exploration_encouraged": false,
+      "emoji_sync_status": "\u26a0\ufe0f",
+      "anomalies": [
+        "high_sec_drift_1.217"
+      ]
+    },
+    {
+      "timestamp": 1765332725.6844018,
+      "cycle": 10,
+      "ccs_current": 0.8,
+      "ccs_baseline": 0.8,
+      "delta_ccs": 0.0,
+      "sec_drift": 1.457144372018172,
+      "phase_lock": 0.7777651956766748,
+      "phase_lock_derivative": -0.010317618872904203,
+      "epci": 0.9880582067409933,
+      "sec_entropy": 3.277613435376421,
+      "recovery_time": 20,
+      "regulation_applied": false,
+      "regulation_strategy": "none",
+      "exploration_encouraged": false,
+      "emoji_sync_status": "\u26a0\ufe0f",
+      "anomalies": [
+        "high_sec_drift_1.457"
+      ]
+    },
+    {
+      "timestamp": 1765332725.8549306,
+      "cycle": 11,
+      "ccs_current": 0.8,
+      "ccs_baseline": 0.8,
+      "delta_ccs": 0.0,
+      "sec_drift": 1.697578319202047,
+      "phase_lock": 0.7566830667618449,
+      "phase_lock_derivative": 0.002619232204044475,
+      "epci": 0.9999997711089146,
+      "sec_entropy": 3.277613435376421,
+      "recovery_time": 21,
+      "regulation_applied": false,
+      "regulation_strategy": "none",
+      "exploration_encouraged": false,
+      "emoji_sync_status": "\u26a0\ufe0f",
+      "anomalies": [
+        "high_sec_drift_1.698"
+      ]
+    },
+    {
+      "timestamp": 1765332726.0323308,
+      "cycle": 12,
+      "ccs_current": 0.8,
+      "ccs_baseline": 0.8,
+      "delta_ccs": 0.0,
+      "sec_drift": 1.93747094527596,
+      "phase_lock": 0.7027573385833716,
+      "phase_lock_derivative": -0.025002619031101053,
+      "epci": 0.9999998143011841,
+      "sec_entropy": 3.277613435376421,
+      "recovery_time": 22,
+      "regulation_applied": false,
+      "regulation_strategy": "none",
+      "exploration_encouraged": false,
+      "emoji_sync_status": "\u26a0\ufe0f",
+      "anomalies": [
+        "high_sec_drift_1.937"
+      ]
+    },
+    {
+      "timestamp": 1765332726.2039924,
+      "cycle": 13,
+      "ccs_current": 0.8,
+      "ccs_baseline": 0.8,
+      "delta_ccs": 0.0,
+      "sec_drift": 2.177616332569932,
+      "phase_lock": 0.7271787006378689,
+      "phase_lock_derivative": -0.009834788707992,
+      "epci": 0.9999998995090212,
+      "sec_entropy": 3.277613435376421,
+      "recovery_time": 23,
+      "regulation_applied": false,
+      "regulation_strategy": "none",
+      "exploration_encouraged": false,
+      "emoji_sync_status": "\u26a0\ufe0f",
+      "anomalies": [
+        "high_sec_drift_2.178"
+      ]
+    },
+    {
+      "timestamp": 1765332726.376469,
+      "cycle": 14,
+      "ccs_current": 0.8,
+      "ccs_baseline": 0.8,
+      "delta_ccs": 0.0,
+      "sec_drift": 2.560809316156501,
+      "phase_lock": 14.404908887923732,
+      "phase_lock_derivative": 4.5673838497801205,
+      "epci": 0.9954613634775407,
+      "sec_entropy": 3.277613435376421,
+      "recovery_time": 24,
+      "regulation_applied": false,
+      "regulation_strategy": "none",
+      "exploration_encouraged": false,
+      "emoji_sync_status": "\u26a0\ufe0f",
+      "anomalies": [
+        "high_sec_drift_2.561"
+      ]
+    },
+    {
+      "timestamp": 1765332726.5470364,
+      "cycle": 15,
+      "ccs_current": 0.8,
+      "ccs_baseline": 0.8,
+      "delta_ccs": 0.0,
+      "sec_drift": 2.3288867124844157,
+      "phase_lock": 14.423826424395973,
+      "phase_lock_derivative": 4.565549241252701,
+      "epci": 0.993162748329369,
+      "sec_entropy": 3.277613435376421,
+      "recovery_time": 25,
+      "regulation_applied": false,
+      "regulation_strategy": "none",
+      "exploration_encouraged": false,
+      "emoji_sync_status": "\u26a0\ufe0f",
+      "anomalies": [
+        "high_sec_drift_2.329"
+      ]
+    }
+  ]
+}

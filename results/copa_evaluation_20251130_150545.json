@@ -1,0 +1,197 @@
+{
+  "accuracy": 0.55,
+  "total_samples": 100,
+  "correct_predictions": 55,
+  "lobe_activation_summary": {
+    "sensus": 0.5024330731781514,
+    "nexus": 0.4933911219204129,
+    "codex": 0.4919585238545106,
+    "cortex": 0.48983400069060545
+  },
+  "results": [
+    {
+      "sample_id": 0,
+      "premise": "The man turned on the faucet.",
+      "choice1": "The toilet filled with water.",
+      "choice2": "Water flowed from the spout.",
+      "question_type": "effect",
+      "correct_label": 1,
+      "predicted_label": 0,
+      "correct": false,
+      "confidence": 0.45781228016210207,
+      "lobe_activations": {
+        "sensus": 0.42250204000186664,
+        "nexus": 0.3575823431458899,
+        "codex": 0.6523041694132599,
+        "cortex": 0.39886056808739173
+      },
+      "category": "unknown"
+    },
+    {
+      "sample_id": 1,
+      "premise": "The girl found a bug in her cereal.",
+      "choice1": "She poured milk in the bowl.",
+      "choice2": "She lost her appetite.",
+      "question_type": "effect",
+      "correct_label": 1,
+      "predicted_label": 0,
+      "correct": false,
+      "confidence": 0.47086814764280926,
+      "lobe_activations": {
+        "sensus": 0.4949103572978086,
+        "nexus": 0.46898017869556174,
+        "codex": 0.48223042757456624,
+        "cortex": 0.4373516270033003
+      },
+      "category": "unknown"
+    },
+    {
+      "sample_id": 2,
+      "premise": "The woman retired.",
+      "choice1": "She received her pension.",
+      "choice2": "She paid off her mortgage.",
+      "question_type": "effect",
+      "correct_label": 0,
+      "predicted_label": 0,
+      "correct": true,
+      "confidence": 0.4811741739608827,
+      "lobe_activations": {
+        "sensus": 0.5093408112946408,
+        "nexus": 0.393131778973454,
+        "codex": 0.5491039358979674,
+        "cortex": 0.47312016967746867
+      },
+      "category": "unknown"
+    },
+    {
+      "sample_id": 3,
+      "premise": "I wanted to conserve energy.",
+      "choice1": "I swept the floor in the unoccupied room.",
+      "choice2": "I shut off the light in the unoccupied room.",
+      "question_type": "effect",
+      "correct_label": 1,
+      "predicted_label": 1,
+      "correct": true,
+      "confidence": 0.4626320635674729,
+      "lobe_activations": {
+        "sensus": 0.3564315593728912,
+        "nexus": 0.5970954407676395,
+        "codex": 0.48956822105739317,
+        "cortex": 0.40743303307196743
+      },
+      "category": "unknown"
+    },
+    {
+      "sample_id": 4,
+      "premise": "The hamburger meat browned.",
+      "choice1": "The cook froze it.",
+      "choice2": "The cook grilled it.",
+      "question_type": "cause",
+      "correct_label": 1,
+      "predicted_label": 0,
+      "correct": false,
+      "confidence": 0.5089839398882741,
+      "lobe_activations": {
+        "sensus": 0.44416437632321354,
+        "nexus": 0.6462702745141458,
+        "codex": 0.41488259199354804,
+        "cortex": 0.5306185167221893
+      },
+      "category": "unknown"
+    },
+    {
+      "sample_id": 5,
+      "premise": "I doubted the salesman's pitch.",
+      "choice1": "I turned his offer down.",
+      "choice2": "He persuaded me to buy the product.",
+      "question_type": "effect",
+      "correct_label": 0,
+      "predicted_label": 0,
+      "correct": true,
+      "confidence": 0.44870828816892105,
+      "lobe_activations": {
+        "sensus": 0.4492563900291803,
+        "nexus": 0.21523275268162811,
+        "codex": 0.6664519226674054,
+        "cortex": 0.46389208729747045
+      },
+      "category": "unknown"
+    },
+    {
+      "sample_id": 6,
+      "premise": "I decided to stay home for the night.",
+      "choice1": "The forecast called for storms.",
+      "choice2": "My friends urged me to go out.",
+      "question_type": "cause",
+      "correct_label": 0,
+      "predicted_label": 1,
+      "correct": false,
+      "confidence": 0.5700221497704504,
+      "lobe_activations": {
+        "sensus": 0.6527210076049229,
+        "nexus": 0.764867313270377,
+        "codex": 0.38500624341364237,
+        "cortex": 0.47749403479285923
+      },
+      "category": "unknown"
+    },
+    {
+      "sample_id": 7,
+      "premise": "My eyes became red and puffy.",
+      "choice1": "I was sobbing.",
+      "choice2": "I was laughing.",
+      "question_type": "cause",
+      "correct_label": 0,
+      "predicted_label": 1,
+      "correct": false,
+      "confidence": 0.6272438458242096,
+      "lobe_activations": {
+        "sensus": 0.6160823682993185,
+        "nexus": 0.6162913507545853,
+        "codex": 0.7180833624247805,
+        "cortex": 0.5585183018181541
+      },
+      "category": "unknown"
+    },
+    {
+      "sample_id": 8,
+      "premise": "The flame on the candle went out.",
+      "choice1": "I blew on the wick.",
+      "choice2": "I put a match to the wick.",
+      "question_type": "cause",
+      "correct_label": 0,
+      "predicted_label": 1,
+      "correct": false,
+      "confidence": 0.4898980750501064,
+      "lobe_activations": {
+        "sensus": 0.4448594594304965,
+        "nexus": 0.5334454529256737,
+        "codex": 0.4477683578674319,
+        "cortex": 0.5335190299768237
+      },
+      "category": "unknown"
+    },
+    {
+      "sample_id": 9,
+      "premise": "The man drank heavily at the party.",
+      "choice1": "He had a headache the next day.",
+      "choice2": "He had a runny nose the next day.",
+      "question_type": "effect",
+      "correct_label": 0,
+      "predicted_label": 0,
+      "correct": true,
+      "confidence": 0.45645967703552937,
+      "lobe_activations": {
+        "sensus": 0.4263021789157227,
+        "nexus": 0.37214050144252575,
+        "codex": 0.5084071240220444,
+        "cortex": 0.5189889037618248
+      },
+      "category": "unknown"
+    }
+  ],
+  "evaluation_mode": "real",
+  "timestamp": "2025-11-30T15:05:45.582049",
+  "benchmark": "COPA",
+  "description": "Choice of Plausible Alternatives - Causal Reasoning"
+}

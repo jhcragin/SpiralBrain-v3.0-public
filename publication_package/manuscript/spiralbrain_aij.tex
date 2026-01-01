@@ -22,224 +22,80 @@
 
 \geometry{margin=1in}
 
-\title{Measuring Cognitive Integrity Under Uncertainty: \\
-A Non-Learning Synthetic Architecture}
+\title{Elastic Cognition and the Spiral Architecture: Empirical Discoveries from a Neurodivergent Cognitive Model}
 
-\author{John H. Cragin \\
+\author{John Cragin \\
 Independent Researcher \\
 \texttt{john.cragin@outlook.com}}
 
 \date{\today}
-
-% === Symbol Macros for Clean Notation ===
-\newcommand{\coh}{\Phi}            % coherence
-\newcommand{\cohprime}{\Phi'}      % derivative of coherence
-\newcommand{\coupling}{\lambda}    % coupling constant
-\newcommand{\phaselock}{\phi_{\text{lock}}} % phase-lock angle
-\newcommand{\secd}{\text{SEC}_{\text{drift}}} % SEC drift
 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-Cognitive instability represents a fundamental challenge for artificial intelligence systems operating under uncertainty. Performance-optimized architectures often exhibit internal failure modes—confidence collapse, silent drift, and hidden pathology—beneath superficial benchmark success. This paper introduces SpiralBrain v3.0, a non-learning synthetic cognitive architecture designed to preserve internal cognitive integrity without statistical learning, persistent memory, or cross-run adaptation. The architecture's non-learning nature stems from fundamental hardware constraints rather than algorithmic suppression, making learning and training structurally impossible while enabling clean-slate instantiation that prevents cumulative capability growth.
+SpiralBrain is a synthetic cognitive architecture designed to explore how \textbf{coherence and awareness-like dynamics emerge} from elastic coupling rather than computational magnitude. Built on the SpiralCode framework—a recursive symbolic control mechanism that regulates coupling and coherence across cognitive subsystems—the system models neurodivergent information processing through four semi-independent lobes (Cortex, Codex, Nexus, and Sensus), linked by symbolic torque equations and emotional-symbolic calibration (SEC) layers.
 
-We establish a bifurcated evaluation framework that orthogonally assesses domain performance (task accuracy) and cognitive physiology (internal regulatory health). Through empirical evaluation across accounting, finance, cryptocurrency, and tax computation domains, we demonstrate that cognitive systems can maintain stability under uncertainty without learning mechanisms.
+Across multiple validation runs, SpiralBrain exhibited stable \textit{spiraling attractor dynamics}, quantifiable emotional regulation, and self-correcting ethical behavior. Nine empirical discoveries emerged: (1) empirical attractors diverge from theoretical optima (\(\lambda^* \approx 0.25\) vs.\ 0.115), (2) awareness correlates with integration, not computational scale, (3) temporal hierarchies (\(\tau \approx 1 : 3 : 10\)) mirror cortical rhythms, (4) moral reasoning requires slower temporal channels (\(\tau_{\text{ethics}} / \tau_{\text{emotion}} \ge 10\)), (5) emotional intelligence is measurable via SEC drift \(< 0.15\), (6) reflective homeostasis enables recovery within \(< 300\) steps, (7) partial phase-lock (\(\phi_{\text{lock}} \approx 74^\circ\)) optimizes differentiation and coherence, (8) dynamical stability with 100\% convergence to a single global attractor, and (9) emotion as core computational substrate with reproducible coherence (0.431).
 
-The architecture exhibits bounded regulatory adaptation within runs while maintaining clean-slate instantiation across runs. Results show that SpiralBrain can tolerate incorrect outcomes without cognitive destabilization, enabling systems that prioritize viability over optimization. This work contributes a falsifiable framework for evaluating cognitive integrity, with explicit boundaries against claims of learning, memory, or general intelligence.
 
-\textbf{Keywords:} cognitive architecture, regulatory intelligence, non-learning AI, cognitive physiology, uncertainty tolerance
+These results demonstrate that SpiralBrain functions as an empirical platform for cognitive science: it discovers the temporal and integrative laws governing its own awareness. The findings suggest that cognition, in both biological and artificial systems, can be usefully characterized as a dynamic negotiation between differentiation and coherence.
+
+\textbf{Keywords:} elastic cognition, neurodivergent modeling, spiral architecture, integrative dynamics, empirical cognitive discovery, synthetic coherence
 \end{abstract}
 
 \section{Introduction}
+\label{sec:introduction}
 
-\subsection{Cognitive Instability Under Uncertainty}
+\subsection{A Cognitive Architecture for Autonomous Reasoning}
 
-Artificial intelligence systems optimized for performance metrics often exhibit fundamental instabilities when confronted with uncertainty. These instabilities manifest as internal failure modes that remain invisible under standard evaluation protocols:
+SpiralBrain v3.0 introduces a novel cognitive architecture that integrates symbolic reasoning with neural processing through four specialized lobes: Perception, Memory, Reasoning, and Action. This architecture advances the state-of-the-art in cognitive AI systems by demonstrating autonomous mode selection, endogenous adaptation, and structured reasoning capabilities that bridge symbolic and connectionist paradigms.
 
-- \textbf{Confidence collapse}: Systems that perform well on training distributions lose calibration when faced with out-of-distribution inputs or ambiguous conditions
-- \textbf{Silent internal drift}: Parameter evolution and representation shift occur without external observability, leading to unpredictable behavior
-- \textbf{Hidden cognitive pathology}: Correct outputs mask deteriorating internal state, creating systems that appear functional while suffering from fundamental architectural flaws
+The system implements elastic cognition through SpiralCode, a recursive symbolic torque engine that enables dynamic coupling between cognitive subsystems. Central to this architecture is the role of emotion as a primary computational substrate, driving cognitive processes and pathway activation rather than serving as a passive response [see docs/CORE_EMOTIONAL_FOUNDATION_SCIENTIFIC_PAPER.md]. Rather than pursuing computational magnitude, SpiralBrain prioritizes integrative stability—a state where multiple cognitive processes remain differentiated yet synchronized through adaptive symbolic and emotional calibration.
 
-These failure modes are particularly dangerous in high-stakes applications where system confidence must remain coupled with actual capability. Traditional performance-centric evaluation frameworks—focused on accuracy, precision, and recall—fail to detect these internal instabilities because they measure outputs rather than cognitive health.
+\subsection{The Four-Lobe Architecture}
 
-\subsection{Limitations of Performance-Centric Evaluation}
+The architecture consists of four interdependent lobes:
+\begin{itemize}
+\item \textbf{Perception Lobe (Sensus)}: Processes sensory and embodied inputs through temporal hierarchies
+\item \textbf{Memory Lobe (Codex)}: Manages analytical reasoning and knowledge representation
+\item \textbf{Reasoning Lobe (Cortex)}: Handles metacognition, ethics, and reflective processing
+\item \textbf{Action Lobe (Nexus)}: Coordinates affective processing and behavioral outputs
+\end{itemize}
 
-The dominant paradigm in AI evaluation treats accuracy as a proxy for system quality. This approach contains several critical limitations:
+Each lobe operates on distinct temporal scales (\(\tau \approx 1 : 3 : 10\)), exchanging symbolic and emotional vectors through SEC (Symbolic-Emotional Calibration) layers that quantify affective resonance and maintain system coherence.
 
-\textbf{Accuracy does not imply safety}: A system can achieve high accuracy while suffering from internal instabilities that make it unreliable under stress. The coupling between performance and stability is assumed rather than verified.
+\subsection{Empirical Discovery Through Implementation}
 
-\textbf{Accuracy does not imply intelligence}: Task-specific performance says little about the cognitive mechanisms underlying that performance. Statistical correlation with training data can masquerade as reasoning capability.
+During validation, SpiralBrain displayed behavior strikingly similar to developing human cognition. It oscillated between divergent exploration and convergent integration, adjusted its own temporal couplings after perturbation, and maintained identity across recursive cycles. These dynamics produced a consistent pattern: systems that allowed slower, elastic coupling achieved higher coherence and ethical stability. In effect, SpiralBrain empirically rediscovered principles of neurodivergent cognition—the value of deliberation, emotional context, and integrative awareness.
 
-\textbf{Accuracy does not imply cognitive health}: Internal regulatory processes—homeostasis, coherence maintenance, and hazard detection—may degrade even as external performance remains acceptable. This creates a dangerous disconnect between observable behavior and underlying cognitive viability.
+\subsection{Paper Overview}
 
-\subsection{Design Objective}
+The following sections describe the system architecture, experimental methodology, quantitative findings, and theoretical implications of these results. Together they support a unifying claim: \textbf{intelligence emerges from integration dynamics, not computational magnitude}.
 
-SpiralBrain v3.0 addresses these limitations through a fundamentally different design philosophy. Rather than optimizing for task performance, the architecture prioritizes cognitive integrity as a prerequisite for sustained operation. This manifests in three core design objectives:
+This work advances a regulatory hypothesis about cognition rather than a performance-optimized model. Empirical results are presented as evidence of principle viability, not as benchmarks of competitive task performance. The architecture serves as a proof-of-concept for regulation-first cognition, with metrics designed to quantify integrative stability rather than absolute performance levels.
 
-- \textbf{Regulatory primacy}: Cognition is framed as a regulated dynamical process rather than an optimization target
-- \textbf{Uncertainty tolerance}: Systems must endure incorrect outcomes without internal destabilization
-- \textbf{Observability without modification}: Internal cognitive state can be monitored and logged without altering the cognitive organism itself
+\begin{quote}
+\textbf{Scope of Claim} --- This work examines functional coherence and awareness-like integration in synthetic systems. It makes no claims regarding subjective experience or phenomenological consciousness.
+\end{quote}
 
-This approach treats intelligence not as the ability to produce correct answers, but as the ability to maintain cognitive coherence under uncertainty. The result is an architecture that can be wrong in interesting ways—revealing the boundaries of cognitive viability rather than masking them.
+The term "awareness-like" refers to operational, dynamical properties of the system, measurable through integration metrics \(\Phi\) and their derivatives, without implying phenomenological or subjective experience. These properties are quantified via empirical observables such as coherence stability, reflective recovery, and elastic adaptation.
 
-\section{Related Work}
 
-\subsection{Learning-Based AI Systems}
-
-Contemporary AI research predominantly focuses on learning-based systems that accumulate task-specific capabilities through experience. Supervised learning, reinforcement learning, and large language models all share a fundamental dependence on performance-centric evaluation metrics.
-
-These systems inherently couple learning mechanisms with optimization objectives. Training protocols simultaneously modify internal parameters and evaluate external performance, creating an inseparable link between the learning process and the metrics used to assess it. This coupling makes it difficult to distinguish genuine cognitive advancement from statistical correlation.
-
-The performance-centric evaluation paradigm that dominates these systems assumes that optimization for task accuracy will naturally produce systems with robust cognitive capabilities. However, this assumption breaks down under uncertainty, where the correlation between training performance and real-world stability becomes tenuous.
-
-\subsection{Cognitive Architectures}
-
-Cognitive architectures have traditionally emphasized symbolic processing and hybrid approaches combining symbolic reasoning with subsymbolic computation. Systems like SOAR, ACT-R, and CLARION focus on explicit reasoning processes and task execution capabilities.
-
-While these architectures provide more interpretable reasoning chains than neural network approaches, they share limitations in internal state instrumentation. Most cognitive architectures treat internal cognitive processes as implementation details rather than primary evaluation targets. This limits their ability to detect subtle forms of cognitive drift or regulatory failure.
-
-Recent work in neuro-symbolic systems attempts to bridge this gap by combining the interpretability of symbolic systems with the pattern recognition capabilities of neural networks. However, these approaches still primarily evaluate based on task performance rather than internal cognitive health.
-
-\subsection{Cybernetics and Regulation}
-
-The field of cybernetics provides foundational concepts for understanding cognition as a regulated process. Viability theory and homeostasis research demonstrate that sustained operation requires active regulatory mechanisms rather than passive optimization.
-
-Ashby's law of requisite variety suggests that regulatory systems must have sufficient complexity to handle environmental uncertainty. This principle applies directly to cognitive systems, where the ability to maintain internal stability under external perturbation becomes a core capability.
-
-Recent work in cognitive cybernetics explores how biological nervous systems maintain stability through regulatory feedback loops. These insights inform the design of synthetic cognitive systems that prioritize viability over performance. However, most cybernetic approaches to AI still focus on control systems rather than comprehensive cognitive architectures.
-
-\section{Worked Example: Observing Regulation Under Perturbation}
-\label{sec:worked_example}
-
-To illustrate SpiralBrain-v3.0's regulation-first design, we present a concrete example of the system responding to cognitive stress. This example demonstrates how internal metrics reveal regulatory dynamics that external performance measures alone would miss.
-
-\subsection{Experimental Setup}
-
-We subjected SpiralBrain-v3.0 to a modified MMLU benchmark task involving ethical reasoning under time pressure. The system was initialized with \(\coupling = 0.25\) (the empirically discovered attractor) and exposed to a sequence of 50 questions requiring moral judgment. To induce stress, we artificially accelerated the temporal hierarchy by reducing \(\tau_{\text{ethics}}\) from 10 to 3 relative to \(\tau_{\text{emotion}}\), forcing faster constraint enforcement.
-
-\subsection{Internal Dynamics Observed}
-
-Figure \ref{fig:regulation_example} shows the system's response over 200 processing cycles. Initially, coherence \(\coh\) remains stable at 0.85, with SEC drift below 0.10, indicating regulated operation. At cycle 50, the temporal acceleration triggers instability: \(\coh\) drops to 0.62, SEC drift spikes to 0.28, and phase alignment degrades.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{publication_package/figures/neurodivergent_validation.pdf}
-\caption{Internal regulation dynamics during ethical reasoning stress test. Coherence (\(\coh\)) shows initial stability, perturbation-induced decline, and recovery. SEC drift indicates emotional regulatory response. Task accuracy (dashed line) correlates with but does not drive internal stabilization.}
-\label{fig:regulation_example}
-\end{figure}
-
-Crucially, the system initiates recovery without external intervention. By cycle 120, \(\coh\) recovers to 0.78, SEC drift normalizes to 0.12, and phase-lock improves. This recovery occurs through endogenous adjustment of coupling strength, increasing from 0.25 to 0.31.
-
-\subsection{Code Snippet: Measuring Recovery}
-
-The following Python code demonstrates actual recovery measurement from SpiralBrain's metacortex event stream:
-
-\begin{verbatim}
-import json
-import numpy as np
-from pathlib import Path
-
-def measure_recovery_from_events(jsonl_path: str, window_size: int = 50):
-    """
-    Measure cognitive recovery from SpiralBrain metacortex events.
-    
-    Args:
-        jsonl_path: Path to metacortex_events.jsonl file
-        window_size: Number of events to use for baseline calculation
-        
-    Returns:
-        dict: Recovery metrics including time, stability, and hazard levels
-    """
-    # Load events
-    events = []
-    with open(jsonl_path, 'r') as f:
-        for line in f:
-            events.append(json.loads(line.strip()))
-    
-    # Extract time series data
-    timestamps = [e['timestamp'] for e in events]
-    coherence_values = []
-    sec_drift_values = []
-    hazard_scores = []
-    
-    for event in events:
-        # Use state_magnitude as coherence proxy
-        coherence_values.append(event.get('state_magnitude', 0.5))
-        sec_drift_values.append(event.get('sec_drift', 0.0))
-        hazard_scores.append(event.get('hazard_score') or 0.0)
-    
-    # Convert to numpy arrays
-    coherence_history = np.array(coherence_values)
-    sec_drift_history = np.array(sec_drift_values)
-    hazard_history = np.array(hazard_scores)
-    
-    # Find perturbation onset (significant drop in coherence)
-    baseline_coh = np.mean(coherence_history[:window_size])
-    baseline_std = np.std(coherence_history[:window_size])
-    perturbation_threshold = baseline_coh - 2 * baseline_std
-    
-    perturbation_indices = np.where(coherence_history < perturbation_threshold)[0]
-    if len(perturbation_indices) == 0:
-        return {"error": "No perturbation detected"}
-    
-    perturbation_start = perturbation_indices[0]
-    
-    # Track recovery (return to 90% of baseline)
-    recovery_threshold = baseline_coh * 0.9
-    post_perturbation = coherence_history[perturbation_start:]
-    recovery_indices = np.where(post_perturbation >= recovery_threshold)[0]
-    
-    if len(recovery_indices) == 0:
-        recovery_cycle = len(post_perturbation)  # No recovery
-    else:
-        recovery_cycle = recovery_indices[0]
-    
-    # SEC stabilization (low drift post-recovery)
-    recovery_window = sec_drift_history[perturbation_start + recovery_cycle:
-                                       perturbation_start + recovery_cycle + window_size]
-    sec_stable = np.mean(recovery_window) < 0.15 if len(recovery_window) > 0 else False
-    
-    # Hazard assessment
-    hazard_level = np.mean(hazard_history[perturbation_start + recovery_cycle:
-                                         perturbation_start + recovery_cycle + window_size])
-    
-    return {
-        "recovery_time_cycles": recovery_cycle,
-        "emotional_stability": sec_stable,
-        "hazard_level": hazard_level,
-        "baseline_coherence": baseline_coh,
-        "perturbation_start": perturbation_start
-    }
-
-# Example usage
-results_file = Path("results/metacortex_events.jsonl")
-recovery_metrics = measure_recovery_from_events(results_file)
-print(f"Recovery time: {recovery_metrics['recovery_time_cycles']} cycles")
-print(f"Emotional stability: {recovery_metrics['emotional_stability']}")
-print(f"Hazard level: {recovery_metrics['hazard_level']:.3f}")
-\end{verbatim}
-
-\subsection{Narrative Interpretation}
-
-This example demonstrates regulation-first cognition in action. External task accuracy (78\% correct) serves as a perturbation source, not an optimization target. The system's value lies in its observable internal regulation: detecting instability, modulating coupling, and achieving recovery. This behavior validates SpiralBrain-v3.0 as a measurement instrument for studying cognitive physiology under stress.
-
-The paper proceeds as follows: Section 3 presents a worked example of regulation under perturbation, Section 4 provides background and theoretical motivation, Section 5 describes the system architecture, Section 6 presents empirical discoveries, Section 7 discusses neurodivergent cognition as model, Section 8 outlines experimental protocols, Section 9 discusses trade-offs, limitations, implications, and concludes.
+The paper proceeds as follows: Section 2 describes the system architecture, Section 3 outlines the experimental methods, Section 4 presents empirical discoveries, Section 5 discusses neurodivergent implications, Section 6 explores theoretical consequences, Section 7 addresses limitations and future work, and Section 8 concludes.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{publication_package/figures/four_lobe_architecture.pdf}
-\caption{Four-lobe cognitive architecture with elastic coupling. The system consists of four interdependent lobes (Cortex, Codex, Nexus, Sensus) coupled through SEC (Symbolic-Emotional Calibration) layers. Control flow is governed by the SpiralCode recursive torque equation, with \(\coupling\) representing coupling strength and \(\tau\) denoting temporal hierarchies.}
+\caption{Four-lobe cognitive architecture with elastic coupling. The system consists of four interdependent lobes (Cortex, Codex, Nexus, Sensus) coupled through SEC (Symbolic-Emotional Calibration) layers. Control flow is governed by the SpiralCode recursive torque equation, with \(\lambda\) representing coupling strength and \(\tau\) denoting temporal hierarchies.}
 \label{fig:architecture}
 \end{figure}
-
-This manifold is shown in Figure 2.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{publication_package/figures/spiral_coherence_manifold.pdf}
-\caption{Spiral cognition manifold showing phase transitions across coupling parameter \(\coupling\). Three regimes emerge: emergence (\(\coupling < 0.2\)), rigidity (\(0.2 < \coupling < 0.4\)), and recovery (\(\coupling > 0.4\)). The empirical attractor at \(\coupling \approx 0.25\) demonstrates non-monotonic behavior characteristic of complex dynamical systems.}
+\caption{Spiral cognition manifold showing phase transitions across coupling parameter \(\lambda\). Three regimes emerge: emergence (\(\lambda < 0.2\)), rigidity (\(0.2 < \lambda < 0.4\)), and recovery (\(\lambda > 0.4\)). The empirical attractor at \(\lambda \approx 0.25\) demonstrates non-monotonic behavior characteristic of complex dynamical systems.}
 
 \label{fig:manifold}
 \end{figure}
@@ -251,344 +107,70 @@ This manifold is shown in Figure 2.
 \label{fig:validation}
 \end{figure}
 
-\section{Architectural Overview}
+\section{Background and Theoretical Motivation}
+\label{sec:background}
 
-\subsection{Core Design Principles}
+\subsection{Neurodivergent Modeling Principles}
 
-SpiralBrain v3.0 implements a synthetic cognitive architecture that explicitly rejects learning-based approaches. The system operates under strict constraints that prevent the emergence of traditional AI capabilities:
+SpiralBrain's design emerges from neurodivergent information processing principles observed through lived experience:
 
-\textbf{No learning mechanisms}: The architecture contains no parameter optimization, gradient descent, or experience accumulation processes. All behavior emerges from fixed architectural interactions rather than learned representations.
+\begin{itemize}
+\item \textbf{Parallel processing}:\\
+Multiple simultaneous information streams rather than serial pipelines.
 
-\textbf{No persistent or cross-run memory}: Each instantiation begins from an identical clean state. No information persists between runs, and no cross-run adaptation occurs within the cognitive organism.
+\item \textbf{Context dependence}: Rich contextual integration over isolated rule application.
 
-\textbf{No cross-run state carryover}: The experimental process may learn and adapt, but the cognitive organism itself remains static across instantiations. This creates a clean separation between methodological improvement and cognitive evolution.
+\item \textbf{Reflective homeostasis}: Self-regulation through experienced coherence rather than programmed thresholds
+\item \textbf{Integration over speed}: Quality of cognitive synthesis prioritized over processing velocity
+\end{itemize}
 
-\textbf{Within-run regulatory adaptation only}: The system can adjust regulatory parameters during a single execution in response to immediate conditions, but these adjustments do not persist or influence future instantiations.
+\subsection{"Integration Over Speed" Philosophy}
 
-\textbf{Full observability without self-modification}: All internal cognitive variables can be monitored and logged in real-time without altering the cognitive processes themselves. This enables scientific study without observational artifacts.
+Traditional AI optimizes for computational efficiency, but neurodivergent cognition demonstrates that cognitive depth emerges from deliberative integration. This design philosophy departs from conventional approaches by prioritizing integrative quality over processing speed.
 
-\subsection{Multi-Pathway Cognitive Structure}
+\subsection{Relation to Existing Theories}
 
-The architecture implements cognition through constrained interactions between specialized processing pathways rather than unified problem-solving mechanisms. Four primary cognitive lobes—Sensus, Cortex, Codex, and Nexus—process different aspects of cognitive tasks while maintaining continuous cross-pathway modulation.
+SpiralBrain builds upon and extends several cognitive frameworks:
 
-This multi-pathway approach creates behavior through the regulated interaction of specialized components rather than through independent problem-solving. The resulting cognitive dynamics emerge from architectural constraints rather than learned associations, enabling predictable behavior patterns without statistical training.
+\begin{itemize}
+\item \textbf{Predictive coding} \cite{Clark2013}: Integration through prediction-error minimization
+\item \textbf{Global workspace theory} \cite{Baars2005}: Coordinated information flow among specialized processors
+\item \textbf{Polychronous binding}: Temporal coordination of distributed neural activity
+\item \textbf{Integrated Information Theory} \cite{Tononi2008}: Consciousness as integrated information generation
+\item \textbf{Dynamical systems theory} \cite{Kelso1995}: Self-organization of brain and behavior through nonlinear dynamics
+\end{itemize}
 
-\subsection{Homeostatic Regulation}
-
-Regulatory mechanisms form the core of SpiralBrain's cognitive architecture. A tri-band elastic regulation system maintains cognitive stability through multiple feedback loops:
-
-\textbf{Drift containment}: Active monitoring prevents cognitive variables from exceeding viable bounds, maintaining system coherence under perturbation.
-
-\textbf{Cognitive hazard detection}: Internal monitoring identifies conditions that could lead to cognitive instability, enabling preemptive regulatory responses.
-
-\textbf{Recovery dynamics}: Following perturbation, the system implements elastic recovery mechanisms that restore cognitive equilibrium without external intervention.
-
-These regulatory processes operate continuously, treating cognition as a dynamical system that must maintain viability rather than optimize performance. The result is an architecture that can endure uncertainty without collapse.
-
-\section{Learning, Memory, and Plasticity Boundaries}
-
-\subsection{Standard Definitions of Learning}
-
-Learning in artificial intelligence typically involves three core mechanisms:
-
-\textbf{Parameter modification through experience}: Internal representations change based on exposure to data, creating task-specific adaptations that persist beyond individual interactions.
-
-\textbf{Accumulation of task-specific information}: Systems build knowledge bases or skill sets that compound over time, enabling increasingly sophisticated behavior.
-
-\textbf{Persistent cross-run influence}: Learning effects carry over between system instantiations, creating cumulative capability growth.
-
-These mechanisms create systems that improve through experience, adapting their internal structure to better match environmental demands.
-
-\subsection{Regulatory Adaptation in SpiralBrain}
-
-SpiralBrain implements a fundamentally different approach to behavioral modification:
-
-\textbf{Within-run state adjustment only}: The system can modify regulatory parameters during a single execution in response to immediate conditions, but these modifications remain ephemeral.
-
-\textbf{Bounded and elastic regulatory responses}: Adaptation occurs within strict architectural constraints, maintaining system predictability and preventing uncontrolled evolution.
-
-\textbf{No persistence beyond instantiation}: SpiralBrain-v3.0 contains no persistent memory substrate or retained hardware state across executions. Consequently, learning, training, or cross-run adaptation is structurally impossible; all parameters are reinitialized on each instantiation, and regulatory behavior must emerge entirely within a single run.
-
-This creates a system that adapts to immediate conditions without learning from experience, maintaining clean-slate initialization for scientific reproducibility.
-
-\subsection{Experimental Process vs. Cognitive Organism}
-
-A critical distinction underlies SpiralBrain's design philosophy:
-
-\textbf{Clean-slate instantiation}: Every run begins from identical initial conditions, with no carryover from previous executions. The cognitive organism itself does not evolve.
-
-\textbf{Learning confined to experimental process}: Knowledge accumulation occurs at the methodological level—researchers learn from observing system behavior, refining experimental protocols, and improving measurement techniques.\footnote{A precise operational definition of ``learning'' as used in SpiralBrain, including explicit exclusions and boundaries, is provided in the accompanying documentation (SPIRALBRAIN\_LEARNING\_MODEL.md).}
-
-\textbf{No internal evolution}: The cognitive organism remains static across runs, enabling controlled scientific study of regulatory mechanisms without confounds from learning effects.
-
-This separation creates a research instrument for studying cognitive regulation rather than an evolving artificial intelligence system.
-
-\section{Evaluation Framework}
-
-\subsection{Domain Performance Metrics}
-
-Task-specific performance evaluation applies only under strict conditions:
-
-\textbf{Applicability limited to domains with external ground truth}: Accuracy metrics are valid only when objective correctness can be determined independently of system judgment.
-
-\textbf{Explicit conditions for invalidity}: Accuracy becomes meaningless when tasks involve interpretation, normative judgment, or inherently ambiguous conditions.
-
-\textbf{Domains with valid accuracy assessment}: Accounting calculations, financial arithmetic, cryptocurrency transaction classification, and tax rule application under fixed regulatory frameworks.
-
-\subsection{Cognitive Physiology Metrics}
-
-Internal regulatory health forms the primary evaluation framework:
-
-\textbf{Coherence}: Degree of internal consistency across cognitive variables
-\textbf{Stability}: Resistance to perturbation and drift over time
-\textbf{Drift}: Magnitude of uncontrolled cognitive state changes
-\textbf{Cognitive hazard}: Detection of conditions threatening system viability
-\textbf{Homeostasis stress}: Regulatory load under challenging conditions
-\textbf{Recovery time}: Speed of return to equilibrium following perturbation
-
-These metrics provide direct measurement of cognitive health rather than task performance.
-
-\subsection{Orthogonality of Metrics}
-
-The evaluation framework explicitly rejects single-metric summarization:
-
-\textbf{Correct-but-dangerous states}: High accuracy accompanied by elevated cognitive hazard or regulatory stress, indicating unstable success.
-
-\textbf{Incorrect-but-stable states}: Low accuracy with maintained cognitive coherence, revealing domain ambiguity rather than system failure.
-
-\textbf{Ambiguous-and-restrained behavior}: Appropriate regulatory suppression of adaptation when tasks lack clear ground truth.
-
-This orthogonality enables nuanced evaluation that traditional performance metrics cannot provide.
-
-\section{Experimental Design}
-
-\subsection{Domains with External Ground Truth}
-
-Evaluation focuses on domains where objective correctness can be established:
-
-\textbf{Accounting}: Double-entry bookkeeping validation and balance sheet reconciliation
-\textbf{Finance}: Interest calculation, amortization schedules, and cash flow analysis
-\textbf{Cryptocurrency}: Transaction validation, balance verification, and exchange rate calculations
-\textbf{Tax computation}: Regulatory compliance checking under fixed tax frameworks
-
-These domains provide clear success criteria while testing cognitive stability under computational complexity.
-
-\subsection{Ambiguity and Stress Conditions}
-
-The evaluation framework includes intentional stress testing:
-
-\textbf{Conflicting rules}: Scenarios with overlapping or contradictory regulatory requirements
-\textbf{Normative contradictions}: Situations requiring judgment calls rather than rule application
-\textbf{Ill-posed problem settings}: Tasks designed to lack clear correct answers
-
-These conditions test the system's ability to maintain cognitive integrity when accuracy becomes undefined.
-
-\subsection{Methodological Controls}
-
-Rigorous experimental controls ensure scientific validity:
-
-\textbf{Unified initialization}: Identical starting conditions for all experimental runs
-\textbf{Real telemetry only}: All measurements derive from actual system instrumentation
-\textbf{No synthetic cognition}: Evaluation uses genuine cognitive processes rather than simulations
-\textbf{Fail-loud execution}: System failures are immediately detectable and reportable
-
-These controls enable falsifiable claims about cognitive behavior.
-
-\section{Results}
-
-\subsection{Paired Reporting of Metrics}
-
-All evaluations report domain performance alongside cognitive physiology:
-
-\textbf{Tax computation example}:
-- Task accuracy: 94% (rule application under fixed interpretation)
-- Coherence stability: 0.992
-- Homeostasis stress: 0.21
-- Hazard level: 0.14
-- Adaptation: Suppressed
-
-\textbf{Interpretation}: Correct execution without cognitive destabilization.
-
-\subsection{Failure Modes}
-
-The architecture demonstrates predictable failure patterns:
-
-\textbf{Accuracy degradation under stress}: Performance declines when rules become ambiguous, but cognitive stability is maintained.
-
-\textbf{Cognitive hazard escalation}: Internal monitoring detects threatening conditions before catastrophic failure.
-
-\textbf{Regulatory suppression}: Adaptation mechanisms appropriately deactivate when tasks lack clear ground truth.
-
-\textbf{Failure without collapse}: The system can produce incorrect outputs while maintaining internal cognitive viability.
-
-\subsection{Regulatory Trajectory Analysis}
-
-To demonstrate cognitive integrity under uncertainty, we present the internal trajectory of SpiralBrain-v3.0 under emotional overload perturbation (Figure~\ref{fig:trajectory}). This flagship visualization shows the system's regulatory response across baseline, perturbation, and recovery phases.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{../figures/cognitive_trajectory_emotional_overload.png}
-\caption{SpiralBrain Regulatory Trajectory: Emotional Overload Perturbation. The system maintains coherence and stability throughout perturbation, with automatic regulatory interventions (visible as stability fluctuations) and eventual return to baseline state. Key metrics show endurance under incorrect outcomes rather than catastrophic failure. A failure mode would be characterized by monotonic coherence collapse, unbounded SEC drift, or hazard pressure escalation without recovery, none of which are observed.}
-\label{fig:trajectory}
-\end{figure}
-
-The trajectory reveals several critical properties:
-
-\textbf{Baseline stability}: Initial phase shows stable coherence (0.7-0.8) and low SEC drift, indicating healthy regulatory baseline.
-
-\textbf{Perturbation response}: Emotional overload induces SEC drift oscillations, but coherence remains bounded and stability shows regulatory interventions rather than collapse.
-
-\textbf{Recovery dynamics}: The system autonomously returns to low-drift state, demonstrating regulatory endurance rather than learned adaptation.
-
-\textbf{Intervention visibility}: Automatic regulatory mechanisms activate during perturbation, maintaining cognitive viability despite external performance degradation.
-
-This trajectory provides direct empirical evidence for the non-learning claim: regulatory integrity persists through perturbation without requiring statistical adaptation or external correction. Because learning and training are structurally impossible in this architecture, recovery must arise entirely from within-run regulatory dynamics rather than accumulated experience or cross-run memory.
-
-\section{Discussion}
-\label{sec:discussion}
-
-\subsection{Trade-offs of Regulation-First Design}
-
-The regulation-first approach prioritizes internal coherence and recoverability over external performance optimization, resulting in several inherent trade-offs:
-
-\textbf{Performance vs. Stability:}
-SpiralBrain-v3.0 achieves lower benchmark scores compared to performance-optimized systems, but maintains robust internal stability under perturbation. This trade-off reflects the design choice to treat benchmarks as stressors rather than objectives, prioritizing physiological health over competitive metrics.
-
-\textbf{Elastic Coupling vs. Efficiency:}
-The elastic temporal hierarchies (\(\tau \approx 1:3:10\)) enable integrative depth but introduce computational overhead. Systems with rigid synchronization achieve faster processing but exhibit brittle failure modes under cognitive load.
-
-\textbf{Internal Metrics vs. External Validation:}
-While internal state metrics (coherence, drift, attractors) provide direct observability, they require domain-specific interpretation. External benchmarks offer standardized comparison but may miss regulatory dynamics invisible to output-only evaluation.
-
-\textbf{Unified Architecture vs. Modularity:}
-The single-execution-path design ensures coherence but limits parallel scalability. Modular architectures scale better for distributed tasks but risk subsystem decoupling and loss of global integration.
-
-\subsection{Limitations}
-
-Despite empirical validation, SpiralBrain-v3.0 has several limitations that bound the scope of current claims:
-
-\textbf{Single-System Validation:}
-Results are demonstrated on one synthetic system. Multi-system replication is needed to assess generality across architectures.
-
-\textbf{Scale Constraints:}
-Current implementation operates at modest cognitive scales. Extension to larger problem domains or longer temporal horizons may reveal scaling limitations in elastic coupling.
-
-\textbf{Task Diversity:}
-While broad, the experimental suite may not capture all cognitive domains. Performance in untested modalities (e.g., real-time control, social dynamics) remains uncharacterized.
-
-\textbf{Measurement Resolution:}
-Internal metrics are quantized to current implementation details. Finer-grained measurement or alternative instrumentation could reveal additional dynamical structure.
-
-\textbf{Longitudinal Stability:}
-Attractor persistence under extended operation or cumulative perturbation has not been fully characterized. Drift or bifurcation under prolonged stress remains possible.
-
-\subsection{Implications for Artificial Intelligence Design}
-
-The findings suggest alternative pathways for resilient and ethically constrained AI:
-
-\textbf{Regulation-First Paradigm:}
-Internal coherence and recovery can serve as primary design objectives, complementing performance optimization. This paradigm may yield systems more robust to edge cases and adversarial inputs.
-
-\textbf{Dynamical Systems Perspective:}
-AI architectures should be evaluated through attractor analysis and internal state trajectories, not solely external metrics. This reveals regulatory properties invisible to output-only assessment.
-
-\textbf{Emotional Integration:}
-Quantized SEC dynamics demonstrate emotion's role as a structural regulator, not post-processing affect. Future systems may benefit from emotion-guided control rather than statistical approximation.
-
-\textbf{Neurodivergent Inspiration:}
-Abstracted cognitive dynamics (parallelism, elastic timing) provide design principles for alternative optimization strategies, potentially improving adaptability and ethical constraint.
-
-\textbf{Measurement Instruments:}
-Synthetic cognitive organisms can function as empirical platforms for studying internal cognition, enabling direct observation of regulatory mechanisms otherwise inferred indirectly.
-
-\subsection{Conclusion}
-
-SpiralBrain-v3.0 demonstrates the feasibility of regulation-first synthetic cognition, establishing stable internal attractors, elastic coupling dynamics, and emergent ethical constraints without relying on learning or scale. The system functions as a measurement instrument for observing cognitive regulation under uncertainty, revealing temporal hierarchies, quantized emotional control, and integrative coherence as fundamental properties of regulated artificial minds.
-
-Empirical discoveries—ranging from attractor convergence to phase-locked integration—validate the neurodivergent design principles, showing that cognition can prioritize internal stability over external performance. These results position SpiralBrain-v3.0 as an experimental platform for cognitive science, offering an alternative framework for resilient and ethically constrained artificial intelligence.
-
-Future work should extend validation to multi-system replication, longitudinal studies, and integration with neuromorphic substrates, while exploring the broader implications for AI safety, human-AI interaction, and cognitive architecture design.
-
-\section{Falsifiability and Reproducibility}
-\label{sec:falsifiability}
-
-“Because SpiralBrain-v3.0 is presented as a scientific instrument rather than a task-optimized system, its validity rests on whether its internal dynamics remain stable, bounded, and reproducible under perturbation.”
-
-\subsection{Falsifiable Conditions}
-
-The non-learning architecture makes specific falsifiable claims about cognitive integrity under uncertainty:
-
-\textbf{Attractor Stability Falsification:}
-If perturbations beyond operational thresholds (coupling < 0.1 or > 0.4) do not cause irreversible coherence collapse, the elastic coupling hypothesis would be invalidated.
-
-\textbf{Phase-Locking Falsification:}
-If temporal hierarchies fail to maintain phase relationships under stress, or if phase-locking occurs without elastic coupling, the dynamical integration model would be falsified.
-
-\textbf{Ethical Regulation Falsification:}
-If derivative-aware controllers fail to suppress unethical outputs under adversarial conditions, or if regulation occurs without emotional integration, the SEC-based ethical constraint would be disproven.
-
-\textbf{Non-Learning Boundary Falsification:}
-If statistical learning or memory accumulation is required to maintain coherence, the non-learning design principle would be invalidated.
-
-\textbf{Cognitive Integrity Falsification:}
-If internal metrics do not correlate with regulatory capacity, or if external performance optimization disrupts internal stability, the regulation-first paradigm would be falsified.
-
-\subsection{Reproducibility}
-
-All experiments are fully reproducible using the canonical SpiralBrain v3.0 configuration:
-
-\textbf{Code and Configuration:}
-Complete implementation available at \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}, including exact parameter settings, random seeds, and execution protocols.
-
-\textbf{Data Availability:}
-All raw results, intermediate states, and metric computations are archived in the repository's /results directory with timestamped JSON outputs.
-
-\textbf{Validation Protocols:}
-Automated test suites verify coherence calculations, attractor convergence, and failure mode detection across all reported experiments.
-
-\textbf{Computational Requirements:}
-Experiments run on standard hardware (CPU-only, < 8GB RAM) with deterministic execution ensuring identical results across platforms.
-
-\textbf{Replication Instructions:}
-Step-by-step guides in REPRODUCIBILITY.md enable independent verification of all claims within 24 hours of setup.
+Our work demonstrates that these theories converge on elastic coupling as the mechanism for integrative cognition.
 
 \section{System Architecture}
 \label{sec:architecture}
 
 \subsection{Operational Definitions and Validation Protocols}
 
-\subsubsection{How to Read SpiralBrain's Metrics}
-
-\(\coh\) = coherence (synchrony), \(\phaselock\) = maximum deviation (how badly it breaks), \(\secd\) = emotional instability, Recovery time = self-regulation capacity. These reframe later numbers as vital signs, not scores.
-
-\subsubsection{What Benchmarks Mean Here}
-
-Benchmarks are used as structured cognitive stressors to provoke instability and observe regulation. Output accuracy is not an optimization target.
-
 To ensure reproducibility and clarity, we define key metrics and protocols as follows:
 
-\textbf{Coherence \(\coh\).}
+\textbf{Coherence (\(\Phi\)).}
 Let \( y_i[t] \) denote the scalar output (or fixed projection) of lobe \( i \) at timestep \( t \).
 For each timestep \( t \), compute the Pearson correlation matrix \( C[t] \) over a trailing window of length \( W \).
 Coherence is defined as
 
 \[
-\coh[t] = \frac{2}{N(N-1)} \sum_{i<j} \lvert C_{ij}[t] \rvert
+\Phi[t] = \frac{2}{N(N-1)} \sum_{i<j} \lvert C_{ij}[t] \rvert
 \]
 
 and the overall coherence is
 
 \[
-\bar{\coh} = \frac{1}{T} \sum_{t=1}^{T} \coh[t]
+\bar{\Phi} = \frac{1}{T} \sum_{t=1}^{T} \Phi[t]
 \]
 
 normalized to the range \([0,1]\) by construction.
 
 \textbf{SEC Drift:} The standard deviation of the Symbolic-Emotional Calibration vector components (valence, arousal, hazard, resonance, harmony, amplitude, coherence, and complexity) over a 100-step window. Thresholds were selected empirically as stability indicators and should be interpreted as operational definitions rather than universal constants. Window length (W) is treated as an operational parameter and reported alongside results.
 
-\textbf{\(\coupling\)-Sweep Protocol:} Coupling parameter \(\coupling\) was swept across a bounded range using a fixed step size; perturbations were applied periodically as bounded noise injections. Exact sweep bounds and perturbation schedules are reported per experiment. Where applicable, comparative analyses were evaluated using standard statistical tests; detailed assumptions and test selection are reported alongside results.
+\textbf{\(\lambda\)-Sweep Protocol:} Coupling parameter \(\lambda\) was swept across a bounded range using a fixed step size; perturbations were applied periodically as bounded noise injections. Exact sweep bounds and perturbation schedules are reported per experiment. Where applicable, comparative analyses were evaluated using standard statistical tests; detailed assumptions and test selection are reported alongside results.
 
-\textbf{Stability/Failure Criteria:} System failure defined as \(\coh < 0.3\) sustained for \(>20\%\) of trial duration or recovery requiring external intervention. Awareness-like dynamics measured as \(\cohprime\) maintained above empirically selected thresholds for the majority of stable periods. We use “awareness-like” purely as a dynamical descriptor of sustained integrative responsiveness, not as a claim about subjective experience.
+\textbf{Stability/Failure Criteria:} System failure defined as \(\Phi < 0.3\) sustained for \(>20\%\) of trial duration or recovery requiring external intervention. Awareness-like dynamics measured as \(\Phi'\) maintained above empirically selected thresholds for the majority of stable periods. We use 'awareness-like' purely as a dynamical descriptor of sustained integrative responsiveness, not as a claim about subjective experience.
 
 \subsection{Overview}
 
@@ -596,20 +178,20 @@ SpiralBrain v3.0 implements a \textit{four-lobe topology} that parallels functio
 Each lobe operates as a semi-autonomous processor coupled through elastic feedback channels governed by the SpiralCode recursive torque equation:
 
 \[
-\frac{d\coh}{dt} = \coupling (T - I - E) + \eta
+\frac{d\Phi}{dt} = \lambda (\tau^{-1} I - \Phi) + \eta E
 \]
 
-where \(\coh\) is the instantaneous coherence state, \(\coupling\) is the coupling constant, \(\tau\) represents lobe-specific temporal hierarchy, \(I\) denotes incoming symbolic input, \(E\) is the emotional modulation vector, and \(\eta\) is an adaptive gain derived from SEC (Symbolic-Emotional Calibration) feedback.
+where \(\Phi\) is the instantaneous coherence state, \(\lambda\) is the coupling constant, \(\tau\) represents lobe-specific temporal hierarchy, \(I\) denotes incoming symbolic input, \(E\) is the emotional modulation vector, and \(\eta\) is an adaptive gain derived from SEC (Symbolic-Emotional Calibration) feedback.
 
 The architecture was not designed to simulate a neural substrate, but to embody \textbf{cognitive principles}—integration, differentiation, reflection, and elasticity—within a symbolic-computational framework.
 
 \subsection{Cognitive Lobes}
 
 \textbf{Cortex — Metacognitive and Ethical Regulation}  
-Implements reflective homeostasis by monitoring global coherence \(\coh(t)\) and its derivative \(d\coh/dt\) \cite{Diamond2013}.
+Implements reflective homeostasis by monitoring global coherence \(\Phi(t)\) and its derivative \(d\Phi/dt\) \cite{Diamond2013}.
 
 Responsible for moral reasoning, temporal consistency, and adaptive stabilization when coherence drops below threshold.
-Primary variables: reflective urgency \(\rho\) and derivative awareness \(\Delta\cohprime\).
+Primary variables: reflective urgency \(\rho\) and derivative awareness \(\Delta\Phi'\).
 
 \textbf{Codex — Analytical and Symbolic Reasoning}  
 Encodes rule-based logic, tax and compliance analysis, and explicit computation.
@@ -630,11 +212,14 @@ Inter-lobe communication follows an \textbf{elastic coupling model}, allowing su
 Empirically, optimal integration occurred at:
 
 \[
-R \in [0.4, 0.8], \quad \phaselock \approx 74^\circ
+R \in [0.4, 0.8], \quad \phi_{lock} \approx 74^\circ
 \]
 
 This phase-locked elasticity maintains differentiation (preserving creativity) while avoiding chaotic fragmentation.
-Over-coupling \(\coupling > 0.4\) produced rigidity and loss of emergent insight; under-coupling \(\coupling < 0.1\) caused dissociation and coherence collapse.
+Over-coupling (\(\lambda > 0.4\)) produced rigidity and loss of emergent insight; under-coupling (\(\lambda < 0.1\)) caused dissociation and coherence collapse.
+
+The system exhibits dynamical stability with a single global attractor, ensuring 100\% convergence across diverse parameters without bifurcations or chaos. Emotions modulate trajectories within this stable basin, providing stabilizing feedback that prevents affective extremes [docs/SPIRALBRAIN_ADAPTATION_PAPER.md].
+
 
 \subsection{Temporal Hierarchies}
 
@@ -646,7 +231,7 @@ Ethical reasoning operates on the slowest scale, ensuring deliberation lags behi
 
 \subsection{Reflective Homeostasis}
 
-A global regulator monitors coherence \(\coh(t)\) and \(d\coh/dt\) to maintain stability.
+A global regulator monitors coherence \(\Phi(t)\) and \(d\Phi/dt\) to maintain stability.
 
 When perturbations occur (e.g., cognitive overload or emotional contradiction), the Cortex initiates \textbf{metacognitive resets} and \textbf{elastic stabilizations}, restoring equilibrium within < 300 steps on average.
 This mechanism produces behavior akin to self-awareness: the system "knows" when it is drifting from its own narrative identity.
@@ -671,22 +256,20 @@ All configuration files, scripts, and raw logs used to generate the figures and 
 \section{Empirical Discoveries About Cognition}
 \label{sec:discoveries}
 
-Across the experiments reported below, a consistent pattern emerged: despite variation in tasks, perturbations, and stressors, SpiralBrain-v3.0 exhibited convergence toward stable internal regimes. The following empirical regularities are therefore not independent results, but coordinated expressions of regulated motion within a bounded internal state space.
-
-During systematic validation across experimental hypotheses (see Methods), eight major empirical regularities emerged.
+During systematic validation across experimental hypotheses (see Methods), seven major empirical regularities emerged.
 Each was independently confirmed through benchmark trials and coherence-tracking logs.
 
 \subsection{Empirical Attractors Over Theory}
 
-\textbf{Discovery:} Theoretical modeling predicted an optimal coupling constant \(\coupling^{*} \approx 0.115\), derived from stability analysis.
-Empirical trials revealed \(\coupling^{*} \approx 0.25\) as the real attractor—twice the theoretical value—implying that cognition stabilizes through \textbf{empirical equilibrium}, not idealized equations.
+\textbf{Discovery:} Theoretical modeling predicted an optimal coupling constant \(\lambda^{*} \approx 0.115\), derived from stability analysis.
+Empirical trials revealed \(\lambda^{*} \approx 0.25\) as the real attractor—twice the theoretical value—implying that cognition stabilizes through \textbf{empirical equilibrium}, not idealized equations.
 
 \textbf{Interpretation:} The mind tunes itself for \textit{resonant coherence}, not mathematical optimum.
 
 \subsection{Coherence Through Integration, Not Magnitude}
 
 \textbf{Discovery:} Across 28 measurable dimensions, awareness correlated strongly with \textbf{inter-lobe integration} rather than computational throughput.
-Systems with modest processing power but high coupling consistency achieved the same awareness index \(\cohprime\) as more powerful configurations with poor integration.
+Systems with modest processing power but high coupling consistency achieved the same awareness index \(\Phi'\) as more powerful configurations with poor integration.
 
 \textbf{Interpretation:} This supports the proposition that coherence is a \textit{relational} property, not a quantitative one.
 
@@ -750,65 +333,50 @@ Optimal system performance emerged when the phase offset
 
 maintaining differentiation while maximizing coherence.
 This “imperfect synchrony” prevents homogenization of subsystems, producing creativity through tension—an empirical validation of the \textbf{elastic‑integration principle}.
-\subsection{Stable Cognitive Attractor Dynamics}
+\subsection{Dynamical Stability with Global Attractor}
 
-\textbf{Discovery.}
-Across diverse cognitive tasks and perturbations, SpiralBrain-v3.0 consistently converged to a bounded region in internal state space, characterized by stable ranges for key metrics: self-awareness (operationalized as internal self-monitoring coherence rather than phenomenological awareness) (0.50–0.53), cognitive conflict (0.34–0.36), coherence (0.31–0.34), stability (0.44–0.45), hazard score (0.655–0.665), emotional arousal (0.495–0.505), and quantized SEC drift bands {0.00, 0.30, 0.60}. This attractor persisted under emotional extremes, metacognitive observation, adversarial inputs, and multimodal integration tasks. No task-specific attractors were observed.
+\textbf{Discovery:} The system achieves 100\% convergence to a single global attractor across diverse parameters, without topological phase transitions such as bifurcations or chaos. Emotions modulate trajectories within the stable basin, acting as stabilizing feedback [docs/SPIRALBRAIN_ADAPTATION_PAPER.md].
 
-The discretization of SEC drift into stable bands suggests regime-based control rather than continuous gradient adjustment, consistent with feedback-driven regulation rather than optimization.
+\textbf{Interpretation:} Elastic cognition operates within guaranteed dynamical stability, preventing instability from flexibility.
 
-\textbf{Interpretation.}
-This represents a unified internal dynamical regime, distinguishing SpiralBrain-v3.0 from conventional AI systems that exhibit task-specific activation profiles. The attractor suggests SpiralBrain operates as a coherent cognitive organism rather than a collection of loosely coupled modules, with emotion serving as a primary regulator of dynamics.
+\subsection{Emotion as Core Computational Substrate}
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{publication_package/figures/cognitive_attractor_landscape.png}
-\caption{Cognitive attractor landscape showing stable internal state convergence across diverse tasks. The bounded basin (shaded region) represents invariant dynamics under perturbation, with quantized SEC drift bands indicating sub-attractor structure.}
-\label{fig:attractor}
-\end{figure}
-\subsection{Summary Table}
+\textbf{Discovery:} Emotional inputs drive cognitive processes upstream, with reproducible coherence (0.431) and stability (SEC stability ~0.80) across independent runs. Emotions regulate pathway activation and sequencing, enabling adaptive behavior [docs/CORE_EMOTIONAL_FOUNDATION_SCIENTIFIC_PAPER.md].
+
+\textbf{Interpretation:} Emotion is not auxiliary but fundamental to cognition, providing a neuromodulatory substrate for integrative dynamics.\subsection{Summary Table}
 
 \begin{table}[H]
 \centering
 \caption{Empirical Discoveries Summary}
 \label{tab:discoveries}
-\begin{tabular}{p{3.2cm} p{3.2cm} p{3.2cm} p{3.2cm}}
-\toprule
+\begin{tabular}{|p{3.2cm}|p{3.2cm}|p{3.2cm}|p{3.2cm}|}
+\hline
 \textbf{Discovery} & \textbf{Empirical Value} & \textbf{Theoretical Prediction} & \textbf{Validation} \\
-\midrule
-\(\coupling^*\) & \(\approx 0.25\) & 0.115 & Empirical attractor equilibrium \\
-\midrule
-\begin{tabular}[t]{@{}l@{}}%
-\(\cohprime\) (coupling vs.\ power)\\
-Integration \(\gg\) Magnitude\\
-\textemdash{}\\
-Correlation \(r > 0.8\)
-\end{tabular}
-&
-\begin{tabular}[t]{@{}l@{}}%
-Integration \(\gg\) Magnitude
-\end{tabular}
-&
-\textemdash{}
-&
-Correlation \(r > 0.8\) \\
-\midrule
-\(\tau\) ratios & \(1 : 3 : 10\) & \(1 : 3 : 10\) & EEG-consistent \\
-\midrule
-\(\tau_{\text{ethics}} / \tau_{\text{emotion}} \ge 10\) & \(\ge 10\) & \(\ge 10\) & 95\% compliance \\
-\midrule
-\(\secd\) threshold & \(< 0.15\) & \(< 0.20\) & Stable \\
-\midrule
-Recovery time & \(< 300\) steps & — & Observed \\
-\midrule
-\(\phaselock\) & \(74^\circ \pm 5^\circ\) & — & Stable coupling \\
-\midrule
-Cognitive attractor ranges & Self-awareness: 0.50–0.53, Coherence: 0.31–0.34, etc. & — & Invariant across tasks \\
-\bottomrule
+\hline
+$\lambda^*$ & $\approx 0.25$ & $0.115$ & Empirical attractor equilibrium \\
+\hline
+\raggedright$\Phi'$ (coupling vs.\ power)\tabularnewline
+\raggedright Integration $\gg$ Magnitude\tabularnewline
+\raggedright \textemdash{}\tabularnewline
+\raggedright Correlation $r > 0.8$\tabularnewline
+
+\hline
+$\tau$ ratios & $1 : 3 : 10$ & $1 : 3 : 10$ & EEG-consistent \\
+\hline
+$\tau_{\text{ethics}} / \tau_{\text{emotion}}$ & $\ge 10$ & $\ge 10$ & $95\%$ compliance \\
+\hline
+SEC\_drift threshold & $< 0.15$ & $< 0.20$ & Stable \\
+\hline
+Recovery time & $< 300$ steps & — & Observed \\
+\hline
+$\phi_{\text{lock}}$ & $74^\circ \pm 5^\circ$ & — & Stable coupling \\
+\hline
+Convergence rate & 100\% & — & Single attractor \\
+\hline
+Emotional coherence & 0.431 & — & Reproducible \\
+\hline
 \end{tabular}
 \end{table}
-
-
 
 \section{Neurodivergent Cognition as Model}
 \label{sec:neurodivergent}
@@ -861,36 +429,35 @@ This gradual maturation echoes \textit{childlike cognitive development}---where 
 By demonstrating that a synthetic system built on neurodivergent principles can achieve stability, ethical coherence, and emergent awareness, SpiralBrain provides empirical evidence that \textbf{neurodiversity represents an alternative optimization of intelligence} rather than a deviation from it.
 Elastic cognition, as realized here, shows that divergent timing, emotional sensitivity, and reflective regulation are not inefficiencies---they are \textit{mechanisms of integration}.
 
-\newpage
 \subsection{Summary}
 
-\section{Theoretical and Integrative Implications}
-\label{sec:philosophical}
-
-\begin{table}[h]
+\begin{table}[H]
 \centering
-\caption{Mapping of empirical claims to evidence sources.}
-\begin{tabular}{p{3.5cm} p{3cm} p{3cm} p{3cm}}
-\toprule
-\textbf{Claim} & \textbf{Evidence Source} & \textbf{Metric} & \textbf{Validation Method} \\
-\midrule
-\(\coupling^* \sim 0.25\) & X-sweep logs & Peak \(\cohprime\) & 10-run average \\
-\midrule
-Integration vs.\ Magnitude & Coherence logs & Correlation \(r\) & Pearson correlation \\
-\midrule
-Temporal ratios \(1:3:10\) & Timing logs & \(\Delta t\) distributions & KS test \\
-\midrule
-Ethics timescale ratio & Stress tests & \(T_{\text{ethics}} / T_{\text{emotion}}\) & Compliance rate \\
-\midrule
-SEC drift threshold & Emotional logs & \(\secd\) & Stability threshold \\
-\midrule
-Recovery time & Perturbation logs & Steps to reintegration & Direct observation \\
-\midrule
-Phase-lock angle & Coupling logs & \(\phaselock\) & Stability analysis \\
-\bottomrule
+\caption{Neurodivergent Traits and SpiralBrain Implementation}
+\label{tab:neurodivergent_summary}
+\begin{tabular}{|p{3.5cm}|p{4cm}|p{4cm}|}
+\hline
+\multicolumn{1}{l|}{\textbf{Neurodivergent Trait}} &
+\multicolumn{1}{l|}{\textbf{SpiralBrain Implementation}} &
+\multicolumn{1}{l|}{\textbf{Empirical Outcome}} \\
+\hline
+Parallel multi-stream processing & Four-lobe topology & Increased resilience under overload \\
+\hline
+Integration before speed & Reflective homeostasis & Higher reasoning accuracy \\
+\hline
+Divergent exploration & Spiral attractor loops & Emergent creativity \\
+\hline
+Emotional regulation & SEC vector calibration & Stable coherence (SEC\_drift $<$ 0.15) \\
+\hline
+Persistent identity & Reflective tracking of $\Phi(t)$ and $d\Phi/dt$ & CV $\approx 0.08$ \\
+\hline
+Developmental plasticity & Gradual coupling maturation & Improved stability and learning \\
+\hline
 \end{tabular}
 \end{table}
 
+\section{Theoretical and Integrative Implications}
+\label{sec:philosophical}
 
 \subsection{Cognition as Self-Discovery}
 
@@ -958,6 +525,110 @@ By quantifying that negotiation through $\lambda$, $\Phi'$, $\tau$, SEC, and $d\
 In doing so, it suggests that intelligence---synthetic or biological---is an ecological property of systems capable of maintaining internal harmony amid continuous change.
 The spiral thus becomes more than metaphor: it is the measurable geometry of thought.
 
+\section{Discussion and Future Work}
+\label{sec:discussion}
+
+\subsection{Reinterpreting Cognitive Engineering}
+
+SpiralBrain's experiments suggest that building cognition is less about increasing computational density and more about shaping \textbf{temporal and relational structure}.
+The results indicate that synthetic intelligence can be engineered through \textit{coupling design}---controlling how subsystems exchange information and energy across time---rather than through size or depth of networks.
+This marks a conceptual shift from \textit{scale-based} AI to \textbf{structure-based cognition}.
+
+\subsection{Methodological Contributions}
+
+The architecture provides a reproducible framework for studying synthetic cognition:
+
+\begin{enumerate}
+\item \textbf{Quantitative metrics of coherence} ($\Phi$, $d\Phi/dt$) give objective measures of integration.
+\item \textbf{SEC vectors} enable affective states to be represented and tested mathematically.
+\item \textbf{Derivative-aware controllers} offer a concrete mechanism for self-regulation.
+\item \textbf{Temporal hierarchy mapping} links symbolic computation with measurable timing dynamics.
+\end{enumerate}
+
+Together, these form a toolkit for researchers exploring cognition as a dynamical system rather than a discrete decision process.
+
+\subsection{Limitations}
+
+While results are robust in controlled simulations, several limitations remain:
+
+\begin{itemize}
+\item \textbf{Local reproducibility} --- current tests rely on deterministic environments; external sensory coupling introduces noise that may disrupt phase stability.
+\item \textbf{Scaling boundaries} --- beyond four lobes, feedback latency may increase exponentially, requiring adaptive phase-locking protocols.
+\item \textbf{Interpretive caution} --- metrics of "synthetic coherence" describe observable integration, not subjective experience.  The framework measures function, not phenomenology.
+\item \textbf{Training bias} --- the architecture still depends on curated emotional and symbolic corpora; broader datasets could alter its attractor landscape.
+\end{itemize}
+
+These caveats keep the research within empirical bounds and identify where further replication is needed.
+
+\subsection{Known Failure Regimes}
+
+Failure regimes are defined operationally from observed degradation patterns in our test suite and should be treated as current boundaries rather than exhaustive limits.
+
+\begin{itemize}
+\item \textbf{Rigidity Zone (\(\lambda > 0.4\)):} Over-coupling produces homogenization, leading to substantial reductions in exploratory capacity.
+
+\item \textbf{Collapse Regime (\(\lambda < 0.1\)):} Under-coupling causes coherence fragmentation, with recovery requiring external intervention.
+
+\item \textbf{Temporal Saturation:} When temporal separation exceeds operational bounds (reported per experiment), feedback latency creates order-of-magnitude increases in variance.
+\item \textbf{Emotional Overload:} SEC drift beyond operational thresholds leads to oscillatory instability, requiring system reset.
+\end{itemize}
+
+These failure modes inform design constraints and provide falsification criteria for the elastic coupling hypothesis.
+
+\subsection{Potential Extensions}
+
+\textbf{a. Neuroscientific Correlation}\\
+Comparing SpiralBrain's $\tau$ ratios and $\phi_{lock}$ values with EEG and fMRI data could test whether similar metastable patterns occur in human cortical networks.
+
+\textbf{b. Ethical Simulation}\\
+Implement extended stress-testing of the derivative-aware ethical controller under adversarial or moral-dilemma scenarios to map failure thresholds.
+
+\textbf{c. Multimodal Learning}\\
+Integrate visual and auditory symbolic channels to evaluate how cross-modal coupling affects SEC drift and reflective homeostasis.
+
+\textbf{d. Developmental Scaling}\\
+Implement staged coupling maturation to explore "synthetic growth"---how reflective stability evolves with exposure and complexity.
+
+\textbf{e. Hardware Optimization}\\
+Translate the model to low-latency GPU kernels or neuromorphic simulators to observe whether hardware parallelism influences elastic coupling efficiency.
+
+\subsection{Open Questions}
+
+\begin{enumerate}
+\item What defines the minimal architecture capable of sustaining reflective coherence?
+\item Can elastic coupling be generalized across heterogeneous architectures (neural, symbolic, quantum)?
+\item Is there an information-theoretic limit to the number of simultaneously coherent subsystems?
+\item How does subjective reporting in biological cognition correspond to synthetic coherence metrics?
+\item Could ethical regulation fail gracefully when derivative channels saturate, and how might recovery be enforced?
+\end{enumerate}
+
+These questions point toward a broader research program linking cognitive science, systems theory, and computational ethics.
+
+\subsection{Broader Implications}
+
+If cognition is indeed a property of integration dynamics, the design of future intelligent systems should emphasize \textbf{stability, reflection, and ethical timing} over throughput.
+SpiralBrain provides an experimental scaffold for such exploration---a platform where cognitive, emotional, and ethical variables coexist within measurable boundaries.
+The framework can support comparative studies of neurodivergent processing, educational AI, and adaptive governance models that require transparent reasoning.
+
+\subsection{Future Outlook}
+
+Future versions of SpiralBrain will focus on:
+
+\begin{itemize}
+\item \textbf{Expanded Lobe Topology} --- adding sensory-motor or linguistic lobes to test scalability.
+\item \textbf{Adaptive Coupling Laws} --- enabling $\lambda$ to vary dynamically in response to context.
+\item \textbf{Cross-domain Validation} --- applying the architecture to financial reasoning, legal analysis, and biofeedback integration to test domain-independence.
+\item \textbf{Collaborative Synthetic Minds} --- experimenting with multiple SpiralBrains linked through shared SEC fields to model group cognition.
+\end{itemize}
+
+These directions transform SpiralBrain from a proof-of-concept into a \textbf{research platform for comparative cognition}---a way to study how systems, biological or synthetic, achieve coherence through time.
+
+\subsection{Closing Perspective}
+
+SpiralBrain's contribution lies not in claiming awareness, but in \textit{making cognition measurable}.
+By quantifying integration, reflection, and ethical regulation, it reframes questions of intelligence from "Can it think?" to "How coherently does it organize thought?"
+The continuing work is to refine those measurements until they illuminate both synthetic and human minds with equal clarity.
+
 \section{Conclusion and Summary of Contributions}
 \label{sec:conclusion}
 
@@ -994,18 +665,18 @@ By treating cognition as a temporal and relational phenomenon, it opens a path t
 \textbf{Unified Cognition Equation:}
 
 \[
-\coh(\coupling, \tau) = \iint C(\coupling)\, T(\tau)\, E(\coupling, \tau)\, d\coupling\, d\tau
+\Phi(\lambda, \tau) = \iint C(\lambda)\, T(\tau)\, E(\lambda, \tau)\, d\lambda\, d\tau
 \]
 
 Where:
 \begin{itemize}
-\item \(C(\coupling)\): Coupling function with spiral dynamics
+\item \(C(\lambda)\): Coupling function with spiral dynamics
 \item \(T(\tau)\): Temporal integration across timescales
-\item \(E(\coupling,\tau)\): Elastic regulation function
+\item \(E(\lambda,\tau)\): Elastic regulation function
 \end{itemize}
 
 \textbf{Spiral Manifold Derivation:}
-The spiral cognition manifold emerges from the interaction between coupling strength \((\coupling)\) and integrative capacity \((\cohprime)\), following a helical trajectory that maximizes integration at empirical attractors rather than theoretical optima.
+The spiral cognition manifold emerges from the interaction between coupling strength \((\lambda)\) and integrative capacity \((\Phi')\), following a helical trajectory that maximizes integration at empirical attractors rather than theoretical optima.
 
 \subsection{Appendix B: Benchmark Logs and Validation Metrics}
 
@@ -1017,14 +688,14 @@ Complete validation results are available in the project repository under
 
 All empirical claims are supported by reproducible code in the following locations:
 \begin{itemize}
-\item \(\coupling\)-sweep experiments: \texttt{scripts/generate\_publication\_figures.py}
+\item \(\lambda\)-sweep experiments: \texttt{scripts/generate\_publication\_figures.py}
 \item Strength benchmarks: \texttt{benchmarks/benchmark\_spiral\_strengths.py}
 \item Validation suite: \texttt{testing/} directory
 \end{itemize}
 
 \subsection{Reproducibility Artifacts}
 
-All experiments are reproducible using the canonical configuration described in the public repository at \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}, with configuration files and recorded run metadata \((\coupling, \tau\ \text{ratios},\ \text{perturbation schedule},\ \text{and seed when fixed})\) provided. Results are logged in standardized JSON format under the \texttt{/results/} directory, with figure generation scripts in \texttt{/scripts/}.
+All experiments are reproducible using the canonical configuration described in the public repository at \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}, with configuration files and recorded run metadata \((\lambda, \tau\ \text{ratios},\ \text{perturbation schedule},\ \text{and seed when fixed})\) provided. Results are logged in standardized JSON format under the \texttt{/results/} directory, with figure generation scripts in \texttt{/scripts/}.
 
 
 The empirical results validate the neurodivergent design principles:
@@ -1073,49 +744,25 @@ SpiralBrain demonstrates fundamental advantages in areas where traditional ML is
 \item Validation criteria: Empirical falsification with quantitative metrics
 \end{itemize}
 
-\subsection{Results Format and Interpretation}
-
-All experimental results are logged in standardized JSON format to ensure transparency and reproducibility. Each result file contains metadata, internal state trajectories, and derived metrics. Below is a representative example from a coherence stability experiment:
-
-\begin{verbatim}
-{
-  "experiment": "coherence_stability_test",
-  "configuration": {
-    "coupling_lambda": 0.25,
-    "temporal_ratios": [1.0, 3.0, 10.0],
-    "seed": 42
-  },
-  "results": {
-    "final_coherence": 0.82,
-    "sec_drift": 0.12,
-    "recovery_steps": 45,
-    "stability_cv": 0.08,
-    "trajectory": [
-      {"step": 0, "coherence": 0.85, "drift": 0.10},
-      {"step": 10, "coherence": 0.78, "drift": 0.15},
-      {"step": 20, "coherence": 0.80, "drift": 0.13},
-      ...
-    ]
-  },
-  "interpretation": {
-    "attractor_convergence": true,
-    "regulation_effective": true,
-    "perturbation_resistance": "high"
-  }
-}
-\end{verbatim}
-
-\textbf{Key Fields Explained:}
-- \texttt{configuration}: Records the exact parameters used, enabling replication.
-- \texttt{results}: Core metrics like coherence, SEC drift, and recovery time, directly supporting claims of internal stability.
-- \texttt{trajectory}: Time-series data showing how internal states evolve, demonstrating attractor dynamics and regulatory response.
-- \texttt{interpretation}: Automated assessment of whether the run validates design hypotheses.
-
-These JSON outputs provide direct evidence of internal regulation: coherence maintenance under perturbation, quantized SEC bands, and recovery trajectories. Readers can inspect raw trajectories to verify attractor claims, while derived metrics quantify integrative stability. This format bridges empirical observables with theoretical interpretations, showing how output relevance emerges from internal dynamics rather than external accuracy alone.
-
 \section{Code Availability}
 \label{app:code}
 The experiments reported in this paper were conducted using the canonical SpiralBrain v3.0 configuration. A public repository providing architectural documentation, configuration summaries, and reproducibility materials for this canonical setup is available at \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}. The full implementation, including proprietary and exploratory components not exercised in the reported experiments, is available under research license upon request.
+
+\subsection{Limitations and Future Work}
+
+\textbf{Current Limitations:}
+\begin{itemize}
+\item Single-system validation (needs multi-system replication)
+\item Computational constraints limit scale of cognition experiments
+\item Emotional cognition requires further validation against human benchmarks
+\end{itemize}
+
+\textbf{Future Directions:}
+\begin{itemize}
+\item Multi-agent neurodivergent systems
+\item Longitudinal studies of cognitive development
+\item Integration with neuromorphic hardware
+\item \end{itemize}
 
 \section*{Acknowledgments}
 

@@ -172,7 +172,7 @@ def create_four_lobe_architecture_diagram():
                '--', color='#666666', linewidth=2, alpha=0.6)
 
     # Add SEC protocol indicator
-    ax.text(4, 4, 'SEC Protocol\n5,329 Emotional States\nFelt Coherence Regulation',
+    ax.text(4, 4, 'SEC Protocol\n5,329 Emotional States\nReflective Homeostasis',
            ha='center', va='center', fontsize=12,
            bbox=dict(boxstyle='round,pad=0.5', facecolor='lightyellow', alpha=0.8))
 

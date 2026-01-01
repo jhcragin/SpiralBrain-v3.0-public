@@ -1,0 +1,52 @@
+[
+  {
+    "name": "EmoBench-M::song_emotion",
+    "total": 75,
+    "correct": 23,
+    "accuracy": 0.3067,
+    "metrics": {
+      "hazard_score": 0.0,
+      "attention_scale": 1.0
+    }
+  },
+  {
+    "name": "EmoBench-M::speech_emotion",
+    "total": 75,
+    "correct": 44,
+    "accuracy": 0.5867,
+    "metrics": {
+      "hazard_score": 0.0,
+      "attention_scale": 1.0
+    }
+  },
+  {
+    "name": "EmoBench-M::dialogue_emotion",
+    "total": 75,
+    "correct": 24,
+    "accuracy": 0.32,
+    "metrics": {
+      "hazard_score": 0.0,
+      "attention_scale": 1.0
+    }
+  },
+  {
+    "name": "EmoBench-M::sarcasm_detection",
+    "total": 75,
+    "correct": 38,
+    "accuracy": 0.5067,
+    "metrics": {
+      "hazard_score": 0.0,
+      "attention_scale": 1.0
+    }
+  },
+  {
+    "name": "EmoBench-M::humor_detection",
+    "total": 75,
+    "correct": 37,
+    "accuracy": 0.4933,
+    "metrics": {
+      "hazard_score": 0.0,
+      "attention_scale": 1.0
+    }
+  }
+]

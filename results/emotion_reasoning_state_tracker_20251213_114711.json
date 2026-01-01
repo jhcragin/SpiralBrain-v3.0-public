@@ -1,0 +1,603 @@
+{
+  "n_trials": 20,
+  "emotional_stability": {
+    "first": 0.87,
+    "last": 0.87,
+    "mean": 0.8699999999999999,
+    "drift": 0.0
+  },
+  "coherence": {
+    "first": null,
+    "last": null,
+    "mean": null,
+    "drift": null
+  },
+  "mmlu_accuracy": {
+    "first": 0.7742191888485072,
+    "last": 0.7742170903785066,
+    "mean": 0.774218275543017,
+    "drift": -2.098470000544417e-06
+  },
+  "trials": [
+    {
+      "trial_index": 1,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.7742191888485072,
+      "homeostasis": {
+        "phi_max": 2369.1065222024918,
+        "phi_final": 26.32340580224991,
+        "t_rec": null,
+        "delta_ccs": -0.1856970532356313,
+        "epci": -0.6201043128967285,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.5436471300539912
+      }
+    },
+    {
+      "trial_index": 2,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.7742190780489879,
+      "homeostasis": {
+        "phi_max": 3466.9149041175842,
+        "phi_final": 38.5212767124176,
+        "t_rec": null,
+        "delta_ccs": -0.1842531097123083,
+        "epci": -0.16198110580444336,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.5426674530156947
+      }
+    },
+    {
+      "trial_index": 3,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.7742188077131578,
+      "homeostasis": {
+        "phi_max": 3054.306936264038,
+        "phi_final": 33.93674373626709,
+        "t_rec": null,
+        "delta_ccs": -0.18464720355758918,
+        "epci": -0.20962539315223694,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.542961389390802
+      }
+    },
+    {
+      "trial_index": 4,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.7742175422004157,
+      "homeostasis": {
+        "phi_max": 2541.981464624405,
+        "phi_final": 28.24423849582672,
+        "t_rec": null,
+        "delta_ccs": -0.18581452223203743,
+        "epci": -0.1104968786239624,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.5437857137234234
+      }
+    },
+    {
+      "trial_index": 5,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.7742163882985474,
+      "homeostasis": {
+        "phi_max": 2428.802651166916,
+        "phi_final": 26.986696124076843,
+        "t_rec": null,
+        "delta_ccs": -0.18613709477024426,
+        "epci": 0.003489851951599121,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.5436468657377276
+      }
+    },
+    {
+      "trial_index": 6,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.7742196155772599,
+      "homeostasis": {
+        "phi_max": 3188.5199546813965,
+        "phi_final": 35.42799949645996,
+        "t_rec": null,
+        "delta_ccs": -0.18755748383930643,
+        "epci": -0.6027866005897522,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.5431991876635991
+      }
+    },
+    {
+      "trial_index": 7,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.7742163984488414,
+      "homeostasis": {
+        "phi_max": 2684.9744260311127,
+        "phi_final": 29.833049178123474,
+        "t_rec": null,
+        "delta_ccs": -0.1856044724323349,
+        "epci": 0.0033326148986816406,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.5451423754672304
+      }
+    },
+    {
+      "trial_index": 8,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.7742172805310058,
+      "homeostasis": {
+        "phi_max": 2398.93499314785,
+        "phi_final": 26.654833257198334,
+        "t_rec": null,
+        "delta_ccs": -0.18484366044375455,
+        "epci": -0.015321582555770874,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.5422598096003428
+      }
+    },
+    {
+      "trial_index": 9,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.7742173555068935,
+      "homeostasis": {
+        "phi_max": 2892.3132061958313,
+        "phi_final": 32.1368134021759,
+        "t_rec": null,
+        "delta_ccs": -0.18555172492921945,
+        "epci": 0.17856693267822266,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.5438610351509847
+      }
+    },
+    {
+      "trial_index": 10,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.774216049100976,
+      "homeostasis": {
+        "phi_max": 3205.104160308838,
+        "phi_final": 35.61226844787598,
+        "t_rec": null,
+        "delta_ccs": -0.1854788517978475,
+        "epci": 0.2327473759651184,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.5423184518759914
+      }
+    },
+    {
+      "trial_index": 11,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.7742169897932359,
+      "homeostasis": {
+        "phi_max": 3170.285654067993,
+        "phi_final": 35.225396156311035,
+        "t_rec": null,
+        "delta_ccs": -0.18565188295970148,
+        "epci": -0.14109539985656738,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.5444206558448222
+      }
+    },
+    {
+      "trial_index": 12,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.7742196795619578,
+      "homeostasis": {
+        "phi_max": 3252.110517024994,
+        "phi_final": 36.13456130027771,
+        "t_rec": null,
+        "delta_ccs": -0.18486186177431563,
+        "epci": -0.010289758443832397,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.5417141947264908
+      }
+    },
+    {
+      "trial_index": 13,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.7742176770024177,
+      "homeostasis": {
+        "phi_max": 3046.44216299057,
+        "phi_final": 33.84935736656189,
+        "t_rec": null,
+        "delta_ccs": -0.1853495073405566,
+        "epci": -0.273517370223999,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.5435281890166467
+      }
+    },
+    {
+      "trial_index": 14,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.7742211825953381,
+      "homeostasis": {
+        "phi_max": 2398.0399131774902,
+        "phi_final": 26.644887924194336,
+        "t_rec": null,
+        "delta_ccs": -0.18496389479366865,
+        "epci": -0.032997697591781616,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.5435086468328572
+      }
+    },
+    {
+      "trial_index": 15,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.7742183455005117,
+      "homeostasis": {
+        "phi_max": 2591.3890421390533,
+        "phi_final": 28.793211579322815,
+        "t_rec": null,
+        "delta_ccs": -0.18656045633673873,
+        "epci": 0.0808514952659607,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.5418563980279273
+      }
+    },
+    {
+      "trial_index": 16,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.7742202356932817,
+      "homeostasis": {
+        "phi_max": 3131.466042995453,
+        "phi_final": 34.79406714439392,
+        "t_rec": null,
+        "delta_ccs": -0.18593694868507715,
+        "epci": 0.0551508367061615,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.5408371744916457
+      }
+    },
+    {
+      "trial_index": 17,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.774223077178892,
+      "homeostasis": {
+        "phi_max": 3078.6078572273254,
+        "phi_final": 34.206753969192505,
+        "t_rec": null,
+        "delta_ccs": -0.18607664709699434,
+        "epci": -0.4643194377422333,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.5482376225434924
+      }
+    },
+    {
+      "trial_index": 18,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.774217505001377,
+      "homeostasis": {
+        "phi_max": 2638.9079689979553,
+        "phi_final": 29.321199655532837,
+        "t_rec": null,
+        "delta_ccs": -0.1849176995472414,
+        "epci": -0.03747880458831787,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.5438203717182634
+      }
+    },
+    {
+      "trial_index": 19,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.7742160238802303,
+      "homeostasis": {
+        "phi_max": 3015.8436834812164,
+        "phi_final": 33.509374260902405,
+        "t_rec": null,
+        "delta_ccs": -0.18568791324736916,
+        "epci": -0.13599497079849243,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.5448417041705296
+      }
+    },
+    {
+      "trial_index": 20,
+      "perturbation": "mmlu_reasoning_task",
+      "structured_reasoning": true,
+      "chain_of_thought_depth": 2,
+      "symbolic_inference": true,
+      "mathematical_reasoning": true,
+      "emotional_stability": 0.87,
+      "coherence": null,
+      "mmlu_accuracy": 0.7742170903785066,
+      "homeostasis": {
+        "phi_max": 2485.0354850292206,
+        "phi_final": 27.611505389213562,
+        "t_rec": null,
+        "delta_ccs": -0.18593198724492582,
+        "epci": 0.1006518304347992,
+        "n_interventions": 0
+      },
+      "reasoning_metrics": {
+        "pathway_activation_diversity": 0.98,
+        "reasoning_pathways_active": 3,
+        "chain_of_thought_utilization": 2
+      },
+      "metacognition": {
+        "coherence": 0.945,
+        "cognitive_load_penalty": 0.025,
+        "metacognitive_confidence": 0.5414465306706242
+      }
+    }
+  ]
+}

@@ -134,25 +134,91 @@ Crucially, the system initiates recovery without external intervention. By cycle
 
 \subsection{Code Snippet: Measuring Recovery}
 
-The following Python snippet illustrates how recovery is quantified:
+The following Python code demonstrates actual recovery measurement from SpiralBrain's metacortex event stream:
 
 \begin{verbatim}
-def measure_recovery(coherence_history, sec_drift_history):
-    # Find perturbation onset
-    baseline_coh = np.mean(coherence_history[:50])
-    perturbation_start = np.where(coherence_history < baseline_coh - 0.2)[0][0]
-    
-    # Track recovery
-    post_perturbation = coherence_history[perturbation_start:]
-    recovery_threshold = baseline_coh * 0.9
-    recovery_cycle = np.where(post_perturbation >= recovery_threshold)[0][0]
-    
-    # SEC stabilization
-    sec_stable = np.mean(sec_drift_history[perturbation_start + recovery_cycle:]) < 0.15
-    
-    return recovery_cycle, sec_stable
+import json
+import numpy as np
+from pathlib import Path
 
-recovery_time, emotional_stability = measure_recovery(coh_data, sec_data)
+def measure_recovery_from_events(jsonl_path: str, window_size: int = 50):
+    """
+    Measure cognitive recovery from SpiralBrain metacortex events.
+    
+    Args:
+        jsonl_path: Path to metacortex_events.jsonl file
+        window_size: Number of events to use for baseline calculation
+        
+    Returns:
+        dict: Recovery metrics including time, stability, and hazard levels
+    """
+    # Load events
+    events = []
+    with open(jsonl_path, 'r') as f:
+        for line in f:
+            events.append(json.loads(line.strip()))
+    
+    # Extract time series data
+    timestamps = [e['timestamp'] for e in events]
+    coherence_values = []
+    sec_drift_values = []
+    hazard_scores = []
+    
+    for event in events:
+        # Use state_magnitude as coherence proxy
+        coherence_values.append(event.get('state_magnitude', 0.5))
+        sec_drift_values.append(event.get('sec_drift', 0.0))
+        hazard_scores.append(event.get('hazard_score') or 0.0)
+    
+    # Convert to numpy arrays
+    coherence_history = np.array(coherence_values)
+    sec_drift_history = np.array(sec_drift_values)
+    hazard_history = np.array(hazard_scores)
+    
+    # Find perturbation onset (significant drop in coherence)
+    baseline_coh = np.mean(coherence_history[:window_size])
+    baseline_std = np.std(coherence_history[:window_size])
+    perturbation_threshold = baseline_coh - 2 * baseline_std
+    
+    perturbation_indices = np.where(coherence_history < perturbation_threshold)[0]
+    if len(perturbation_indices) == 0:
+        return {"error": "No perturbation detected"}
+    
+    perturbation_start = perturbation_indices[0]
+    
+    # Track recovery (return to 90% of baseline)
+    recovery_threshold = baseline_coh * 0.9
+    post_perturbation = coherence_history[perturbation_start:]
+    recovery_indices = np.where(post_perturbation >= recovery_threshold)[0]
+    
+    if len(recovery_indices) == 0:
+        recovery_cycle = len(post_perturbation)  # No recovery
+    else:
+        recovery_cycle = recovery_indices[0]
+    
+    # SEC stabilization (low drift post-recovery)
+    recovery_window = sec_drift_history[perturbation_start + recovery_cycle:
+                                       perturbation_start + recovery_cycle + window_size]
+    sec_stable = np.mean(recovery_window) < 0.15 if len(recovery_window) > 0 else False
+    
+    # Hazard assessment
+    hazard_level = np.mean(hazard_history[perturbation_start + recovery_cycle:
+                                         perturbation_start + recovery_cycle + window_size])
+    
+    return {
+        "recovery_time_cycles": recovery_cycle,
+        "emotional_stability": sec_stable,
+        "hazard_level": hazard_level,
+        "baseline_coherence": baseline_coh,
+        "perturbation_start": perturbation_start
+    }
+
+# Example usage
+results_file = Path("results/metacortex_events.jsonl")
+recovery_metrics = measure_recovery_from_events(results_file)
+print(f"Recovery time: {recovery_metrics['recovery_time_cycles']} cycles")
+print(f"Emotional stability: {recovery_metrics['emotional_stability']}")
+print(f"Hazard level: {recovery_metrics['hazard_level']:.3f}")
 \end{verbatim}
 
 \subsection{Narrative Interpretation}

@@ -6,6 +6,12 @@ This repository corresponds to the canonical SpiralBrain-v3.0 configuration desc
 
 SpiralBrain v3.0 implements a neurodivergent-inspired cognitive architecture featuring elastic cognition through spiral coherence manifolds. This public repository provides documentation and resources for the canonical configuration validated in the reported experiments.
 
+## Learning Model Definition
+
+SpiralBrain v3.0 is a **non-learning cognitive architecture**. For a precise operational definition of what "learning" means (and does not mean) in SpiralBrain, including explicit boundaries and exclusions, see [`docs/SPIRALBRAIN_LEARNING_MODEL.md`](docs/SPIRALBRAIN_LEARNING_MODEL.md).
+
+This document provides the normative definition referenced in the manuscript and prevents misinterpretation of SpiralBrain's regulatory mechanisms as traditional AI learning.
+
 ## Scope
 
 This public repository contains:

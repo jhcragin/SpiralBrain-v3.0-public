@@ -43,7 +43,7 @@ Independent Researcher \\
 \maketitle
 
 \begin{abstract}
-Cognitive instability represents a fundamental challenge for artificial intelligence systems operating under uncertainty. Performance-optimized architectures often exhibit internal failure modes—confidence collapse, silent drift, and hidden pathology—beneath superficial benchmark success. This paper introduces SpiralBrain v3.0, a non-learning synthetic cognitive architecture designed to preserve internal cognitive integrity without statistical learning, persistent memory, or cross-run adaptation. The architecture's non-learning nature stems from fundamental hardware constraints rather than algorithmic suppression, enabling clean-slate instantiation that prevents cumulative capability growth while maintaining within-run regulatory adaptation.
+Cognitive instability represents a fundamental challenge for artificial intelligence systems operating under uncertainty. Performance-optimized architectures often exhibit internal failure modes—confidence collapse, silent drift, and hidden pathology—beneath superficial benchmark success. This paper introduces SpiralBrain v3.0, a non-learning synthetic cognitive architecture designed to preserve internal cognitive integrity without statistical learning, persistent memory, or cross-run adaptation. The architecture's non-learning nature stems from fundamental hardware constraints rather than algorithmic suppression, making learning and training structurally impossible while enabling clean-slate instantiation that prevents cumulative capability growth.
 
 We establish a bifurcated evaluation framework that orthogonally assesses domain performance (task accuracy) and cognitive physiology (internal regulatory health). Through empirical evaluation across accounting, finance, cryptocurrency, and tax computation domains, we demonstrate that cognitive systems can maintain stability under uncertainty without learning mechanisms.
 
@@ -307,7 +307,7 @@ SpiralBrain implements a fundamentally different approach to behavioral modifica
 
 \textbf{Bounded and elastic regulatory responses}: Adaptation occurs within strict architectural constraints, maintaining system predictability and preventing uncontrolled evolution.
 
-\textbf{No persistence beyond instantiation}: All regulatory adjustments reset with each new system instantiation, preventing cumulative learning effects. This clean-slate behavior is not a design choice to disable learning, but a fundamental architectural constraint resulting from the absence of persistent memory or hardware storage mechanisms.
+\textbf{No persistence beyond instantiation}: SpiralBrain-v3.0 contains no persistent memory substrate or retained hardware state across executions. Consequently, learning, training, or cross-run adaptation is structurally impossible; all parameters are reinitialized on each instantiation, and regulatory behavior must emerge entirely within a single run.
 
 This creates a system that adapts to immediate conditions without learning from experience, maintaining clean-slate initialization for scientific reproducibility.
 
@@ -442,7 +442,7 @@ The trajectory reveals several critical properties:
 
 \textbf{Intervention visibility}: Automatic regulatory mechanisms activate during perturbation, maintaining cognitive viability despite external performance degradation.
 
-This trajectory provides direct empirical evidence for the non-learning claim: regulatory integrity persists through perturbation without requiring statistical adaptation or external correction. Because all parameters are fixed and no cross-run memory is permitted, recovery reflects within-run regulatory dynamics rather than adaptation or learning.
+This trajectory provides direct empirical evidence for the non-learning claim: regulatory integrity persists through perturbation without requiring statistical adaptation or external correction. Because learning and training are structurally impossible in this architecture, recovery must arise entirely from within-run regulatory dynamics rather than accumulated experience or cross-run memory.
 
 \section{Discussion}
 \label{sec:discussion}

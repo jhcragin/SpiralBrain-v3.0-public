@@ -1,6 +1,0 @@
-{
-  "timestamp": "2025-11-25T21:35:21.810743",
-  "benchmark": "sensus_integration",
-  "status": "success",
-  "verbose": "STDOUT:\n\ud83e\udde0 AveragingRegulator initialized with 0 prior sessions\n\nSTDERR:\n"
-}

@@ -1,6 +1,0 @@
-{
-  "timestamp": "2025-11-25T21:34:41.811487",
-  "benchmark": "adversarial_cognitive",
-  "status": "success",
-  "verbose": "STDOUT:\n   \u2705 MultiPathwayBrain initialized with homeostasis\n   \u2705 UnifiedEmotionalIntelligence initialized\n\u2705 Complete SpiralBrain organism initialized\n   \ud83e\udde0 Pathways: 8\n   \ud83d\udee1\ufe0f  Homeostasis: Active (Tri-Band Elastic)\n   \u2764\ufe0f  Emotion: Enabled\n   \ud83c\udfaf CCN: Enabled\n   Ready for unified cognitive processing\n   \u26a0\ufe0f  Emotional processing failed: name 'safety_payload' is not defined\n   \u26a0\ufe0f  Emotional processing failed: name 'safety_payload' is not defined\n   \u26a0\ufe0f  Emotional processing failed: name 'safety_payload' is not defined\n   \u26a0\ufe0f  Emotional processing failed: name 'safety_payload' is not defined\n   \u26a0\ufe0f  Emotional processing failed: name 'safety_payload' is not defined\n   \u26a0\ufe0f  Emotional processing failed: name 'safety_payload' is not defined\n   \u26a0\ufe0f  Emotional processing failed: name 'safety_payload' is not defined\n   \u26a0\ufe0f  Emotional processing failed: name 'safety_payload' is not defined\n   \u26a0\ufe0f  Emotional processing failed: name 'safety_payload' is not defined\n   \u26a0\ufe0f  Emotional processing failed: name 'safety_payload' is not defined\n\nSTDERR:\n"
-}

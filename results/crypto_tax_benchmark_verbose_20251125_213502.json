@@ -1,6 +1,0 @@
-{
-  "timestamp": "2025-11-25T21:35:02.407928",
-  "benchmark": "crypto_tax_benchmark",
-  "status": "success",
-  "verbose": "STDOUT:\n\ud83d\udd04 Running Light CryptoTax Benchmark (Suite Mode)\nWarning: Emoji controls CSV not found at emotional_intelligence/individual_emoji_controls.csv\nWarning: Emoji controls CSV not found at emotional_intelligence/individual_emoji_controls.csv\n\ud83c\udfc3 Running benchmark on hodler dataset (8 transactions)\n\u2705 hodler: 0.010 accuracy\nWarning: Emoji controls CSV not found at emotional_intelligence/individual_emoji_controls.csv\nWarning: Emoji controls CSV not found at emotional_intelligence/individual_emoji_controls.csv\n\ud83c\udfc3 Running benchmark on day_trader dataset (262 transactions)\n\u2705 day_trader: 0.008 accuracy\n\ud83d\udcca Light benchmark complete - Avg accuracy: 0.009\n\nSTDERR:\n"
-}

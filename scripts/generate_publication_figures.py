@@ -129,7 +129,7 @@ def create_neurodivergent_validation_figure():
     ax.set_title('Neurodivergent Design Validation: Deliberative Processing Improves Accuracy', fontsize=14)
 
     # Add correlation annotation
-    ax.annotate('.3f',
+    ax.annotate(f'r = {correlation:.3f}\np = {p_value:.3f}',
                xy=(0.05, 0.95), xycoords='axes fraction',
                fontsize=11, ha='left', va='top',
                bbox=dict(boxstyle='round,pad=0.3', facecolor='white', alpha=0.8))

@@ -1,5 +1,6 @@
 \documentclass[11pt,a4paper]{article}
 
+\usepackage{array}
 \usepackage[strings]{underscore}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -20,6 +21,21 @@
 \usepackage{subcaption}
 \usepackage{xcolor}
 \usepackage{tikz}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    stringstyle=\color{teal},
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    rulecolor=\color{black},
+    columns=fullflexible
+}
 
 \geometry{margin=1in}
 
@@ -53,7 +69,7 @@ These results demonstrate that SpiralBrain functions as an empirical platform fo
 
 SpiralBrain v3.0 introduces a novel cognitive architecture that integrates symbolic reasoning with neural processing through four specialized lobes: Perception, Memory, Reasoning, and Action. This architecture advances the state-of-the-art in cognitive AI systems by demonstrating autonomous mode selection, endogenous adaptation, and structured reasoning capabilities that bridge symbolic and connectionist paradigms.
 
-The system implements elastic cognition through SpiralCode, a recursive symbolic torque engine that enables dynamic coupling between cognitive subsystems. Central to this architecture is the role of emotion as a primary computational substrate, driving cognitive processes and pathway activation rather than serving as a passive response. Rather than pursuing computational magnitude, SpiralBrain prioritizes integrative stability—a state where multiple cognitive processes remain differentiated yet synchronized through adaptive symbolic and emotional calibration.
+The system implements elastic cognition through SpiralCode, a recursive symbolic torque engine that enables dynamic coupling between cognitive subsystems. Central to this architecture is the role of emotion as a primary computational substrate, driving cognitive processes and pathway activation rather than serving as a passive response [see docs/CORE_EMOTIONAL_FOUNDATION_SCIENTIFIC_PAPER.md]. Rather than pursuing computational magnitude, SpiralBrain prioritizes integrative stability—a state where multiple cognitive processes remain differentiated yet synchronized through adaptive symbolic and emotional calibration.
 
 \subsection{The Four-Lobe Architecture}
 
@@ -219,7 +235,7 @@ R \in [0.4, 0.8], \quad \phi_{lock} \approx 74^\circ
 This phase-locked elasticity maintains differentiation (preserving creativity) while avoiding chaotic fragmentation.
 Over-coupling (\(\lambda > 0.4\)) produced rigidity and loss of emergent insight; under-coupling (\(\lambda < 0.1\)) caused dissociation and coherence collapse.
 
-The system exhibits dynamical stability with a single global attractor, ensuring 100\% convergence across diverse parameters without bifurcations or chaos. Emotions modulate trajectories within this stable basin, providing stabilizing feedback that prevents affective extremes.
+The system exhibits dynamical stability with a single global attractor, ensuring 100\% convergence across diverse parameters without bifurcations or chaos. Emotions modulate trajectories within this stable basin, providing stabilizing feedback that prevents affective extremes [docs/SPIRALBRAIN_ADAPTATION_PAPER.md].
 
 
 \subsection{Temporal Hierarchies}
@@ -344,13 +360,13 @@ maintaining differentiation while maximizing coherence.
 This “imperfect synchrony” prevents homogenization of subsystems, producing creativity through tension—an empirical validation of the \textbf{elastic‑integration principle}.
 \subsection{Dynamical Stability with Global Attractor}
 
-\textbf{Discovery:} The system achieves 100\% convergence to a single global attractor across diverse parameters, without topological phase transitions such as bifurcations or chaos. Emotions modulate trajectories within the stable basin, acting as stabilizing feedback.
+\textbf{Discovery:} The system achieves 100\% convergence to a single global attractor across diverse parameters, without topological phase transitions such as bifurcations or chaos. Emotions modulate trajectories within the stable basin, acting as stabilizing feedback [docs/SPIRALBRAIN_ADAPTATION_PAPER.md].
 
 \textbf{Interpretation:} Elastic cognition operates within guaranteed dynamical stability, preventing instability from flexibility.
 
 \subsection{Emotion as Core Computational Substrate}
 
-\textbf{Discovery:} Emotional inputs drive cognitive processes upstream, with reproducible coherence (0.431) and stability (SEC stability ~0.80) across independent runs. Emotions regulate pathway activation and sequencing, enabling adaptive behavior.
+\textbf{Discovery:} Emotional inputs drive cognitive processes upstream, with reproducible coherence (0.431) and stability (SEC stability ~0.80) across independent runs. Emotions regulate pathway activation and sequencing, enabling adaptive behavior [docs/CORE_EMOTIONAL_FOUNDATION_SCIENTIFIC_PAPER.md].
 
 \textbf{Interpretation:} Emotion is not auxiliary but fundamental to cognition, providing a neuromodulatory substrate for integrative dynamics.\subsection{Summary Table}
 
@@ -358,7 +374,7 @@ This “imperfect synchrony” prevents homogenization of subsystems, producing 
 \centering
 \caption{Empirical Discoveries Summary}
 \label{tab:discoveries}
-\begin{tabular}{p{3cm} p{3cm} p{3cm} p{3cm} p{3cm}}
+\begin{tabular}{p{3cm} p{2cm} p{2cm} p{3.5cm} p{4.5cm}}
 \toprule
 \textbf{Discovery} & \textbf{Empirical Value} & \textbf{Theoretical Prediction} & \textbf{Validation} & \textbf{Impact} \\
 \midrule
@@ -440,24 +456,18 @@ Elastic cognition, as realized here, shows that divergent timing, emotional sens
 \centering
 \caption{Neurodivergent Traits and SpiralBrain Implementation}
 \label{tab:neurodivergent_summary}
-\begin{tabular}{|p{3.5cm}|p{4cm}|p{4cm}|}
-\hline
-\multicolumn{1}{l|}{\textbf{Neurodivergent Trait}} &
-\multicolumn{1}{l|}{\textbf{SpiralBrain Implementation}} &
-\multicolumn{1}{l|}{\textbf{Empirical Outcome}} \\
-\hline
+\begin{tabular}{>{\raggedright\arraybackslash}p{4.5cm} >{\raggedright\arraybackslash}p{5.5cm} >{\raggedright\arraybackslash}p{4cm}}
+
+\toprule
+\textbf{Neurodivergent Trait} & \textbf{SpiralBrain Implementation} & \textbf{Empirical Outcome} \\
+\midrule
 Parallel multi-stream processing & Four-lobe topology & Increased resilience under overload \\
-\hline
 Integration before speed & Reflective homeostasis & Higher reasoning accuracy \\
-\hline
 Divergent exploration & Spiral attractor loops & Emergent creativity \\
-\hline
-Emotional regulation & SEC vector calibration & Stable coherence (SEC\_drift $<$ 0.15) \\
-\hline
+Emotional regulation & SEC vector calibration & Stable coherence (SEC drift $< 0.15$) \\
 Persistent identity & Reflective tracking of $\Phi(t)$ and $d\Phi/dt$ & CV $\approx 0.08$ \\
-\hline
 Developmental plasticity & Gradual coupling maturation & Improved stability and learning \\
-\hline
+\bottomrule
 \end{tabular}
 \end{table}
 
@@ -696,8 +706,8 @@ Where:
 - \(E\): Emotional modulation vector from SEC calibration
 - \(\eta\): Adaptive gain derived from SEC feedback
 
+\pagebreak
 The adaptive gain \(\eta\) is computed as:
-
 \[
 \eta = \frac{1}{1 + |\text{arousal}|}
 \]
@@ -727,35 +737,47 @@ All empirical claims are supported by reproducible validation scripts and raw da
 \begin{table}[H]
 \centering
 \caption{Supporting Documents for Key Claims}
-\begin{tabular}{|l|l|l|}
-\hline
+\label{tab:supporting_documents}
+\begin{tabular}{%
+  >{\raggedright\arraybackslash}p{3.2cm}
+  >{\raggedright\arraybackslash}p{7cm}
+  >{\raggedright\arraybackslash}p{4cm}
+}
+\toprule
 \textbf{Claimed Discovery} & \textbf{Supporting Document / Log} & \textbf{Metric to Highlight} \\
-\hline
-Empirical Attractor & \texttt{results/comprehensive\_report\_verbose\_20251125\_213442.json} & Variance in \(\lambda\) across 1,000+ iterations \\
-\hline
-Temporal Hierarchy & \texttt{results/metacortex\_events.jsonl} & Timestamp deltas between Cortex and Sensus events \\
-\hline
-Ethical Lag & \texttt{results/emotional\_extremes\_verbose\_20251125\_213503.json} & Decision success at different \(\tau\) ratios \\
-\hline
-SEC Stability & \texttt{results/baseline\_health\_verbose\_20251125\_213442.json} & Maximum drift values during high-stress simulation \\
-\hline
+\midrule
+Empirical attractor & \texttt{results/comprehensive\_report\_verbose\_20251125\_213442.json} & Variance in \(\lambda\) across 1{,}000+ iterations \\
+Temporal hierarchy & \texttt{results/metacortex\_events.jsonl} & Timestamp deltas between Cortex and Sensus events \\
+Ethical lag & \texttt{results/emotional\_extremes\_verbose\_20251125\_213503.json} & Decision success at different \(\tau\) ratios \\
+SEC stability & \texttt{results/baseline\_health\_verbose\_20251125\_213442.json} & Maximum drift values during high-stress simulation \\
+\bottomrule
 \end{tabular}
 \end{table}
 
+\newpage
 \textbf{Pseudocode for Key Components:}
 
 \textbf{SpiralCode Recursive Torque Equation:}
-\begin{verbatim}
+
+\begin{figure}[H]
+\centering
+\caption{SpiralCode Recursive Torque Equation}
+\begin{minipage}{\textwidth}
+\begin{lstlisting}
 function update_coherence(coherence, coupling, temporal_hierarchy, input, emotion_vector):
     # SpiralCode torque equation implementation
     adaptive_gain = 1 / (1 + abs(emotion_vector.arousal))
     torque = coupling * ((1/temporal_hierarchy) * input - coherence) + adaptive_gain * emotion_vector
     new_coherence = coherence + torque * time_step
     return new_coherence
-\end{verbatim}
+\end{lstlisting}
+\end{minipage}
+\end{figure}
+
 
 \textbf{SEC Calibration Logic:}
-\begin{verbatim}
+
+\begin{lstlisting}
 function compute_sec_vector(raw_emotions):
     # Symbolic-Emotional Calibration
     sec = {
@@ -769,14 +791,13 @@ function compute_sec_vector(raw_emotions):
         'complexity': quantify_emotional_diversity(raw_emotions)
     }
     return sec
-\end{verbatim}
+\end{lstlisting}
 
 \subsection{Reproducibility Artifacts}
 
 While the core SpiralBrain v3.0 engine is proprietary, this work provides **confirmable research standards** through comprehensive public artifacts. The repository \cite{Cragin2026SpiralBrainRepo} contains the full suite of raw experimental data, validation wrappers, analytical scripts, and JSON-encoded state transitions. This ensures findings are audit-ready and statistical derivations are fully transparent, adhering to the journal's standards for empirical integrity.
 
-All experiments are reproducible using the canonical configuration described in the public repository, with configuration files and recorded run metadata \((\lambda, \tau\ \text{ratios},\ \text{perturbation schedule},\ \text{and seed when fixed})\) provided. Results are logged in standardized JSON format under the \texttt{/results/} directory, with figure generation scripts in \texttt{/scripts/}.
-
+All experiments are reproducible using the canonical configuration described in the public repository, with configuration files and recorded run metadata (\(\lambda\), \(\tau\) ratios, perturbation schedule, and seed when fixed) provided. Results are logged in standardized JSON format under the \texttt{/results/} directory, with figure generation scripts in \texttt{/scripts/}.
 
 The empirical results validate the neurodivergent design principles:
 
@@ -843,7 +864,7 @@ The experiments reported in this paper were conducted using the canonical Spiral
 \item Multi-agent neurodivergent systems
 \item Longitudinal studies of cognitive development
 \item Integration with neuromorphic hardware
-\item \end{itemize}
+\end{itemize}
 
 \section*{Acknowledgments}
 

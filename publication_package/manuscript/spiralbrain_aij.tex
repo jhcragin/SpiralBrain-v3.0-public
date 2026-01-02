@@ -137,7 +137,7 @@ SpiralBrain builds upon and extends several cognitive frameworks:
 \item \textbf{Predictive coding} \cite{Clark2013}: Integration through prediction-error minimization
 \item \textbf{Global workspace theory} \cite{Baars2005}: Coordinated information flow among specialized processors
 \item \textbf{Polychronous binding}: Temporal coordination of distributed neural activity
-\item \textbf{Integrated Information Theory} \cite{Tononi2008}: Consciousness as integrated information generation
+\item \textbf{Integrated Information Theory} \cite{Tononi2008}: Consciousness as integrated information generation. Our \(\Phi'\) differs from Tononi's \(\Phi\) by measuring dynamical integration over time rather than static information content, complementing IIT by quantifying temporal coherence.
 \item \textbf{Dynamical systems theory} \cite{Kelso1995}: Self-organization of brain and behavior through nonlinear dynamics
 \end{itemize}
 
@@ -672,6 +672,30 @@ Where:
 \item \(E(\lambda,\tau)\): Elastic regulation function
 \end{itemize}
 
+\textbf{SpiralCode Torque Equation Derivation:}
+
+The core dynamical equation governing inter-lobe coupling is derived from first principles of elastic feedback control:
+
+\[
+\frac{d\Phi}{dt} = \lambda (\tau^{-1} I - \Phi) + \eta E
+\]
+
+Where:
+- \(\Phi\): Instantaneous coherence state
+- \(\lambda\): Coupling constant controlling feedback strength
+- \(\tau\): Temporal hierarchy parameter (lobe-specific)
+- \(I\): Incoming symbolic input magnitude
+- \(E\): Emotional modulation vector from SEC calibration
+- \(\eta\): Adaptive gain derived from SEC feedback
+
+The adaptive gain \(\eta\) is computed as:
+
+\[
+\eta = \frac{1}{1 + |\text{arousal}|}
+\]
+
+This formulation ensures moderate arousal optimizes learning efficiency (\(\eta \propto 1/|\text{arousal}|\)), with high arousal compressing integration windows and low arousal extending them. The SEC vector components (valence, arousal, hazard, resonance, harmony, amplitude, coherence, complexity) are normalized and weighted to produce \(E\), creating a feedback loop where emotional state modulates symbolic processing.
+
 \textbf{Spiral Manifold Derivation:}
 The spiral cognition manifold emerges from the interaction between coupling strength \((\lambda)\) and integrative capacity \((\Phi')\), following a helical trajectory that maximizes integration at empirical attractors rather than theoretical optima.
 
@@ -751,6 +775,7 @@ The experiments reported in this paper were conducted using the canonical Spiral
 \begin{itemize}
 \item Single-system validation (needs multi-system replication)
 \item Computational constraints limit scale of cognition experiments
+\item Beyond four lobes, feedback latency may increase exponentially, requiring adaptive phase-locking protocols to mitigate scaling challenges.
 \item Emotional cognition requires further validation against human benchmarks
 \end{itemize}
 

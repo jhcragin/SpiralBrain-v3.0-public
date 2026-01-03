@@ -12,7 +12,7 @@ Across multiple validation runs, SpiralBrain exhibited stable spiraling attracto
 
 This public repository contains:
 
-- **`publication_package/`**: Complete journal submission materials including manuscript, figures, metadata, and cover letter
+- **`aij_submission/`**: Complete journal submission materials including manuscript, figures, metadata, and cover letter
 - **`scripts/`**: Reproducibility scripts for figure generation and analysis
 - **`results/`**: Essential experimental data, trajectory measurements, and validation benchmarks
 - **`docs/`**: Formal definitions, learning model boundaries, and additional research papers
@@ -37,7 +37,7 @@ The repository is structured for complete reproducibility of the manuscript's fi
 python scripts/generate_publication_figures.py
 ```
 
-**Publication Package:** The [`publication_package/`](publication_package/) directory contains the complete manuscript, all figures, and submission materials.
+**Publication Package:** The [`aij_submission/`](aij_submission/) directory contains the complete manuscript, all figures, and submission materials.
 
 **Data:** Experimental results are in [`results/`](results/) with trajectory data in JSONL format. All referenced experimental data files are included for full reproducibility.
 

@@ -12,7 +12,7 @@
 \maketitle
 
 \begin{abstract}
-This paper investigates the role of emotional regulation in modulating symbolic stability in neurosymbolic systems. Using SpiralBrain v3.0 as an instrumented testbed, we examine how affective stabilization influences coherence under stress conditions. Analysis of intervention data reveals that emotional regulation functions as a dynamic state-selection signal, enabling context-sensitive cognitive control through competing modes of convergence and divergence. Falsification requires demonstrating consistent symbolic stability patterns regardless of emotional regulation.
+This paper investigates the role of emotional regulation in modulating symbolic stability in neurosymbolic systems. Using SpiralBrain v3.0 as an instrumented testbed, we examine how affective stabilization influences coherence under stress conditions. Analysis of intervention data reveals that emotional regulation functions as a dynamic state-selection signal, enabling context-sensitive cognitive control through competing modes of convergence and divergence. Falsification requires demonstrating that goal-directed symbolic recovery shows no measurable improvement with emotional regulation compared to autonomous processes.
 \end{abstract}
 
 \section{Introduction}
@@ -32,7 +32,7 @@ The problem is particularly acute in systems that must maintain reliable symboli
 \textbf{Hypothesis:} Emotional regulation functions as a dynamic state-selection signal that modulates symbolic stability in neurosymbolic systems through competing cognitive modes of convergence and divergence.
 
 \textbf{Falsification Criteria:}
-The hypothesis is falsified if emotional regulation produces no measurable effects on symbolic coherence under any tested conditions, or if observed effects cannot be attributed to state-dependent signal selection.
+The hypothesis is falsified if goal-directed symbolic recovery shows no measurable improvement with emotional regulation compared to autonomous processes, or if observed effects cannot be attributed to state-dependent signal selection.
 
 \section{Methods}
 
@@ -92,15 +92,15 @@ Data aggregated from the `emotional_intervention_subset.yaml` logs indicates tha
 
 The experimental results support a refined version of the hypothesis: emotional regulation acts as a **dynamic state-selection signal** that modulates symbolic stability. The high variance observed in **Figure 1** and the "context-dependent" outcomes are likely a function of the complexity of the Synthetic-Emotional Calibration (SEC) mapping.
 
-\subsection{The Dual-Role of the SEC Signal}
+\subsection{Emotional Regulation as a Cognitive Mode Selector}
 
-The high variance observed in **Figure 1** and the "mixed" recovery results are now explained by the system's internal state-selection. The SEC signal is not failing when coherence drops; rather, it is switching from a **Closure** state to an **Analysis** state.
+The high variance observed in **Figure 1** and the "mixed" recovery results are now explained by the system's internal state-selection. The SEC signal functions as a **cognitive mode selector**, dynamically switching between **Closure** (convergence) and **Analysis** (divergence) modes based on contextual demands. When coherence drops, it is not system failure but intentional mode switching—redirecting cognitive resources from immediate stability toward exploratory processing.
 
-The finding that symbolic coherence can be intentionally degraded by a specific SEC drift indicates that emotion is not just a safety net for logic, but a **tuning knob** for cognitive flexibility. This explains why "thresholds" are difficult to define globally—a drift that is "unstable" for a task requiring logical closure may be "optimal" for a task requiring deep symbolic analysis.
+The finding that symbolic coherence can be intentionally degraded by a specific SEC drift indicates that emotion serves as a **tuning knob** for cognitive flexibility rather than a simple stability switch. This explains why "thresholds" are difficult to define globally—a drift that appears "unstable" for tasks requiring logical closure may be optimal for tasks requiring deep symbolic analysis.
 
-\subsection{Passive vs. Active Convergence}
+\subsection{Passive Drift vs. Active Mode Selection}
 
-While the "Without Regulation" group eventually achieves recovery, it does so at a significantly slower rate and with less precision than the regulated group. This suggests that while symbolic repair may be *computationally possible* autonomously, emotional regulation provides the **directional control bias** that determines the *efficiency and direction* of that repair. Without the SEC feedback loop, the system relies on passive symbolic drift rather than active state selection.
+While the "Without Regulation" group eventually achieves recovery, it does so at a significantly slower rate and with less precision than the regulated group. This suggests that while symbolic repair may be *computationally possible* autonomously, emotional regulation provides **active mode selection** that determines both the *efficiency* and *character* of recovery. Without the SEC feedback loop, the system relies on passive symbolic drift rather than goal-directed cognitive adaptation.
 
 These findings have nuanced implications for neurosymbolic system design. While emotional components may offer benefits in certain contexts, they do not appear to be essential for basic symbolic stability. The mixed intervention effects suggest that affective regulation should be implemented cautiously, with careful consideration of when and how it is applied.
 
@@ -108,11 +108,11 @@ Limitations include the small sample size of intervention data and the specific 
 
 \section{Conclusion}
 
-This investigation demonstrates that emotional regulation functions as a dynamic state-selection signal in neurosymbolic systems, enabling context-sensitive cognitive control through competing modes of convergence and divergence. Using SpiralBrain v3.0 as a testbed, we observed that symbolic coherence responds to SEC drift through state-dependent signal selection, with interventions producing both rapid convergence (28\% improvement) and controlled divergence (51\% reduction) based on emotional context.
+This investigation demonstrates that emotional regulation functions as a **cognitive mode selector** in neurosymbolic systems, enabling context-sensitive control through competing modes of convergence and divergence. Using SpiralBrain v3.0 as a testbed, we observed that symbolic coherence responds to SEC drift through state-dependent mode selection, with interventions producing both rapid convergence (28\% improvement) and controlled divergence (51\% reduction) based on emotional context.
 
-The findings support the view that emotion acts as an adaptive control bias for symbolic processing, selecting between stability-oriented and exploration-oriented cognitive strategies. While autonomous symbolic repair mechanisms are functional, the SEC system's state-selection capability provides the directional control needed for efficient cognitive adaptation. This has important implications for designing neurosymbolic systems, suggesting that emotional components should be implemented as sophisticated state-selection mechanisms rather than simple stabilizers.
+The findings support the view that emotion acts as an **adaptive mode selector** for symbolic processing, dynamically choosing between stability-oriented and exploration-oriented cognitive strategies. While autonomous symbolic repair mechanisms are functional, the SEC system's mode selection capability provides the directional control needed for efficient, goal-directed cognitive adaptation. This has important implications for designing neurosymbolic systems, suggesting that emotional components should be implemented as sophisticated mode selection mechanisms rather than simple stabilizers.
 
-Future work should explore the multi-dimensional nature of SEC signals, develop adaptive state-selection algorithms, and investigate the generalizability of emotional control biases across different neurosymbolic architectures and application domains.
+Future work should explore the multi-dimensional nature of SEC signals, develop adaptive mode selection algorithms, and investigate the generalizability of emotional control biases across different neurosymbolic architectures and application domains.
 
 \bibliographystyle{plain}
 \bibliography{references}

@@ -242,6 +242,33 @@ Acts as the rational substrate balancing affective inference from Nexus.
 Transforms raw emotional cues into SEC vectors—valence, arousal, hazard, resonance, harmony, amplitude, coherence, and complexity.
 It synchronizes internal motivation with external feedback, forming the emotional substrate through which learning is modulated.
 
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[node distance=2cm, auto]
+    % Define styles
+    \tikzstyle{process} = [rectangle, draw, fill=blue!20, text width=2.5cm, text centered, rounded corners, minimum height=1cm]
+    \tikzstyle{arrow} = [thick,->,>=stealth]
+
+    % Nodes
+    \node[process] (raw) {Raw Affective Inputs};
+    \node[process, right of=raw] (sec) {SEC Vector Components};
+    \node[process, right of=sec] (gain) {Adaptive Gain $\eta$};
+    \node[process, right of=gain] (mod) {Modulate $\lambda$, $\tau$};
+    \node[process, right of=mod] (impact) {Impact on $\Phi$, Recovery};
+
+    % Arrows
+    \draw[arrow] (raw) -- (sec);
+    \draw[arrow] (sec) -- (gain);
+    \draw[arrow] (gain) -- (mod);
+    \draw[arrow] (mod) -- (impact);
+
+    % Feedback loop
+    \draw[arrow, bend left=20] (impact) to node[above] {Feedback} (raw);
+\end{tikzpicture}
+\caption{Emotional-Symbolic Calibration as a Regulatory Control Signal. Raw affective inputs are processed into SEC vector components (valence, arousal, hazard, etc.), which determine an adaptive gain that modulates coupling strength ($\lambda$) and temporal hierarchies ($\tau$), ultimately influencing coherence ($\Phi$) and system recovery. This schematic illustrates emotion's upstream regulatory role in maintaining integrative stability, not as a generative source of cognition.}
+\label{fig:sec_control}
+\end{figure}
+
 \textbf{Sensus — Perceptual Awareness and Embodiment}  
 Handles sensory abstractions and telemetry, including feedback loops from external simulators or sensor arrays.
 Its role parallels proprioception: maintaining awareness of system state and environmental embedding.

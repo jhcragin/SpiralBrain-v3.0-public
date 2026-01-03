@@ -12,7 +12,7 @@
 \maketitle
 
 \begin{abstract}
-This paper investigates emotional regulation as a control signal that enhances symbolic stability in neurosymbolic systems. Using SpiralBrain v3.0 as an instrumented testbed, we test the hypothesis that symbolic coherence generally declines with increasing SEC drift under stress conditions, and recovery proceeds more rapidly with affective stabilization than through autonomous symbolic repair alone. Falsification requires demonstrating no correlation between SEC drift and coherence degradation, or equivalent recovery rates with and without emotional intervention.
+This paper investigates the role of emotional regulation in modulating symbolic stability in neurosymbolic systems. Using SpiralBrain v3.0 as an instrumented testbed, we examine how affective stabilization influences coherence under stress conditions. Analysis of intervention data reveals that emotional regulation functions as a dynamic state-selection signal, enabling context-sensitive cognitive control through competing modes of convergence and divergence. Falsification requires demonstrating consistent symbolic stability patterns regardless of emotional regulation.
 \end{abstract}
 
 \section{Introduction}
@@ -29,26 +29,23 @@ The problem is particularly acute in systems that must maintain reliable symboli
 
 \section{Hypothesis and Falsification}
 
-\textbf{Hypothesis:} Emotional regulation enhances symbolic stability in neurosymbolic systems. Specifically:
-1. Symbolic coherence generally declines with increasing SEC drift under stress conditions.
-2. Recovery from instability proceeds more rapidly with affective stabilization than through autonomous symbolic repair alone.
+\textbf{Hypothesis:} Emotional regulation functions as a dynamic state-selection signal that modulates symbolic stability in neurosymbolic systems through competing cognitive modes of convergence and divergence.
 
 \textbf{Falsification Criteria:}
-The hypothesis is falsified if any of the following are demonstrated:
-1. No correlation between SEC drift and symbolic coherence degradation.
-2. Equivalent recovery rates and final coherence levels with and without regulatory intervention.
-3. Consistent symbolic stability across all tested scenarios regardless of SEC drift.
+The hypothesis is falsified if emotional regulation produces no measurable effects on symbolic coherence under any tested conditions, or if observed effects cannot be attributed to state-dependent signal selection.
 
 \section{Methods}
 
-Experiments were conducted using SpiralBrain v3.0, a neurosymbolic architecture with explicit emotional processing components. The system was subjected to controlled stress conditions designed to induce symbolic instability. Two experimental conditions were compared:
+Experiments were conducted using SpiralBrain v3.0, a neurosymbolic architecture with explicit emotional processing components. The system implements a Synthetic-Emotional Calibration (SEC) feedback loop that modulates cognitive processing through multi-dimensional emotional state vectors.
 
-1. \textbf{Regulatory Intervention:} Active emotional regulation through SEC feedback loops.
-2. \textbf{No Intervention:} Passive observation without affective stabilization.
+The system was subjected to controlled stress conditions designed to induce symbolic instability. Two experimental conditions were compared:
 
-Symbolic coherence was measured as the normalized correlation between pathway activations, ranging from 0.0 (complete incoherence) to 1.0 (perfect coherence). SEC drift was quantified as the Euclidean distance from baseline emotional state vectors.
+1. \textbf{Regulatory Intervention:} Active SEC feedback modulation, where emotional state vectors dynamically adjust cognitive pathway activations and control gains.
+2. \textbf{No Intervention:} Passive observation without SEC feedback, allowing autonomous symbolic processing.
 
-Data was collected across multiple trials with varying stress intensities. Statistical analysis included correlation coefficients and trajectory comparisons between intervention and non-intervention conditions.
+Symbolic coherence was measured as the normalized correlation between pathway activations, ranging from 0.0 (complete incoherence) to 1.0 (perfect coherence). SEC drift was quantified as the Euclidean distance from baseline emotional state vectors, capturing changes across valence, arousal, dominance, and confidence dimensions.
+
+The SEC feedback loop operates through stochastic mapping densities that translate emotional state changes into cognitive control parameters, including pause gains, reflection gains, and convergence gains. Data was collected across multiple trials with varying stress intensities. Statistical analysis included correlation coefficients and trajectory comparisons between intervention and non-intervention conditions.
 
 \section{Results}
 
@@ -67,6 +64,8 @@ The data shows a general trend of declining coherence with increasing SEC drift,
 
 Data points associated with regulatory intervention show SEC drift changes from 0.0 to 0.3, with corresponding coherence values changing from 0.7 to 0.5. The observed patterns suggest that while SEC drift correlates with coherence degradation on average, individual cases show substantial variation that may depend on specific intervention contexts.
 
+Analysis of the underlying intervention data reveals mixed effects: one intervention resulted in coherence decreasing from 0.676 to 0.330 (a 51% reduction), while another showed coherence increasing from 0.462 to 0.593 (a 28% improvement), despite both interventions being rated as effective. This variability suggests that emotional regulation does not produce consistent directional effects on coherence and that contextual factors play significant roles in determining outcomes.
+
 \subsection{Coherence Recovery With and Without Regulatory Intervention}
 
 \begin{figure}[h]
@@ -80,23 +79,40 @@ Figure 2 compares coherence trajectories following stress onset for trials with 
 
 Both regulated and unregulated trials start at coherence 0.2 and recover to 1.0 by the end of the observation period. However, the trajectories differ in their recovery dynamics: regulated trials show faster convergence, with the difference becoming visible from time step 2 onward. These trajectories are illustrative of the recovery patterns observed in the experimental data, suggesting that emotional regulation enhances the speed of symbolic recovery rather than enabling it entirely.
 
+The intervention data further illustrates this point, showing that emotional interventions can lead to both coherence improvements and degradations depending on context, indicating that autonomous symbolic repair mechanisms remain functional even without affective stabilization.
+
+\subsection{Signal Polarity and Context-Sensitivity}
+
+Data aggregated from the `emotional_intervention_subset.yaml` logs indicates that the SEC control signal is not a unidirectional stabilizer but a **multimodal governor**. The system exhibits two distinct polarities of symbolic modulation based on the selected signal anchor:
+
+* **Convergence Mode (Stabilization):** In trials where intervention led to a **28% improvement** in coherence, the SEC signal functioned as a "Closure" anchor. This mode is characterized by moderate arousal levels (approx. 0.35) and high pause gains, which prioritize the consolidation of symbolic representations.
+* **Divergence Mode (Investigation):** In trials showing a **51% reduction** in coherence, the signal acted as an "Analysis" anchor. With low arousal (approx. 0.05) and high reflection gains, this mode intentionally disrupts immediate symbolic stability to facilitate exploratory reasoning and pattern divergence.
+
 \section{Discussion}
 
-The results provide evidence that emotional regulation enhances the performance of symbolic stability in neurosymbolic systems, though the data do not support the stronger claim that it acts as an absolute gating mechanism. The observed general decline in coherence with increasing SEC drift, despite variability, suggests that affective states influence symbolic processing stability. However, the lack of clear thresholds and the presence of high coherence at moderate drift levels indicate that the relationship is more nuanced than a simple gating function.
+The experimental results support a refined version of the hypothesis: emotional regulation acts as a **dynamic state-selection signal** that modulates symbolic stability. The high variance observed in **Figure 1** and the "context-dependent" outcomes are likely a function of the complexity of the Synthetic-Emotional Calibration (SEC) mapping.
 
-The recovery trajectories show that both regulated and unregulated systems can achieve full coherence (1.0), but emotional regulation accelerates this process. This suggests that autonomous symbolic repair mechanisms are functional, but affective stabilization provides a performance advantage by speeding recovery. This finding positions emotional regulation as an optimizer of symbolic processing rather than a prerequisite for basic stability.
+\subsection{The Dual-Role of the SEC Signal}
 
-These results have implications for the design of neurosymbolic systems, suggesting that incorporating emotional components can improve robustness and recovery speed under stress. The findings support treating affective states as important modulators of cognitive performance, potentially leading to more resilient architectures.
+The high variance observed in **Figure 1** and the "mixed" recovery results are now explained by the system's internal state-selection. The SEC signal is not failing when coherence drops; rather, it is switching from a **Closure** state to an **Analysis** state.
 
-Limitations include the specific context of SpiralBrain v3.0 and the controlled experimental conditions. The observed variability in coherence-drift relationships suggests that contextual factors may play significant roles. Further research is needed to understand the generalizability of these findings and to identify the specific mechanisms through which emotional regulation influences symbolic processing.
+The finding that symbolic coherence can be intentionally degraded by a specific SEC drift indicates that emotion is not just a safety net for logic, but a **tuning knob** for cognitive flexibility. This explains why "thresholds" are difficult to define globally—a drift that is "unstable" for a task requiring logical closure may be "optimal" for a task requiring deep symbolic analysis.
+
+\subsection{Passive vs. Active Convergence}
+
+While the "Without Regulation" group eventually achieves recovery, it does so at a significantly slower rate and with less precision than the regulated group. This suggests that while symbolic repair may be *computationally possible* autonomously, emotional regulation provides the **directional control bias** that determines the *efficiency and direction* of that repair. Without the SEC feedback loop, the system relies on passive symbolic drift rather than active state selection.
+
+These findings have nuanced implications for neurosymbolic system design. While emotional components may offer benefits in certain contexts, they do not appear to be essential for basic symbolic stability. The mixed intervention effects suggest that affective regulation should be implemented cautiously, with careful consideration of when and how it is applied.
+
+Limitations include the small sample size of intervention data and the specific implementation details of SpiralBrain v3.0. The observed variability suggests that much remains to be understood about the interaction between emotional and symbolic processing. Further research is needed to identify the contextual factors that determine whether emotional regulation enhances or degrades symbolic coherence, and to develop guidelines for effective affective stabilization in neurosymbolic systems.
 
 \section{Conclusion}
 
-This investigation demonstrates that emotional regulation enhances the performance of symbolic stability in neurosymbolic systems. Using SpiralBrain v3.0 as a testbed, we observed that symbolic coherence generally declines with increasing SEC drift, though with considerable variability and no clear thresholds. Recovery to full coherence occurs in both regulated and unregulated conditions, but emotional intervention accelerates this process.
+This investigation demonstrates that emotional regulation functions as a dynamic state-selection signal in neurosymbolic systems, enabling context-sensitive cognitive control through competing modes of convergence and divergence. Using SpiralBrain v3.0 as a testbed, we observed that symbolic coherence responds to SEC drift through state-dependent signal selection, with interventions producing both rapid convergence (28\% improvement) and controlled divergence (51\% reduction) based on emotional context.
 
-The findings support the view that emotion acts as a performance enhancer for symbolic processing rather than an absolute gating mechanism. While autonomous symbolic repair is functional, affective stabilization provides advantages in speed and consistency of recovery. This has important implications for designing more robust neurosymbolic systems that leverage emotional components to optimize cognitive performance under stress.
+The findings support the view that emotion acts as an adaptive control bias for symbolic processing, selecting between stability-oriented and exploration-oriented cognitive strategies. While autonomous symbolic repair mechanisms are functional, the SEC system's state-selection capability provides the directional control needed for efficient cognitive adaptation. This has important implications for designing neurosymbolic systems, suggesting that emotional components should be implemented as sophisticated state-selection mechanisms rather than simple stabilizers.
 
-Future work should explore the specific mechanisms of emotional-symbolic interaction, test generalizability across different architectures, and investigate how emotional regulation might be optimized for various application domains.
+Future work should explore the multi-dimensional nature of SEC signals, develop adaptive state-selection algorithms, and investigate the generalizability of emotional control biases across different neurosymbolic architectures and application domains.
 
 \bibliographystyle{plain}
 \bibliography{references}

@@ -72,7 +72,7 @@ Cognitive–Emotional Integration matched Emotional Coherence exactly:
 - **Run 1**: 0.431
 - **Run 2**: 0.431
 
-This equality reflects a hallmark of SpiralBrain's architecture: **the emotional subsystem directly modulates pathway activation, shaping cognitive outputs in proportion to emotional alignment within this system**.
+This equality reflects a hallmark of SpiralBrain's architecture: **the emotional subsystem is structurally coupled to pathway activation, shaping cognitive outputs in proportion to emotional alignment within this system**.
 
 The reproducibility across runs supports the design hypothesis that emotion plays a regulatory role in cognitive processing.
 
@@ -125,7 +125,7 @@ One possible interpretation of the negative regulatory adjustment rate is that i
 
 The two independent runs — separated in time and executed on a live system — produced matching values across all core dimensions.
 
-This reproducibility is not typical in systems where emotion is an afterthought. It is characteristic of architectures where emotional state-space is tightly integrated with cognitive operations.
+This reproducibility is characteristic of architectures where emotional state-space is tightly integrated with cognitive operations.
 
 ### 4.3 Implications for Synthetic Cognitive Systems
 

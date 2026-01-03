@@ -2,7 +2,7 @@
 
 ## **Abstract**
 
-SpiralBrain-v3.0 is a multi-pathway synthetic cognitive architecture designed around a central hypothesis: **emotion is not an accessory to cognition but a primary computational substrate that regulates, shapes, and stabilizes cognitive processing**. The system integrates eight cognitive pathways, a unified emotional intelligence module, a metacognitive Central Coordination Nexus (CCN), and a tri-band elastic homeostasis controller.
+SpiralBrain-v3.0 is a multi-pathway synthetic cognitive architecture designed around a central hypothesis: **within this architecture, emotion serves as a primary computational substrate that regulates, shapes, and stabilizes cognitive processing under the tested conditions**. The system integrates eight cognitive pathways, a unified emotional intelligence module, a metacognitive Central Coordination Nexus (CCN), and a tri-band elastic homeostasis controller.
 
 We introduce three complementary evaluation suites:
 
@@ -24,7 +24,7 @@ Across all evaluations, SpiralBrain-v3.0 demonstrates:
 
 * **Consistent emotional learning curves across independent executions**: Identical learning patterns across multiple benchmark runs prove that emotional processing follows deterministic rules rather than random variation.
 
-These findings provide empirical support for **emotion-driven cognition**, **metacognitive control**, and **structured cognitive dynamics** in synthetic systems. SpiralBrain-v3.0 represents a unified computational model of advanced artificial cognition grounded in emotional computation and dynamical systems behavior.
+These findings provide empirical support for **emotion-driven cognition**, **metacognitive control**, and **structured cognitive dynamics** within SpiralBrain under the tested conditions. SpiralBrain-v3.0 represents a computational model of artificial cognition grounded in emotional computation and dynamical systems behavior within this architecture.
 
 ---
 
@@ -34,7 +34,7 @@ Cognitive architectures traditionally treat emotion as either a classification e
 
 SpiralBrain-v3.0 rejects this separation.
 
-Instead, it is built on the premise that **emotion is a computational primitive**, providing the regulatory signals that shape cognitive processing, allocate cognitive resources, and maintain system stability. This idea draws inspiration from:
+Instead, it is built on the premise that **within SpiralBrain, emotion serves as a computational primitive under the tested conditions**, providing the regulatory signals that shape cognitive processing, allocate cognitive resources, and maintain system stability. This idea draws inspiration from:
 
 * **Affective neuroscience (neuromodulator-regulated cognition)**: Biological brains use neuromodulators like dopamine, serotonin, and norepinephrine to regulate neural excitability, attention allocation, and learning plasticity. SpiralBrain operationalizes this through SEC vectors that dynamically modulate pathway activation strengths and cognitive resource allocation.
 
@@ -366,7 +366,7 @@ SpiralBrain-v3.0 demonstrates:
 
 * **Deterministic internal organization**: Rule-based processing rather than stochastic approximation.
 
-This work establishes SpiralBrain as a **scientifically characterizable model of advanced artificial cognition**, where emotion is the governing computational substrate and metacognitive regulation modulates system stability.
+This work establishes SpiralBrain as a **scientifically characterizable model of artificial cognition within this implementation**, where emotion serves as the governing computational substrate and metacognitive regulation modulates system stability under the tested conditions.
 
 ---
 

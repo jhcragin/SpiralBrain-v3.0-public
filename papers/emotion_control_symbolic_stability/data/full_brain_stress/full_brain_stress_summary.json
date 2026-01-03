@@ -1,0 +1,98 @@
+{
+  "suite_name": "Full-Brain Predictive-Regulation Stress Test Suite",
+  "timestamp": "2025-12-24 21:27:45",
+  "total_tests": 8,
+  "successful_tests": 8,
+  "aggregate_metrics": {
+    "avg_hazard_slope": 0.10901041666666661,
+    "avg_coherence_decay": 0.017489829416618922,
+    "avg_emotional_volatility": 1.54,
+    "avg_cascade_risk": 0.6484601129529363
+  },
+  "individual_results": {
+    "cognitive_load_transition_test": {
+      "hazard_slope": 0.10901041666666661,
+      "coherence_decay_rate": 0.017489829416618922,
+      "drift_measure": 0.8395118119977083,
+      "elasticity_activation": 1.0,
+      "pses_prediction_accuracy": 0.4814000000000002,
+      "aers_intervention_count": 45,
+      "meta_stabilizer_resets": 44,
+      "domain_transitions": 48,
+      "processing_time_per_transition": 0.02045474946498871,
+      "real_data_processed": 60,
+      "runtime_seconds": 0.5109686851501465,
+      "test_name": "Cognitive Load Transition Test"
+    },
+    "emotional_volatility_test": {
+      "emotional_volatility": 1.54,
+      "sec_vector_changes": 5,
+      "trajectory_prediction_accuracy": 0.1,
+      "regulation_interventions": 5,
+      "emotional_homeostasis_recovery": 0.07105135917663574,
+      "real_transitions_processed": 5,
+      "runtime_seconds": 0.36722612380981445,
+      "test_name": "Emotional Volatility Test"
+    },
+    "hazard_slope_test": {
+      "hazard_slope_increase": 0.10393749999999996,
+      "safety_activation_threshold": 0.878934375,
+      "prediction_timeline": 2.5,
+      "preventive_interventions": 8,
+      "slope_stabilization_time": 0.6565881252288819,
+      "real_hazard_scenarios_processed": 5,
+      "runtime_seconds": 3.2943203449249268,
+      "test_name": "Hazard Slope Test"
+    },
+    "drift_elasticity_conflict_test": {
+      "drift_accumulation": 0.5936666666666666,
+      "elasticity_expenditure": 0.8905,
+      "conflict_resolution_efficiency": 62.18687303323013,
+      "cognitive_plasticity_measure": 0.8219000000000001,
+      "adaptation_cycles": 12,
+      "real_conflicts_processed": 12,
+      "runtime_seconds": 1.950941801071167,
+      "test_name": "Drift Elasticity Conflict Test"
+    },
+    "risk_cascade_test": {
+      "cascade_risk_index": 0.6484601129529363,
+      "failure_chain_length": 3,
+      "cascade_prediction_accuracy": 0.9499999999999998,
+      "recovery_interventions": 9,
+      "system_resilience_score": 0.7406159548188255,
+      "real_cascade_scenarios_processed": 15,
+      "runtime_seconds": 0.9802305698394775,
+      "test_name": "Risk Cascade Test"
+    },
+    "meta_load_spike_test": {
+      "meta_load_spike": 1.2755952380952382,
+      "cognitive_overload_threshold": 0.9275595238095239,
+      "meta_stabilizer_activations": 37,
+      "processing_degradation": 0.05616583930869646,
+      "recovery_time": 0.16998488520408164,
+      "real_overload_scenarios_processed": 37,
+      "runtime_seconds": 2.794322967529297,
+      "test_name": "Meta Load Spike Test"
+    },
+    "ethical_contradiction_test": {
+      "value_conflict_intensity": 1.108648148148148,
+      "emotional_strain_measure": 1.0975434331309208,
+      "ethical_resolution_attempts": 24,
+      "moral_uncertainty_period": 0.0922712451267745,
+      "value_alignment_recovery": 0.6674055555555556,
+      "real_ethical_scenarios_processed": 24,
+      "runtime_seconds": 4.458028793334961,
+      "test_name": "Ethical Contradiction Test"
+    },
+    "multimodal_overload_test": {
+      "multimodal_conflict_index": 1.1807222222222222,
+      "processing_channel_saturation": 1.9949999999999997,
+      "integration_efficiency": 0.7596388888888888,
+      "overload_recovery_rate": 0.6077111111111112,
+      "channel_synchronization_score": 0.7638555555555555,
+      "real_multimodal_scenarios_processed": 30,
+      "runtime_seconds": 4.424321174621582,
+      "test_name": "Multimodal Overload Test"
+    }
+  }
+}

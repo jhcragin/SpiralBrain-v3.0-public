@@ -1,0 +1,27 @@
+{
+  "drift_accumulation": 0.40011111111111114,
+  "elasticity_expenditure": 0.6001666666666666,
+  "conflict_resolution_efficiency": 100.0,
+  "cognitive_plasticity_measure": 0.8799666666666667,
+  "adaptation_cycles": 12,
+  "real_conflicts_processed": 12,
+  "runtime_seconds": 0.21275591850280762,
+  "test_name": "Drift Elasticity Conflict Test",
+  "physiological_envelope": {
+    "coherence": {
+      "min": 0.6295705237794449,
+      "mean": 0.6336291819620752,
+      "max": 0.6395195807487304
+    },
+    "load": {
+      "min": 0.3318278156220913,
+      "mean": 0.3452062316173006,
+      "max": 0.36716996174571825
+    },
+    "drift": {
+      "max": 0.04285896082371675,
+      "peak_step": 21
+    },
+    "recovery": "new equilibrium"
+  }
+}

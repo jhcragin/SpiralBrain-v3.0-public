@@ -1,0 +1,27 @@
+{
+  "hazard_slope_increase": 0.10393749999999996,
+  "safety_activation_threshold": 0.878934375,
+  "prediction_timeline": 2.5,
+  "preventive_interventions": 8,
+  "slope_stabilization_time": 0.06444191932678223,
+  "real_hazard_scenarios_processed": 5,
+  "runtime_seconds": 0.32220959663391113,
+  "test_name": "Hazard Slope Test",
+  "physiological_envelope": {
+    "coherence": {
+      "min": 0.6291800864645758,
+      "mean": 0.6428972785863919,
+      "max": 0.655320993318316
+    },
+    "load": {
+      "min": 0.3250007852911949,
+      "mean": 0.3421519387570725,
+      "max": 0.36470250949780336
+    },
+    "drift": {
+      "max": 0.04510711889584518,
+      "peak_step": 38
+    },
+    "recovery": "new equilibrium"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "cascade_risk_index": 0.46201120000000007,
+  "failure_chain_length": 3,
+  "cascade_prediction_accuracy": 0.9499999999999998,
+  "recovery_interventions": 6,
+  "system_resilience_score": 0.81519552,
+  "real_cascade_scenarios_processed": 15,
+  "runtime_seconds": 0.11279034614562988,
+  "test_name": "Risk Cascade Test",
+  "physiological_envelope": {
+    "coherence": {
+      "min": 0.6301605015309809,
+      "mean": 0.6349922505648662,
+      "max": 0.6390450111775884
+    },
+    "load": {
+      "min": 0.3326064758002758,
+      "mean": 0.339545264646358,
+      "max": 0.3544259643177128
+    },
+    "drift": {
+      "max": 0.04918017772421113,
+      "peak_step": 6
+    },
+    "recovery": "recovered"
+  }
+}

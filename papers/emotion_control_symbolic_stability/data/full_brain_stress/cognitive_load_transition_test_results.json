@@ -1,0 +1,31 @@
+{
+  "hazard_slope": 0.10901041666666661,
+  "coherence_decay_rate": 0.0,
+  "drift_measure": 0.0,
+  "elasticity_activation": 1.0,
+  "pses_prediction_accuracy": 0.4814000000000002,
+  "aers_intervention_count": 45,
+  "meta_stabilizer_resets": 44,
+  "domain_transitions": 48,
+  "processing_time_per_transition": 0.021589934825897217,
+  "real_data_processed": 60,
+  "runtime_seconds": 0.5348176956176758,
+  "test_name": "Cognitive Load Transition Test",
+  "physiological_envelope": {
+    "coherence": {
+      "min": 0.658643264120211,
+      "mean": 0.6843466415215632,
+      "max": 0.7070902696946327
+    },
+    "load": {
+      "min": 0.3211135268211365,
+      "mean": 0.34145529417402887,
+      "max": 0.3583334924260093
+    },
+    "drift": {
+      "max": 0.041977020878496626,
+      "peak_step": 16
+    },
+    "recovery": "new equilibrium"
+  }
+}

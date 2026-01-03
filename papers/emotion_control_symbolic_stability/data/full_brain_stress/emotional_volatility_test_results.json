@@ -1,0 +1,27 @@
+{
+  "emotional_volatility": 1.54,
+  "sec_vector_changes": 5,
+  "trajectory_prediction_accuracy": 0.1,
+  "regulation_interventions": 5,
+  "emotional_homeostasis_recovery": 0.01331644058227539,
+  "real_transitions_processed": 5,
+  "runtime_seconds": 0.09595847129821777,
+  "test_name": "Emotional Volatility Test",
+  "physiological_envelope": {
+    "coherence": {
+      "min": 0.653796788082093,
+      "mean": 0.6569366717598925,
+      "max": 0.6610090785034066
+    },
+    "load": {
+      "min": 0.33328820019960403,
+      "mean": 0.34744326873755693,
+      "max": 0.3663035974122728
+    },
+    "drift": {
+      "max": 0.04987987125343501,
+      "peak_step": 8
+    },
+    "recovery": "recovered"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "meta_load_spike": 1.2755952380952382,
+  "cognitive_overload_threshold": 0.9275595238095239,
+  "meta_stabilizer_activations": 37,
+  "processing_degradation": 0.05616583930869646,
+  "recovery_time": 0.16998488520408164,
+  "real_overload_scenarios_processed": 37,
+  "runtime_seconds": 2.7938082218170166,
+  "test_name": "Meta Load Spike Test",
+  "physiological_envelope": {
+    "coherence": {
+      "min": 0.635116316438875,
+      "mean": 0.635116316438875,
+      "max": 0.635116316438875
+    },
+    "load": {
+      "min": 0.33446911349892616,
+      "mean": 0.33446911349892616,
+      "max": 0.33446911349892616
+    },
+    "drift": {
+      "max": 0.03391413329566113,
+      "peak_step": 0
+    },
+    "recovery": "recovered"
+  }
+}

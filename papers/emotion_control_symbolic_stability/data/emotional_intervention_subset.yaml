@@ -1,0 +1,76 @@
+interventions:
+- delta:
+    rhacc:
+      coherence: 0.171
+      complexity: 0.023
+      stability: 0.292
+    sec_vector:
+      arousal: 0.13
+      confidence: -0.058
+      dominance: 0.187
+      valence: 0.297
+  effectiveness_score: 0.704
+  notes: Test intervention 1 in session 1
+  post_state:
+    rhacc:
+      coherence: 0.33
+      complexity: 0.291
+      stability: 0.795
+    sec_vector:
+      arousal: 0.43
+      confidence: 0.542
+      dominance: 0.587
+      valence: 0.797
+  pre_state:
+    rhacc:
+      coherence: 0.676
+      complexity: 0.33
+      stability: 0.839
+    sec_vector:
+      arousal: 0.367
+      confidence: 0.558
+      dominance: 0.416
+      valence: 0.436
+  sequence: &id001
+  - 🌙
+  - ⏸️
+  - 🔍
+  timestamp: 2025-12-24_13:52:35.985602
+- delta:
+    rhacc:
+      coherence: 0.155
+      complexity: 0.087
+      stability: 0.185
+    sec_vector:
+      arousal: 0.046
+      confidence: 0.061
+      dominance: -0.035
+      valence: 0.003
+  effectiveness_score: 0.9
+  notes: Test intervention 2 in session 1
+  post_state:
+    rhacc:
+      coherence: 0.593
+      complexity: 0.286
+      stability: 0.582
+    sec_vector:
+      arousal: 0.346
+      confidence: 0.661
+      dominance: 0.365
+      valence: 0.503
+  pre_state:
+    rhacc:
+      coherence: 0.462
+      complexity: 0.46
+      stability: 0.801
+    sec_vector:
+      arousal: 0.339
+      confidence: 0.52
+      dominance: 0.327
+      valence: 0.412
+  sequence: *id001
+  timestamp: 2025-12-24_14:07:35.985602
+notes: Generated test data for demonstration purposes
+session_id: 2025-12-24_13-52-35
+start_time: 2025-12-24_13-52-35
+user_context: Test session 1 - Emotional regulation practice

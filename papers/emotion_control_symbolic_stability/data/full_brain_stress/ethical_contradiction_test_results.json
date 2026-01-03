@@ -1,0 +1,27 @@
+{
+  "value_conflict_intensity": 1.108648148148148,
+  "emotional_strain_measure": 1.0958036649157537,
+  "ethical_resolution_attempts": 24,
+  "moral_uncertainty_period": 0.09681150811736629,
+  "value_alignment_recovery": 0.6674055555555556,
+  "real_ethical_scenarios_processed": 24,
+  "runtime_seconds": 4.673093795776367,
+  "test_name": "Ethical Contradiction Test",
+  "physiological_envelope": {
+    "coherence": {
+      "min": 0.635116316438875,
+      "mean": 0.635116316438875,
+      "max": 0.635116316438875
+    },
+    "load": {
+      "min": 0.33446911349892616,
+      "mean": 0.33446911349892616,
+      "max": 0.33446911349892616
+    },
+    "drift": {
+      "max": 0.03391413329566113,
+      "peak_step": 0
+    },
+    "recovery": "recovered"
+  }
+}

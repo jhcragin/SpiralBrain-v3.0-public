@@ -12,10 +12,8 @@ Across multiple validation runs, SpiralBrain exhibited stable spiraling attracto
 
 This public repository contains:
 
-- **`ARTICLE_AIJ/`**: Complete journal submission materials including manuscript, figures, metadata, and cover letter
+- **`ARTICLE_AIJ/`**: Complete journal submission materials including manuscript, figures, metadata, cover letter, reproducibility scripts, and experimental data
 - **`ARTICLE_EMOTION_CONTROL/`**: Materials for the emotion control symbolic stability paper
-- **`scripts/`**: Reproducibility scripts for figure generation and analysis
-- **`results/`**: Essential experimental data, trajectory measurements, and validation benchmarks
 - **`docs/`**: Formal definitions, learning model boundaries, and additional research papers
 
 Each ARTICLE_* directory is fully self-contained and contains all data, figures, analysis scripts, and provenance required to audit the corresponding publication.
@@ -40,11 +38,11 @@ The repository is structured for complete reproducibility of the manuscript's fi
 python scripts/generate_publication_figures.py
 ```
 
-**Publication Package:** The [`ARTICLE_AIJ/`](ARTICLE_AIJ/) directory contains the complete manuscript, all figures, and submission materials.
+**Publication Package:** The [`ARTICLE_AIJ/`](ARTICLE_AIJ/) directory contains the complete manuscript, all figures, submission materials, reproducibility scripts, and experimental data.
 
-**Data:** Experimental results are in [`results/`](results/) with trajectory data in JSONL format. All referenced experimental data files are included for full reproducibility.
+**Data:** Experimental results are in [`ARTICLE_AIJ/results/`](ARTICLE_AIJ/results/) with trajectory data in JSONL format. All referenced experimental data files are included for full reproducibility.
 
-**Scripts:** Figure generation and analysis code is in [`scripts/`](scripts/). Note that some benchmark scripts are included for transparency but require the full SpiralBrain-v3.0 system to execute. The provided experimental results in [`results/`](results/) are pre-computed and can be tested by:
+**Scripts:** Figure generation and analysis code is in [`ARTICLE_AIJ/scripts/`](ARTICLE_AIJ/scripts/). Note that some benchmark scripts are included for transparency but require the full SpiralBrain-v3.0 system to execute. The provided experimental results in [`ARTICLE_AIJ/results/`](ARTICLE_AIJ/results/) are pre-computed and can be tested by:
 
 - Inspecting the JSON files directly to verify metrics against manuscript claims.
 - Running `scripts/generate_publication_figures.py` to reproduce figures from the data.

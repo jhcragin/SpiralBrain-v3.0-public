@@ -1,9 +1,12 @@
 \documentclass[11pt]{article}
+
 \usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{hyperref}
 \usepackage{booktabs}
+\usepackage{caption}
+\captionsetup{width=0.9\textwidth}
 
 \begin{document}
 
@@ -24,6 +27,31 @@ Quantitative validation reveals that while external task accuracy (MMLU) remains
 Neurosymbolic systems combine the pattern recognition capabilities of neural networks with the interpretability and logical reasoning of symbolic processing. However, maintaining symbolic stability under varying conditions remains a significant challenge. Traditional approaches to stability focus on algorithmic improvements or architectural modifications, but these often overlook the role of affective states in modulating cognitive processes \cite{damasio2010self}.
 
 This paper explores the hypothesis that emotional regulation serves as a critical control signal for maintaining symbolic stability in neurosymbolic architectures. We treat emotion not as a byproduct of cognition, but as an upstream regulator—a \textbf{cognitive mode selector}—that shapes the dynamics of symbolic recursion. By examining SpiralBrain v3.0, we investigate how affective states, represented via Synthetic-Emotional Calibration (SEC) vectors, influence symbolic coherence and recovery from stress-induced instability in synthetic organisms \cite{garcez2020neurosymbolic}.
+
+\section{Related Work}
+
+While the present work focuses on the regulatory role of emotion in symbolic stability, it builds upon and complements a companion paper that establishes the foundational architecture of SpiralBrain v3.0. In a related article titled "Elastic Cognition and the Spiral Architecture: Empirical Discoveries from a Neurodivergent Cognitive Model", we introduce the "Elastic Cognition" paradigm, describing the four-lobe architecture (Cortex, Codex, Nexus, Sensus) and the SpiralCode torque mechanism that enables dynamic coupling between differentiated subsystems. That work emphasizes the emergence of awareness through integration dynamics, measured via coupling strength ($\kappa$) and temporal hierarchies.
+
+In contrast, this paper examines the metabolic regulation of that architecture, treating emotion as a high-dimensional control signal that modulates symbolic coherence under stress. Together, the two papers describe complementary layers of the same synthetic organism: the AIJ paper details the structural skeleton, while this work explores the physiological homeostasis that sustains it. Both are grounded in the SpiralBrain v3.0 testbed and the shared SpiralBrain-v3.0-public repository, ensuring full reproducibility and data integrity.
+
+The key distinctions and connections are summarized in Table 1.
+
+\begin{table}[htbp]
+\centering
+\caption{Comparison of "Elastic Cognition and the Spiral Architecture: Empirical Discoveries from a Neurodivergent Cognitive Model" and New Article (Regulatory Intelligence)}
+\begin{tabular}{p{3cm} p{6cm} p{6cm}}
+\toprule
+\textbf{Feature} & \textbf{"Elastic Cognition and the Spiral Architecture: Empirical Discoveries from a Neurodivergent Cognitive Model"} & \textbf{New Article (Regulatory Intelligence)} \\
+\midrule
+\textbf{Primary Focus} & The Map: The 4-lobe architecture (Cortex, Codex, Nexus, Sensus) and the "SpiralCode" torque mechanism. & The Metabolism: Emotion (SEC signals) as an upstream regulator and "mode selector" for symbolic stability. \\
+\textbf{Core Concept} & Elastic Coupling: How awareness emerges from the integration of differentiated subsystems. & Regulatory Intelligence: Prioritizing internal homeostasis and "health" over raw task accuracy. \\
+\textbf{Key Metric} & Integration Dynamics: Measuring $\kappa$ (coupling strength) and temporal hierarchies. & Homeostatic Effectiveness: Measuring SEC drift and symbolic coherence under stress. \\
+\textbf{Task Testing} & Validates stable spiraling attractor dynamics and "self-correcting" ethical behavior. & Uses MMLU as a "foreign stressor" to prove the system prioritizes internal health (99.9\% homeostasis). \\
+\textbf{Shared Base} & Built on the SpiralBrain v3.0 testbed and documented in the same public repo. & Built on the SpiralBrain v3.0 testbed and documented in the same public repo. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 
 \section{Problem Statement}
 
@@ -87,7 +115,7 @@ Unlike traditional neurosymbolic models that utilize external error-handling loo
 
 \subsection{Symbolic Coherence vs. SEC Drift}
 
-\begin{figure}[htbp]
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=0.8\textwidth]{../figures/figure_1_phase_space.png}
 \caption{SEC Phase Space and Cognitive Mode Transitions \cite{kelso1995dynamic}. The shaded regions indicate the functional anchors identified in the mapping density. Arrows represent observed system transitions during intervention trials. The "Stabilization" transition (blue) demonstrates a return to coherence within the convergence zone, while the "Annealing" transition (red) shows a deliberate exit to a lower-coherence state for symbolic reshaping.}
@@ -108,7 +136,7 @@ The "mixed effects" observed in intervention trials (where coherence sometimes d
     \item \textbf{Divergence Mode (Investigation):} Triggered by signals with ultra-low arousal (approx. 0.05) and high reflection gains ($g_{reflect}=1.0$). This 51\% drop is a form of 'Cognitive Annealing.' Just as heating metal allows it to be reshaped, the system temporarily reduces logical rigidity (coherence) to prevent getting stuck in a logical dead-end, allowing it to discover new reasoning paths.
 \end{itemize}
 
-\begin{figure}[htbp]
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=0.8\textwidth]{../figures/figure_2_recovery_dynamics.png}
 \caption{Comparative Recovery Dynamics between Passive Drift and Active SEC Regulation. Active regulation (blue) exhibits a characteristic damped-oscillator response, achieving target coherence significantly faster than passive symbolic drift (red), which exhibits stochastic wandering and extended settling times.}
@@ -118,7 +146,7 @@ The "mixed effects" observed in intervention trials (where coherence sometimes d
 \subsection{Empirical Validation Benchmarks}
 Table 1 summarizes the system's underlying emotional processing capabilities, which ground the SEC signals used in regulation.
 
-\begin{table}[h]
+\begin{table}[htbp]
 \centering
 \caption{EmoBench-M Validation Results for SpiralBrain v3.0}
 \begin{tabular}{lc}
@@ -133,7 +161,7 @@ Dialogue Emotion Recognition & 32.00\% \\
 \end{tabular}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[htbp]
 \centering
 \caption{Regulatory Intelligence Metrics Across Cognitive Stressors}
 \begin{tabular}{lccc}
@@ -148,7 +176,7 @@ Affective (SEC) & 80.0\% & 100\% & N/A \\
 \label{tab:regulatory_performance}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[htbp]
 \centering
 \caption{System Resilience vs. External Stressor Regulatory Integrity}
 \begin{tabular}{lccr}
@@ -180,14 +208,12 @@ This demonstrates \textbf{Regulated Competence}: the architecture deliberately b
 \subsection{Long-Term Stability and Homeostasis}
 Real-time monitoring of 15+ homeostasis cycles revealed a stable operational baseline with SEC drift consistently below 0.2 and phase lock stability ranging from 52.9° to 90.0°. Cognitive integrity benchmarks showed an 87\% mean emotional stability across 20 reasoning trials, confirming the reliability of the SEC control layer.
 
-\begin{figure}[htbp]
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=0.9\textwidth]{../figures/homeostasis_baseline_stress.png}
 \caption{Homeostatic Baseline vs. Stress-Induced Perturbation. (A) Baseline SEC drift remains within the 0.112–0.186 range over 15+ cycles, indicating high system stability without external stimuli. (B) Under stress, drift exceeds the 0.3 threshold, triggering the "Mode Selector" response. (C) Cognitive Integrity benchmarks confirm that even during high-drift events, the mean emotional stability remains at 87\%, ensuring the system does not enter an unrecoverable state.}
 \label{fig:homeostasis_baseline}
 \end{figure}
-
-\clearpage
 
 \section{Discussion}
 
@@ -215,7 +241,9 @@ Our results suggest that for synthetic organisms, external task benchmarks like 
 
 The datasets generated and analyzed during this study, including the \textbf{SEC calibration mapping library (100\% reproducibility)} and the \textbf{Homeostatic stress response logs}, are available in the public repository: \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}.
 
-The \textbf{Zero-Fallback Scientific Validation Framework} allows for the direct extraction of raw internal state metrics—confirming the 99.9\% Homeostasis effectiveness—via the included \texttt{core\_emotional\_foundation\_benchmark.py} suite. All benchmark results are archived as immutable JSON records to ensure scientific integrity.
+\noindent\begin{minipage}{0.95\linewidth}
+The \textbf{Zero-Fallback Scientific Validation Framework} allows for the direct extraction of raw internal state metrics—confirming the 99.9\% Homeostasis effectiveness—via the included \texttt{\detokenize{core_emotional_foundation_benchmark.py}} suite. All benchmark results are archived as immutable JSON records to ensure scientific integrity.
+\end{minipage}
 
 \bibliographystyle{plain}
 \bibliography{references}

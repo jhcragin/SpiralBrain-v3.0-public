@@ -1,16 +1,58 @@
-\documentclass[11pt]{report}
-\usepackage{amsmath}
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
 \usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{titlesec}
 \usepackage{float}
 \usepackage{setspace}
+\usepackage{parskip}
 \usepackage{tikz}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
-\setstretch{1.15}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+\geometry{margin=1in}
+
+% Section formatting
+\titleformat{\section}
+  {\normalfont\Large\bfseries}
+  {\thesection}
+  {1em}
+  {}
+
+\titlespacing*{\section}
+  {0pt}
+  {12pt}
+  {6pt}
+
+% Subsection formatting
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}
+  {\thesubsection}
+  {1em}
+  {}
+
+\titlespacing*{\subsection}
+  {0pt}
+  {8pt}
+  {4pt}
+
+\onehalfspacing
 
 \title{Regulatory Intelligence as a Foundational Layer for Safe Cognitive Systems\\
 Architectural Regulation and Stability-Constrained Alignment}
-\author{John H. Cragin}
+
+\author{John H. Cragin \\
+Independent Researcher \\
+john.cragin@outlook.com}
+
 \date{\today}
 
 \begin{document}

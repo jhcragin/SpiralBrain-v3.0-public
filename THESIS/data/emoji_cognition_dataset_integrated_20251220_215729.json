@@ -1,0 +1,487 @@
+{
+  "metadata": {
+    "generated_at": "2025-12-20T21:57:29.016377",
+    "num_samples": 20,
+    "intelligent_selection": true,
+    "brain_context": {
+      "brain_health": 0.8,
+      "emotional_stability": 0.7,
+      "recent_performance": 0.75,
+      "session_id": "dataset_gen_20251220_215729"
+    }
+  },
+  "samples": [
+    {
+      "sequence": "☝️🛑🙏",
+      "mood_description": "balanced and composed",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 0.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.782,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "balanced",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    },
+    {
+      "sequence": "🙏🧠",
+      "mood_description": "balanced and composed",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 0.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.709,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "positive",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    },
+    {
+      "sequence": "🔥🧮🛑📐",
+      "mood_description": "energetic and dynamic",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 1.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [
+        "energetic",
+        "passionate"
+      ],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.795,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "reflective",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    },
+    {
+      "sequence": "✋🧠🔍🪶",
+      "mood_description": "balanced and composed",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 0.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.88,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "energized",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    },
+    {
+      "sequence": "♻️🪶⚡",
+      "mood_description": "energetic and dynamic",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 1.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [
+        "energetic",
+        "passionate"
+      ],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.721,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "calm",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    },
+    {
+      "sequence": "⏸️✋",
+      "mood_description": "balanced and composed",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 0.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.751,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "balanced",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    },
+    {
+      "sequence": "🧠🙏🌱",
+      "mood_description": "balanced and composed",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 0.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.877,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "positive",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    },
+    {
+      "sequence": "⏸️📐🪞💥",
+      "mood_description": "balanced and composed",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 0.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.85,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "reflective",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    },
+    {
+      "sequence": "✨🌱🔁",
+      "mood_description": "balanced and composed",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 0.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.781,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "energized",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    },
+    {
+      "sequence": "🧐💥🔍",
+      "mood_description": "balanced and composed",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 0.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.709,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "calm",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    },
+    {
+      "sequence": "🔄🪶",
+      "mood_description": "balanced and composed",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 0.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.949,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "balanced",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    },
+    {
+      "sequence": "🙏🌱",
+      "mood_description": "balanced and composed",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 0.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.874,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "positive",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    },
+    {
+      "sequence": "✋💥☝️",
+      "mood_description": "balanced and composed",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 0.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.73,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "reflective",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    },
+    {
+      "sequence": "🪶📓♻️🧐",
+      "mood_description": "balanced and composed",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 0.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.881,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "energized",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    },
+    {
+      "sequence": "☝️🧮✋",
+      "mood_description": "balanced and composed",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 0.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.914,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "calm",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    },
+    {
+      "sequence": "🪞⏸️…",
+      "mood_description": "balanced and composed",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 0.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.737,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "balanced",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    },
+    {
+      "sequence": "🙏…✅",
+      "mood_description": "balanced and composed",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 0.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.891,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "positive",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    },
+    {
+      "sequence": "📐🔥📓",
+      "mood_description": "energetic and dynamic",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 1.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [
+        "energetic",
+        "passionate"
+      ],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.929,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "reflective",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    },
+    {
+      "sequence": "⚡🛑🌱♻️",
+      "mood_description": "energetic and dynamic",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 1.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [
+        "energetic",
+        "passionate"
+      ],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.791,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "energized",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    },
+    {
+      "sequence": "💥✋",
+      "mood_description": "balanced and composed",
+      "sec_vector": {
+        "joy": 0.0,
+        "curiosity": 0.0,
+        "energy": 0.0,
+        "concern": 0.0,
+        "love": 0.0,
+        "insight": 0.0
+      },
+      "personality_traits": [],
+      "emotional_arc": "resolution arc: calm → focused → satisfied (moderate)",
+      "confidence_score": 0.703,
+      "complexity_level": "medium",
+      "selection_metadata": {
+        "selection_method": "intelligent",
+        "target_mood": "calm",
+        "brain_context_used": true,
+        "performance_weight": 0.6,
+        "timestamp": "2025-12-20T21:57:29.015381"
+      }
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{titlesec}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+\geometry{margin=1in}
+
+% Section formatting
+\titleformat{\section}
+  {\normalfont\Large\bfseries}
+  {\thesection}
+  {1em}
+  {}
+
+\titlespacing*{\section}
+  {0pt}
+  {12pt}
+  {6pt}
+
+% Subsection formatting
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}
+  {\thesubsection}
+  {1em}
+  {}
+
+\titlespacing*{\subsection}
+  {0pt}
+  {8pt}
+  {4pt}
+
+\onehalfspacing
+
+\title{MMLU and Cognitive Integrity: Clarifying Benchmark Interpretation in Regulatory Architectures}
+
+\author{John H. Cragin \\
+Independent Researcher \\
+john.cragin@outlook.com}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+Benchmarks like MMLU are essential for evaluating AI capabilities, but their interpretation shifts when repurposed as stressors for regulatory architectures. This paper clarifies that MMLU measures task-level optimization under uncertainty, not cognitive integrity—defined as boundedness, coherence, and recoverability. Using SpiralBrain v3.0 as an instrumented example, we show how low MMLU scores (20–36\%) reflect intentional stability preservation, not deficits, while internal metrics reveal preserved integrity. Common misconceptions about performance implying cognition are addressed, with implications for more careful benchmark usage. No claims of universality or superiority are made; conclusions are constrained to observed behavior in SpiralBrain.
+
+This work is situated within the Regulatory Intelligence (RI) paradigm \cite{Cragin2026Thesis}, which defines intelligence as the capacity for viability rather than calculation. In this framework, MMLU serves as a structured stressor to probe regulatory mechanisms, with performance intentionally sacrificed to maintain homeostasis when hazard increases.
+
+\section{Introduction}
+
+Benchmarks play a central role in contemporary AI evaluation, providing standardized measures of system capabilities across diverse tasks. The Massive Multitask Language Understanding (MMLU) dataset, with its 15,908 questions spanning 57 academic subjects, is widely used to assess general knowledge, reasoning, and problem-solving in language models \cite{hendrycks2020measuring}. In practice, MMLU results are often interpreted as direct indicators of cognitive capability, where higher scores imply superior reasoning and lower scores suggest deficiencies.
+
+This interpretation rests on an implicit assumption: that task performance equates to cognition. However, when benchmarks such as MMLU are repurposed as structured sources of uncertainty and contradiction rather than as capability rankings, this assumption breaks down. The purpose of this paper is to clarify MMLU interpretation in such contexts, using SpiralBrain v3.0 as an instrumented example to distinguish between task-level optimization and cognitive integrity under uncertainty. We make no claims of universality or superiority; all conclusions are constrained to empirically observed behavior in SpiralBrain.
+
+\section{How MMLU Is Used in the Regulatory Intelligence Work}
+
+In the Regulatory Intelligence work \cite{Cragin2026Thesis}, MMLU is employed not as a measure of capability but as a structured stressor to probe system stability under high-entropy conditions. The dataset's diverse questions across 57 academic subjects provide a controlled source of uncertainty and contradiction, allowing observation of how regulatory mechanisms respond to increasing cognitive load.
+
+Experiments are conducted in a clean-slate, deterministic Python environment to ensure reproducibility and isolate internal physiology from external variables. Each run begins from identical initial conditions, with no persistent memory or cross-run learning, enabling falsification of regulatory behavior.
+
+Dual measurement is used: both external task performance (MMLU accuracy) and internal cognitive physiology (metrics like coherence, hazard, and drift) are recorded simultaneously. This approach distinguishes stress testing—observing how the system maintains viability under load—from ranking systems by raw performance.
+
+The goal is to observe regulatory throttling and homeostasis preservation, not to optimize scores. Lower MMLU performance is an intentional outcome of prioritizing stability over accuracy when hazard increases.
+
+\section{MMLU in the H-Series Experimental Program}
+
+The Regulatory Intelligence work employs MMLU within the H-Series experimental program \cite{Cragin2026Thesis}, a systematic validation framework testing regulatory mechanisms under stress:
+
+\begin{itemize}
+\item \textbf{H3 (Structured Reasoning)}: Forces high-convergence logic, revealing coherence costs of intense reasoning
+\item \textbf{H4 (Elastic Coupling)}: Implements restorative signals to maintain coherence floors  
+\item \textbf{H5 (Cognitive Control Network)}: Enables autonomous mode selection based on hazard levels
+\item \textbf{H6 (Long-Term Adaptation)}: Demonstrates 25.4\% drift reduction through regulatory optimization
+\end{itemize}
+
+Across H-series phases, MMLU performance ranges from 23.0\% to 36.5\%, with predictable regulatory responses: throttling activates when hazard rises, ensuring recoverable dynamics rather than divergence.
+
+\section{Common Misconceptions About MMLU Results}
+
+Common interpretations of MMLU results in regulatory architectures often lead to misconceptions about system capabilities.
+
+\textbf{Misconception 1:} Low MMLU scores imply weak reasoning. In fact, scores in the 20–36\% range reflect intentional regulatory throttling to preserve stability, not deficiencies in cognitive processing.
+
+\textbf{Misconception 2:} Inconsistency or variability in performance implies confusion or collapse. Instead, it indicates elastic adaptation within runs, maintaining bounded dynamics without persistent learning.
+
+\textbf{Misconception 3:} Non-learning systems are inherently disadvantaged on complex benchmarks. Regulatory architectures prioritize homeostasis over optimization, yielding lower scores but guaranteed stability.
+
+These intuitions arise from optimization-centric paradigms but fail for systems designed for viability-first cognition. SpiralBrain demonstrates that stability can be maintained even as accuracy is sacrificed.
+
+\section{Cognitive Integrity vs Task Performance}
+
+Cognitive integrity refers to a system's ability to maintain boundedness, coherence, and recoverability under stress, independent of task accuracy. In contrast, task performance measures correctness on specific objectives.
+
+Accuracy is an insufficient proxy for integrity under uncertainty because it does not capture internal state. A system may achieve high performance while approaching instability, or low performance while preserving coherence.
+
+Performance failure (e.g., incorrect answers) does not necessarily indicate cognitive failure (e.g., loss of bounded dynamics). Regulatory systems may deliberately fail tasks to maintain integrity.
+
+Internal metrics like coherence (alignment), hazard (instability risk), and drift (state volatility) provide direct measures of integrity, revealing aspects invisible to performance alone.
+
+\section{Illustrative Examples from SpiralBrain MMLU Runs}
+
+SpiralBrain's MMLU runs illustrate how low scores can coexist with preserved integrity \cite{Cragin2026Thesis}.
+
+Example 1: In baseline conditions, MMLU performance reaches 23.3\%, with coherence remaining above 0.95 and homeostasis at 99.9\%, demonstrating that accuracy sacrifice preserves stability.
+
+Example 2: Under enhanced reasoning activation, scores improve to 29.9\% while maintaining bounded drift and low hazard, showing degradation without collapse.
+
+Example 3: Across the H-series, performance ranges from 23.0\% to 36.5\%, with predictable failure modes: throttling activates when hazard rises, ensuring recoverable dynamics rather than divergence.
+
+These examples emphasize interpretation over achievement, highlighting how regulatory systems respond to stress.
+
+\section{What MMLU Does Measure Well}
+
+MMLU legitimately measures task-level performance in structured domains where answers are unambiguous, such as academic knowledge and reasoning.
+
+It is appropriate for evaluating optimization-driven systems aiming for high accuracy, and useful for comparative ranking in those contexts.
+
+This paper is not an attack on benchmarks; MMLU provides valuable signals when used for its intended purpose. However, overloading it with cognitive meaning beyond performance can mislead interpretations of regulatory systems.
+
+\section{Implications for Benchmark Interpretation}
+
+Overloading benchmarks with cognitive meaning risks misinterpreting regulatory systems, where low performance may reflect intentional stability preservation rather than deficiency.
+
+Internal instrumentation is essential for evaluating systems beyond external metrics, revealing coherence and hazard that performance alone obscures.
+
+Regulatory systems should be evaluated differently: prioritize integrity metrics alongside accuracy, recognizing that stability-first designs may sacrifice performance for reliability.
+
+This encourages more careful benchmark usage, distinguishing between optimization targets and stress tests.
+
+\section{Limitations}
+
+This analysis is constrained to SpiralBrain v3.0 and its specific instrumentation; results may not generalize to other architectures without validation.
+
+No claim of universality is made; the clarification applies only to regulatory systems similar to SpiralBrain.
+
+No proposal for a replacement benchmark is offered; MMLU remains valuable for its intended uses.
+
+All experimental results, analysis scripts, figure-generation pipelines, and logged outputs referenced in this study are publicly available in the SpiralBrain v3.0 repository \cite{SpiralBrainRepo}.
+
+\section{Conclusion}
+
+This paper clarifies MMLU interpretation when used as a stressor in regulatory architectures, distinguishing task performance from cognitive integrity.
+
+Summary: Low scores reflect intentional stability preservation, not weakness; internal metrics reveal integrity invisible to accuracy alone; benchmarks should be used carefully to avoid overloading with unwarranted cognitive meaning.
+
+Invitation: Encourage researchers to adopt dual measurement and consider integrity alongside performance in evaluating AI systems.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

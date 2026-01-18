@@ -38,5 +38,6 @@ python -m benchmarks.asymmetry_under_scarcity_experiment --n-trials 3 --epochs 1
 ## Files
 
 - `asymmetric_regulatory_responses_scarcity.tex`: Main manuscript
+- `asymmetric_regulatory_responses_scarcity.md`: Markdown version
 - `references.bib`: Bibliography
 - `README.md`: This overview

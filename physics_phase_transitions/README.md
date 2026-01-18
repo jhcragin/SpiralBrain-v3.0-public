@@ -30,5 +30,6 @@ Run bifurcation sweeps: `python bifurcation_analysis_v3.py`
 ## Files
 
 - `physics_phase_transitions.tex`: Main manuscript
+- `physics_phase_transitions.md`: Markdown version
 - `references.bib`: Bibliography
 - `README.md`: This overview

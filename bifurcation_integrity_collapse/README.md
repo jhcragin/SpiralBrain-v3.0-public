@@ -36,5 +36,6 @@ Run `bifurcation_analysis_v3.py` for full parameter sweeps.
 ## Files
 
 - `bifurcation_integrity_collapse.tex`: Main manuscript
+- `bifurcation_integrity_collapse.md`: Markdown version
 - `references.bib`: Bibliography
 - `README.md`: This overview

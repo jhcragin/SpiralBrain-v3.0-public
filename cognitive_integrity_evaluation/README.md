@@ -26,9 +26,9 @@ AI systems cannot be meaningfully evaluated without accounting for regulatory re
 - Discussion: Implications for AI evaluation redesign
 
 ## Status
-Outline complete. Ready for drafting.
+Paper drafted and available in LaTeX and Markdown formats.
 
 ## Files
-- `outline.md`: Detailed paper outline
-- `cognitive_integrity_evaluation.tex`: (To be created) LaTeX source
+- `cognitive_integrity_evaluation.tex`: LaTeX source
+- `cognitive_integrity_evaluation.md`: Markdown version
 - `references.bib`: Bibliography

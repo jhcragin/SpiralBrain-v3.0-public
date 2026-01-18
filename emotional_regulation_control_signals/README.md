@@ -67,3 +67,10 @@ All findings are grounded in executable Python artifacts:
 ## Reproducibility
 
 Execute `python -m benchmarks.core_emotional_foundation_benchmark` for validation results. All artifacts in SpiralBrain v3.0 repository.
+
+## Files
+
+- `emotional_regulation_control_signals.tex`: Main manuscript
+- `emotional_regulation_control_signals.md`: Markdown version
+- `references.bib`: Bibliography
+- `README.md`: This overview

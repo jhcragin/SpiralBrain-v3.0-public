@@ -43,6 +43,8 @@ Run tax reasoning probe: `python benchmarks/financial_cognition_stability_probe.
 ## Files
 
 - `regulatory_intelligence_finance.tex`: Main manuscript with appendix, figures, and tables
+- `regulatory_intelligence_finance.md`: Markdown version
+- `regulatory_intelligence_finance.pdf`: Compiled PDF
 - `references.bib`: Bibliography
 - `README.md`: This overview
 

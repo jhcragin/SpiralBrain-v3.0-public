@@ -333,9 +333,9 @@ Any violation falsifies the regulatory-only claim and indicates unintended learn
 
 | Prohibited Mechanism | Detection Test | Threshold |
 |---------------------|----------------|-----------|
-| Task-level statistical learning | Cross-run performance correlation | ρ > 0.01 |
-| Persistent task memory | Initial capability checksum comparison | Δchecksum ≠ 0 |
-| Task plasticity accumulation | Performance delta norms across instantiations | \|\|Δp\|\|₂ > 10⁻⁶ |
+| Task-level statistical learning | Cross-run performance correlation | $\rho > 0.01$ |
+| Persistent task memory | Initial capability checksum comparison | $\Delta(\text{checksum}) = 0$ |
+| Task plasticity accumulation | Performance delta norms across instantiations | $||\Delta p||_2 > 10^{-6}$ |
 | Regulatory learning (allowed) | Within-run adaptation detection | Regulatory metrics vary |
 
 **Empirical Status**: All H-series experiments satisfy these criteria, with measured ρ = 0.003, ||Δp||₂ = 2.1 × 10⁻⁸, establishing clean-slate validation. □

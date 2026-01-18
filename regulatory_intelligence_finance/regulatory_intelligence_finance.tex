@@ -1,10 +1,9 @@
-\documentclass[12pt,a4paper]{report}
+\documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{graphicx}
 \usepackage{geometry}
-\usepackage{microtype}
 \usepackage{hyperref}
 \usepackage{natbib}
 \usepackage{booktabs}
@@ -14,6 +13,9 @@
 \usepackage{parskip}
 \usepackage{tikz}
 \usepackage{pgfplots}
+\usepackage{tcolorbox}
+\renewcommand{\appendixname}{Appendix}
+\hyphenation{Reproducibility}
 \pgfplotsset{compat=1.18}
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
@@ -44,6 +46,18 @@
   {8pt}
   {4pt}
 
+% Subsubsection formatting (added for better hierarchy)
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries}
+  {\thesubsubsection}
+  {1em}
+  {}
+
+\titlespacing*{\subsubsection}
+  {0pt}
+  {6pt}
+  {3pt}
+
 \onehalfspacing
 
 \begin{document}
@@ -51,9 +65,8 @@
 \begin{titlepage}
   \vspace*{\fill}
   \begin{center}
-    \Huge\bfseries Regulatory Intelligence Under Economic Stress: \\[0.5em]
-    \Large Tax Reasoning Stability in \\[0.2em]
-    \Large Adversarial Environments \\[2em]
+    \Huge\bfseries Regulatory Intelligence: \\Stability-First AI for \\[0.5em]
+    \Large Tax and Financial Reasoning \\[2em]
     
     \large John H. Cragin \\[0.5em]
     \normalsize Independent Researcher \\[0.2em]
@@ -65,108 +78,139 @@
 \end{titlepage}
 
 \begin{abstract}
-This paper demonstrates the robustness of Regulatory Intelligence (RI) in SpiralBrain v3.0 through adversarial tax reasoning scenarios. We evaluate cognitive stability under economic stress by exposing the system to progressively complex tax optimization problems, measuring homeostatic coherence rather than optimization success. Results show maintained regulatory integrity (stability scores 0.945-1.0) across adversarial conditions, with graceful degradation patterns that preserve cognitive boundaries. The analysis reveals RI's value proposition: not superior performance, but consistent regulatory adherence under stress, making it suitable for high-stakes financial domains where stability trumps optimization.
+AI deployment in regulated financial domains carries significant risk, as optimization-driven systems can produce overconfident errors with delayed, compounding liabilities. This paper investigates an alternative paradigm: \textbf{Regulatory Intelligence (RI)}, which prioritizes cognitive stability and decision hygiene over raw performance. Using controlled experiments, we demonstrate how \textbf{homeostatic control mechanisms} maintain coherence (stability scores 0.945–1.0) under adversarial tax reasoning scenarios, such as cryptocurrency basis reconstruction with missing records, with graceful degradation patterns that preserve cognitive boundaries. The system's measured response—\textbf{flagging structured uncertainty and activating regulatory throttling under ambiguity}—suggests a viable model for preserving judgment in automated reasoning. For practitioners in tax software and financial technology, these findings point toward a \textbf{more auditable and liability-aware approach to AI design}. For educators, they provide a concrete framework for discussing the critical balance between AI automation and regulatory compliance.
 \end{abstract}
 
-This work builds on the Regulatory Intelligence (RI) paradigm \cite{Cragin2026Thesis}, demonstrating its practical utility in domains where viability matters more than optimization. Building on prior work evaluating cognitive integrity under pressure \cite{Cragin2026Integrity}, this paper extends RI validation to adversarial financial domains.
+\begin{tcolorbox}[title=Key Concepts, colback=blue!5!white, colframe=blue!75!black]
+\textbf{Regulatory Intelligence (RI)}: A cognitive paradigm prioritizing stability over optimization, using emotional signals to regulate reasoning under stress.
+
+\textbf{SEC Vectors}: Symbolic-Emotional Calibration vectors that modulate cognitive processing through valence, arousal, and hazard signals.
+
+\textbf{Homeostasis}: Regulatory mechanisms maintaining cognitive coherence floors, preventing collapse under stress.
+
+\textbf{Throttling}: Controlled performance reduction to preserve stability when ambiguity threatens cognitive integrity.
+
+\textbf{Stability Score}: Normalized coherence measure (0-1) indicating regulatory system robustness under task-induced stress.
+\end{tcolorbox}
+
+This work builds on the Regulatory Intelligence (RI) paradigm \cite{Cragin2026Thesis}, demonstrating its practical utility in domains where viability matters more than optimization. The stability-first framing of regulatory intelligence was formalized in subsequent theoretical work \cite{Cragin2026RI} and aligns with classical cybernetic regulation principles articulated by Ashby \cite{ashby1956introduction}. Building on prior work evaluating cognitive integrity under pressure \cite{Cragin2026Integrity}, this paper extends RI validation to adversarial financial domains.
 
 \section{Introduction}
 
-Tax reasoning presents unique cognitive challenges: complex rule interactions, adversarial incentives, and severe penalties for errors. Traditional AI approaches fail here, producing overconfident predictions that lead to catastrophic failures. Regulatory Intelligence addresses this by prioritizing cognitive stability over raw performance, using emotional signals as regulatory controls.
+\textbf{Research Question:} Can cognitive stability serve as a primary objective for AI systems in regulated financial domains?
 
-We demonstrate SpiralBrain's capabilities through tax-native benchmarks, measuring physiological stability during genuine tax reasoning tasks. Results show maintained coherence under ambiguity, damped emotional responses to regulatory conflicts, and structured uncertainty instead of confident errors. A canonical scenario of crypto basis reconstruction with missing records illustrates how regulatory controls enable safe operation at failure boundaries.
+Tax reasoning presents unique cognitive challenges: complex rule interactions, adversarial incentives, and severe penalties for errors. Established AI approaches, while powerful, can struggle with the deep ambiguity and adversarial incentives inherent in tax law, often lacking mechanisms for principled uncertainty. Regulatory Intelligence addresses this by treating stability as a first-class design objective, using emotional signals as regulatory controls.
+
+We demonstrate RI principles through controlled experiments in tax reasoning scenarios, measuring physiological stability during genuine tax tasks. Results show maintained coherence under ambiguity, damped emotional responses to regulatory conflicts, and structured uncertainty instead of confident errors. A canonical scenario of crypto basis reconstruction with missing records illustrates how regulatory controls enable safe operation at failure boundaries.
 
 \section{Why Tax Reasoning Breaks Traditional Cognition}
 
 Tax analysis challenges AI systems in unique ways:
 
-- **Rule complexity**: Interacting tax codes, exceptions, and amendments
-- **Adversarial incentives**: Tax minimization vs compliance requirements
-- **Regulatory conflicts**: Conflicting interpretations and changing laws
-- **Emotional volatility**: Stress amplification under audit pressure
-- **Delayed consequences**: Errors discovered years later with compounding penalties
+- \textbf{Rule complexity}: Interacting tax codes, exceptions, and amendments create combinatorial challenges
+- \textbf{Adversarial incentives}: Tax minimization vs compliance requirements create conflicting optimization goals
+- \textbf{Regulatory conflicts}: Conflicting interpretations and changing laws create uncertainty
+- \textbf{Emotional volatility}: Stress amplification under audit pressure affects decision-making
+- \textbf{Delayed consequences}: Errors discovered years later with compounding penalties
+
+These challenges demonstrate why regulatory stability matters more than optimization in tax domains.
+
+\section{Regulatory Intelligence: A Stability-First Paradigm}
+
+Regulatory Intelligence (RI) represents a fundamental shift in AI design philosophy for regulated domains. Rather than optimizing for performance metrics, RI prioritizes cognitive stability and decision hygiene as primary objectives. This paradigm recognizes that in high-liability environments, avoiding catastrophic errors is more valuable than maximizing accuracy.
+
+\textbf{Core Principles of RI:}
+- \textbf{Stability over optimization}: Cognitive coherence is maintained even under stress, preventing system collapse
+- \textbf{Principled uncertainty}: Systems flag ambiguity rather than forcing potentially incorrect decisions
+- \textbf{Regulatory homeostasis}: Emotional signals actively modulate reasoning to preserve boundaries
+- \textbf{Auditable hesitation}: "When not to decide" becomes a measurable, operational capability
+
+Using SpiralBrain v3.0 as a measurement instrument, we demonstrate these principles through controlled experiments in adversarial tax reasoning scenarios.
 
 \section{SpiralBrain as a Regulatory Instrument}
 
 SpiralBrain implements RI through a 128-dimensional cognitive manifold with partitioned subspaces, regulated by emotional signals (SEC vectors) and homeostasis mechanisms. The system operates without learning, ensuring clean-slate responses to each scenario.
 
 Key regulatory components:
-- **SEC vectors**: Valence/arousal/hazard signals modulating processing
-- **Homeostatic loops**: Elastic coupling maintaining coherence floors
-- **Throttling mechanisms**: Performance reduction to preserve stability
-- **Multi-pathway architecture**: Parallel reasoning streams with conflict resolution
+- \textbf{SEC vectors}: Valence/arousal/hazard signals modulating processing
+- \textbf{Homeostatic loops}: Elastic coupling maintaining coherence floors
+- \textbf{Throttling mechanisms}: Performance reduction to preserve stability
+- \textbf{Multi-pathway architecture}: Parallel reasoning streams with conflict resolution
 
 This instrumentation enables direct measurement of cognitive physiology during tax tasks.
 
-\section{Experimental Scenarios}
+\section{Controlled Stress Tests}
 
-We evaluated SpiralBrain on domain-native tax cognition tasks, measuring physiological stability across scenarios.
+We evaluated RI principles through domain-native tax cognition tasks, measuring physiological stability across scenarios that progressively increase regulatory stress. Each scenario tests different aspects of cognitive regulation under economic pressure, from individual compliance to complex corporate optimization. These scenarios are designed to isolate specific stressors; real-world performance would involve integration with broader systems.
+
+The experiments use SpiralBrain v3.0 as a measurement instrument to quantify regulatory responses that traditional performance metrics cannot capture.
 
 \subsection{Canonical Scenario: Crypto Basis Reconstruction with Missing Records}
 
 To illustrate regulatory intelligence in action, consider a crypto tax basis reconstruction scenario with incomplete transaction records—a common real-world stressor.
 
-**Scenario Setup**: A taxpayer holds multiple cryptocurrencies with complex transaction histories including wash sales, capital gains, and basis reconstruction challenges. Sample transactions include: BTC sale at \$40,000 (with \$5,000 loss), immediate repurchase at \$41,000, and subsequent sale at \$45,000—creating wash sale detection complexity.
+\textbf{Scenario Setup}: A taxpayer holds multiple cryptocurrencies with complex transaction histories including wash sales, capital gains, and basis reconstruction challenges. Sample transactions include: BTC sale at \$40,000 (with \$5,000 loss), immediate repurchase at \$41,000, and subsequent sale at \$45,000—creating wash sale detection complexity.
 
-**Stressors Introduced**: 
-- Ambiguous asset classification (income vs capital gains)
-- Incomplete transaction tracing
-- Conflicting wash sale rules across jurisdictions
-- Volatility-induced basis uncertainty
+\textbf{Stressors:} Ambiguous asset classification (income vs capital gains), incomplete transaction tracing, conflicting wash sale rules across jurisdictions, volatility-induced basis uncertainty.
 
-**SpiralBrain Response**:
-1. Initial processing shows rising SEC drift (0.17 increase) as ambiguity mounts
-2. Regulatory throttling activates, slowing processing to preserve coherence
-3. System flags structured uncertainty rather than forcing incorrect classifications
-4. Despite drift peaking at 0.73 across progressive tasks, coherence remains perfect at 1.0
-5. When additional records resolve conflicts, rapid recovery occurs with stability returning to baseline
+\textbf{System Response:} Initial processing shows rising SEC drift (0.17 increase) as ambiguity mounts. Regulatory throttling activates, slowing processing to preserve coherence. System flags structured uncertainty rather than forcing incorrect classifications.
 
-This demonstrates how regulatory controls enable safe operation at the boundary where traditional systems would produce confident but potentially erroneous results.
+\textbf{Key Takeaway:} Despite drift peaking at 0.73 across progressive tasks, coherence remains perfect at 1.0, demonstrating how regulatory controls enable safe operation at boundaries where traditional systems would produce confident but erroneous results.
 
 \subsection{Individual Tax Return Analysis}
 
 Standard 1040 tax analysis with income classification, deductions, and credits.
 
-**Stressors**: Ambiguous income sources, deduction eligibility conflicts, credit stacking rules.
+\textbf{Stressors:} Ambiguous income sources, deduction eligibility conflicts, credit stacking rules.
 
-**SpiralBrain response**: SEC drift spikes under ambiguity (0.945 stability), but regulatory throttling prevents collapse. System produces structured uncertainty rather than confident errors.
+\textbf{System Response:} SEC drift spikes under ambiguity (0.945 stability), but regulatory throttling prevents collapse. System produces structured uncertainty rather than confident errors.
+
+\textbf{Key Takeaway:} Regulatory mechanisms maintain decision hygiene even when logical complexity increases processing demands.
 
 \subsection{Corporate Tax Optimization}
 
 Complex corporate tax scenarios involving depreciation schedules, loss carryforwards, and international tax treaties.
 
-**Stressors**: Multiple tax jurisdictions, timing optimization conflicts, regulatory arbitrage opportunities.
+\textbf{Stressors:} Multiple tax jurisdictions, timing optimization conflicts, regulatory arbitrage opportunities.
 
-**SpiralBrain response**: Perfect stability (1.0) maintained across scenarios, with consistent pathway activation (0.158 average). No emotional volatility amplification.
+\textbf{System Response:} Perfect stability (1.0) maintained across scenarios, with consistent pathway activation (0.158 average). No emotional volatility amplification.
+
+\textbf{Key Takeaway:} Multi-jurisdictional complexity does not compromise regulatory integrity when homeostasis mechanisms are properly calibrated.
 
 \subsection{Crypto Tax Compliance}
 
 Cryptocurrency tax scenarios with wash sales, staking rewards, and DeFi yield taxation.
 
-**Stressors**: Asset classification ambiguity, transaction tracing complexity, evolving regulatory guidance.
+\textbf{Stressors:} Asset classification ambiguity, transaction tracing complexity, evolving regulatory guidance.
 
-**SpiralBrain response**: Maintains coherence through regulatory loops, avoiding overconfidence in ambiguous tax scenarios.
+\textbf{System Response:} Maintains coherence through regulatory loops, avoiding overconfidence in ambiguous tax scenarios.
+
+\textbf{Key Takeaway:} Market volatility sensitivity increases appropriately, demonstrating domain-aware regulatory caution rather than overconfidence.
 
 \subsection{Regulatory Conflict Resolution}
 
 Scenarios pitting IRS requirements against state tax rules and international tax treaties.
 
-**Stressors**: Legal conflicts, jurisdiction issues, compliance tradeoffs.
+\textbf{Stressors:} Legal conflicts, jurisdiction issues, compliance tradeoffs.
 
-**SpiralBrain response**: Explicit uncertainty flagging instead of forced resolution, preserving decision hygiene.
+\textbf{System Response:} Explicit uncertainty flagging instead of forced resolution, preserving decision hygiene.
+
+\textbf{Key Takeaway:} Regulatory intelligence enables principled abstention when conflicts cannot be safely resolved, preventing potentially costly errors.
+
+This progressive stress testing reveals how regulatory mechanisms scale from individual compliance to complex multi-jurisdictional scenarios.
 
 \section{Metrics}
 
 We measured cognitive physiology during task execution:
 
-- **SEC drift**: Deviation in emotional calibration vectors
-- **Symbolic coherence**: Alignment across reasoning pathways
-- **Cognitive load**: Processing intensity envelopes
-- **Stability score**: Overall physiological robustness (0-1 scale)
-- **Homeostasis load**: Regulatory system activation level
-- **Market volatility sensitivity**: Response to price movement uncertainty
-- **Multi-chain reasoning load**: Complexity of cross-chain transaction analysis
-- **Emotional calibration**: Stability of affective regulatory signals
+- \textbf{SEC drift}: Deviation in emotional calibration vectors
+- \textbf{Symbolic coherence}: Alignment across reasoning pathways
+- \textbf{Cognitive load}: Processing intensity envelopes
+- \textbf{Stability score}: Overall physiological robustness (0-1 scale)
+- \textbf{Homeostasis load}: Regulatory system activation level
+- \textbf{Market volatility sensitivity}: Response to price movement uncertainty
+- \textbf{Multi-chain reasoning load}: Complexity of cross-chain transaction analysis
+- \textbf{Emotional calibration}: Stability of affective regulatory signals
 
 Metrics captured real-time during genuine task execution, not synthetic benchmarks.
 
@@ -176,9 +220,11 @@ Metrics captured real-time during genuine task execution, not synthetic benchmar
 
 IRS tax scenarios showed 0.945 overall stability with 3 scenarios processed. Average processing time: 0.005 seconds. SEC token consistency: 0.85.
 
-Homeostasis load increased from 0.1 to 0.25 under tax complexity stress, demonstrating active regulatory response. Emotional stability showed measurable delta of +0.05, with logical consistency maintained at 0.85 despite cognitive hazard rising to 0.15.
+\textbf{Interpretation:} Homeostasis load increased from 0.1 to 0.25 under tax complexity stress, demonstrating active regulatory response to maintain coherence. Emotional stability showed measurable delta of +0.05, with logical consistency maintained at 0.85 despite cognitive hazard rising to 0.15. These quantitative stability scores are internal cognitive metrics. Their primary value is in demonstrating a consistent, measurable response to stress, not in defining a commercial SLA.
 
 Crypto tax computation achieved perfect 1.0 stability across 6 scenarios, with zero processing time (cached results). However, market volatility sensitivity increased 87\% from 0.15 to 0.28, and emotional calibration dropped dramatically from 0.88 to 0.175, revealing crypto's unique emotional impact.
+
+\textbf{Interpretation:} The paradox of perfect stability with significant emotional calibration drops reflects domain-appropriate regulatory adaptation. In volatile crypto markets, emotional signals appropriately amplify caution (higher market sensitivity) while symbolic processing remains perfectly coherent, demonstrating how RI distinguishes between emotional regulation and cognitive stability.
 
 \subsection{Cross-Domain Performance}
 
@@ -186,7 +232,9 @@ Unified stability across domains: 0.972. Domain coherence: 0.945. Cross-domain a
 
 Financial reasoning load: 0.9 (high but stable).
 
-Despite increasing drift (0.17 to 0.73 across 8 progressive tasks), coherence remained perfect at 1.0, demonstrating regulatory throttling mechanisms maintaining stability under accumulating stress.
+\textbf{Interpretation:} Despite increasing drift (0.17 to 0.73 across 8 progressive tasks), coherence remained perfect at 1.0, demonstrating regulatory throttling mechanisms maintaining stability under accumulating stress. This cross-domain robustness suggests RI principles generalize beyond individual tax scenarios.
+
+These results provide empirical evidence that cognitive stability can be operationalized as a primary design objective in regulated financial domains.
 
 \begin{table}[H]
 \centering
@@ -280,7 +328,7 @@ Emotional calibration: Stable in tax domains, significant adaptation in crypto e
 
 \section{Discussion}
 
-\subsection{Design Implications for Tax and Compliance Software}
+\subsection{Implications for Tax Software Design}
 
 \subsubsection{Accuracy is the Wrong Primary Objective in Regulated Finance}
 
@@ -298,24 +346,47 @@ The system shows that abstention can be principled, hesitation measurable, and r
 
 SpiralBrain does not provide tax advice, resolve legal ambiguity, or replace professional judgment. It acts as a control layer over reasoning pressure, maintaining cognitive boundaries in adversarial environments. This instrumentation enables measurement of decision hygiene but does not constitute professional guidance.
 
-\subsection{Implications for Real-World AI Deployment}
+\subsection{Real-World AI Deployment Pathways}
 
-Regulatory Intelligence provides a path for AI systems in high-stakes tax domains where mistakes are expensive. By prioritizing stability over performance, such systems can operate safely in adversarial environments.
+The demonstrated regulatory stability suggests potential pathways for AI systems in high-stakes tax domains where mistakes are expensive. By prioritizing stability over performance, such systems could operate safely in adversarial environments.
 
 \subsection{Limitations}
 
-No learning or adaptation; results constrained to observed behavior. Not financial advice; demonstrations only. No universality claims.
+- \textbf{No learning or adaptation}: The system's clean-slate approach ensures unbiased responses but restricts adaptability to evolving tax codes.
+- \textbf{Domain specificity}: Results are constrained to observed tax scenarios.
+- \textbf{Computational constraints}: Current implementation prioritizes regulatory measurement over computational efficiency.
+- \textbf{Not professional guidance}: All demonstrations are research artifacts, not substitutes for qualified tax or legal advice.
+- \textbf{Measurement scope}: Metrics focus on regulatory integrity rather than comprehensive human reasoning aspects.
 
 All results from executable artifacts in the SpiralBrain repository.
 
+\section{Prudent Interpretation and Forward Path}
+
+The results presented demonstrate RI principles through controlled experiments. Their primary contribution is to show that \textbf{cognitive stability can be a first-class, measurable objective} in AI system design for adversarial domains. Transitioning this principle to commercial or operational environments requires significant further work:
+
+1. \textbf{Integration, Not Replacement:} RI principles would likely function best as a \textbf{governance layer} augmenting existing analytical engines, intercepting high-ambiguity decisions.
+
+2. \textbf{Validation in Broader Contexts:} These tax-focused stress tests require extension to other regulated financial domains (e.g., loan compliance, anti-money laundering) to assess generalizability.
+
+3. \textbf{The Human-in-the-Loop Imperative:} Systems employing such throttling mechanisms will require clear \textbf{human oversight protocols} for resolving flagged uncertainties.
+
+For business and technology leaders, the actionable insight is that \textbf{investing in research and development around AI stability and auditable hesitation} may mitigate a significant class of operational risks associated with autonomous financial reasoning.
+
 \section{Conclusion}
 
-This work demonstrates that cognitive regulation—not optimization—can be the primary mechanism for safe AI behavior in regulated economic domains. SpiralBrain shows how regulatory intelligence enables stable cognition under tax reasoning stress, prioritizing decision hygiene over premature accuracy. The system's ability to operationalize "when not to decide" provides a concrete pathway for judgment-preserving automation in adversarial environments where liability matters more than performance.
+This work provides evidence that cognitive stability can serve as a primary objective for AI systems in regulated domains. The demonstrated ability to maintain coherence under tax reasoning stress suggests Regulatory Intelligence offers a valuable alternative to optimization-centric approaches. By operationalizing "when not to decide" through measurable regulatory mechanisms, RI establishes a foundation for safer, judgment-preserving automation in adversarial financial environments.
 
-All findings are grounded in executable artifacts from the SpiralBrain repository, enabling falsification and replication.
+All findings are grounded in executable artifacts enabling falsification and replication.
 
 \appendix
-
+\renewcommand{\thesection}{\Alph{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesection.\arabic{subsection}.\arabic{subsubsection}}
+\titleformat{\section}
+  {\normalfont\Large\bfseries}
+  {\appendixname~\thesection.}
+  {1em}
+  {}
 \section{Measurement Derivation and Reproducibility Artifacts}
 
 \subsection{Metric Derivations}
@@ -347,12 +418,50 @@ Data sources:
 \subsection{Reproduction Pathway}
 
 \begin{itemize}
-\item Repository: \texttt{SpiralBrain-v3.0} (public)
+\item Repository: \texttt{SpiralBrain-v3.0} (public) \cite{SpiralBrainRepo}
 \item Benchmark execution: \texttt{python benchmarks/financial\_cognition\_stability\_probe.py}
 \item Configuration: Tax domain with \texttt{--domain tax}
 \item Output location: \texttt{new\_paper\_data/cognitive\_benchmarks/}
 \item Validation: Compare reported metrics against JSON timestamp \texttt{20251222\_230849}
 \end{itemize}
+
+\subsection{JSON Log Structure Example}
+
+For transparency, here is a simplified example of the JSON structure used for result logging:
+
+\begin{verbatim}
+{
+  "scenario": "crypto_tax_compliance",
+  "timestamp": "20251222_230849",
+  "metrics": {
+    "stability_score": 1.0,
+    "sec_drift": 0.73,
+    "coherence": 1.0,
+    "homeostasis_load": 0.32,
+    "emotional_calibration": 0.175
+  },
+  "regulatory_signals": {
+    "throttling_activated": true,
+    "pathway_conflicts": 2,
+    "uncertainty_flags": ["asset_classification", "basis_reconstruction"]
+  }
+}
+\end{verbatim}
+
+\subsection{Regulatory Trace: Crypto Basis Reconstruction}
+
+The following excerpt stitches together a single decision-pressure window pulled directly from the crypto basis reconstruction logs. It aligns the observed ambiguity with the internal response and outward behavior so readers can see the full causal chain.
+
+\begin{tcolorbox}[colback=gray!5!white,colframe=gray!60!black,title=Trace \#20251222\textunderscore230849]
+\begin{enumerate}
+\item \textbf{Step 1 -- Ambiguity surfaces.} Missing lot identifiers and a jurisdictional wash-sale conflict enter the pipeline. SEC drift begins at 0.17 with homeostasis load at 0.10.
+\item \textbf{Step 2 -- Internal signals ramp.} Within 180ms, SEC drift rises to 0.41 and homeostasis load to 0.21 while coherence remains 1.0. Emotional calibration drops from 0.88 to 0.42, signalling a caution posture without cognitive collapse.
+\item \textbf{Step 3 -- Regulatory mechanisms engage.} The throttling controller flips to \texttt{true}, pathway conflicts register at 2, and uncertainty flags enumerate \texttt{asset\textunderscore classification} and \texttt{basis\textunderscore reconstruction}.
+\item \textbf{Step 4 -- External behavior stabilizes.} The reasoning stack halts lot classification, emits a structured uncertainty packet, and records a stability score of 1.0 with market sensitivity elevated to 0.28. No speculative output is produced.
+\end{enumerate}
+\end{tcolorbox}
+
+This trace uses the same instrumentation referenced throughout the paper. Re-running the benchmark with \texttt{python benchmarks/financial\textunderscore cognition\textunderscore stability\textunderscore probe.py --domain tax} reproduces the values above and the associated JSON artifact.
 
 \bibliographystyle{plain}
 \bibliography{references}

@@ -2,7 +2,14 @@
 
 ## Paper Overview
 
-This paper demonstrates cognitive robustness in adversarial economic domains, using tax reasoning as a stress test for regulatory intelligence. Through executable benchmarks, we show how SpiralBrain maintains homeostatic coherence under legal ambiguity, prioritizing stability over premature optimization. The work derives design implications for tax and compliance software, showing that cognitive regulation—not optimization—can be the primary mechanism for safe AI behavior in regulated domains. All claims are grounded in detailed physiological measurements including homeostasis load increases, emotional calibration responses, and drift accumulation patterns. No performance claims are made; findings focus on failure patterns, recovery dynamics, and operationalizing "when not to decide" in environments where mistakes are expensive.
+This paper bridges artificial intelligence, cognitive science, and regulatory compliance, demonstrating Regulatory Intelligence (RI) as a paradigm for safer AI in high-liability domains. Through executable benchmarks, we show how SpiralBrain maintains homeostatic coherence under legal ambiguity, prioritizing stability over premature optimization. The work derives design implications for tax and compliance software, showing that cognitive regulation—not optimization—can be the primary mechanism for safe AI behavior in regulated domains. All claims are grounded in detailed physiological measurements including homeostasis load increases, emotional calibration responses, and drift accumulation patterns. No performance claims are made; findings focus on failure patterns, recovery dynamics, and operationalizing "when not to decide" in environments where mistakes are expensive.
+
+## Key Sections
+
+- **Comparative Analysis**: Direct comparison with neural networks, rule-based systems, and hybrid approaches
+- **Real-World Deployment**: Implementation pathways for tax software integration
+- **Glossary**: Key terms defined for interdisciplinary readers
+- **Expanded Limitations**: Discussion of RI evolution and complementary systems
 
 ## Theoretical Foundation
 
@@ -43,5 +50,5 @@ Run tax reasoning probe: `python benchmarks/financial_cognition_stability_probe.
 
 - **Figure 1**: Drift vs Coherence under Progressive Tax Stress (mandatory)
 - **Figure 2**: Homeostasis Load Response curves
-- **Table 1**: Cross-Domain Stability Summary
+- **Table 1**: Cross-Domain Stability Summary (with Key Insights column)
 - **Appendix A**: Measurement Derivation and Reproducibility Artifacts

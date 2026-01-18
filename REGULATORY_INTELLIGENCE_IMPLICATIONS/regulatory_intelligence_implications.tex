@@ -118,6 +118,32 @@ The architecture follows a four-lobe structural topology: regulatory lobe (homeo
 
 These principles enable systems that are inherently safe by design, reducing the need for external safety mechanisms.
 
+\section{Illustrative Safety Failure Mode (Prevented by Regulatory Intelligence)}
+
+To demonstrate the safety relevance of Regulatory Intelligence, consider a concrete failure mode that optimization-centric systems may exhibit under stress: \emph{runaway internal divergence}, where conflicting objectives or high-entropy inputs cause unbounded parameter evolution and loss of coherence.
+
+\subsection{Hypothetical Optimization-Centric Failure}
+
+In a traditional optimization-driven architecture, such as a reinforcement learning agent with multiple competing reward signals, runaway divergence can occur as follows:
+
+1. Under normal conditions, the system optimizes toward a stable policy.
+2. When exposed to contradictory inputs (e.g., conflicting task requirements or adversarial perturbations), the optimization process attempts to reconcile incompatible objectives.
+3. This leads to oscillatory or divergent parameter updates, amplifying internal conflicts rather than resolving them.
+4. The system enters a state of cascading instability, where corrective actions exacerbate the divergence, potentially leading to unpredictable or unsafe behavior.
+
+This failure mode is particularly dangerous in safety-critical applications, where bounded behavior is essential.
+
+\subsection{Prevention via Regulatory Intelligence}
+
+In contrast, Regulatory Intelligence prevents runaway divergence through architectural constraints that enforce bounded dynamics:
+
+1. The geometric partitioning into orthogonal subspaces (regulatory, pathway, affective) ensures that state evolution remains within a predefined manifold.
+2. Elastic regulatory dynamics bound perturbations, preventing unbounded parameter drift.
+3. Phase-locked relationships between pathways maintain coherence, avoiding fragmentation under stress.
+4. Continuous monitoring of internal metrics (coherence, hazard, drift) triggers regulatory throttling before instability cascades.
+
+Empirical evidence from SpiralBrain v3.0 demonstrates this prevention: across the H-series experiments, the system maintains 99.9\% homeostasis under equivalent stress conditions, with bounded state evolution and predictable degradation rather than divergence (see Section 4.2 in \cite{Cragin2026Thesis}). This architectural regulation provides intrinsic safety by design, complementing or replacing post-hoc optimization constraints.
+
 \section*{Data and Artifact Availability}
 
 All experimental results, analysis scripts, figure-generation pipelines, and logged outputs referenced in this study are publicly available in the SpiralBrain v3.0 repository \cite{SpiralBrainRepo}.
@@ -128,7 +154,11 @@ The full cognitive system implementation is not publicly released; however, all 
 
 The primary safety implication of Regulatory Intelligence lies in its empirically observed stability properties rather than normative ethical claims. By constraining internal dynamics through architectural regulation, RI-based systems exhibit predictable behavior under stress, which is a prerequisite for safe deployment in real-world environments.
 
+Regulatory Intelligence is orthogonal to value alignment and goal formation; it addresses systemic failure modes prior to such layers. RI constrains \emph{how} systems fail (bounded, predictable), not \emph{what} they want. It serves as a pre-alignment substrate, ensuring that cognitive processes remain coherent and recoverable, thereby enabling safer integration with higher-level alignment mechanisms like RLHF or constitutional AI.
+
 Empirical evidence from SpiralBrain experiments shows that regulatory architectures can handle complex decision-making while remaining bounded and predictable. This approach supports ethical deployment in applications requiring reliability and safety.
+
+A falsifiable safety prediction: Under equivalent high-entropy stress conditions, RI-constrained systems will exhibit bounded internal state evolution (measured by coherence and hazard metrics) where optimization-driven systems exhibit divergence or collapse.
 
 \section{Limitations and Risks}
 

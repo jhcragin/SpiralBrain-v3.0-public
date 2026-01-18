@@ -324,10 +324,19 @@ To maintain scientific rigor, we define quantitative falsification criteria:
 
 **Theorem 3.4 (Learning Exclusion)**: SpiralBrain satisfies the non-learning constraint if and only if:
 
-1. **Cross-run performance**: Spearman correlation $\rho(\text{run\_order}, \text{performance}) < 0.01$
-2. **Parameter stability**: $||\Delta p||_2 < 10^{-6}$ across instantiations
-3. **State initialization**: $||\Delta S_0|| < 10^{-14}$ (floating-point tolerance)
-4. **Checksum invariance**: $\Delta(\text{checksum}) = 0$
+\begin{enumerate}
+\item \textbf{Cross-run performance:}
+$\rho(\text{run-order}, \text{performance}) < 0.01$
+
+\item \textbf{Parameter stability:}
+$\|\Delta p\|_2 < 10^{-6}$ across instantiations
+
+\item \textbf{State initialization:}
+$\|\Delta S_0\| < 10^{-14}$ (floating-point tolerance)
+
+\item \textbf{Checksum invariance:}
+$\Delta(\text{checksum}) = 0$
+\end{enumerate}
 
 Any violation falsifies the regulatory-only claim and indicates unintended learning.
 

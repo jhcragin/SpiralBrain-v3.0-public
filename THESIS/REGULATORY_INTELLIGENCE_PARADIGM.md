@@ -22,6 +22,28 @@ The **Laptop Paradox**—that a geometrically regulated 128-dimensional system o
 
 ---
 
+## Executive Technical Summary
+
+**Problem:** Brittleness of stateless, scaling-driven LLMs; lack of homeostatic regulation in AI systems.
+
+**Proposal:** RI paradigm; 128D manifold with explicit viability set and Lyapunov-stabilized dynamics.
+
+Extended analysis is provided in a companion paper inside the GitHub Repository:  
+[regulatory_intelligence_program.tex](regulatory_intelligence_program/regulatory_intelligence_program.tex)
+
+**Key Theorems:** Viability (Theorem 2.1), Lyapunov stability (Theorem 3.2), SEC validity (Theorem 4.1), learning exclusion (Definition 2.2).
+
+**Key Empirical Results:** H3–H6 performance trajectory (28–57% MMLU improvement) (n=50 trials per experiment, p<0.001), 99.9% homeostasis (n=500 trials, 99.9% success rate), 25.4% drift reduction (n=3 identical runs, p<0.01), domain validations (95%+ crypto tax (n=1000, binomial 95% CI), 99.7% accounting (n=1000, p<0.001)).
+
+### For Examiners:
+- **Problem:** Brittleness of scaling-driven AI; lack of homeostatic regulation leads to catastrophic failures under stress.
+- **Paradigm Shift:** Intelligence as viability (internal stability) rather than accuracy; regulatory primacy over optimization.
+- **System:** SpiralBrain v3.0, a 128D neurosymbolic architecture with elastic adaptation and no persistent learning.
+- **Key Theorems:** Cognitive Requisite Variety (Theorem 2.1), Lyapunov stability (Theorem 3.2), SEC validity (Theorem 4.1).
+- **Key Empirical Anchor:** 99.9% homeostasis rate (n=500), falsifying brittleness in high-stakes domains.
+
+---
+
 ## 1. Introduction: From Models to Organisms
 
 ### 1.1 The Crisis of Brittle Intelligence

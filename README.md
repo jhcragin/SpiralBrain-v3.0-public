@@ -28,7 +28,7 @@ This repository contains the complete materials for the thesis "The Regulatory I
 
 ### Main Thesis
 
-- **`THESIS/`**: The primary thesis document, including the full manuscript ([`REGULATORY_INTELLIGENCE_PARADIGM.md`](THESIS/REGULATORY_INTELLIGENCE_PARADIGM.md)), LaTeX source ([`Regulatory Intelligence Paradigm.tex`](THESIS/Regulatory Intelligence Paradigm.tex)), references, and compiled PDF.
+- **`THESIS/`**: The primary thesis document, including the compiled PDF ([`Regulatory Intelligence Paradigm.pdf`](THESIS/Regulatory Intelligence Paradigm.pdf)), full manuscript ([`REGULATORY_INTELLIGENCE_PARADIGM.md`](THESIS/REGULATORY_INTELLIGENCE_PARADIGM.md)), LaTeX source ([`Regulatory Intelligence Paradigm.tex`](THESIS/Regulatory Intelligence Paradigm.tex)), references, and build files.
 
 ### Companion Papers and Articles
 

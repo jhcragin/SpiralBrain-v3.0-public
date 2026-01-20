@@ -153,18 +153,18 @@ Elastic architectures recover from perturbation through recursive feedback actin
 To ensure reproducibility and clarity, we define key metrics and protocols as follows:
 
 \textbf{Coherence (\(\Phi\)).}
-Let \( y_i(t) \) denote the scalar output (or fixed projection) of lobe \( i \) at timestep \( t \).
-For each timestep \( t \), compute the Pearson correlation matrix \( C(t) \) over a trailing window of length \( W \).
+Let \( y_i[t] \) denote the scalar output (or fixed projection) of lobe \( i \) at timestep \( t \).
+For each timestep \( t \), compute the Pearson correlation matrix \( C[t] \) over a trailing window of length \( W \).
 Coherence is defined as
 
 \[
-\Phi(t) = \frac{2}{N(N-1)} \sum_{i<j} \lvert C_{ij}(t) \rvert
+\Phi[t] = \frac{2}{N(N-1)} \sum_{i<j} \lvert C_{ij}[t] \rvert
 \]
 
 and the overall coherence is
 
 \[
-\bar{\Phi} = \frac{1}{T} \sum_{t=1}^{T} \Phi(t)
+\bar{\Phi} = \frac{1}{T} \sum_{t=1}^{T} \Phi[t]
 \]
 
 normalized to the range \([0,1]\) by construction.

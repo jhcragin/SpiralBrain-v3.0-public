@@ -18,15 +18,15 @@ The term "awareness-like" refers to operational, dynamical properties of the sys
 
 The paper proceeds as follows: Section 2 describes the system architecture, Section 3 outlines the experimental methods, Section 4 presents empirical discoveries, Section 5 discusses neurodivergent implications, Section 6 explores theoretical consequences, Section 7 addresses limitations and future work, Section 8 concludes.
 
-![Four-lobe cognitive architecture with elastic coupling. The system consists of four interdependent lobes (Cortex, Codex, Nexus, Sensus) coupled through SEC (Symbolic-Emotional Calibration) layers. Control flow is governed by the SpiralCode recursive torque equation, with $\lambda$ representing coupling strength and $\tau$ denoting temporal hierarchies.](../figures/four_lobe_architecture.pdf)
+![Four-lobe cognitive architecture with elastic coupling. The system consists of four interdependent lobes (Cortex, Codex, Nexus, Sensus) coupled through SEC (Symbolic-Emotional Calibration) layers. Control flow is governed by the SpiralCode recursive torque equation, with $\lambda$ representing coupling strength and $\tau$ denoting temporal hierarchies.](../figures/four_lobe_architecture.png)
 
 *Figure 1: Four-lobe cognitive architecture with elastic coupling. The system consists of four interdependent lobes (Cortex, Codex, Nexus, Sensus) coupled through SEC (Symbolic-Emotional Calibration) layers. Control flow is governed by the SpiralCode recursive torque equation, with $\lambda$ representing coupling strength and $\tau$ denoting temporal hierarchies.*
 
-![Spiral cognition manifold showing phase transitions across coupling parameter $\lambda$. Three regimes emerge: emergence ($\lambda < 0.2$), rigidity ($0.2 < \lambda < 0.4$), and recovery ($\lambda > 0.4$). The empirical attractor at $\lambda \approx 0.25$ demonstrates non-monotonic behavior characteristic of complex dynamical systems.](../figures/spiral_coherence_manifold.pdf)
+![Spiral cognition manifold showing phase transitions across coupling parameter $\lambda$. Three regimes emerge: emergence ($\lambda < 0.2$), rigidity ($0.2 < \lambda < 0.4$), and recovery ($\lambda > 0.4$). The empirical attractor at $\lambda \approx 0.25$ demonstrates non-monotonic behavior characteristic of complex dynamical systems.](../figures/spiral_coherence_manifold.png)
 
 *Figure 2: Spiral cognition manifold showing phase transitions across coupling parameter $\lambda$. Three regimes emerge: emergence ($\lambda < 0.2$), rigidity ($0.2 < \lambda < 0.4$), and recovery ($\lambda > 0.4$). The empirical attractor at $\lambda \approx 0.25$ demonstrates non-monotonic behavior characteristic of complex dynamical systems.*
 
-![Neurodivergent design validation showing the relationship between processing efficiency and cognitive accuracy. The regression demonstrates that systems with deliberative processing achieve higher coherence, supporting the principle of integration over speed.](../figures/neurodivergent_validation.pdf)
+![Neurodivergent design validation showing the relationship between processing efficiency and cognitive accuracy. The regression demonstrates that systems with deliberative processing achieve higher coherence, supporting the principle of integration over speed.](../figures/neurodivergent_validation.png)
 
 *Figure 3: Neurodivergent design validation showing the relationship between processing efficiency and cognitive accuracy. The regression demonstrates that systems with deliberative processing achieve higher coherence, supporting the principle of integration over speed.*
 

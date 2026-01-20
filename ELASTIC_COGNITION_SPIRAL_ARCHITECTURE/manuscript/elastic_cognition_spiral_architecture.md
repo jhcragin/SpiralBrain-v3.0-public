@@ -85,17 +85,17 @@ To ensure reproducibility and clarity, we define key metrics and protocols as fo
 
 **Coherence ($\Phi$).**
 Let $y_i(t)$ denote the scalar output (or fixed projection) of lobe $i$ at timestep $t$.
-For each timestep $t$, compute the Pearson correlation matrix $C(t)$ over a trailing window of length $W$.
+For each timestep $t$, compute the Pearson correlation matrix $C_t$ over a trailing window of length $W$.
 Coherence is defined as
 
 $$
-\Phi(t) = \frac{2}{N(N-1)} \sum_{i<j} \bigl| C_{ij}(t) \bigr|
+\Phi_t = \frac{2}{N(N-1)} \sum_{i<j} |C_{ij,t}|
 $$
 
 and the overall coherence is
 
 $$
-\bar{\Phi} = \frac{1}{T} \sum_{t=1}^{T} \Phi(t)
+\bar{\Phi} = \frac{1}{T} \sum_{t=1}^{T} \Phi_t
 $$
 
 normalized to the range $[0,1]$ by construction.

@@ -45,8 +45,6 @@
 
 \begin{document}
 
-\maketitle
-
 \begin{abstract}
 SpiralBrain is a synthetic cognitive architecture designed to explore how \textbf{coherence and awareness-like dynamics emerge} from elastic coupling rather than computational magnitude. Built on the SpiralCode framework—a recursive symbolic control mechanism that regulates coupling and coherence across cognitive subsystems—the system models neurodivergent information processing through four semi-independent lobes (Cortex, Codex, Nexus, and Sensus), linked by symbolic torque equations and emotional-symbolic calibration (SEC) layers.
 
@@ -69,14 +67,14 @@ The paper proceeds as follows: Section 2 describes the system architecture, Sect
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\textwidth]{../figures/four_lobe_architecture.pdf}
+\includegraphics[width=\textwidth]{figures/four_lobe_architecture.pdf}
 \caption{Four-lobe cognitive architecture with elastic coupling. The system consists of four interdependent lobes (Cortex, Codex, Nexus, Sensus) coupled through SEC (Symbolic-Emotional Calibration) layers. Control flow is governed by the SpiralCode recursive torque equation, with \(\lambda\) representing coupling strength and \(\tau\) denoting temporal hierarchies.}
 \label{fig:architecture}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\textwidth]{../figures/spiral_coherence_manifold.pdf}
+\includegraphics[width=\textwidth]{figures/spiral_coherence_manifold.pdf}
 \caption{Spiral cognition manifold showing phase transitions across coupling parameter \(\lambda\). Three regimes emerge: emergence (\(\lambda < 0.2\)), rigidity (\(0.2 < \lambda < 0.4\)), and recovery (\(\lambda > 0.4\)). The empirical attractor at \(\lambda \approx 0.25\) demonstrates non-monotonic behavior characteristic of complex dynamical systems.}
 
 \label{fig:manifold}
@@ -84,7 +82,7 @@ The paper proceeds as follows: Section 2 describes the system architecture, Sect
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\textwidth]{../figures/neurodivergent_validation.pdf}
+\includegraphics[width=\textwidth]{figures/neurodivergent_validation.pdf}
 \caption{Neurodivergent design validation showing the relationship between processing efficiency and cognitive accuracy. The regression demonstrates that systems with deliberative processing achieve higher coherence, supporting the principle of integration over speed.}
 \label{fig:validation}
 \end{figure}
@@ -476,8 +474,12 @@ Elastic cognition, as realized here, shows that divergent timing, emotional sens
 \centering
 \caption{Neurodivergent Traits and SpiralBrain Implementation}
 \label{tab:neurodivergent_summary}
-\begin{tabular}{>{\raggedright\arraybackslash}p{4.5cm} >{\raggedright\arraybackslash}p{5.5cm} >{\raggedright\arraybackslash}p{4cm}
 
+\begin{tabular}{%
+    >{\raggedright\arraybackslash}p{4.5cm}
+    >{\raggedright\arraybackslash}p{5.5cm}
+    >{\raggedright\arraybackslash}p{4cm}
+}
 \toprule
 \textbf{Neurodivergent Trait} & \textbf{SpiralBrain Implementation} & \textbf{Empirical Outcome} \\
 \midrule
@@ -489,7 +491,9 @@ Persistent identity & Reflective tracking of $\Phi(t)$ and $d\Phi/dt$ & CV $\app
 Adaptive plasticity & Gradual coupling maturation & Improved stability and learning \\
 \bottomrule
 \end{tabular}
+
 \end{table}
+
 
 \section{Theoretical and Integrative Implications}
 \label{sec:philosophical}
@@ -860,7 +864,6 @@ SpiralBrain is designed to support cognitive functions that are difficult to exp
 \label{app:protocols}
 
 \subsection{Hypothesis Testing Framework}
-\end{itemize}
 
 \begin{itemize}
 \item Multiple individual tests across hypothesis domains

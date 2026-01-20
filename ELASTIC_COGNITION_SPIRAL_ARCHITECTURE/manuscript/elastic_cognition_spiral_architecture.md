@@ -89,7 +89,7 @@ For each timestep $t$, compute the Pearson correlation matrix $C_t$ over a trail
 Coherence is defined as
 
 $$
-\Phi_t = \frac{2}{N(N-1)} \sum_{i<j} \left| C_{ij,t} \right|
+\Phi_t = \frac{2}{N(N-1)} \sum_{i<j} |C_{ij,t}|
 $$
 
 and the overall coherence is

@@ -26,22 +26,20 @@
 \exhyphenpenalty=10000
 \emergencystretch=3em
 
-% ToC formatting for TOC
+% ToC formatting
 \usepackage{tocloft}
-\renewcommand{\cftchappresnum}{Chapter~}
+\renewcommand{\cftchappresnum}{\chaptername~}
 \renewcommand{\cftchapnumwidth}{8em}
 
-% --- Make the TOC smaller ---
 \renewcommand{\cfttoctitlefont}{\large\bfseries} 
 \addtocontents{toc}{\protect\small}              
 \setlength{\cftbeforesecskip}{1pt}               
 \setlength{\cftbeforesubsecskip}{1pt}
 
-% --- Make the List of Tables smaller ---
 \renewcommand{\cftlottitlefont}{\large\bfseries}
 \renewcommand{\cfttabfont}{\small} 
 \renewcommand{\cfttabpagefont}{\small}  
-\setlength{\cftbeforetabskip}{1pt} 
+\setlength{\cftbeforetabskip}{1pt}
 
 % Bookmarks and links
 \usepackage{bookmark}
@@ -57,10 +55,13 @@
 % Prevent chapters from starting on new pages unnecessarily
 \let\cleardoublepage\clearpage
 
-% Chapter formatting: "Chapter 1" style
+% Base chapter name for normal chapters
+\renewcommand{\chaptername}{Chapter}
+
+% Chapter formatting: uses \chaptername so it can switch to Appendix
 \titleformat{\chapter}
   {\normalfont\Large\bfseries\raggedright}
-  {Chapter~\thechapter}
+  {\chaptername~\thechapter}
   {1em}
   {}
 
@@ -92,7 +93,6 @@
   {0pt}
   {8pt}
   {4pt}
-
 
 % --- Unicode Sanitization Macros ---
 \newcommand{\geqU}{\geq}
@@ -156,6 +156,7 @@ john.cragin@outlook.com}
 \maketitle
 \tableofcontents
 \listoftables
+
 \newpage
 
 \begin{abstract}
@@ -1491,9 +1492,16 @@ To ensure transparency and reproducibility, independent audits of the released s
 \bibliographystyle{plain}
 
 \appendix
+\addtocontents{toc}{%
+  \protect\renewcommand{\protect\cftchappresnum}{Appendix~}%
+}
+
+\renewcommand{\chaptername}{Appendix}
 \renewcommand{\thechapter}{\Alph{chapter}}
+
+% Override the chapter format for appendices
 \titleformat{\chapter}
-  {\normalfont\Large\bfseries}
+  {\normalfont\Large\bfseries\raggedright}
   {Appendix~\thechapter}
   {1em}
   {}
@@ -1503,6 +1511,7 @@ To ensure transparency and reproducibility, independent audits of the released s
 This chapter presents the complete results of the falsification tests designed to validate the Regulatory Intelligence (RI) paradigm. Each test is crafted to detect potential violations of the core hypothesis that SpiralBrain v3.0 operates through pure regulatory mechanisms without learning, memorization, or persistent adaptation. The thresholds are set conservatively to ensure statistical significance, and all measured values fall well within acceptable bounds, confirming the system's adherence to RI principles.
 
 The tests collectively demonstrate that SpiralBrain maintains clean-slate operation across instantiations, with no evidence of prohibited mechanisms such as statistical learning or parameter plasticity. This rigorous falsification protocol distinguishes RI from traditional machine learning approaches and establishes the system's behavior as scientifically verifiable.
+
 
 % Local spacing for this table only
 \begingroup
@@ -2230,5 +2239,14 @@ For Reviewers: Run the protocol yourself on any LLM. Watch brittleness vanish un
 \textbf{"This is Regulatory Intelligence: Giving AI the ability to stop being confidently wrong."}
 
 Complete interaction log, timestamps, model state, and reproducibility package provided above. No interpretation required—observe the failure, watch the fix, witness recovery.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.6\linewidth]{figures/pause_demo.png}
+    \caption{Demonstration of symbolic pause and resume interaction.}
+    \label{fig:pause_demo}
+\end{figure}
+
+
 
 \end{document}

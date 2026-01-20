@@ -95,7 +95,7 @@ $$
 and the overall coherence is
 
 $$
-\bar{\Phi} = \frac{1}{T} \sum_{t=1}^{T} \Phi_t
+\overline{\Phi} = \frac{1}{T} \sum_{t=1}^{T} \Phi_t
 $$
 
 normalized to the range $[0,1]$ by construction.

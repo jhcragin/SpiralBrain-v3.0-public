@@ -89,7 +89,7 @@ For each timestep $t$, compute the Pearson correlation matrix $C(t)$ over a trai
 Coherence is defined as
 
 $$
-\Phi(t) = \frac{2}{N(N-1)} \sum_{i<j} \left|C_{ij}(t)\right|
+\Phi(t) = \frac{2}{N(N-1)} \sum_{i<j} \bigl| C_{ij}(t) \bigr|
 $$
 
 and the overall coherence is

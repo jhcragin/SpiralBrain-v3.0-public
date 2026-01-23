@@ -14,7 +14,7 @@ This complements prior work on stability-first regulation and real-time coherenc
 
 Readers primarily interested in the decision phenomenon may skim Sections 7–9 on auditability and return for results and discussion.
 
-No claims of trading alpha, profitability, or universality are made. All quantitative statements in this paper are grounded in the recorded artifacts for run [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255). Any non-quantitative interpretation is stated as a hypothesis with explicit falsification criteria.
+No claims of trading alpha, profitability, or universality are made. All quantitative statements in this paper are grounded in the recorded artifacts for run [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/). Any non-quantitative interpretation is stated as a hypothesis with explicit falsification criteria.
 
 ## Problem Statement
 
@@ -106,7 +106,7 @@ Inputs are derived from:
 - Crypto Fear & Greed Index API (alternative.me) [1]
 - Bitcoin market chart (price and volume, USD) via CoinGecko [2]
 
-For [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255), the dataset spans 60 matched UTC days, from `2025-11-22` through `2026-01-20`, inclusive. The integrator matches sources by a UTC day key formatted as `YYYY-MM-DD`.
+For [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results), the dataset spans 60 matched UTC days, from `2025-11-22` through `2026-01-20`, inclusive. The integrator matches sources by a UTC day key formatted as `YYYY-MM-DD`.
 
 ## Market Window Visualization
 
@@ -126,7 +126,7 @@ This work is designed to be verifiable offline. Each run records:
 - The exact aligned `market_data_used.json` passed into the system
 - A deterministic SHA-256 hash of `market_data_used.json`
 
-For [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255), the recorded provenance hashes are:^[Fear & Greed payload SHA-256: `19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d`; BTC market payload SHA-256: `fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7`; `market_data_used.json` SHA-256: `8785bb45407cfa07b843ae61379a0b92d759b30181d2305c04f669d691e3efb2`]
+For [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results), the recorded provenance hashes are:^[Fear & Greed payload SHA-256: `19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d`; BTC market payload SHA-256: `fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7`; `market_data_used.json` SHA-256: `8785bb45407cfa07b843ae61379a0b92d759b30181d2305c04f669d691e3efb2`]
 
 The run metadata records the exact command-line invocation used to generate artifacts.
 
@@ -146,7 +146,7 @@ SpiralBrain v3.0 is treated as an instrumented regulatory cognitive system. The 
 
 ### Profiles
 
-The following six profiles are tested in [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255): `control_neutral`, `high_hazard_alert`, `overconfident_explorer`, `high_uncertainty`, `complacent`, `defensive`.
+The following six profiles are tested in [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results): `control_neutral`, `high_hazard_alert`, `overconfident_explorer`, `high_uncertainty`, `complacent`, `defensive`.
 
 Profiles differ only in the injected `emotional_state` parameters (valence, arousal, hazard pressure, neuromodulator flexibility); no profile alters external inputs, feature extraction, or the output contract.
 
@@ -203,7 +203,7 @@ The absence of sell postures in this window reflects a high de-risking threshold
 
 ## Discussion
 
-When exposed to the same aligned 60-day market time series, the system exhibits a clean separation in participation behavior: hazard-biased profiles consistently refuse new exposure (*hold*), while neutral and exploratory profiles consistently accept exposure (*buy*). This separation is observed in run [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255). This observation supports hypothesis H1 for this run. The emotional state is modulating the threshold for action rather than the certainty of the underlying belief.
+When exposed to the same aligned 60-day market time series, the system exhibits a clean separation in participation behavior: hazard-biased profiles consistently refuse new exposure (*hold*), while neutral and exploratory profiles consistently accept exposure (*buy*). This separation is observed in run [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results). This observation supports hypothesis H1 for this run. The emotional state is modulating the threshold for action rather than the certainty of the underlying belief.
 
 This experiment is designed to test separation, not calibration; graded effects are not necessary to falsify the null hypothesis—clean separation under byte-identical inputs is sufficient.
 
@@ -217,40 +217,40 @@ The absence of *sell* postures in this window reflects the selected market regim
 
 ## Verification Summary (Auditability)
 
-This paper makes the following claims. Each claim is either directly verifiable from artifacts in [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255) or is explicitly falsifiable.
+This paper makes the following claims. Each claim is either directly verifiable from artifacts in [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results) or is explicitly falsifiable.
 
 ### Artifact-Verifiable Claims
 
-- **C1 (Run identity)**: The analyzed run [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255).  
-  *Verification:* read [summary_report.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/summary_report.json).
+- **C1 (Run identity)**: The analyzed run [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results).  
+  *Verification:* read [summary_report.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/summary_report.json).
 
 - **C2 (Dataset size and alignment)**: The run uses 60 matched days in UTC with start `2025-11-22` and end `2026-01-20`.  
-  *Verification:* read [summary_report.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/summary_report.json) for the `dataset_provenance.alignment.matched_days`, `matched_day_range`, and the explicit list `matched_days_in_order`.
+  *Verification:* read [summary_report.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/summary_report.json) for the `dataset_provenance.alignment.matched_days`, `matched_day_range`, and the explicit list `matched_days_in_order`.
 
 - **C3 (Audit-bundled upstream payloads)**: The run stores gzipped raw upstream payloads whose SHA-256 hashes match the recorded `dataset_provenance.sources.*.sha256`.  
-  *Verification:* recompute SHA-256 over the decompressed UTF-8 text of [19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/provenance/raw/19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz) and [fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/provenance/raw/fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz) and compare to `sources.*.sha256`.^[Offline verification (no network, no inference) is provided by `verify_reference_run.py` for the canonized fixture specimen.]
+  *Verification:* recompute SHA-256 over the decompressed UTF-8 text of [19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/provenance/raw/19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz) and [fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/provenance/raw/fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz) and compare to `sources.*.sha256`.^[Offline verification (no network, no inference) is provided by `verify_reference_run.py` for the canonized fixture specimen.]
 
 - **C4 (Exact model input captured)**: The exact aligned input time series used for inference is stored as `provenance/market_data_used.json` and its deterministic SHA-256 equals `dataset_provenance.market_data_sha256`.  
-  *Verification:* hash the canonical JSON encoding of [market_data_used.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/provenance/market_data_used.json) and compare to the recorded SHA-256.^[Offline verification (no network, no inference) is provided by `verify_reference_run.py` for the canonized fixture specimen.]
+  *Verification:* hash the canonical JSON encoding of [market_data_used.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/provenance/market_data_used.json) and compare to the recorded SHA-256.^[Offline verification (no network, no inference) is provided by `verify_reference_run.py` for the canonized fixture specimen.]
 
 - **C5 (Prediction counts)**: The run produces 6 profiles × 60 days = 360 predictions, and 0 prediction errors.  
-  *Verification:* read `total_profiles`, `market_data_points`, and `results_summary.<profile>.error_predictions` in [summary_report.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/summary_report.json).
+  *Verification:* read `total_profiles`, `market_data_points`, and `results_summary.<profile>.error_predictions` in [summary_report.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/summary_report.json).
 
 - **C6 (Observed posture distributions)**: In this run, `high_hazard_alert` and `defensive` selected hold on every aligned day in the 60-day window; the other four profiles selected buy on every aligned day in the same window; no profile selected sell on any aligned day.  
-  *Verification:* read `results_summary.<profile>.direction_distribution` in [summary_report.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/summary_report.json) or the generated table included in this document.
+  *Verification:* read `results_summary.<profile>.direction_distribution` in [summary_report.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/summary_report.json) or the generated table included in this document.
 
 - **C7 (Upstream request parameters and status)**: In this run, upstream providers return HTTP status code 200, and the CoinGecko request is `vs_currency=usd`, `days=62`, `interval=daily`.  
-  *Verification:* read `dataset_provenance.sources.fear_greed.status_code`, `dataset_provenance.sources.btc_market.status_code`, and the recorded `url` fields under `dataset_provenance.sources` in [summary_report.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/summary_report.json).
+  *Verification:* read `dataset_provenance.sources.fear_greed.status_code`, `dataset_provenance.sources.btc_market.status_code`, and the recorded `url` fields under `dataset_provenance.sources` in [summary_report.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/summary_report.json).
 
 ### Referenced Artifacts
 
 The following files are directly referenced in this paper. Each filename links to its exact location in the public verification repository.
 
-- [summary_report.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/summary_report.json)
-- [market_data_used.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/provenance/market_data_used.json)
-- [19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/provenance/raw/19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz)
-- [fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/provenance/raw/fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz)
-- [VERIFY.sha256](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/VERIFY.sha256)
+- [summary_report.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/summary_report.json)
+- [market_data_used.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/provenance/market_data_used.json)
+- [19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/provenance/raw/19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz)
+- [fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/provenance/raw/fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz)
+- [VERIFY.sha256](https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/VERIFY.sha256)
 
 ## Limitations
 

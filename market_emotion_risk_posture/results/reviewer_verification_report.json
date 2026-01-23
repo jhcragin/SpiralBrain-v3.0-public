@@ -1,0 +1,22 @@
+{
+  "run_dir": "..\\..\\..\\results\\market_emotion_research_20260120_201255",
+  "summary_report": "..\\..\\..\\results\\market_emotion_research_20260120_201255\\summary_report_20260120_201255.json",
+  "ok": true,
+  "checks": [
+    {
+      "check": "raw_payload_sha256:fear_greed",
+      "ok": true,
+      "detail": "expected=19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d actual=19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d"
+    },
+    {
+      "check": "raw_payload_sha256:btc_market",
+      "ok": true,
+      "detail": "expected=fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7 actual=fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7"
+    },
+    {
+      "check": "market_data_sha256",
+      "ok": true,
+      "detail": "expected=8785bb45407cfa07b843ae61379a0b92d759b30181d2305c04f669d691e3efb2 actual=8785bb45407cfa07b843ae61379a0b92d759b30181d2305c04f669d691e3efb2"
+    }
+  ]
+}

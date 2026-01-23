@@ -1,0 +1,602 @@
+[
+  {
+    "timestamp": "2026-01-20T18:00:00",
+    "btc_price": 92558.46334372147,
+    "volume": 43338958368,
+    "fear_greed_index": 24,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2026-01-19T18:00:00",
+    "btc_price": 93752.70577188236,
+    "volume": 23132534225,
+    "fear_greed_index": 32,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2026-01-18T18:00:00",
+    "btc_price": 95099.53192554631,
+    "volume": 17839431205,
+    "fear_greed_index": 44,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2026-01-17T18:00:00",
+    "btc_price": 95516.07771987123,
+    "volume": 37208122951,
+    "fear_greed_index": 49,
+    "fear_greed_rating": "Neutral",
+    "vix_value": null,
+    "sentiment": "neutral",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2026-01-16T18:00:00",
+    "btc_price": 95584.82797878512,
+    "volume": 59629891835,
+    "fear_greed_index": 50,
+    "fear_greed_rating": "Neutral",
+    "vix_value": null,
+    "sentiment": "neutral",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2026-01-15T18:00:00",
+    "btc_price": 97007.78078881276,
+    "volume": 68433627980,
+    "fear_greed_index": 49,
+    "fear_greed_rating": "Neutral",
+    "vix_value": null,
+    "sentiment": "neutral",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2026-01-14T18:00:00",
+    "btc_price": 95260.4422971001,
+    "volume": 66844465446,
+    "fear_greed_index": 61,
+    "fear_greed_rating": "Greed",
+    "vix_value": null,
+    "sentiment": "greed",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2026-01-13T18:00:00",
+    "btc_price": 91134.96917951507,
+    "volume": 46923085427,
+    "fear_greed_index": 48,
+    "fear_greed_rating": "Neutral",
+    "vix_value": null,
+    "sentiment": "neutral",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2026-01-12T18:00:00",
+    "btc_price": 90819.36598904192,
+    "volume": 19870776213,
+    "fear_greed_index": 26,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2026-01-11T18:00:00",
+    "btc_price": 90442.01907847001,
+    "volume": 13961660357,
+    "fear_greed_index": 27,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2026-01-10T18:00:00",
+    "btc_price": 90504.89560340019,
+    "volume": 43664879516,
+    "fear_greed_index": 29,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2026-01-09T18:00:00",
+    "btc_price": 90983.51578142625,
+    "volume": 48319133568,
+    "fear_greed_index": 25,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2026-01-08T18:00:00",
+    "btc_price": 91257.15544035907,
+    "volume": 47910812257,
+    "fear_greed_index": 27,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2026-01-07T18:00:00",
+    "btc_price": 93666.86387314305,
+    "volume": 57439451725,
+    "fear_greed_index": 28,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2026-01-06T18:00:00",
+    "btc_price": 93926.7956485658,
+    "volume": 59451605754,
+    "fear_greed_index": 42,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2026-01-05T18:00:00",
+    "btc_price": 91373.21588108438,
+    "volume": 31050236622,
+    "fear_greed_index": 44,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2026-01-04T18:00:00",
+    "btc_price": 90593.85443180417,
+    "volume": 23480735292,
+    "fear_greed_index": 26,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2026-01-03T18:00:00",
+    "btc_price": 89926.27924953419,
+    "volume": 50705395175,
+    "fear_greed_index": 25,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2026-01-02T18:00:00",
+    "btc_price": 88727.67004249741,
+    "volume": 21163124465,
+    "fear_greed_index": 29,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2026-01-01T18:00:00",
+    "btc_price": 87520.18048742875,
+    "volume": 37245075349,
+    "fear_greed_index": 28,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-31T18:00:00",
+    "btc_price": 88414.62856073362,
+    "volume": 39734225800,
+    "fear_greed_index": 20,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-30T18:00:00",
+    "btc_price": 87156.56266080117,
+    "volume": 53957962807,
+    "fear_greed_index": 21,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-29T18:00:00",
+    "btc_price": 87822.90829076794,
+    "volume": 17428479525,
+    "fear_greed_index": 23,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-28T18:00:00",
+    "btc_price": 87807.003210775,
+    "volume": 15670944599,
+    "fear_greed_index": 24,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-27T18:00:00",
+    "btc_price": 87305.95655961394,
+    "volume": 47130449135,
+    "fear_greed_index": 24,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-26T18:00:00",
+    "btc_price": 87229.78066010943,
+    "volume": 22773603342,
+    "fear_greed_index": 23,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-25T18:00:00",
+    "btc_price": 87642.60888119951,
+    "volume": 29100645180,
+    "fear_greed_index": 20,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-24T18:00:00",
+    "btc_price": 87406.43636737975,
+    "volume": 46353794741,
+    "fear_greed_index": 23,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-23T18:00:00",
+    "btc_price": 88491.12020788102,
+    "volume": 41948947368,
+    "fear_greed_index": 24,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-22T18:00:00",
+    "btc_price": 88577.42038358838,
+    "volume": 22541294542,
+    "fear_greed_index": 24,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-21T18:00:00",
+    "btc_price": 88347.94310567998,
+    "volume": 17103607834,
+    "fear_greed_index": 25,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-20T18:00:00",
+    "btc_price": 88103.86075721023,
+    "volume": 51932451056,
+    "fear_greed_index": 20,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-19T18:00:00",
+    "btc_price": 85450.3312009302,
+    "volume": 58649139178,
+    "fear_greed_index": 20,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-18T18:00:00",
+    "btc_price": 86064.94716216,
+    "volume": 48886793507,
+    "fear_greed_index": 16,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-17T18:00:00",
+    "btc_price": 87821.88919109134,
+    "volume": 48317754254,
+    "fear_greed_index": 17,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-16T18:00:00",
+    "btc_price": 86413.9190195637,
+    "volume": 50630498834,
+    "fear_greed_index": 16,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-15T18:00:00",
+    "btc_price": 88230.77409367911,
+    "volume": 33808538697,
+    "fear_greed_index": 11,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-14T18:00:00",
+    "btc_price": 90257.4292885891,
+    "volume": 35222775785,
+    "fear_greed_index": 16,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-13T18:00:00",
+    "btc_price": 90307.26028567803,
+    "volume": 67750393558,
+    "fear_greed_index": 21,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-12T18:00:00",
+    "btc_price": 92494.17691640415,
+    "volume": 53232377699,
+    "fear_greed_index": 23,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-11T18:00:00",
+    "btc_price": 92005.13714957413,
+    "volume": 52189659395,
+    "fear_greed_index": 29,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-10T18:00:00",
+    "btc_price": 92723.21372069631,
+    "volume": 54575121853,
+    "fear_greed_index": 29,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-09T18:00:00",
+    "btc_price": 90618.0535204608,
+    "volume": 45466493941,
+    "fear_greed_index": 26,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-08T18:00:00",
+    "btc_price": 90162.90714007126,
+    "volume": 33912893266,
+    "fear_greed_index": 22,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-07T18:00:00",
+    "btc_price": 89244.7620814118,
+    "volume": 24818678152,
+    "fear_greed_index": 20,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-06T18:00:00",
+    "btc_price": 89307.09154512963,
+    "volume": 50193142876,
+    "fear_greed_index": 20,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-05T18:00:00",
+    "btc_price": 92140.70419795791,
+    "volume": 67878296355,
+    "fear_greed_index": 23,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-04T18:00:00",
+    "btc_price": 93619.43750817103,
+    "volume": 81429135004,
+    "fear_greed_index": 28,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-03T18:00:00",
+    "btc_price": 91344.73275150165,
+    "volume": 83138039128,
+    "fear_greed_index": 26,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-02T18:00:00",
+    "btc_price": 86281.49519776918,
+    "volume": 92988982967,
+    "fear_greed_index": 28,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-12-01T18:00:00",
+    "btc_price": 90406.28448571145,
+    "volume": 40334819409,
+    "fear_greed_index": 23,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-11-30T18:00:00",
+    "btc_price": 90841.45258193677,
+    "volume": 39253888201,
+    "fear_greed_index": 24,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-11-29T18:00:00",
+    "btc_price": 90950.37695910994,
+    "volume": 62833195066,
+    "fear_greed_index": 28,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-11-28T18:00:00",
+    "btc_price": 91279.06057176423,
+    "volume": 59295194347,
+    "fear_greed_index": 28,
+    "fear_greed_rating": "Fear",
+    "vix_value": null,
+    "sentiment": "fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-11-27T18:00:00",
+    "btc_price": 90474.22677969698,
+    "volume": 69690430587,
+    "fear_greed_index": 25,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-11-26T18:00:00",
+    "btc_price": 87310.33159950442,
+    "volume": 67956444142,
+    "fear_greed_index": 22,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-11-25T18:00:00",
+    "btc_price": 88229.35740719768,
+    "volume": 77606296173,
+    "fear_greed_index": 15,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-11-24T18:00:00",
+    "btc_price": 86783.84766839583,
+    "volume": 60446592409,
+    "fear_greed_index": 20,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-11-23T18:00:00",
+    "btc_price": 84682.62429147748,
+    "volume": 42644968955,
+    "fear_greed_index": 19,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  },
+  {
+    "timestamp": "2025-11-22T18:00:00",
+    "btc_price": 85051.8019295002,
+    "volume": 135093457122,
+    "fear_greed_index": 13,
+    "fear_greed_rating": "Extreme Fear",
+    "vix_value": null,
+    "sentiment": "extreme_fear",
+    "indicators": {}
+  }
+]

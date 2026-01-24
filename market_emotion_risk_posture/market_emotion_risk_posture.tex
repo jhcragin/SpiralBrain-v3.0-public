@@ -393,7 +393,7 @@ The following files are directly referenced in this paper. Each filename links t
 	\item Absence of sell signals may reflect the dataset's lack of sustained downtrends (as discussed in Results); future windows including bear phases would test de-risking thresholds.
 \end{itemize}
 
-\section{Reproducibility}
+\section{Verification and Regeneration}
 
 We separate \textbf{verification} (artifact integrity) from \textbf{reproduction} (generating a new run).
 
@@ -405,7 +405,9 @@ To verify that the published artifacts say what this paper claims (no network, n
 \href{https://github.com/jhcragin/SpiralBrain-v3.0-public}{SpiralBrain-v3.0-public}
 \end{quote}
 
-\subsection{Reproduction (online, hypothesis-level)}
+\subsection{Online Run Generation (Documented, Not Public)}
+
+This section documents how new experimental runs would be generated using the full SpiralBrain system. It is provided for methodological transparency; execution requires system components not included in the public repository.
 
 To generate a new run by querying upstream providers and executing inference (not required for verification):
 
@@ -419,13 +421,17 @@ Then verify provenance and regenerate paper exports for that new run directory:
 \texttt{python analyze\_market\_emotion\_results.py results/<run\_dir>}
 \end{quote}
 
+\pagebreak 
+
 \appendix
 
 \section{Reference Examples (Artifact Formats)}
 
-This appendix provides small verbatim excerpts from the published artifacts and verifier so an offline reader can see the concrete file formats without opening the repository.
+Revised, expanded explanation
 
-A complete SHA-256 manifest covering all referenced artifacts is included in the public verification package (VERIFY.sha256), enabling offline integrity checks without executing inference.
+This appendix provides small verbatim excerpts from the published artifacts and the offline verifier so that readers can inspect the concrete file formats without needing to browse the repository or execute any code. These excerpts illustrate the exact structure of the JSON reports, the hashing routines, and the canonicalization rules used in the verification pipeline.
+
+For full reproducibility, the public verification package also includes a complete SHA‑256 manifest (VERIFY.sha256) covering every referenced artifact. This manifest allows an offline reader to confirm the integrity of all files—verifying that each artifact matches the published hash—without running inference, downloading external dependencies, or relying on network access. In combination, the excerpts and manifest provide a transparent, audit‑ready snapshot of the evidence base underlying the study.
 
 \subsection{Run Summary (summary\_report.json)}
 
@@ -462,12 +468,10 @@ Verbatim excerpt from \\ \texttt{verify\_reference\_run.py} showing the core has
 \begin{Verbatim}[fontsize=\small,breaklines=true,breakanywhere=true]
 def sha256_file(path: Path) -> str:
 	return _sha256_bytes(path.read_bytes())
-
 def sha256_gzip_decompressed_bytes(path: Path) -> str:
 	with gzip.open(path, "rt", encoding="utf-8") as f:
 		text = f.read()
 	return _sha256_bytes(text.encode("utf-8"))
-
 def canonical_json_sha256(path: Path) -> str:
 	value = json.loads(path.read_text(encoding="utf-8"))
 	canonical = json.dumps(

@@ -85,7 +85,7 @@ john.cragin@outlook.com}
 
 \date{\today}
 
-%{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255}
+%{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/market_emotion_risk_posture/results}
 % Update this path to point at the run you want the paper to reference.
 \newcommand{\PublicVerificationRepo}{https://github.com/jhcragin/SpiralBrain-v3.0-public}
 
@@ -101,7 +101,7 @@ This complements prior work on stability-first regulation and real-time coherenc
 
 Readers primarily interested in the decision phenomenon may skim Sections 7–9 on auditability and return for results and discussion.
 
-No claims of trading alpha, profitability, or universality are made. All quantitative statements in this paper are grounded in the recorded artifacts for run \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255}{market_emotion_research_20260120_201255}. Any non-quantitative interpretation is stated as a hypothesis with explicit falsification criteria.
+No claims of trading alpha, profitability, or universality are made. All quantitative statements in this paper are grounded in the recorded artifacts for run \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/market_emotion_risk_posture/results}{market_emotion_research_20260120_201255}. Any non-quantitative interpretation is stated as a hypothesis with explicit falsification criteria.
 
 \section{Problem Statement}
 
@@ -212,7 +212,7 @@ Inputs are derived from:
 	\item Bitcoin market chart (price and volume, USD) via CoinGecko \citep{CoinGeckoMarketChart}
 \end{itemize}
 
-For \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255}{market_emotion_research_20260120_201255}, the dataset spans 60 matched UTC days, from \texttt{2025-11-22} through \texttt{2026-01-20}, inclusive. The integrator matches sources by a UTC day key formatted as \texttt{YYYY-MM-DD}.
+For \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/market_emotion_risk_posture/results}{market_emotion_research_20260120_201255}, the dataset spans 60 matched UTC days, from \texttt{2025-11-22} through \texttt{2026-01-20}, inclusive. The integrator matches sources by a UTC day key formatted as \texttt{YYYY-MM-DD}.
 
 \section{Market Window Visualization}
 
@@ -237,7 +237,7 @@ This work is designed to be verifiable offline. Each run records:
 	\item A deterministic SHA-256 hash of \texttt{market\_data\_used.json}
 \end{itemize}
 
-For \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255}{market_emotion_research_20260120_201255}, the recorded provenance hashes are:\footnote{Fear \& Greed payload SHA-256: \texttt{19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d}; BTC market payload SHA-256: \texttt{fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7}; \texttt{market\_data\_used.json} SHA-256: \texttt{8785bb45407cfa07b843ae61379a0b92d759b30181d2305c04f669d691e3efb2}}
+For \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/market_emotion_risk_posture/results}{market_emotion_research_20260120_201255}, the recorded provenance hashes are:\footnote{Fear \& Greed payload SHA-256: \texttt{19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d}; BTC market payload SHA-256: \texttt{fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7}; \texttt{market\_data\_used.json} SHA-256: \texttt{8785bb45407cfa07b843ae61379a0b92d759b30181d2305c04f669d691e3efb2}}
 
 The run metadata records the exact command-line invocation used to generate artifacts.
 
@@ -249,7 +249,7 @@ To support journal review without requiring trust in the author or access to any
 \href{https://github.com/jhcragin/SpiralBrain-v3.0-public}{SpiralBrain-v3.0-public}
 \end{quote}
 
-The public repository contains a frozen verification contract (\href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/VERIFICATION.md}{VERIFICATION.md}), a stdlib-only offline verifier (\href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/verify_reference_run.py}{verify_reference_run.py}), and a canonized reference specimen under \texttt{fixtures/market_emotion/reference_run/}. Verification requires no network access and does not execute SpiralBrain inference.
+The public repository contains a frozen verification contract (\href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/README.md}{README.md}), a stdlib-only offline verifier (\href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/market_emotion_risk_posture/verify_reference_run.py}{verify_reference_run.py}), and a canonized reference specimen under \texttt{results/}. Verification requires no network access and does not execute SpiralBrain inference.
 
 \section{Experimental Setup}
 
@@ -261,7 +261,7 @@ SpiralBrain v3.0 is treated as an instrumented regulatory cognitive system. The 
 
 \subsection{Profiles}
 
-The following six profiles are tested in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255}{market_emotion_research_20260120_201255}:
+The following six profiles are tested in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/market_emotion_risk_posture/results}{market_emotion_research_20260120_201255}:
 \texttt{control\_neutral}, \texttt{high\_hazard\_alert}, \texttt{overconfident\_explorer}, \texttt{high\_uncertainty}, \texttt{complacent}, \texttt{defensive}.
 
 Profiles differ only in the injected \texttt{emotional\_state} parameters (valence, arousal, hazard pressure, neuromodulator flexibility); no profile alters external inputs, feature extraction, or the output contract.
@@ -330,7 +330,7 @@ The absence of sell postures in this window reflects a high de-risking threshold
 
 \section{Discussion}
 
-When exposed to the same aligned 60-day market time series, the system exhibits a clean separation in participation behavior: hazard-biased profiles consistently refuse new exposure (\emph{hold}), while neutral and exploratory profiles consistently accept exposure (\emph{buy}). This separation is observed in run \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255}{market_emotion_research_20260120_201255}. This observation supports hypothesis H1 for this run. The emotional state is modulating the threshold for action rather than the certainty of the underlying belief.
+When exposed to the same aligned 60-day market time series, the system exhibits a clean separation in participation behavior: hazard-biased profiles consistently refuse new exposure (\emph{hold}), while neutral and exploratory profiles consistently accept exposure (\emph{buy}). This separation is observed in run \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/market_emotion_risk_posture/results}{market_emotion_research_20260120_201255}. This observation supports hypothesis H1 for this run. The emotional state is modulating the threshold for action rather than the certainty of the underlying belief.
 This experiment is designed to test separation, not calibration; graded effects are not necessary to falsify the null hypothesis—clean separation under byte-identical inputs is sufficient.
 The consistency of postures within each profile (all-hold or all-buy) is an observed outcome of this specific run, not a hard-coded decision rule. In this benchmark, the same inference pipeline processes the same input data; only the injected emotional state differs across profiles, yet the outputs differ. A stronger objection remains possible: the system's mapping may saturate under this particular window and asset. That objection is falsifiable by repeating the run on other time windows or assets and checking whether posture distributions change under the same profiles.
 
@@ -342,34 +342,34 @@ The absence of \emph{sell} postures in this window reflects the selected market 
 
 \section{Verification Summary (Auditability)}
 
-This paper makes the following claims. Each claim is either directly verifiable from artifacts in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255}{market_emotion_research_20260120_201255} or is explicitly falsifiable.
+This paper makes the following claims. Each claim is either directly verifiable from artifacts in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/market_emotion_risk_posture/results}{market_emotion_research_20260120_201255} or is explicitly falsifiable.
 
 \subsection{Artifact-Verifiable Claims}
 
 \begin{itemize}
-	\item \textbf{C1 (Run identity)}: The analyzed run \\ \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255}{market_emotion_research_20260120_201255}. \\
-	\emph{Verification:} read \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/summary_report.json}{summary_report.json}.
+	\item \textbf{C1 (Run identity)}: The analyzed run \\ \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/market_emotion_risk_posture/results}{market_emotion_research_20260120_201255}. \\
+	\emph{Verification:} read \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/market_emotion_risk_posture/results/summary_report.json}{summary_report.json}.
 
 	\item \textbf{C2 (Dataset size and alignment)}: The run uses 60 matched days in UTC with start \texttt{2025-11-22} and end \texttt{2026-01-20}. \\
-	\emph{Verification:} read \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/summary_report.json}{summary_report.json} for the \texttt{dataset\_provenance.alignment.matched\_days}, \texttt{matched\_day\_range}, and the explicit list \texttt{matched\_days\_in\_order}.
+	\emph{Verification:} read \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/market_emotion_risk_posture/results/summary_report.json}{summary_report.json} for the \texttt{dataset\_provenance.alignment.matched\_days}, \texttt{matched\_day\_range}, and the explicit list \texttt{matched\_days\_in\_order}.
 
 	\item \textbf{C3 (Audit-bundled upstream payloads)}: The run stores gzipped raw upstream payloads whose SHA-256 hashes match the recorded \\ \texttt{dataset\_provenance.sources.*.sha256}. \\
-	\emph{Verification:} recompute SHA-256 over the decompressed UTF-8 text of \\ \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/provenance/raw/19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz}{19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz} and \\ \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/provenance/raw/fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz}{fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz} and compare to \texttt{sources.*.sha256}.\footnote{Offline verification (no network, no inference) is provided by \texttt{verify\_reference\_run.py} for the canonized fixture specimen.}
+	\emph{Verification:} recompute SHA-256 over the decompressed UTF-8 text of \\ \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/market_emotion_risk_posture/results/provenance/raw/19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz}{19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz} and \\ \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/market_emotion_risk_posture/results/provenance/raw/fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz}{fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz} and compare to \texttt{sources.*.sha256}.\footnote{Offline verification (no network, no inference) is provided by \texttt{verify\_reference\_run.py} for the canonized fixture specimen.}
 
 \pagebreak
 
 	\item \textbf{C4 (Exact model input captured)}: The exact aligned input time series used for inference is stored as \texttt{provenance/market\_data\_used.json} and its deterministic SHA-256 equals \texttt{dataset\_provenance.market\_data\_sha256}. \\
-	\emph{Verification:} hash the canonical JSON encoding of \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/provenance/market_data_used.json}{market_data_used.json} and compare to the recorded SHA-256.\footnote{Offline verification (no network, no inference) is provided by \texttt{verify\_reference\_run.py} for the canonized fixture specimen.}
+	\emph{Verification:} hash the canonical JSON encoding of \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/market_emotion_risk_posture/results/provenance/market_data_used.json}{market_data_used.json} and compare to the recorded SHA-256.\footnote{Offline verification (no network, no inference) is provided by \texttt{verify\_reference\_run.py} for the canonized fixture specimen.}
 
 	\item \textbf{C5 (Prediction counts)}: The run produces 6 profiles $\times$ 60 days $=$ 360 predictions, and 0 prediction errors. \\
 	\emph{Verification:} read \texttt{total\_profiles}, \texttt{market\_data\_points}, \\
-    and \texttt{results\_summary.<profile>.error\_predictions} in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/summary_report.json}{summary_report.json}.
+    and \texttt{results\_summary.<profile>.error\_predictions} in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/market_emotion_risk_posture/results/summary_report.json}{summary_report.json}.
 
 	\item \textbf{C6 (Observed posture distributions)}: In this run, \texttt{high\_hazard\_alert} and \texttt{defensive} selected hold on every aligned day in the 60-day window; the other four profiles selected buy on every aligned day in the same window; no profile selected sell on any aligned day. \\
-	\emph{Verification:} read \texttt{results\_summary.<profile>.direction\_distribution} in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/summary_report.json}{summary_report.json} or the generated table included in this document.
+	\emph{Verification:} read \texttt{results\_summary.<profile>.direction\_distribution} in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/market_emotion_risk_posture/results/summary_report.json}{summary_report.json} or the generated table included in this document.
 
 	\item \textbf{C7 (Upstream request parameters and status)}: In this run, upstream providers return HTTP status code 200, and the CoinGecko request is \texttt{vs\_currency=usd}, \texttt{days=62}, \texttt{interval=daily}.
-	\emph{Verification:} read \\ \texttt{dataset\_provenance.sources.fear\_greed.status\_code}, \\ \texttt{dataset\_provenance.sources.btc\_market.status\_code}, and the recorded \texttt{url} fields under \texttt{dataset\_provenance.sources} in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/summary_report.json}{summary_report.json}.
+	\emph{Verification:} read \\ \texttt{dataset\_provenance.sources.fear\_greed.status\_code}, \\ \texttt{dataset\_provenance.sources.btc\_market.status\_code}, and the recorded \texttt{url} fields under \texttt{dataset\_provenance.sources} in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/market_emotion_risk_posture/results/summary_report.json}{summary_report.json}.
 \end{itemize}
 
 \subsection*{Referenced Artifacts}
@@ -377,11 +377,11 @@ This paper makes the following claims. Each claim is either directly verifiable 
 The following files are directly referenced in this paper. Each filename links to its exact location in the public verification repository.
 
 \begin{itemize}
-  \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/summary_report.json}{summary_report.json}
-  \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/provenance/market_data_used.json}{market_data_used.json}
-  \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/provenance/raw/19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz}{19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz}
-  \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/provenance/raw/fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz}{fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz}
-  \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture/results/market_emotion_research_20260120_201255/VERIFY.sha256}{VERIFY.sha256}
+  \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/market_emotion_risk_posture/results/summary_report.json}{summary_report.json}
+  \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/market_emotion_risk_posture/results/provenance/market_data_used.json}{market_data_used.json}
+  \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/market_emotion_risk_posture/results/provenance/raw/19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz}{19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz}
+  \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/market_emotion_risk_posture/results/provenance/raw/fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz}{fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz}
+  \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/market_emotion_risk_posture/results/VERIFY.sha256}{VERIFY.sha256}
 \end{itemize}
 
 \section{Limitations}
@@ -402,7 +402,7 @@ We separate \textbf{verification} (artifact integrity) from \textbf{reproduction
 To verify that the published artifacts say what this paper claims (no network, no inference)\footnote{This verification standard is analogous to checksum-based validation used for scientific instruments and archival datasets.}, access the public repository:
 
 \begin{quote}
-\href{https://github.com/jhcragin/SpiralBrain-v3.0-public/market_emotion_risk_posture}{SpiralBrain-v3.0-public/market_emotion_risk_posture}
+\href{https://github.com/jhcragin/SpiralBrain-v3.0-public}{SpiralBrain-v3.0-public}
 \end{quote}
 
 \subsection{Reproduction (online, hypothesis-level)}

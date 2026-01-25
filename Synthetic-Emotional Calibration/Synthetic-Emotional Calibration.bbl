@@ -1,0 +1,42 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ashby(1956)]{Ashby1956}
+W.~Ross Ashby.
+\newblock \emph{An introduction to cybernetics}.
+\newblock Chapman \& Hall, 1956.
+
+\bibitem[Aubin(2009)]{Aubin2009}
+Jean-Pierre Aubin.
+\newblock \emph{Viability theory: new directions}.
+\newblock Springer Science \& Business Media, 2009.
+
+\bibitem[Conant and Ashby(1970)]{Conant1970}
+Roger~C. Conant and W.~Ross Ashby.
+\newblock Every good regulator of a system must be a model of that system.
+\newblock \emph{International Journal of Systems Science}, 1\penalty0
+  (2):\penalty0 89--97, 1970.
+
+\bibitem[Cragin(2025)]{Cragin2025Monograph}
+John~H. Cragin.
+\newblock \emph{The Regulatory Intelligence Paradigm: Geometric Homeostasis and
+  Viability-First Cognition}.
+\newblock Zenodo, 2025.
+\newblock \doi{10.5281/zenodo.18295507}.
+\newblock Independent research monograph.
+
+\bibitem[Picard(2000)]{Picard2000}
+Rosalind~W Picard.
+\newblock Affective computing.
+\newblock \emph{MIT press}, 2000.
+
+\bibitem[Sutton and Barto(2018)]{Sutton2018}
+Richard~S Sutton and Andrew~G Barto.
+\newblock Reinforcement learning: An introduction.
+\newblock \emph{MIT press}, 2018.
+
+\end{thebibliography}

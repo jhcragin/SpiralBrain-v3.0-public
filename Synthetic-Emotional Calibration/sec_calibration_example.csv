@@ -1,0 +1,8 @@
+# This file is a schematic excerpt for illustrative purposes only.
+# It does not represent the full SEC calibration table used in SpiralBrain.
+emoji,sec_valence,sec_arousal,sec_intensity,alpha_tgt,beta_tgt,gamma_tgt,delta_tgt,H_target,g_pause,g_reflect,g_converge,tempo_bucket,anchor
+U+1F6D1,0.50,0.35,0.40,0.18,0.18,0.23,0.32,2,1,0,0,slow,closure
+U+1F504,0.50,0.50,0.50,0.24,0.23,0.29,0.26,4,0,0,1,neutral,reflection
+U+1F300,0.55,0.05,0.25,0.22,0.22,0.24,0.29,3,0,1,0,slow,analysis
+U+1FAB6,0.50,0.35,0.40,0.22,0.22,0.24,0.29,3,0,1,0,slow,closure
+U+26A1,0.30,1.00,0.90,0.27,0.27,0.24,0.24,4,0,0,0,fast,renewal

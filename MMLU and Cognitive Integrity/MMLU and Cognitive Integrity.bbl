@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{Cragin2026Thesis}
+John~H. Cragin.
+\newblock The regulatory intelligence paradigm: Geometric homeostasis and
+  elastic cognition in synthetic cognitive systems.
+\newblock Research monograph, Independent Researcher, 2026.
+\newblock Public preprint.
+
+\bibitem{SpiralBrainRepo}
+John~H. Cragin.
+\newblock Spiralbrain v3.0 public repository.
+\newblock \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}, 2026.
+\newblock Accessed: 2026-01-10.
+
+\bibitem{hendrycks2020measuring}
+Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Maitreyi Mazeika, Dawn
+  Song, and Jacob Steinhardt.
+\newblock Measuring massive multitask language understanding.
+\newblock {\em arXiv preprint arXiv:2009.03300}, 2020.
+
+\end{thebibliography}

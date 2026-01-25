@@ -93,7 +93,7 @@ AI deployment in regulated financial domains carries significant risk, as optimi
 \textbf{Stability Score}: Normalized coherence measure (0-1) indicating regulatory system robustness under task-induced stress.
 \end{tcolorbox}
 
-This work builds on the Regulatory Intelligence (RI) paradigm \cite{Cragin2026Thesis}, demonstrating its practical utility in domains where viability matters more than optimization. The stability-first framing of regulatory intelligence was formalized in subsequent theoretical work \cite{Cragin2026RI} and aligns with classical cybernetic regulation principles articulated by Ashby \cite{ashby1956introduction}. Building on prior work evaluating cognitive integrity under pressure \cite{Cragin2026Integrity}, this paper extends RI validation to adversarial financial domains.
+This work builds on the Regulatory Intelligence (RI) paradigm \cite{Cragin2026RI}, demonstrating its practical utility in domains where viability matters more than optimization. The stability-first framing of regulatory intelligence was formalized in subsequent theoretical work \cite{Cragin2026RI} and aligns with classical cybernetic regulation principles articulated by Ashby \cite{ashby1956introduction}. Building on prior work evaluating cognitive integrity under pressure \cite{Cragin2026Integrity}, this paper extends RI validation to adversarial financial domains.
 
 \section{Introduction}
 
@@ -462,6 +462,14 @@ The following excerpt stitches together a single decision-pressure window pulled
 \end{tcolorbox}
 
 This trace uses the same instrumentation referenced throughout the paper. Re-running the benchmark with \texttt{python benchmarks/financial\textunderscore cognition\textunderscore stability\textunderscore probe.py --domain tax} reproduces the values above and the associated JSON artifact.
+
+\section{Code Availability}
+
+The experiments reported in this paper were conducted using the canonical SpiralBrain v3.0 configuration.
+A public repository providing architectural documentation, configuration summaries, and reproducibility materials for this canonical configuration is available at: \\
+\url{https://github.com/jhcragin/SpiralBrain-v3.0-public}. \\
+
+The complete SpiralBrain codebase is not publicly available. Components beyond the public canonical configuration include research, experimental, and exploratory modules that were not exercised in the reported experiments and are maintained under a restricted research license.
 
 \bibliographystyle{plain}
 \bibliography{references}

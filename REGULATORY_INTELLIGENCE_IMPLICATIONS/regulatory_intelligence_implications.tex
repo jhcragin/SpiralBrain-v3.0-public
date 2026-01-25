@@ -63,7 +63,7 @@ john.cragin@outlook.com}
 
 Cognitive systems designed for complex decision-making must balance adaptability with reliability. Traditional approaches prioritize optimization through learning mechanisms, but this can lead to instability when systems encounter out-of-distribution inputs or adversarial conditions. Regulatory Intelligence (RI) proposes an alternative paradigm where intelligence emerges from homeostatic stability rather than learned optimization, providing a foundational layer for safe AI development.
 
-The RI framework, as implemented in SpiralBrain v3.0 and documented in the Regulatory Intelligence Paradigm thesis \cite{Cragin2026Thesis}, treats cognitive processes as regulatory dynamics within geometric constraints. This approach ensures that system behavior remains bounded and predictable, even under stress, by maintaining internal coherence through architectural regulation rather than post-hoc safety measures.
+The RI framework, as implemented in SpiralBrain v3.0 and documented in the Regulatory Intelligence Paradigm thesis \cite{Cragin2026RI}, treats cognitive processes as regulatory dynamics within geometric constraints. This approach ensures that system behavior remains bounded and predictable, even under stress, by maintaining internal coherence through architectural regulation rather than post-hoc safety measures.
 
 This paper examines how Regulatory Intelligence serves as a foundational safety layer in cognitive architectures. Through empirical validation across the SpiralBrain H-series experiments, we demonstrate that regulatory stability provides intrinsic alignment mechanisms that prevent structural collapse and enable predictable failure modes. The findings have direct implications for AI safety, showing that architectural regulation can complement or replace optimization-centric approaches in safety-critical applications.
 
@@ -83,21 +83,21 @@ The core principle is that cognitive architectures should prioritize internal co
 
 The eight pathways are organized into four functional lobes, which are embedded within three orthogonal geometric subspaces (regulatory, pathway, affective), as defined in the thesis.
 
-The prevailing paradigm in Artificial General Intelligence (AGI) assumes that cognitive depth is an emergent property of computational scale—a "Scaling Law" that prioritizes external task accuracy over internal system integrity. This approach has yielded architectures that are fundamentally brittle, lacking the homeostatic mechanisms required to navigate high-entropy or contradictory information without catastrophic state collapse \cite{Cragin2026Thesis}.
+The prevailing paradigm in Artificial General Intelligence (AGI) assumes that cognitive depth is an emergent property of computational scale—a "Scaling Law" that prioritizes external task accuracy over internal system integrity. This approach has yielded architectures that are fundamentally brittle, lacking the homeostatic mechanisms required to navigate high-entropy or contradictory information without catastrophic state collapse \cite{Cragin2026RI}.
 
 In SpiralBrain v3.0, the system operates within a 128-dimensional Hilbert space with fixed geometric relationships. State evolution follows elastic regulatory dynamics, where perturbations are bounded and the system resets between instantiations. This clean-slate operation ensures that observed behaviors reflect architectural properties rather than accumulated learning effects.
 
-Experimental validation through the H-series protocol demonstrates that regulatory architectures can achieve stable performance across stress conditions without requiring external optimization (see Section 4 in \cite{Cragin2026Thesis}). The RI paradigm provides a control-theoretic foundation for cognitive systems, where stability is maintained through internal geometric constraints rather than adaptive mechanisms.
+Experimental validation through the H-series protocol demonstrates that regulatory architectures can achieve stable performance across stress conditions without requiring external optimization (see Section 4 in \cite{Cragin2026RI}). The RI paradigm provides a control-theoretic foundation for cognitive systems, where stability is maintained through internal geometric constraints rather than adaptive mechanisms.
 
 The RI hypothesis proposes a departure from the "Model" and a move toward the "Organism." We argue that true general intelligence is a regulatory property. In biological organisms, the brain exists to serve the body's homeostatic needs; cognition is the tool used to maintain equilibrium.
 
-In SpiralBrain v3.0, we invert the standard AI design: instead of teaching a model to solve a task and hoping it stays stable, we build a system that is mandated to stay stable, and we observe as specialized reasoning emerges as a strategy for maintaining that stability \cite{Cragin2026Thesis}.
+In SpiralBrain v3.0, we invert the standard AI design: instead of teaching a model to solve a task and hoping it stays stable, we build a system that is mandated to stay stable, and we observe as specialized reasoning emerges as a strategy for maintaining that stability \cite{Cragin2026RI}.
 
 \section{Internal Coherence as a Safety Primitive}
 
 Internal coherence serves as a fundamental safety primitive in regulatory cognitive architectures. By maintaining geometric relationships between processing pathways, the system prevents the fragmentation or collapse that can occur in optimization-driven systems under stress.
 
-The SpiralBrain experiments show that phase-locked relationships between cognitive pathways provide a stability optimum at approximately 74° angular separation (see Section 3.7–3.8 in \cite{Cragin2026Thesis}). This optimum represents a control-theoretic saddle point balancing differentiation and coherence, ensuring that specialized processing components remain coordinated while maintaining functional independence.
+The SpiralBrain experiments show that phase-locked relationships between cognitive pathways provide a stability optimum at approximately 74° angular separation (see Section 3.7–3.8 in \cite{Cragin2026RI}). This optimum represents a control-theoretic saddle point balancing differentiation and coherence, ensuring that specialized processing components remain coordinated while maintaining functional independence.
 
 For AI safety, this internal coherence provides several advantages:
 
@@ -142,13 +142,15 @@ In contrast, Regulatory Intelligence prevents runaway divergence through archite
 3. Phase-locked relationships between pathways maintain coherence, avoiding fragmentation under stress.
 4. Continuous monitoring of internal metrics (coherence, hazard, drift) triggers regulatory throttling before instability cascades.
 
-Empirical evidence from SpiralBrain v3.0 demonstrates this prevention: across the H-series experiments, the system maintains 99.9\% homeostasis under equivalent stress conditions, with bounded state evolution and predictable degradation rather than divergence (see Section 4.2 in \cite{Cragin2026Thesis}). This architectural regulation provides intrinsic safety by design, complementing or replacing post-hoc optimization constraints.
+Empirical evidence from SpiralBrain v3.0 demonstrates this prevention: across the H-series experiments, the system maintains 99.9\% homeostasis under equivalent stress conditions, with bounded state evolution and predictable degradation rather than divergence (see Section 4.2 in \cite{Cragin2026RI}). This architectural regulation provides intrinsic safety by design, complementing or replacing post-hoc optimization constraints.
 
-\section*{Data and Artifact Availability}
+\section{Code Availability}
 
-All experimental results, analysis scripts, figure-generation pipelines, and logged outputs referenced in this study are publicly available in the SpiralBrain v3.0 repository \cite{SpiralBrainRepo}.
+The experiments reported in this paper were conducted using the canonical SpiralBrain v3.0 configuration.
+A public repository providing architectural documentation, configuration summaries, and reproducibility materials for this canonical configuration is available at: \\
+\url{https://github.com/jhcragin/SpiralBrain-v3.0-public}. \\
 
-The full cognitive system implementation is not publicly released; however, all reported findings are derived from executable artifacts, recorded outputs, and configuration files included in the repository to support independent inspection and reproducibility of the reported results.
+The complete SpiralBrain codebase is not publicly available. Components beyond the public canonical configuration include research, experimental, and exploratory modules that were not exercised in the reported experiments and are maintained under a restricted research license.
 
 \section{Safety and Deployment Implications}
 

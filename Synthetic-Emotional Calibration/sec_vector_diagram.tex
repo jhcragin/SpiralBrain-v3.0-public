@@ -1,0 +1,16 @@
+% SEC Vector Space Diagram
+% TikZ source for the illustrative figure in the SEC paper.
+
+\begin{tikzpicture}
+    % Draw a 2D plane for simplicity
+    \draw[->] (-2,0) -- (2,0) node[right] {Regulatory Threshold Dimension};
+    \draw[->] (0,-2) -- (0,2) node[above] {Regulatory Gain Dimension};
+    
+    % Anchors
+    \filldraw[blue] (-1,1) circle (2pt) node[above left] {\tiny Calm};
+    \filldraw[red] (1,-1) circle (2pt) node[below right] {\tiny Alert};
+    \filldraw[green] (0,0) circle (2pt) node[below] {\tiny Neutral};
+    
+    % Vector example
+    \draw[thick,->] (0,0) -- (-0.5,0.8) node[midway,above] {SEC Vector};
+\end{tikzpicture}

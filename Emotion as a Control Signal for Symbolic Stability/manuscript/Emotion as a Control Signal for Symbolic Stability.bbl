@@ -3,10 +3,10 @@
 \bibitem{Cragin2026Thesis}
 John~H. Cragin.
 \newblock The regulatory intelligence paradigm: Geometric homeostasis and
-  elastic cognition in synthetic cognitive systems.
-\newblock Research monograph, Independent Researcher, 2026.
-\newblock Public preprint.
-\newblock URL: \url{https://doi.org/10.5281/zenodo.18295507}.
+  elastic cognition in synthetic cognitive systems, 2026.
+\newblock Preprint.
+\newblock \href {https://doi.org/10.5281/zenodo.18295507}
+  {\path{doi:10.5281/zenodo.18295507}}.
 
 \bibitem{SpiralBrainV3}
 John~H. Cragin.
@@ -14,6 +14,13 @@ John~H. Cragin.
   2026.
 \newblock GitHub repository.
 \newblock URL: \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}.
+
+\bibitem{Cragin2026SEC}
+John~H. Cragin.
+\newblock Synthetic emotional calibration (sec), 2026.
+\newblock Preprint.
+\newblock \href {https://doi.org/10.5281/zenodo.18370539}
+  {\path{doi:10.5281/zenodo.18370539}}.
 
 \bibitem{damasio2010self}
 Antonio Damasio.

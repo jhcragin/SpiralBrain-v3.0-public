@@ -1,0 +1,60 @@
+\begin{thebibliography}{8}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Brooks(1991)]{Brooks1991}
+Rodney~A. Brooks.
+\newblock Intelligence without representation.
+\newblock \emph{Artificial Intelligence}, 47:\penalty0 139--159, 1991.
+\newblock \doi{10.1016/0004-3702(91)90053-M}.
+
+\bibitem[Clark(1998)]{Clark1998}
+Andy Clark.
+\newblock \emph{Being There: Putting Brain, Body, and World Together Again}.
+\newblock MIT Press, 1998.
+\newblock ISBN 978-0262531566.
+
+\bibitem[Cragin(2026{\natexlab{a}})]{Cragin2026RI}
+John~H. Cragin.
+\newblock The regulatory intelligence paradigm: Geometric homeostasis and
+  elastic cognition in synthetic neurosymbolic systems, 2026{\natexlab{a}}.
+\newblock Preprint, available at \url{https://doi.org/10.5281/zenodo.18295507}.
+
+\bibitem[Cragin(2026{\natexlab{b}})]{Cragin2026SEC}
+John~H. Cragin.
+\newblock Synthetic emotional calibration (sec), 2026{\natexlab{b}}.
+\newblock Preprint, available at \url{https://doi.org/10.5281/zenodo.18370539}.
+
+\bibitem[Cragin(2026{\natexlab{c}})]{SpiralBrainV3}
+John~H. Cragin.
+\newblock Spiralbrain v3.0: A neurosymbolic agent for regulatory intelligence,
+  2026{\natexlab{c}}.
+\newblock URL \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}.
+\newblock GitHub repository.
+
+\bibitem[Friston(2010)]{Friston2010}
+Karl Friston.
+\newblock The free-energy principle: a unified brain theory?
+\newblock \emph{Nature Reviews Neuroscience}, 11\penalty0 (2):\penalty0
+  127--138, 2010.
+\newblock \doi{10.1038/nrn2787}.
+
+\bibitem[Pope(2000)]{Pope2000}
+Stephen~B. Pope.
+\newblock \emph{Turbulent Flows}.
+\newblock Cambridge University Press, 2000.
+\newblock \doi{10.1017/CBO9780511840531}.
+
+\bibitem[Raissi et~al.(2019)Raissi, Perdikaris, and Karniadakis]{Raissi2019}
+Maziar Raissi, Paris Perdikaris, and George~Em Karniadakis.
+\newblock Physics-informed neural networks: A deep learning framework for
+  solving forward and inverse problems involving nonlinear partial differential
+  equations.
+\newblock \emph{Journal of Computational Physics}, 378:\penalty0 686--707,
+  2019.
+\newblock \doi{10.1016/j.jcp.2018.10.045}.
+
+\end{thebibliography}

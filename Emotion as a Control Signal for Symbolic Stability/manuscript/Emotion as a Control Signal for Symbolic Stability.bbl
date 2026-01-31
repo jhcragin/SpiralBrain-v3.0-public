@@ -8,6 +8,13 @@ John~H. Cragin.
 \newblock Public preprint.
 \newblock URL: \url{https://doi.org/10.5281/zenodo.18295507}.
 
+\bibitem{SpiralBrainV3}
+John~H. Cragin.
+\newblock Spiralbrain v3.0: A neurosymbolic agent for regulatory intelligence,
+  2026.
+\newblock GitHub repository.
+\newblock URL: \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}.
+
 \bibitem{damasio2010self}
 Antonio Damasio.
 \newblock {\em Self Comes to Mind: Constructing the Conscious Brain}.

@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{ashby1956introduction}
+W.~Ross Ashby.
+\newblock {\em An introduction to cybernetics}.
+\newblock Chapman \& Hall, 1956.
+
+\bibitem{Cragin2026Integrity}
+John~H. Cragin.
+\newblock Measuring cognitive integrity under uncertainty: A regulatory
+  learning architecture with validated sec dynamics.
+\newblock {\em Preprint}, 2026.
+\newblock Independent Research Manuscript.
+
+\bibitem{Cragin2026RI}
+John~H. Cragin.
+\newblock The regulatory intelligence paradigm: Geometric homeostasis and
+  elastic cognition in synthetic cognitive systems.
+\newblock Research monograph, Independent Researcher, 2026.
+\newblock Public preprint.
+
+\bibitem{SpiralBrainRepo}
+John~H. Cragin.
+\newblock Spiralbrain v3.0 public repository.
+\newblock \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}, 2026.
+\newblock Accessed: 2026-01-10.
+
+\end{thebibliography}

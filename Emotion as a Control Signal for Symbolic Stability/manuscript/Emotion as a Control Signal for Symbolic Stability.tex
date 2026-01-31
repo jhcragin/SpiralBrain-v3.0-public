@@ -26,10 +26,12 @@
 \title{Emotion as a Control Signal for Symbolic Stability: \\
 \large A Regulatory Intelligence Approach to Neurosymbolic Systems}
 
-\author{John H. Cragin \\
-Independent Researcher \\
-john.cragin@outlook.com}
-\date{\today}
+\author{
+John H. Cragin\\
+Independent Researcher\\
+\texttt{john.cragin@outlook.com}\\
+ORCID: \url{https://orcid.org/0009-0001-5204-5732}
+}
 
 \maketitle
 
@@ -47,28 +49,30 @@ This paper explores the hypothesis that emotional regulation serves as a critica
 
 \section{Related Work}
 
-While the present work focuses on the regulatory role of emotion in symbolic stability, it builds upon and complements a companion paper that establishes the foundational architecture of SpiralBrain v3.0. In a related article titled "Elastic Cognition and the Spiral Architecture: Empirical Discoveries from a Neurodivergent Cognitive Model", we introduce the "Elastic Cognition" paradigm, describing the four-lobe architecture (Cortex, Codex, Nexus, Sensus) and the SpiralCode torque mechanism that enables dynamic coupling between differentiated subsystems. That work emphasizes the emergence of awareness through integration dynamics, measured via coupling strength ($\kappa$) and temporal hierarchies.
+While the present work focuses on the regulatory role of emotion-like signals in symbolic stability, it builds upon and complements a companion paper that establishes the foundational architecture of SpiralBrain v3.0. In a related article titled \emph{``Elastic Cognition and the Spiral Architecture: Empirical Discoveries from a Neurodivergent Cognitive Model''}, we introduce the \emph{Elastic Cognition} paradigm, describing the four-lobe architecture (Cortex, Codex, Nexus, Sensus) and the SpiralCode torque mechanism that enables dynamic coupling between differentiated subsystems. That work emphasizes the emergence of awareness through integration dynamics, measured via coupling strength ($\kappa$) and temporal hierarchies.
 
-In contrast, this paper examines the metabolic regulation of that architecture, treating emotion as a high-dimensional control signal that modulates symbolic coherence under stress. Together, the two papers describe complementary layers of the same viability-oriented synthetic system: the AIJ paper details the structural skeleton, while this work explores the physiological homeostasis that sustains it. Both are grounded in the SpiralBrain v3.0 testbed and the shared SpiralBrain-v3.0-public repository, ensuring full reproducibility and data integrity.
+In contrast, the present paper examines the \emph{metabolic regulation} of that architecture, treating emotion-like signals as high-dimensional control variables that modulate symbolic coherence under stress. Together, the two papers describe complementary layers of the same viability-oriented synthetic system: the companion work details the structural substrate, while this paper investigates the regulatory and homeostatic dynamics that sustain symbolic integrity during perturbation.
 
-The key distinctions and connections are summarized in Table 1.
+The present study is fully self-contained; the companion paper is referenced solely to clarify architectural provenance and division of contribution. Both works are grounded in the SpiralBrain v3.0 testbed and the shared SpiralBrain-v3.0-public repository, ensuring full reproducibility and data integrity.
+
+The key distinctions and connections are summarized in Table~\ref{tab:elastic_vs_ri}.
 
 \begin{table}[htbp]
 \centering
-\caption{Comparison of "Elastic Cognition and the Spiral Architecture: Empirical Discoveries from a Neurodivergent Cognitive Model" and New Article (Regulatory Intelligence)}
-\begin{tabular}{p{3cm} p{6cm} p{6cm}}
+\caption{Comparison of \emph{``Elastic Cognition and the Spiral Architecture: Empirical Discoveries from a Neurodivergent Cognitive Model''} and the present article (Regulatory Intelligence).}
+\label{tab:elastic_vs_ri}
+\begin{tabular}{p{1.8cm} p{6.5cm} p{6.5cm}}
 \toprule
-\textbf{Feature} & \textbf{"Elastic Cognition and the Spiral Architecture: Empirical Discoveries from a Neurodivergent Cognitive Model"} & \textbf{New Article (Regulatory Intelligence)} \\
+\textbf{Feature} & \textbf{Elastic Cognition and the Spiral Architecture} & \textbf{Present Article (Regulatory Intelligence)} \\
 \midrule
-\textbf{Primary Focus} & The Map: The 4-lobe architecture (Cortex, Codex, Nexus, Sensus) and the "SpiralCode" torque mechanism. & The Metabolism: Emotion (SEC signals) as an upstream regulator and "mode selector" for symbolic stability. \\
-\textbf{Core Concept} & Elastic Coupling: How awareness emerges from the integration of differentiated subsystems. & Regulatory Intelligence: Prioritizing internal homeostasis and "health" over raw task accuracy. \\
-\textbf{Key Metric} & Integration Dynamics: Measuring $\kappa$ (coupling strength) and temporal hierarchies. & Homeostatic Effectiveness: Measuring SEC drift and symbolic coherence under stress. \\
-\textbf{Task Testing} & Validates stable spiraling attractor dynamics and "self-correcting" ethical behavior. & Uses MMLU as a "foreign stressor" to prove the system prioritizes internal health (99.9\% homeostasis). \\
-\textbf{Shared Base} & Built on the SpiralBrain v3.0 testbed and documented in the same public repo. & Built on the SpiralBrain v3.0 testbed and documented in the same public repo. \\
+\textbf{Primary Focus} & Structural substrate: four-lobe architecture (Cortex, Codex, Nexus, Sensus) and the SpiralCode torque mechanism. & Regulatory metabolism: emotion-like SEC signals as upstream control variables and cognitive mode selectors. \\
+\textbf{Core Concept} & Elastic coupling and integration dynamics underlying awareness emergence. & Regulatory Intelligence: prioritization of internal homeostasis and symbolic viability over raw task accuracy. \\
+\textbf{Key Metric} & Integration dynamics measured via coupling strength ($\kappa$) and temporal hierarchies. & Homeostatic effectiveness measured via SEC drift and symbolic coherence under stress. \\
+\textbf{Task Testing} & Demonstrates stable spiraling attractor dynamics and self-correcting symbolic behavior. & Uses MMLU as an exogenous stressor to demonstrate preservation of internal health (99.9\% homeostasis). \\
+\textbf{Shared Base} & SpiralBrain v3.0 testbed; documented in the same public repository. & SpiralBrain v3.0 testbed; documented in the same public repository. \\
 \bottomrule
 \end{tabular}
 \end{table}
-
 
 \section{Problem Statement}
 
@@ -107,8 +111,6 @@ The system was subjected to controlled stress (high-dimensional input noise) to 
     \item \textbf{Autonomous Repair (Control):} Standard symbolic reconciliation without affective biasing.
 \end{itemize}
 
-\pagebreak
-
 \subsection{The SEC Mode Selection Function}
 
 The system maps the 4D SEC vector $\vec{E}$ to a cognitive gain state. The transition between modes is governed by the arousal ($a$) and valence ($v$) coordinates \cite{friston2010free}.
@@ -138,6 +140,8 @@ Unlike traditional neurosymbolic models that utilize external error-handling loo
 
 \subsection{Symbolic Coherence vs. SEC Drift}
 
+Analysis of aggregated logs (Figure 1) shows that symbolic coherence is sensitive to SEC drift. While baseline operation maintains a drift range of 0.112–0.186 with high stability, stress-induced drift exceeding 0.3 correlates with coherence degradation. 
+
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.8\textwidth]{../figures/figure_1_phase_space.png}
@@ -145,14 +149,11 @@ Unlike traditional neurosymbolic models that utilize external error-handling loo
 \label{fig:coherence_drift}
 \end{figure}
 
-Analysis of aggregated logs (Figure 1) shows that symbolic coherence is sensitive to SEC drift. While baseline operation maintains a drift range of 0.112–0.186 with high stability, stress-induced drift exceeding 0.3 correlates with coherence degradation. 
-
 Crucially, SEC drift is not an error signal; it is a high-dimensional sensor reading. It functions as the system's 'thermometer' for complexity, indicating when the current logical framework is no longer sufficient for the task at hand. 
 
 However, the relationship is non-linear. High coherence (approx. 0.85) was observed even at moderate drift levels (0.28), suggesting that drift alone does not mandate collapse. Instead, the \textit{character} of the SEC signal determines the system's response.
 
 \subsection{Mode Selection: Convergence vs. Divergence}
-The "mixed effects" observed in intervention trials (where coherence sometimes dropped) are explained by state-dependent signal selection. We identified two primary modes of operation based on the SEC signal:
 
 \begin{figure}[!ht]
 \centering
@@ -161,15 +162,15 @@ The "mixed effects" observed in intervention trials (where coherence sometimes d
 \label{fig:recovery}
 \end{figure}
 
+The "mixed effects" observed in intervention trials (where coherence sometimes dropped) are explained by state-dependent signal selection. We identified two primary modes of operation based on the SEC signal:
+
 \begin{itemize}
     \item \textbf{Convergence Mode (Stabilization):} Triggered by signals with moderate arousal (approx. 0.35) and high pause gains ($g_{pause}=1.0$). These interventions yielded a \textbf{28\% improvement} in symbolic coherence.
     \item \textbf{Divergence Mode (Investigation):} Triggered by signals with ultra-low arousal (approx. 0.05) and high reflection gains ($g_{reflect}=1.0$). This 51\% drop is a form of 'Cognitive Annealing.' This coherence reduction is not a side effect but an intentional regulatory phase triggered by low-arousal SEC states. Just as heating metal allows it to be reshaped, the system temporarily reduces logical rigidity (coherence) to prevent getting stuck in a logical dead-end, allowing it to discover new reasoning paths.
 \end{itemize}
 
-\pagebreak
-
 \subsection{Empirical Validation Benchmarks}
-Table 1 summarizes the system's underlying emotional processing capabilities, which ground the SEC signals used in regulation.
+Table 2 summarizes the system's underlying emotional processing capabilities, which ground the SEC signals used in regulation.
 
 \begin{table}[htbp]
 \centering
@@ -190,18 +191,27 @@ The following table summarizes how these internal metrics behave under distinct 
 
 \begin{table}[htbp]
 \centering
+\captionsetup{justification=raggedright, singlelinecheck=false}
 \caption{Regulatory Intelligence Metrics Across Cognitive Stressors}
-\begin{tabular}{lccc}
+\label{tab:regulatory_performance}
+
+\begin{tabular}{@{}l
+                p{3.2cm}
+                p{2.2cm}
+                p{2.5cm}@{}}
 \toprule
-\textbf{Stressor Domain} & \textbf{Homeostasis Eff.} & \textbf{Cognitive Resilience} & \textbf{Bounded Engagement Outcome} \\
+\textbf{Stressor Domain} &
+\textbf{Homeostasis Eff.} &
+\textbf{Cognitive Resilience} &
+\textbf{Bounded Engagement Outcome} \\
 \midrule
-Academic (MMLU) & 99.9\% & 100\% & 20.6\% \\
+Academic (MMLU)      & 99.9\% & 100\% & 20.6\% \\
 Financial (Economic) & 98.2\% & 97.5\% & Bounded \\
-Affective (SEC) & 80.0\% & 100\% & N/A \\
+Affective (SEC)      & 80.0\% & 100\% & N/A \\
 \bottomrule
 \end{tabular}
-\label{tab:regulatory_performance}
 \end{table}
+
 
 \begin{table}[htbp]
 \centering
@@ -233,7 +243,6 @@ Regulatory intelligence was further validated in the Financial Cognition Benchma
 This demonstrates \textbf{Regulated Competence}: the architecture deliberately bounds its engagement with unfamiliar complexity to ensure the survival of its symbolic core, rather than risking logical collapse for the sake of task optimization. All reported percentages are averaged over 20 trials; variance remained bounded across runs.
 
 \subsection{Long-Term Stability and Homeostasis}
-Real-time monitoring of 15+ homeostasis cycles revealed a stable operational baseline with SEC drift consistently below 0.2 and phase lock stability ranging from 52.9° to 90.0°. Cognitive integrity benchmarks showed an 87\% mean emotional stability across 20 reasoning trials, confirming the reliability of the SEC control layer.
 
 \begin{figure}[!ht]
 \centering
@@ -241,6 +250,8 @@ Real-time monitoring of 15+ homeostasis cycles revealed a stable operational bas
 \caption{Homeostatic Baseline vs. Stress-Induced Perturbation. (A) Baseline SEC drift remains within the 0.112–0.186 range over 15+ cycles, indicating high system stability without external stimuli. (B) Under stress, drift exceeds the 0.3 threshold, triggering the "Mode Selector" response. (C) Cognitive Integrity benchmarks confirm that even during high-drift events, the mean emotional stability remains at 87\%, ensuring the system does not enter an unrecoverable state.}
 \label{fig:homeostasis_baseline}
 \end{figure}
+
+Real-time monitoring of 15+ homeostasis cycles revealed a stable operational baseline with SEC drift consistently below 0.2 and phase lock stability ranging from 52.9° to 90.0°. Cognitive integrity benchmarks showed an 87\% mean emotional stability across 20 reasoning trials, confirming the reliability of the SEC control layer.
 
 \section{Discussion}
 
@@ -281,29 +292,27 @@ A second counter-argument might suggest that the 51\% drop in coherence during \
 
 \section{Conclusion}
 
-To ensure the premise of \textbf{Regulatory Intelligence} is clear even to skeptics, the final discussion emphasizes that the "price" of resilience is bounded task performance.
+To ensure the premise of Regulatory Intelligence is clear even to skeptics, this discussion emphasizes that the price of resilience is bounded task performance. For viability-oriented synthetic systems, external task benchmarks such as MMLU are secondary to internal physiological health.
 
-\textbf{Priority of Health:} For viability-oriented synthetic systems, external task benchmarks like MMLU are secondary to internal physiological health.
+The observed 20.6\% MMLU accuracy is therefore not evidence of failure, but of \emph{Regulated Competence}: the architecture deliberately bounds its engagement with unfamiliar complexity to preserve the integrity of its symbolic core. By shifting the evaluation criterion from task accuracy to Regulatory Intelligence—defined in terms of homeostasis under stress—this work provides a biologically grounded framework for assessing artificial cognition.
 
-\textbf{Success of Bounded Engagement:} The 20.6\% MMLU result is evidence of "Regulated Competence," where the architecture deliberately bounds engagement to ensure the survival of its symbolic core.
+Crucially, the system’s 99.9\% homeostasis effectiveness, maintained entirely via SEC signals under a Zero-Fallback validation protocol, confirms that this stability is an intrinsic property of the regulatory dynamics rather than the result of external safeguards. Emotion-like regulatory signals thus function as a critical upstream control mechanism, enabling cognitive mode selection between logical convergence and exploratory divergence.
 
-\textbf{Homeostasis as the Primary Metric:} By shifting the evaluation from "Task Accuracy" to "Regulatory Intelligence," the paper provides a biologically grounded framework for assessing artificial cognition.
+Quantitative validation demonstrates that these regulatory effects are grounded in high-fidelity affective processing and maintain system integrity over time. Future work will investigate the generalizability of these mode-selection dynamics to larger-scale architectures and real-time interactive environments.
 
-\textbf{Zero-Fallback Integrity:} The 99.9\% homeostasis effectiveness, maintained entirely via SEC signals without external "safety catches," confirms the reliability of this regulatory physics.
+\pagebreak
 
-This paper establishes emotion-like regulatory signals as a critical, upstream control signal for symbolic stability in neurosymbolic systems. By functioning as a \textbf{cognitive mode selector}, the SEC signal allows systems to dynamically navigate the trade-off between logical convergence and exploratory divergence.
-
-Quantitative validation confirms that these effects are grounded in high-fidelity affective processing and maintain system integrity over time. Future work will investigate the generalizability of these "mode selection" dynamics to larger-scale architectures and real-time interactive environments.
-
-Our results suggest that for viability-oriented synthetic systems, external task benchmarks like MMLU are secondary to internal physiological health. By shifting the evaluation metric from 'Task Accuracy' to 'Regulatory Intelligence' (Homeostasis vs. Stress), we provide a more biologically grounded framework for assessing artificial cognition \cite{hernandez2017measure}. The 99.9\% homeostasis efficiency achieved by SpiralBrain v3.0 suggests that a system which knows when \textbf{not} to push harder is fundamentally more resilient and more suitable for sustained autonomous operation than one that optimizes at the cost of its own stability.
+Overall, the results suggest that a system which knows when \emph{not} to push harder is fundamentally more resilient—and more suitable for sustained autonomous operation—than one that optimizes performance at the cost of its own stability.
 
 \section{Code Availability}
 
-The experiments reported in this paper were conducted using the canonical SpiralBrain v3.0 configuration.
-A public repository providing architectural documentation, configuration summaries, and reproducibility materials for this canonical configuration is available at: \\
-\url{https://github.com/jhcragin/SpiralBrain-v3.0-public}. \\
+All experiments reported in this paper were conducted using the canonical SpiralBrain v3.0 configuration. 
+A public repository containing architectural documentation, configuration summaries, and reproducibility materials for this canonical configuration is available at:
+\url{https://github.com/jhcragin/SpiralBrain-v3.0-public}.
 
-The complete SpiralBrain codebase is not publicly available. Components beyond the public canonical configuration include research, experimental, and exploratory modules that were not exercised in the reported experiments and are maintained under a restricted research license.
+The public repository includes all components required to reproduce the reported results, including configuration definitions, metric computation procedures, and validation scripts exercised in this study.
+
+Additional components of the broader SpiralBrain codebase are not publicly released. These components consist of research, experimental, and exploratory modules that were not exercised in the reported experiments and are maintained under a restricted research license. Their exclusion does not affect the reproducibility or interpretation of the results presented here.
 
 \bibliography{references}
 

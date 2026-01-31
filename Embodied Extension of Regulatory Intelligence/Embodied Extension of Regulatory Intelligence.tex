@@ -178,8 +178,6 @@ SpiralBrain v3.0 is a neurosymbolic cognitive architecture that integrates neura
 
 The SpiralBrain v3.0 architecture is implemented in Python and executes in a local computational environment, such as a laptop running Visual Studio Code. This lightweight design enables real-time bidirectional coupling with the Navier–Stokes solver without requiring high-performance computing resources.
 
-The Navier--Stokes equations describe the motion of viscous fluid substances, here solved in 2D incompressible form using a finite-difference method on a 64×64 uniform grid. Initial conditions consist of a Gaussian perturbation centered at (0.5, 0.5) to seed turbulence, with no-slip boundary conditions enforcing zero velocity at domain edges. Pressure is projected using Successive Over-Relaxation (SOR) to ensure incompressibility. Coupling occurs bidirectionally: every 10 simulation steps, the brain receives summarized flow statistics and modulates viscosity ($\nu$) and timestep ($\Delta t$) to influence flow evolution contextually. This custom solver prioritizes chaotic dynamics over numerical precision, providing a realistic yet computationally tractable testbed for regulatory intelligence without the overhead of production CFD codes.
-
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[
@@ -327,6 +325,8 @@ The Navier--Stokes equations describe the motion of viscous fluid substances, he
 \caption{\raggedright System architecture showing bidirectional coupling between SpiralBrain v3.0 and the Navier--Stokes simulator, including perceptual ingestion, regulatory decision pathways, and constrained feedback mechanisms.}
 \label{fig:system_architecture}
 \end{figure}
+
+The Navier--Stokes equations describe the motion of viscous fluid substances, here solved in 2D incompressible form using a finite-difference method on a 64×64 uniform grid. Initial conditions consist of a Gaussian perturbation centered at (0.5, 0.5) to seed turbulence, with no-slip boundary conditions enforcing zero velocity at domain edges. Pressure is projected using Successive Over-Relaxation (SOR) to ensure incompressibility. Coupling occurs bidirectionally: every 10 simulation steps, the brain receives summarized flow statistics and modulates viscosity ($\nu$) and timestep ($\Delta t$) to influence flow evolution contextually. This custom solver prioritizes chaotic dynamics over numerical precision, providing a realistic yet computationally tractable testbed for regulatory intelligence without the overhead of production CFD codes.
 
 Cognitive influence is restricted to: \\ 
 (i) low-gain $\nu$ modulation, \\ 
@@ -514,6 +514,8 @@ EPCI is the Epistemic Parity Coherence Index; Sensitivity denotes regulatory sen
 
 The high variance in the Observer condition reflects stochastic internal stress perturbations inherent to SpiralBrain's processing pathways under passive exposure to chaotic input. Both Regulator and Adaptive conditions preserve zero regulatory sensitivity, meaning each intervention adds no incremental cognitive cost relative to observation alone. This operationalizes \textbf{intelligent restraint}: modulation occurs selectively only when Hazard H exceeds elastic thresholds, avoiding unnecessary over-intervention. Zero sensitivity across adaptive runs confirms that homeostatic throttling protects coherence without iatrogenic harm, even as the physical stressor (turbulence) elevates internal stress.
 
+\pagebreak
+
 Flow statistics from the physical side (Table 3) remain highly reproducible and bounded.
 
 \begin{table}[htbp!]
@@ -596,6 +598,8 @@ To support transparency, the core regulatory logic (Hazard→SEC→throttle path
 
 The following pseudocode provides a minimal, inspectable description of the Hazard → SEC → throttling pipeline used in the present experiments. It is intended to expose the regulatory logic rather than serve as an optimized or complete implementation.
 
+\pagebreak
+
 \textbf{SEC Calibration Logic:}
 
 \begin{lstlisting}
@@ -614,8 +618,6 @@ function compute_sec_vector(raw_emotions):
     return sec
 \end{lstlisting}
 
-\pagebreak
-
 \textbf{SpiralCode Recursive Torque Equation:}
 
 \begin{lstlisting}
@@ -627,8 +629,16 @@ function update_coherence(coherence, coupling, temporal_hierarchy, input, emotio
     return new_coherence
 \end{lstlisting}
 
-The specific data files referenced in the Reproducibility Analysis section \\
-(observer\_effect\_20251219\_005113\_81f4859f\_report.json, \\ observer\_effect\_20251219\_011626\_c04bc268\_report.json, \\ observer\_effect\_20251219\_011724\_f4ea4777\_report.json, and \\ observer\_effect\_20251221\_040856\_21f96ed8\_report.json) \\ are included in the \texttt{results/} folder of this submission package for direct verification.
+The specific data files referenced in the Reproducibility Analysis section are included in the \texttt{results/} folder of the Spiralbrain v3.0 public repository for direct verification: 
+
+\begin{enumerate}
+    \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Embodied%20Extension%20of%20Regulatory%20Intelligence/results/observer_effect_20251219_005113_81f4859f_report.json}{\texttt{observer\_effect\_20251219\_005113\_81f4859f\_report.json}}
+    \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Embodied%20Extension%20of%20Regulatory%20Intelligence/results/observer_effect_20251219_011626_c04bc268_report.json}{\texttt{observer\_effect\_20251219\_011626\_c04bc268\_report.json}}
+    \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Embodied%20Extension%20of%20Regulatory%20Intelligence/results/observer_effect_20251219_011724_f4ea4777_report.json}{\texttt{observer\_effect\_20251219\_011724\_f4ea4777\_report.json}}
+    \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Embodied%20Extension%20of%20Regulatory%20Intelligence/results/observer_effect_20251221_040856_21f96ed8_report.json}{\texttt{observer\_effect\_20251221\_040856\_21f96ed8\_report.json}}
+\end{enumerate}
+
+
 
 \bibliographystyle{plainnat}
 \bibliography{references}

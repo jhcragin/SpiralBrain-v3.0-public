@@ -5,44 +5,47 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: references.bib
-You've used 3 entries,
+Warning--I didn't find a database entry for "cragin_2026_18295507"
+Warning--I didn't find a database entry for "cragin_2026_18444713"
+You've used 7 entries,
             2118 wiz_defined-function locations,
-            515 strings with 4629 characters,
-and the built_in function-call counts, 839 in all, are:
-= -- 78
-> -- 52
+            535 strings with 5361 characters,
+and the built_in function-call counts, 2200 in all, are:
+= -- 189
+> -- 164
 < -- 0
-+ -- 22
-- -- 18
-* -- 48
-:= -- 163
-add.period$ -- 11
-call.type$ -- 3
-change.case$ -- 19
++ -- 67
+- -- 58
+* -- 157
+:= -- 407
+add.period$ -- 20
+call.type$ -- 7
+change.case$ -- 50
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 25
-empty$ -- 55
-format.name$ -- 18
-if$ -- 163
+cite$ -- 7
+duplicate$ -- 65
+empty$ -- 136
+format.name$ -- 58
+if$ -- 424
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 1
-newline$ -- 20
-num.names$ -- 6
-pop$ -- 20
+int.to.str$ -- 7
+missing$ -- 5
+newline$ -- 37
+num.names$ -- 14
+pop$ -- 58
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 43
 quote$ -- 0
-skip$ -- 18
+skip$ -- 51
 stack$ -- 0
-substring$ -- 16
-swap$ -- 2
+substring$ -- 46
+swap$ -- 7
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
+type$ -- 28
 warning$ -- 0
-while$ -- 6
-width$ -- 4
-write$ -- 37
+while$ -- 15
+width$ -- 8
+write$ -- 71
+(There were 2 warnings)

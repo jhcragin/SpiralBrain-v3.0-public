@@ -8,21 +8,32 @@ W.~Ross Ashby.
 \bibitem{Cragin2026Integrity}
 John~H. Cragin.
 \newblock Measuring cognitive integrity under uncertainty: A regulatory
-  learning architecture with validated sec dynamics.
-\newblock {\em Preprint}, 2026.
-\newblock Independent Research Manuscript.
+  learning architecture with validated sec dynamics, 2026.
+\newblock Preprint, available at \url{https://doi.org/10.5281/zenodo.18370539}.
 
 \bibitem{Cragin2026RI}
 John~H. Cragin.
 \newblock The regulatory intelligence paradigm: Geometric homeostasis and
-  elastic cognition in synthetic cognitive systems.
-\newblock Research monograph, Independent Researcher, 2026.
-\newblock Public preprint.
+  elastic cognition in synthetic neurosymbolic systems, 2026.
+\newblock Preprint, available at \url{https://doi.org/10.5281/zenodo.18295507}.
 
-\bibitem{SpiralBrainRepo}
+\bibitem{SpiralBrainV3}
 John~H. Cragin.
-\newblock Spiralbrain v3.0 public repository.
-\newblock \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}, 2026.
-\newblock Accessed: 2026-01-10.
+\newblock Spiralbrain v3.0: A neurosymbolic agent for regulatory intelligence,
+  2026.
+\newblock GitHub repository:
+  \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}.
+
+\bibitem{fsb2023ai}
+{Financial Stability Board}.
+\newblock Artificial intelligence and machine learning in financial services,
+  2023.
+\newblock Available at
+  \url{https://www.fsb.org/2023/11/artificial-intelligence-and-machine-learning-in-financial-services/}.
+
+\bibitem{geifman2017selective}
+Yonatan Geifman and Ran El-Yaniv.
+\newblock Selective classification for deep neural networks.
+\newblock {\em Advances in neural information processing systems}, 30, 2017.
 
 \end{thebibliography}

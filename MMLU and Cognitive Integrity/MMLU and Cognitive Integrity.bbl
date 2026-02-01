@@ -1,22 +1,43 @@
 \begin{thebibliography}{1}
 
-\bibitem{Cragin2026Thesis}
+\bibitem{amodei2016concrete}
+Dario Amodei, Chris Olah, Jacob Steinhardt, Paul Christiano, John Schulman, and
+  Dan Man{\'e}.
+\newblock Concrete problems in ai safety.
+\newblock {\em arXiv preprint arXiv:1606.06565}, 2016.
+
+\bibitem{Cragin2026RI}
 John~H. Cragin.
 \newblock The regulatory intelligence paradigm: Geometric homeostasis and
-  elastic cognition in synthetic cognitive systems.
-\newblock Research monograph, Independent Researcher, 2026.
-\newblock Public preprint.
+  elastic cognition in synthetic cognitive systems, 01 2026.
 
-\bibitem{SpiralBrainRepo}
+\bibitem{SpiralBrainV3}
 John~H. Cragin.
-\newblock Spiralbrain v3.0 public repository.
-\newblock \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}, 2026.
-\newblock Accessed: 2026-01-10.
+\newblock Spiralbrain v3.0: A neurosymbolic agent for regulatory intelligence,
+  2026.
+\newblock Canonical public implementation.
+
+\bibitem{ethayarajh2020utility}
+Kawin Ethayarajh and Dan Jurafsky.
+\newblock Utility is in the eye of the user: A critique of nlp leaderboards.
+\newblock {\em arXiv preprint arXiv:2009.13888}, 2020.
 
 \bibitem{hendrycks2020measuring}
 Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Maitreyi Mazeika, Dawn
   Song, and Jacob Steinhardt.
 \newblock Measuring massive multitask language understanding.
 \newblock {\em arXiv preprint arXiv:2009.03300}, 2020.
+
+\bibitem{olah2018building}
+Chris Olah, Arvind Satyanarayan, Ian Johnson, Shan Carter, Ludwig Schubert,
+  Katherine Ye, and Alexander Mordvintsev.
+\newblock The building blocks of interpretability.
+\newblock {\em Distill}, 3(3):e10, 2018.
+
+\bibitem{raji2021beyond}
+Inioluwa~Deborah Raji, Emily~M Bender, Amandalynne Paullada, Emily Denton, and
+  Alex Hanna.
+\newblock Beyond accuracy: Behavioral testing of nlp models with checklist.
+\newblock {\em arXiv preprint arXiv:2005.04118}, 2021.
 
 \end{thebibliography}

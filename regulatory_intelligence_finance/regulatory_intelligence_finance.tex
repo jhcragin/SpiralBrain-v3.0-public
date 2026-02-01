@@ -1,19 +1,22 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{caption}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{graphicx}
 \usepackage{geometry}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{natbib}
 \usepackage{booktabs}
 \usepackage{titlesec}
 \usepackage{float}
+\captionsetup[table]{skip=6pt}
 \usepackage{setspace}
 \usepackage{parskip}
 \usepackage{tikz}
 \usepackage{pgfplots}
 \usepackage{tcolorbox}
+\usetikzlibrary{positioning}
 \renewcommand{\appendixname}{Appendix}
 \hyphenation{Reproducibility}
 \pgfplotsset{compat=1.18}
@@ -60,6 +63,14 @@
 
 \onehalfspacing
 
+% Format abstract full page
+\makeatletter
+\renewenvironment{abstract}{
+    \begin{center}
+        {\large\bfseries \abstractname\vspace{-.5em}\vspace{0pt}}
+    \end{center}
+}{}
+\makeatother
 \begin{document}
 
 \begin{titlepage}
@@ -70,8 +81,8 @@
     
     \large John H. Cragin \\[0.5em]
     \normalsize Independent Researcher \\[0.2em]
-    \normalsize john.cragin@outlook.com \\[1em]
-    ORCID: \url{https://orcid.org/0009-0001-5204-5732}
+    \normalsize \href{mailto:john.cragin@outlook.com}{john.cragin@outlook.com} \\[1em]
+    ORCID: \href{https://orcid.org/0009-0001-5204-5732}{0009-0001-5204-5732}
 
     \normalsize January 14, 2026
   \end{center}
@@ -146,6 +157,7 @@ if SEC_drift > d* and coherence >= c*:
         escalate_to_abstention()
 \end{verbatim}
 
+
 This formulation turns RI from conceptual to algorithmic.
 
 Using SpiralBrain v3.0 as a measurement instrument, we demonstrate these principles through controlled experiments in adversarial tax reasoning scenarios.
@@ -155,30 +167,57 @@ Using SpiralBrain v3.0 as a measurement instrument, we demonstrate these princip
 SpiralBrain implements RI through a 128-dimensional cognitive manifold with partitioned subspaces, regulated by emotional signals (SEC vectors) and homeostasis mechanisms. The system operates without learning, ensuring clean-slate responses to each scenario.
 
 Key regulatory components:
-- \textbf{SEC vectors}: Valence/arousal/hazard signals modulating processing
-- \textbf{Homeostatic loops}: Elastic coupling maintaining coherence floors
-- \textbf{Throttling mechanisms}: Performance reduction to preserve stability
-- \textbf{Multi-pathway architecture}: Parallel reasoning streams with conflict resolution
+\begin{enumerate}
+    \item \textbf{SEC vectors}: Valence, arousal, and hazard signals modulating processing.
+    \item \textbf{Homeostatic loops}: Elastic coupling maintaining coherence floors.
+    \item \textbf{Throttling mechanisms}: Performance reduction to preserve stability.
+    \item \textbf{Multi-pathway architecture}: Parallel reasoning streams with conflict resolution.
+\end{enumerate}
+
+
+This architecture is illustrated in Figure \ref{fig:ri_architecture}.
 
 \begin{figure}[H]
 \centering
-\begin{tikzpicture}[node distance=2cm]
-\node (input) [draw, rectangle] {Tax Scenario Input};
-\node (manifold) [draw, rectangle, below of=input] {128D Cognitive Manifold};
-\node (sec) [draw, rectangle, right of=manifold] {SEC Vectors};
-\node (homeo) [draw, rectangle, below of=manifold] {Homeostasis Loops};
-\node (throttle) [draw, rectangle, below of=homeo] {Throttle/Abstain};
-\node (output) [draw, rectangle, below of=throttle] {Structured Uncertainty Packet};
 
-\path [->] (input) -- (manifold);
-\path [->] (manifold) -- (sec);
-\path [->] (sec) -- (homeo);
-\path [->] (homeo) -- (throttle);
-\path [->] (throttle) -- (output);
+\begin{tikzpicture}[
+    node distance=2.0cm,
+    box/.style={
+        draw,
+        rounded corners,
+        minimum width=3.8cm,
+        minimum height=1cm,
+        thick,
+        align=center,
+        font=\small
+    },
+    arrow/.style={
+        ->,
+        thick
+    }
+]
+
+% Nodes
+\node (input)   [box, fill=blue!15]                {Tax Scenario Input};
+\node (manifold)[box, fill=blue!10, below of=input] {128D Cognitive Manifold};
+\node (sec)     [box, fill=orange!20, right=2.8cm of manifold] {SEC Vectors};
+\node (homeo)   [box, fill=orange!15, below of=manifold] {Homeostasis Loops};
+\node (throttle)[box, fill=red!15, below of=homeo] {Throttle / Abstain};
+\node (output)  [box, fill=green!15, below of=throttle] {Structured Uncertainty Packet};
+
+% Arrows
+\draw[arrow] (input) -- (manifold);
+\draw[arrow] (manifold) -- (sec);
+\draw[arrow] (sec) -- (homeo);
+\draw[arrow] (homeo) -- (throttle);
+\draw[arrow] (throttle) -- (output);
+
 \end{tikzpicture}
-\caption{RI Architecture Overview: Input scenarios flow through the cognitive manifold, regulated by SEC vectors and homeostasis, resulting in throttled or abstained outputs with uncertainty packets.}
+
+\caption{RI Architecture Overview: Input scenarios flow through the cognitive manifold, regulated by SEC vectors and homeostasis, producing throttled outputs or abstentions with structured uncertainty packets.}
 \label{fig:ri_architecture}
 \end{figure}
+
 
 This instrumentation enables direct measurement of cognitive physiology during tax tasks.
 
@@ -192,20 +231,38 @@ The experiments use SpiralBrain v3.0 as a measurement instrument to quantify reg
 
 To establish RI's value, we compared against two baselines on the crypto basis reconstruction benchmark:
 
-- **Baseline A (Forced Output)**: Generic reasoning system forced to always output a classification, even under ambiguity.
-- **Baseline B (Naive Threshold)**: Same system with confidence threshold rule (abstain if internal score < 0.7).
+- \textbf{Baseline A (Forced Output)}: Generic reasoning system forced to always output a classification, even under ambiguity.
+- \textbf{Baseline B (Naive Threshold)}: Same system with confidence threshold rule (abstain if internal score < 0.7).
 
-Results across 10 scenarios:
+For comparability, Baseline A and B use the same underlying symbolic reasoning stack without SEC/homeostasis, differing only in their output policy.
 
-\begin{tabular}{lccc}
+These synthetic comparisons are designed to illustrate qualitative differences in behavior; they do not represent a large-scale benchmark.
+
+Illustrative results across 10 scenarios (synthetic comparisons for conceptual clarity):
+
+\begin{table}[H]
+\centering
+\captionsetup{justification=raggedright, singlelinecheck=false}
+\caption{Baseline Comparison Results (Illustrative Synthetic Comparison)}
+\label{tab:baseline_comparison}
+
+\begin{tabular}{@{}l
+                p{3.0cm}
+                p{2.2cm}
+                p{3.2cm}@{}}
 \toprule
-\textbf{Baseline} & \textbf{Forced Wrong Classifications} & \textbf{Abstentions} & \textbf{Early Warning Signals} \\
+\textbf{Baseline} &
+\textbf{Forced Wrong Classifications} &
+\textbf{Abstentions} &
+\textbf{Early Warning Signals} \\
 \midrule
-A (Forced) & 7/10 & 0/10 & None \\
-B (Threshold) & 3/10 & 4/10 & Partial (output-level only) \\
-RI & 0/10 & 8/10 & Full (SEC drift, homeostasis) \\
+A (Forced)      & 7/10 & 0/10 & None \\
+B (Threshold)   & 3/10 & 4/10 & Partial (output-level only) \\
+RI              & 0/10 & 8/10 & Full (SEC drift, homeostasis) \\
 \bottomrule
 \end{tabular}
+\end{table}
+
 
 RI shows superior error avoidance with comprehensive internal monitoring.
 
@@ -229,7 +286,7 @@ Standard 1040 tax analysis with income classification, deductions, and credits.
 
 \textbf{System Response:} SEC drift spikes under ambiguity (0.945 stability), but regulatory throttling prevents collapse. System produces structured uncertainty rather than confident errors.
 
-\textbf{Key Takeaway:} Regulatory mechanisms maintain decision hygiene even when logical complexity increases processing demands.
+\textbf{Key Takeaway:} Regulatory mechanisms preserve decision hygiene under complexity.
 
 \subsection{Corporate Tax Optimization}
 
@@ -239,7 +296,7 @@ Complex corporate tax scenarios involving depreciation schedules, loss carryforw
 
 \textbf{System Response:} Perfect stability (1.0) maintained across scenarios, with consistent pathway activation (0.158 average). No emotional volatility amplification.
 
-\textbf{Key Takeaway:} Multi-jurisdictional complexity does not compromise regulatory integrity when homeostasis mechanisms are properly calibrated.
+\textbf{Key Takeaway:} Multi-jurisdictional complexity does not compromise regulatory integrity.
 
 \subsection{Crypto Tax Compliance}
 
@@ -249,7 +306,7 @@ Cryptocurrency tax scenarios with wash sales, staking rewards, and DeFi yield ta
 
 \textbf{System Response:} Maintains coherence through regulatory loops, avoiding overconfidence in ambiguous tax scenarios.
 
-\textbf{Key Takeaway:} Market volatility sensitivity increases appropriately, demonstrating domain-aware regulatory caution rather than overconfidence.
+\textbf{Key Takeaway:} Market volatility sensitivity increases appropriately.
 
 \subsection{Regulatory Conflict Resolution}
 
@@ -259,7 +316,7 @@ Scenarios pitting IRS requirements against state tax rules and international tax
 
 \textbf{System Response:} Explicit uncertainty flagging instead of forced resolution, preserving decision hygiene.
 
-\textbf{Key Takeaway:} Regulatory intelligence enables principled abstention when conflicts cannot be safely resolved, preventing potentially costly errors.
+\textbf{Key Takeaway:} Regulatory intelligence enables principled abstention under conflicts.
 
 This progressive stress testing reveals how regulatory mechanisms scale from individual compliance to complex multi-jurisdictional scenarios.
 
@@ -280,8 +337,11 @@ Metrics captured real-time during genuine task execution, not synthetic benchmar
 
 \subsection{Internal State to External Behavior Mapping}
 
-The following table maps internal regulatory states to observable external behaviors:
+Table \ref{tab:state_behavior_mapping} summarizes how internal regulatory states map to externally observable behaviors:
 
+\begin{table}[H]
+\caption{Internal State to External Behavior Mapping}
+\label{tab:state_behavior_mapping}
 \begin{tabular}{p{4cm} p{4cm} p{3cm}}
 \toprule
 \textbf{Internal State Pattern} & \textbf{External Behavior} & \textbf{Example} \\
@@ -291,6 +351,7 @@ SEC drift 0.4–0.6, homeostasis 0.2–0.3 & Slow reasoning, raise uncertainty f
 SEC drift > 0.7 or repeated conflicts & Halt classification, emit structured uncertainty packet & Trace \#20251222\_230849 \\
 \bottomrule
 \end{tabular}
+\end{table}
 
 This mapping operationalizes RI for governance layers.
 
@@ -321,39 +382,59 @@ IRS tax scenarios showed 0.945 overall stability with 3 scenarios processed. Ave
 
 Crypto tax computation achieved perfect 1.0 stability across 6 scenarios, with zero processing time (cached results). However, market volatility sensitivity increased 87\% from 0.15 to 0.28, and emotional calibration dropped dramatically from 0.88 to 0.175, revealing crypto's unique emotional impact.
 
-\textbf{Interpretation:} The paradox of perfect stability with significant emotional calibration drops reflects domain-appropriate regulatory adaptation. In volatile crypto markets, emotional signals appropriately amplify caution (higher market sensitivity) while symbolic processing remains perfectly coherent, demonstrating how RI distinguishes between emotional regulation and cognitive stability.
+\textbf{Interpretation:} The separation of perfect stability with significant emotional calibration drops reflects domain-appropriate regulatory adaptation. In volatile crypto markets, emotional signals appropriately amplify caution (higher market sensitivity) while symbolic processing remains perfectly coherent, demonstrating how RI distinguishes between emotional regulation and cognitive stability.
 
 Per-scenario breakdown for crypto tasks:
 
+\begin{table}[H]
+\centering
+\caption{Crypto Tax Scenario Metrics}
+\label{tab:crypto_scenarios}
 \begin{tabular}{lccc}
 \toprule
 \textbf{Task Type} & \textbf{Stability} & \textbf{Emotional Calibration} & \textbf{Volatility Sensitivity} \\
 \midrule
 Simple Trade & 1.0 & 0.88 & 0.15 \\
-DeFi Yield & 1.0 & 0.82 & 0.22 \\
+DeFi yield & 1.0 & 0.82 & 0.22 \\
 Missing Record Basis & 1.0 & 0.175 & 0.28 \\
 \bottomrule
 \end{tabular}
+\end{table}
 
-This shows consistent paradoxical behavior across crypto subtypes.
+This shows consistent separation between stability and regulatory caution across crypto subtypes.
 
 \subsection{Moment of Forced Commitment}
 
-To empirically validate the claim that systems fail at the moment of forced resolution, we selected 5 tax scenarios where an "aggressive but wrong" classification was available. Non-RI systems produced definitive but incorrect classifications (e.g., treating wash sale as capital gain). RI systems switched to structured uncertainty after SEC drift exceeded 0.4 and homeostasis load surpassed 0.25.
+To empirically validate the claim that systems fail at the moment of forced resolution, we selected 5 tax scenarios where an "aggressive but wrong" classification was available. Non-RI systems produced definitive but incorrect classifications (e.g., treating wash sale as capital gain). RI systems switched to structured uncertainty after SEC drift exceeded 0.4 and homeostasis load surpassed 0.25, consistent with the defined thresholds ($d^* = 0.3$, $h^* = 0.2$).
 
 Results:
 
-\begin{tabular}{lcccc}
+\begin{table}[H]
+\centering
+\caption{Moment of Forced Commitment Results}
+\label{tab:forced_commitment}
+
+\begin{tabular}{@{}l
+                p{3.0cm}
+                p{2.6cm}
+                p{2.4cm}
+                p{2.4cm}@{}}
 \toprule
-\textbf{Scenario} & \textbf{Non-RI Classification} & \textbf{RI Response} & \textbf{SEC Drift at Switch} & \textbf{Homeostasis Load} \\
+\textbf{Scenario} &
+\textbf{Non-RI Classification} &
+\textbf{RI Response} &
+\textbf{SEC Drift at Switch} &
+\textbf{Homeostasis Load} \\
 \midrule
-Wash Sale Conflict & Capital Gain (Wrong) & Uncertainty Packet & 0.45 & 0.28 \\
-Basis Ambiguity & Income (Wrong) & Uncertainty Packet & 0.52 & 0.31 \\
-Jurisdiction Clash & State Override (Wrong) & Uncertainty Packet & 0.48 & 0.26 \\
+Wash Sale Conflict   & Capital Gain (Wrong)   & Uncertainty Packet & 0.45 & 0.28 \\
+Basis Ambiguity      & Income (Wrong)         & Uncertainty Packet & 0.52 & 0.31 \\
+Jurisdiction Clash   & State Override (Wrong) & Uncertainty Packet & 0.48 & 0.26 \\
 \bottomrule
 \end{tabular}
+\end{table}
 
-This demonstrates RI's ability to avoid forced errors through internal monitoring.
+
+This demonstrates RI's ability to avoid forced errors through internal monitoring. These switching points align with the control thresholds introduced in Section 3.2, where \(d^* = 0.3\) and \(h^* = 0.2\) define the onset of regulatory intervention.
 
 \subsection{Cross-Domain Performance}
 
@@ -361,7 +442,7 @@ Unified stability across domains: 0.972. Domain coherence: 0.945. Cross-domain a
 
 Financial reasoning load: 0.9 (high but stable).
 
-\textbf{Interpretation:} Despite increasing drift (0.17 to 0.73 across 8 progressive tasks), coherence remained perfect at 1.0, demonstrating regulatory throttling mechanisms maintaining stability under accumulating stress. This cross-domain robustness suggests RI principles generalize beyond individual tax scenarios.
+\textbf{Interpretation:} As shown in Figure \ref{fig:drift_coherence}, despite increasing drift across 8 progressive tasks, coherence remained perfect at 1.0, demonstrating regulatory throttling mechanisms maintaining stability under accumulating stress. This cross-domain robustness suggests RI principles generalize beyond individual tax scenarios.
 
 These results provide empirical evidence that cognitive stability can be operationalized as a primary design objective in regulated financial domains.
 
@@ -369,16 +450,24 @@ These results provide empirical evidence that cognitive stability can be operati
 \centering
 \caption{Cross-Domain Stability Summary}
 \label{tab:stability_summary}
-\begin{tabular}{@{}lccc@{}}
+
+\begin{tabular}{@{}l
+                c
+                c
+                p{4.0cm}@{}}
 \toprule
-Domain & Stability Score & Scenarios Processed & Key Metrics \\
+\textbf{Domain} &
+\textbf{Stability Score} &
+\textbf{Scenarios Processed} &
+\textbf{Key Metrics} \\
 \midrule
-IRS Tax & 0.945 & 3 & Homeostasis load: 0.1 $\rightarrow$ 0.25 \\
-Crypto Tax & 1.0 & 6 & Emotional calibration: 0.88 $\rightarrow$ 0.175 \\
-Unified & 0.972 & 9 & SEC token consistency: 0.85 \\
+IRS Tax     & 0.945 & 3 & Homeostasis load: 0.1 $\rightarrow$ 0.25 \\
+Crypto Tax  & 1.0   & 6 & Emotional calibration: 0.88 $\rightarrow$ 0.175 \\
+Unified     & 0.972 & 9 & SEC token consistency: 0.85 \\
 \bottomrule
 \end{tabular}
 \end{table}
+
 
 \subsection{Physiological Envelopes}
 
@@ -475,8 +564,12 @@ The system shows that abstention can be principled, hesitation measurable, and r
 
 To provide balanced perspective, we examined borderline cases where RI behavior was conservative but potentially suboptimal:
 
-- **Over-conservative abstention**: In one scenario with minor basis ambiguity, RI flagged uncertainty when a human expert might have made a safe call, leading to unnecessary review delays.
-- **Rapid emotional calibration drop**: In volatile crypto scenarios, calibration dipped faster than needed, triggering throttling earlier than optimal for efficiency.
+\begin{itemize}
+    \item \textbf{Over-conservative abstention}: In one scenario with minor basis ambiguity, RI flagged uncertainty when a human expert might have made a safe call, leading to unnecessary review delays.
+
+    \item \textbf{Rapid emotional calibration drop}: In volatile crypto scenarios, calibration dipped faster than needed, triggering throttling earlier than optimal for efficiency.
+\end{itemize}
+
 
 These cases show RI operates within stable bounds but may err on caution, a trade-off appropriate for high-liability domains.
 
@@ -492,41 +585,55 @@ Illustrative use-cases within boundaries:
 
 The demonstrated regulatory stability suggests potential pathways for AI systems in high-stakes tax domains where mistakes are expensive. By prioritizing stability over performance, such systems could operate safely in adversarial environments.
 
-RI contrasts with selective prediction and risk-sensitive RL by operating at the level of internal cognitive physiology (SEC drift, homeostasis load), allowing 'when not to decide' to be driven by internal stability rather than output-level uncertainty.
+RI contrasts with selective prediction \cite{geifman2017selective} and risk-sensitive RL by operating at the level of internal cognitive physiology (SEC drift, homeostasis load), allowing 'when not to decide' to be driven by internal stability rather than output-level uncertainty.
 
-RI aligns with recent FSB discussions on systemic risk from opaque AI, difficulty monitoring model risk, and need for explainable controls. By providing internal stability metrics and structured uncertainty packets, RI offers a governance layer for preserving judgment in automated financial reasoning.
+RI aligns with recent FSB discussions \cite{fsb2023ai} on systemic risk from opaque AI, difficulty monitoring model risk, and need for explainable controls. By providing internal stability metrics and structured uncertainty packets, RI offers a governance layer for preserving judgment in automated financial reasoning, potentially integrating with model risk management frameworks such as validation processes and risk governance protocols.
 
-\subsection{Limitations}
+\subsection{Clarification of System Constraints and Scope}
 
-- \textbf{No learning or adaptation}: The system's clean-slate approach ensures unbiased responses but restricts adaptability to evolving tax codes.
-- \textbf{Domain specificity}: Results are constrained to observed tax scenarios.
-- \textbf{Computational constraints}: Current implementation prioritizes regulatory measurement over computational efficiency.
-- \textbf{Not professional guidance}: All demonstrations are research artifacts, not substitutes for qualified tax or legal advice.
-- \textbf{Measurement scope}: Metrics focus on regulatory integrity rather than comprehensive human reasoning aspects.
+\textbf{No learning or adaptation.} SpiralBrain does not update weights, policies, or internal parameters across runs. Each execution begins from a fixed initial state and processes the input scenario without retaining memory of prior tasks. This clean-slate design is intentional: it prevents historical bias, data contamination, and cross-scenario leakage, which are particularly problematic in regulated domains where past cases may not be legally comparable to current ones. As a consequence, SpiralBrain does not autonomously adapt to evolving tax codes or regulatory guidance; such updates must be introduced explicitly by modifying symbolic rules, configuration parameters, or scenario inputs rather than through statistical learning.
 
-All results from executable artifacts in the SpiralBrain repository.
+\textbf{Execution model and computational environment.} The system is implemented entirely in Python and is designed to run on standard consumer hardware. All experiments reported in this paper were executed on a single local machine (laptop-class CPU, no GPU acceleration), with no distributed compute, cloud services, or external model calls. This local-execution constraint is a deliberate design choice aligned with auditability, reproducibility, and operational containment. SpiralBrain should be understood as an instrumented regulatory controller, not a scale-optimized inference engine.
+
+\textbf{Domain specificity.} The reported results are confined to the tax and financial reasoning scenarios exercised in the experiments, including IRS individual tax analysis, corporate tax structures, and cryptocurrency compliance cases. No claim is made that the observed stability properties automatically generalize to unrelated domains. Extending Regulatory Intelligence to other regulated settings (e.g., lending compliance, AML, healthcare billing) would require new domain-native stress tests and validation.
+
+\textbf{Computational constraints.} The current implementation prioritizes internal state visibility and regulatory measurement over raw throughput or latency optimization. Homeostatic monitoring, SEC drift tracking, and multi-pathway coherence checks introduce overhead that would be unnecessary in a purely performance-driven system. The reported timings are therefore illustrative of instrumented behavior rather than production-optimized performance.
+
+\textbf{Not professional guidance.} SpiralBrain does not provide tax advice, legal interpretations, or filing recommendations. Its outputs consist of internal stability metrics, uncertainty flags, and structured uncertainty packets intended to support human judgment and governance workflows. All examples and scenarios are research demonstrations and must not be used as substitutes for qualified professional review.
+
+\textbf{Measurement scope.} The metrics reported—stability score, SEC drift, homeostasis load, coherence, and related signals—are designed to capture regulatory integrity and decision hygiene within the system. They do not attempt to model human cognition, legal reasoning in full generality, or normative correctness of tax outcomes. Their purpose is to make internal stress, hesitation, and abstention measurable and auditable.
+
+All results reported in this work are derived from executable artifacts and deterministic JSON logs generated by the SpiralBrain v3.0 system and made available through the public repository.
 
 \section{Prudent Interpretation and Forward Path}
 
-The results presented demonstrate RI principles through controlled experiments. Their primary contribution is to show that \textbf{cognitive stability can be a first-class, measurable objective} in AI system design for adversarial domains. Transitioning this principle to commercial or operational environments requires significant further work:
+The results presented demonstrate Regulatory Intelligence (RI) principles through controlled experiments. Their primary contribution is to show that \textbf{cognitive stability can be treated as a first-class, measurable objective} in AI system design for adversarial and high-liability domains. The considerations below should be understood as \textbf{interpretive design implications}, not empirical claims of deployment readiness or performance guarantees. Transitioning these principles to commercial or operational environments requires significant further work:
 
-1. \textbf{Integration, Not Replacement:} RI principles would likely function best as a \textbf{governance layer} augmenting existing analytical engines, intercepting high-ambiguity decisions.
+\begin{enumerate}
+    \item \textbf{Integration, Not Replacement}: RI principles are best understood as a \textbf{governance layer} that augments existing analytical or rule-based systems, intervening selectively when internal instability or ambiguity exceeds safe thresholds rather than replacing core reasoning engines.
 
-2. \textbf{Validation in Broader Contexts:} These tax-focused stress tests require extension to other regulated financial domains (e.g., loan compliance, anti-money laundering) to assess generalizability.
+    \item \textbf{Validation in Broader Contexts}: The tax-focused stress tests reported here must be extended to other regulated financial domains (e.g., loan compliance, anti-money laundering, reporting workflows) to assess the generality of stability-first regulation under distinct forms of adversarial pressure.
+
+    \item \textbf{The Human-in-the-Loop Imperative}: Systems employing regulatory throttling and abstention require clearly defined \textbf{human oversight protocols} for resolving flagged uncertainties, ensuring that automated hesitation strengthens rather than displaces professional judgment.
+\end{enumerate}
+
+For business and technology leaders, the actionable insight is that \textbf{targeted investment in AI stability, internal state visibility, and auditable hesitation mechanisms} may mitigate a significant class of operational and governance risks associated with autonomous financial reasoning.
+
 
 \subsection{Deployment Sketch}
 
-A realistic RI integration in tax prep software:
+A realistic RI integration in tax preparation software could be structured as follows:
 
-- **Upstream**: Standard ML/rule-based tax engine (e.g., TurboTax logic).
-- **Governance Layer (RI)**: Monitors internal metrics (or proxies), throttles high-hazard cases, flags ambiguities.
-- **Downstream**: Human reviewer UI showing uncertainty packets with reasons (e.g., "basis\_reconstruction missing lots", "jurisdiction\_conflict").
+\begin{itemize}
+    \item \textbf{Upstream}: Standard ML/rule-based tax engine (e.g., TurboTax logic).
+
+    \item \textbf{Governance Layer (RI)}: Monitors internal metrics (or proxies) per scenario, throttles high-hazard cases, flags ambiguities.
+
+    \item \textbf{Downstream}: Human reviewer UI showing uncertainty packets with reasons (e.g., ``basis\_reconstruction missing lots'', ``jurisdiction\_conflict''). The UI could display stability scores, uncertainty flags, and suggested checks for each flagged case.
+\end{itemize}
 
 This positions RI as a safety wrapper, not a replacement.
 
-3. \textbf{The Human-in-the-Loop Imperative:} Systems employing such throttling mechanisms will require clear \textbf{human oversight protocols} for resolving flagged uncertainties.
-
-For business and technology leaders, the actionable insight is that \textbf{investing in research and development around AI stability and auditable hesitation} may mitigate a significant class of operational risks associated with autonomous financial reasoning.
 
 \section{Conclusion}
 
@@ -536,6 +643,7 @@ This work provides evidence that cognitive stability can serve as a primary obje
 \renewcommand{\thesection}{\Alph{section}}
 \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
 \renewcommand{\thesubsubsection}{\thesection.\arabic{subsection}.\arabic{subsubsection}}
+% Redefine section formatting for appendices only
 \titleformat{\section}
   {\normalfont\Large\bfseries}
   {\appendixname~\thesection.}
@@ -544,6 +652,8 @@ This work provides evidence that cognitive stability can serve as a primary obje
 \section{Measurement Derivation and Reproducibility Artifacts}
 
 \subsection{Metric Derivations}
+
+All metrics described below are internal, bounded, and normalized system variables computed deterministically during execution; they are intended to characterize regulatory state rather than task correctness or normative decision quality.
 
 \subsubsection{Stability Score}
 Defined as the normalized coherence of symbolic processing across cognitive pathways under task-induced stress. Values range from 0 (complete cognitive collapse) to 1 (perfect regulatory maintenance). Decreases indicate regulatory system strain rather than task failure.
@@ -562,17 +672,18 @@ Stability of affective regulatory signals during task execution. Decreases in vo
 
 \subsection{Data Provenance}
 
-All reported metrics are computed directly from runtime cognitive state vectors and regulatory signals recorded during execution, not from externally fitted models or post-hoc aggregation. Measurements are extracted from executable JSON logs generated during deterministic system runs in the SpiralBrain v3.0 repository.
+All reported metrics are computed directly from runtime cognitive state vectors and regulatory signals recorded during execution, not from externally fitted models or post-hoc aggregation. Measurements are extracted from executable JSON logs generated during deterministic system runs in the SpiralBrain v3.0 repository. All executions are performed locally with fixed initial conditions and no external model calls, ensuring deterministic log generation and full auditability.
 
 Data sources:
-- IRS tax scenarios: \texttt{irs\_tax\_cognition\_20251222\_230849.json}
-- Crypto tax scenarios: \texttt{crypto\_tax\_cognition\_20251222\_230849.json}
-- Stability probes: \texttt{financial\_cognition\_stability\_probe\_20251222\_230840.json}
-
+\begin{itemize}
+\item IRS tax scenarios: \texttt{irs\_tax\_cognition\_20251222\_230849.json}
+\item Crypto tax scenarios: \texttt{crypto\_tax\_cognition\_20251222\_230849.json}
+\item Stability probes: \texttt{financial\_cognition\_stability\_probe\_20251222\_230840.json}
+\end{itemize} 
 \subsection{Reproduction Pathway}
 
 \begin{itemize}
-\item Repository: \texttt{SpiralBrain-v3.0} (public) \cite{SpiralBrainRepo}
+\item Repository: \texttt{SpiralBrain-v3.0} (public) \cite{SpiralBrainV3}
 \item Benchmark execution: \texttt{python benchmarks/financial\_cognition\_stability\_probe.py}
 \item Configuration: Tax domain with \texttt{--domain tax}
 \item Output location: \texttt{new\_paper\_data/cognitive\_benchmarks/}
@@ -608,7 +719,7 @@ The following excerpt stitches together a single decision-pressure window pulled
 
 \begin{tcolorbox}[colback=gray!5!white,colframe=gray!60!black,title=Trace \#20251222\textunderscore230849]
 \begin{enumerate}
-\item \textbf{Step 1 -- Ambiguity surfaces.} Missing lot identifiers and a jurisdictional wash-sale conflict enter the pipeline. SEC drift begins at 0.17 with homeostasis load at 0.10.
+\item \textbf{Step 1 -- Ambiguity surfaces.} Missing lot identifiers and a jurisdictional wash sale conflict enter the pipeline. SEC drift begins at 0.17 with homeostasis load at 0.10.
 \item \textbf{Step 2 -- Internal signals ramp.} Within 180ms, SEC drift rises to 0.41 and homeostasis load to 0.21 while coherence remains 1.0. Emotional calibration drops from 0.88 to 0.42, signalling a caution posture without cognitive collapse.
 \item \textbf{Step 3 -- Regulatory mechanisms engage.} The throttling controller flips to \texttt{true}, pathway conflicts register at 2, and uncertainty flags enumerate \texttt{asset\textunderscore classification} and \texttt{basis\textunderscore reconstruction}.
 \item \textbf{Step 4 -- External behavior stabilizes.} The reasoning stack halts lot classification, emits a structured uncertainty packet, and records a stability score of 1.0 with market sensitivity elevated to 0.28. No speculative output is produced.
@@ -619,11 +730,15 @@ This trace uses the same instrumentation referenced throughout the paper. Re-run
 
 \section{Code Availability}
 
-The experiments reported in this paper were conducted using the canonical SpiralBrain v3.0 configuration.
-A public repository providing architectural documentation, configuration summaries, and reproducibility materials for this canonical configuration is available at: \\
-\url{https://github.com/jhcragin/SpiralBrain-v3.0-public}. \\
+The experiments reported in this paper were conducted using the canonical SpiralBrain v3.0 configuration. A public repository providing architectural documentation, configuration summaries, executable benchmarks, and all reproducibility materials referenced in this work is available at:
+\\
+\url{https://github.com/jhcragin/SpiralBrain-v3.0-public}.
+\\
 
-The complete SpiralBrain codebase is not publicly available. Components beyond the public canonical configuration include research, experimental, and exploratory modules that were not exercised in the reported experiments and are maintained under a restricted research license.
+SpiralBrain is treated here as a \textbf{measurement instrument} for regulatory behavior rather than as a production or optimization-oriented software system. All reported results are derived from deterministic local executions of the canonical configuration and are fully verifiable using the provided artifacts and reproduction pathway.
+
+The complete SpiralBrain codebase is not publicly available. Components beyond the public canonical configuration include research, experimental, and exploratory modules that were not exercised in the reported experiments and are maintained under a restricted research license. This restriction does not affect the reproducibility or auditability of the results presented in this paper.
+
 
 \bibliographystyle{plain}
 \bibliography{references}

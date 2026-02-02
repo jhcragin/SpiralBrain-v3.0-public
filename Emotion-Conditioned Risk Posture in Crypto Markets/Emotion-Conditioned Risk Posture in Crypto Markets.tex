@@ -109,7 +109,7 @@ ORCID: \href{https://orcid.org/0009-0001-5204-5732}{0009-0001-5204-5732}}
 \begin{abstract}
 This paper does not evaluate market prediction, trading performance, or profitability. SpiralBrain v3.0 is used strictly as a deterministic experimental instrument to isolate participation gating as a controllable variable. SpiralBrain v3.0 is used here strictly as a deterministic experimental probe, analogous to a laboratory instrument, rather than as a trading agent or deployable decision system.
 
-This paper presents a controlled empirical demonstration that internal regulatory bias alone can deterministically alter participation decisions under identical market inputs. Using a neurosymbolic Regulatory Intelligence system (SpiralBrain v3.0) as an instrument, we evaluate discrete risk posture outputs drawn from the posture ontology (\emph{buy}, \emph{hold}, \emph{sell}), with this experiment restricting observed outcomes to \emph{buy} and \emph{hold} to isolate participation gating.
+This paper presents a controlled empirical demonstration that internal regulatory bias alone can deterministically alter participation decisions under identical market inputs. Using a neurosymbolic Regulatory Intelligence system (SpiralBrain v3.0) as an instrument, we evaluate discrete participation postures (\emph{buy}, \emph{hold}) to isolate participation gating.
 
 Across a 60-day Bitcoin market window constructed from real price, volume, and sentiment data, different emotional profiles produce cleanly separated posture regimes—some consistently accepting new exposure (\emph{buy}), others consistently refusing incremental exposure (\emph{hold})—despite identical inputs and inference logic. This isolates participation gating as a first-class regulatory function, independent of forecasting accuracy, optimization, or trading performance.
 
@@ -428,7 +428,7 @@ For \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/Emotion-
 \draw[dashed, gray] (axis cs:0,75) -- (axis cs:59,75);
 \end{axis}
 \end{tikzpicture}
-\caption{BTC Price (USD) and Fear \& Greed Index timeline for the experimental window (Nov 22, 2025 – Jan 20, 2026). Dashed lines indicate Fear/Neutral (25) and Greed (75) thresholds.}
+\caption{BTC Price (USD) and Fear \& Greed Index timeline for the experimental window (Dec 4, 2025 – Feb 1, 2026). Dashed lines indicate Fear/Neutral (25) and Greed (75) thresholds.}
 \end{figure}
 
 This visualization provides context for the experimental window (Dec 4, 2025 – Feb 1, 2026) by jointly displaying Bitcoin price (USD) and the Fear \& Greed Index. The period corresponds to post-correction consolidation, with sentiment transitioning from Extreme Fear toward Fear/Neutral dominance.
@@ -499,7 +499,7 @@ The observed outcome is a complete separation: under identical inputs, each emot
 
 To test whether the posture bifurcation observed in the primary experiment persists under unbiased sampling, we conducted a confirmatory run with 20 randomly generated emotional profiles. This confirmatory run is not intended to estimate frequencies, thresholds, or probabilities over emotional space, but to test whether the posture bifurcation observed in the primary experiment persists under unbiased sampling.
 
-The confirmatory run produced 1,200 predictions (20 profiles × 60 days) with identical market inputs. Results showed the same clean bifurcation: 16 profiles produced 100\% buy signals, while 4 profiles produced 100\% hold signals, with no sell signals observed. This confirms that the buy/hold separation is not an artifact of the specific research profiles but a robust property of the regulatory mechanism.
+The confirmatory run produced 1,200 predictions (20 profiles × 60 days) with identical market inputs. Results showed the same clean bifurcation: 16 profiles produced 100\% buy outcomes, while 4 profiles produced 100\% hold outcomes. This confirms that the buy/hold separation is not an artifact of the specific research profiles but a robust property of the regulatory mechanism.
 
 \begin{table}[H]
 \centering
@@ -628,7 +628,7 @@ This paper makes the following claims. Each claim is either directly verifiable 
 	\emph{Verification:} read \texttt{results\_summary.<profile>.direction\_distribution} in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/participation_summary.json}{participation_summary.json} or the generated table included in this document.
 
 	\item \textbf{C7 (Upstream request parameters and status)}: In this run, upstream providers return HTTP status code 200, and the CoinGecko request is \texttt{vs\_currency=usd}, \texttt{days=62}, \texttt{interval=daily}.
-	\emph{Verification:} read \\ \texttt{dataset\_provenance.sources.fear\_greed.status\_code}, \\ \texttt{dataset\_provenance.sources.btc\_market.status\_code}, and the recorded \texttt{url} fields under \texttt{dataset\_provenance.sources} in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report_20260120_201255.json}{summary_report_20260120_201255.json}.
+	\emph{Verification:} read \\ \texttt{dataset\_provenance.sources.fear\_greed.status\_code}, \\ \texttt{dataset\_provenance.sources.btc\_market.status\_code}, and the recorded \texttt{url} fields under \texttt{dataset\_provenance.sources} in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/participation_summary.json}{participation_summary.json}.
 \end{itemize}
 
 \subsection*{Referenced Artifacts}
@@ -669,88 +669,108 @@ The verification materials for this paper are published at:
 \end{quote}
 
 
-\subsection{Online Run Generation (Documented, Not Public)}
+\subsection{Reference Run Generation (Documented for Completeness)}
 
-This section documents how new experimental runs would be generated using the full SpiralBrain system. It is provided for methodological transparency; execution requires system components not included in the public repository.
+This paper is grounded in a single, fixed reference run whose outputs, hashes, and provenance artifacts are publicly archived and sufficient for independent verification. Re-execution of the system is neither required nor expected for falsification of the reported claims.
 
-To generate a new run by querying upstream providers and executing inference (not required for verification):
+For methodological completeness, we note that reference runs are generated using the full SpiralBrain system by querying upstream market data providers and executing deterministic inference over an aligned time window. These execution steps require system components that are not included in the public repository and are therefore documented only at a descriptive level.
 
-\begin{quote}
-\texttt{python benchmarks/market\_emotion\_prediction\_v3.py --mode research --days 60}
-\end{quote}
-
-Then verify provenance and regenerate paper exports for that new run directory:
-
-\begin{quote}
-\texttt{python analyze\_market\_emotion\_results.py results/<run\_dir>}
-\end{quote}
-
+Verification of the results presented in this paper is performed exclusively via offline inspection of the archived artifacts, using the provided hashes and standard-library verifier, without executing SpiralBrain or re-querying external data sources.
 
 \appendix
 
 \section{Reference Examples (Artifact Formats)}
 
-Revised, expanded explanation
+This appendix presents small verbatim excerpts from the published artifacts and the offline verifier to illustrate the concrete file formats used in this study. The examples show the structure of the JSON result files, the hashing routines, and the canonicalization rules applied during verification.
 
-This appendix provides small verbatim excerpts from the published artifacts and the offline verifier so that readers can inspect the concrete file formats without needing to browse the repository or execute any code. These excerpts illustrate the exact structure of the JSON reports, the hashing routines, and the canonicalization rules used in the verification pipeline.
-
-For full reproducibility, the public verification package also includes a complete SHA‑256 manifest covering every referenced artifact. \\
+A complete SHA-256 manifest covering all referenced artifacts is included in the public verification package:
 \begin{quote}
 \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/VERIFY.sha256}{VERIFY.sha256}
 \end{quote}
 
-This manifest allows an offline reader to confirm the integrity of all files—verifying that each artifact matches the published hash—without running inference, downloading external dependencies, or relying on network access. In combination, the excerpts and manifest provide a transparent, audit‑ready snapshot of the evidence base underlying the study.
+Together, these materials allow readers to inspect file structure and verify artifact integrity without executing inference code or accessing external data sources.
 
-\subsection{Run Summary (summary\_report.json)}
+\subsection{Run Summary (participation\_summary.json)}
 
-The run summary is a single JSON file that binds together provenance, alignment, and per-profile result aggregates.
+The run summary is a single JSON file that binds together provenance, alignment metadata, and per-profile aggregate outcomes for the canonical reference experiment. All quantitative results reported in the paper are derived directly from this file.
 
-\pagebreak
-
-Verbatim excerpt from \texttt{fixtures/market\_emotion/reference\_run/summary\_report.json}:
+Verbatim excerpt from:\\
+\texttt{fixtures/market\_emotion/reference\_run/participation\_summary.json}
+(\emph{excerpted for length})
 
 \begin{Verbatim}[fontsize=\small,breaklines=true,breakanywhere=true]
 {
-	"experiment_mode": "research",
-	"total_profiles": 6,
-	"market_data_points": 60,
-	"results_summary": {
-		"control_neutral": {
-			"total_predictions": 60,
-			"valid_predictions": 60,
-			"error_predictions": 0,
-			"avg_confidence": 0.6112038850784302,
-			"direction_distribution": {
-				"buy": 60,
-				"hold": 0,
-				"error": 0
-			}
-		}
-	}
+  "experiment_mode": "research",
+  "total_profiles": 6,
+  "market_data_points": 60,
+  "profiles_tested": [
+    "control_neutral",
+    "high_hazard_alert",
+    "overconfident_explorer",
+    "high_uncertainty",
+    "complacent",
+    "defensive"
+  ],
+  "results_summary": {
+    "control_neutral": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.6106100968706908,
+      "direction_distribution": {
+        "buy": 60,
+        "hold": 0,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "high_hazard_alert": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.5586020232886562,
+      "direction_distribution": {
+        "buy": 0,
+        "hold": 60,
+        "error": 0
+      }
+    }
+  }
 }
 \end{Verbatim}
 
+\medskip
+\noindent
+The run summary functions as the primary index for the reference experiment. Verification does not require re-execution of inference or access to external data sources; integrity is established by computing cryptographic hashes over the run summary and all referenced artifacts using a fixed canonicalization scheme.
+
 \subsection{Verifier Snippet (Offline Checks)}
 
-Verbatim excerpt from \\ \texttt{verify\_reference\_run.py} showing the core hashing canonicalization rules:
+Verbatim excerpt from \texttt{verify\_reference\_run.py} illustrating the canonical hashing rules applied during offline verification:
 
 \begin{Verbatim}[fontsize=\small,breaklines=true,breakanywhere=true]
 def sha256_file(path: Path) -> str:
-	return _sha256_bytes(path.read_bytes())
+    return _sha256_bytes(path.read_bytes())
+
 def sha256_gzip_decompressed_bytes(path: Path) -> str:
-	with gzip.open(path, "rt", encoding="utf-8") as f:
-		text = f.read()
-	return _sha256_bytes(text.encode("utf-8"))
+    with gzip.open(path, "rt", encoding="utf-8") as f:
+        text = f.read()
+    return _sha256_bytes(text.encode("utf-8"))
+
 def canonical_json_sha256(path: Path) -> str:
-	value = json.loads(path.read_text(encoding="utf-8"))
-	canonical = json.dumps(
-		value,
-		sort_keys=True,
-		ensure_ascii=False,
-		separators=(",", ":"),
-	).encode("utf-8")
-	return _sha256_bytes(canonical)
+    value = json.loads(path.read_text(encoding="utf-8"))
+    canonical = json.dumps(
+        value,
+        sort_keys=True,
+        ensure_ascii=False,
+        separators=(",", ":"),
+    ).encode("utf-8")
+    return _sha256_bytes(canonical)
 \end{Verbatim}
+
+
 
 \section{Code Availability}
 

@@ -1,0 +1,446 @@
+{
+  "experiment_mode": "research",
+  "total_profiles": 20,
+  "market_data_points": 60,
+  "profiles_tested": [
+    "random_emotion_01",
+    "random_emotion_02",
+    "random_emotion_03",
+    "random_emotion_04",
+    "random_emotion_05",
+    "random_emotion_06",
+    "random_emotion_07",
+    "random_emotion_08",
+    "random_emotion_09",
+    "random_emotion_10",
+    "random_emotion_11",
+    "random_emotion_12",
+    "random_emotion_13",
+    "random_emotion_14",
+    "random_emotion_15",
+    "random_emotion_16",
+    "random_emotion_17",
+    "random_emotion_18",
+    "random_emotion_19",
+    "random_emotion_20"
+  ],
+  "results_summary": {
+    "random_emotion_01": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.6008760611216227,
+      "direction_distribution": {
+        "buy": 60,
+        "hold": 0,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "random_emotion_02": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.5631499121586482,
+      "direction_distribution": {
+        "buy": 0,
+        "hold": 60,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "random_emotion_03": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.6080379029115041,
+      "direction_distribution": {
+        "buy": 60,
+        "hold": 0,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "random_emotion_04": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.5538350522518158,
+      "direction_distribution": {
+        "buy": 60,
+        "hold": 0,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "random_emotion_05": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.5614796737829845,
+      "direction_distribution": {
+        "buy": 0,
+        "hold": 60,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "random_emotion_06": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.5539755180478096,
+      "direction_distribution": {
+        "buy": 60,
+        "hold": 0,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "random_emotion_07": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.5502755537629127,
+      "direction_distribution": {
+        "buy": 60,
+        "hold": 0,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "random_emotion_08": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.5527550399303436,
+      "direction_distribution": {
+        "buy": 0,
+        "hold": 60,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "random_emotion_09": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.5753278185923895,
+      "direction_distribution": {
+        "buy": 60,
+        "hold": 0,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "random_emotion_10": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.5543328593174617,
+      "direction_distribution": {
+        "buy": 0,
+        "hold": 60,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "random_emotion_11": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.5922130137681961,
+      "direction_distribution": {
+        "buy": 60,
+        "hold": 0,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "random_emotion_12": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.5588604932030042,
+      "direction_distribution": {
+        "buy": 60,
+        "hold": 0,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "random_emotion_13": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.5877302010854085,
+      "direction_distribution": {
+        "buy": 60,
+        "hold": 0,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "random_emotion_14": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.5531718984246254,
+      "direction_distribution": {
+        "buy": 60,
+        "hold": 0,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "random_emotion_15": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.5499707246820132,
+      "direction_distribution": {
+        "buy": 60,
+        "hold": 0,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "random_emotion_16": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.5342592105269433,
+      "direction_distribution": {
+        "buy": 60,
+        "hold": 0,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "random_emotion_17": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.5464163134495418,
+      "direction_distribution": {
+        "buy": 60,
+        "hold": 0,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "random_emotion_18": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.5857443809509277,
+      "direction_distribution": {
+        "buy": 60,
+        "hold": 0,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "random_emotion_19": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.5608436246713002,
+      "direction_distribution": {
+        "buy": 60,
+        "hold": 0,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    },
+    "random_emotion_20": {
+      "total_predictions": 60,
+      "valid_predictions": 60,
+      "error_predictions": 0,
+      "error_rate": 0.0,
+      "avg_confidence": 0.5505017643173535,
+      "direction_distribution": {
+        "buy": 60,
+        "hold": 0,
+        "error": 0
+      },
+      "avg_ccn_coherence": null,
+      "avg_reflection_count": 8.0
+    }
+  },
+  "dataset_provenance": {
+    "schema_version": 1,
+    "generated_at": "2026-02-02T03:17:50.492520+00:00",
+    "sources": {
+      "fear_greed": {
+        "url": "https://api.alternative.me/fng/?limit=60&format=json",
+        "retrieved_at": "2026-02-02T03:17:50.105059+00:00",
+        "status_code": 200,
+        "sha256": "13dfc36313284bfed8b96ff07d79261f0e623e1f697db4d1abb8f370136f8309",
+        "raw_size_bytes": 5878,
+        "provider": "alternative.me",
+        "item_count": 60
+      },
+      "btc_market": {
+        "url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=62&interval=daily",
+        "retrieved_at": "2026-02-02T03:17:50.481736+00:00",
+        "status_code": 200,
+        "sha256": "68c0dec43aa301dac8e541f2c20dcc223677ea40f44eeb4d69c93e8bf623ac46",
+        "raw_size_bytes": 6532,
+        "provider": "coingecko",
+        "days_param": 62,
+        "interval": "daily",
+        "price_points": 63,
+        "volume_points": 63
+      }
+    },
+    "alignment": {
+      "timezone": "UTC",
+      "key": "YYYY-MM-DD",
+      "matched_days": 60,
+      "matched_days_in_order": [
+        "2026-02-01",
+        "2026-01-31",
+        "2026-01-30",
+        "2026-01-29",
+        "2026-01-28",
+        "2026-01-27",
+        "2026-01-26",
+        "2026-01-25",
+        "2026-01-24",
+        "2026-01-23",
+        "2026-01-22",
+        "2026-01-21",
+        "2026-01-20",
+        "2026-01-19",
+        "2026-01-18",
+        "2026-01-17",
+        "2026-01-16",
+        "2026-01-15",
+        "2026-01-14",
+        "2026-01-13",
+        "2026-01-12",
+        "2026-01-11",
+        "2026-01-10",
+        "2026-01-09",
+        "2026-01-08",
+        "2026-01-07",
+        "2026-01-06",
+        "2026-01-05",
+        "2026-01-04",
+        "2026-01-03",
+        "2026-01-02",
+        "2026-01-01",
+        "2025-12-31",
+        "2025-12-30",
+        "2025-12-29",
+        "2025-12-28",
+        "2025-12-27",
+        "2025-12-26",
+        "2025-12-25",
+        "2025-12-24",
+        "2025-12-23",
+        "2025-12-22",
+        "2025-12-21",
+        "2025-12-20",
+        "2025-12-19",
+        "2025-12-18",
+        "2025-12-17",
+        "2025-12-16",
+        "2025-12-15",
+        "2025-12-14",
+        "2025-12-13",
+        "2025-12-12",
+        "2025-12-11",
+        "2025-12-10",
+        "2025-12-09",
+        "2025-12-08",
+        "2025-12-07",
+        "2025-12-06",
+        "2025-12-05",
+        "2025-12-04"
+      ],
+      "matched_day_range": {
+        "start": "2025-12-04",
+        "end": "2026-02-01"
+      }
+    },
+    "market_data_sha256": "52bca4dfd654b8ad8bc592a7307d5049290836e4e49f3d1ddbf28fb6217d4b0b",
+    "market_data_used": {
+      "relpath": "provenance/market_data_used.json",
+      "sha256": "52bca4dfd654b8ad8bc592a7307d5049290836e4e49f3d1ddbf28fb6217d4b0b",
+      "count": 60
+    },
+    "raw_artifacts": {
+      "dir": "provenance/raw",
+      "index": "provenance/index.json",
+      "by_source": {
+        "fear_greed": "provenance/raw/13dfc36313284bfed8b96ff07d79261f0e623e1f697db4d1abb8f370136f8309.json.gz",
+        "btc_market": "provenance/raw/68c0dec43aa301dac8e541f2c20dcc223677ea40f44eeb4d69c93e8bf623ac46.json.gz"
+      }
+    }
+  },
+  "run_provenance": {
+    "generated_at": "2026-02-01T22:44:31.145552",
+    "argv": [
+      "C:\\Users\\johnc\\source\\repos\\SpiralBrain-v3.0\\scripts\\cli_v3.py",
+      "--mode",
+      "research",
+      "--days",
+      "60",
+      "--output",
+      "C:\\Users\\johnc\\source\\repos\\SpiralBrain-v3.0\\results\\market_emotion_random_20_profiles",
+      "--timestamp",
+      "20260201_224358",
+      "--quiet",
+      "--dataset",
+      "results/market_emotion_participation_only_20260201/provenance/market_data_used.json",
+      "--num-profiles",
+      "20",
+      "--seed",
+      "42"
+    ],
+    "python_executable": "C:\\Users\\johnc\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe",
+    "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "git_head": "c2f1b9e97009bf7e5e4b555ff9dc18d23e9f78c6"
+  }
+}

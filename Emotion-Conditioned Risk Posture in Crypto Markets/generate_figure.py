@@ -4,7 +4,7 @@ from datetime import datetime
 import json
 
 # Load real data from the experiment run
-with open('c:/Users/johnc/source/repos/SpiralBrain-v3.0/results/market_emotion_research_20260201_204741/provenance/market_data_used.json', 'r') as f:
+with open('results/market_emotion_participation_only_20260201/provenance/market_data_used.json', 'r') as f:
     market_data = json.load(f)
 
 # Extract data

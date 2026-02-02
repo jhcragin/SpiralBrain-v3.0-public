@@ -1,0 +1,16 @@
+{
+  "13dfc36313284bfed8b96ff07d79261f0e623e1f697db4d1abb8f370136f8309": {
+    "source": "fear_greed",
+    "relpath": "provenance/raw/13dfc36313284bfed8b96ff07d79261f0e623e1f697db4d1abb8f370136f8309.json.gz",
+    "url": "https://api.alternative.me/fng/?limit=60&format=json",
+    "retrieved_at": "2026-02-02T03:17:50.105059+00:00",
+    "raw_size_bytes": 5878
+  },
+  "68c0dec43aa301dac8e541f2c20dcc223677ea40f44eeb4d69c93e8bf623ac46": {
+    "source": "btc_market",
+    "relpath": "provenance/raw/68c0dec43aa301dac8e541f2c20dcc223677ea40f44eeb4d69c93e8bf623ac46.json.gz",
+    "url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=62&interval=daily",
+    "retrieved_at": "2026-02-02T03:17:50.481736+00:00",
+    "raw_size_bytes": 6532
+  }
+}

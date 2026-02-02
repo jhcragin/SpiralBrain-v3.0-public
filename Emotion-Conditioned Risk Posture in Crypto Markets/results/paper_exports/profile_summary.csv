@@ -1,0 +1,7 @@
+profile,total_predictions,avg_confidence,buy,hold
+complacent,60,0.5966041319891979,60,0
+control_neutral,60,0.6106100968706908,60,0
+defensive,60,0.5466052337603674,0,60
+high_hazard_alert,60,0.5586020232886562,0,60
+high_uncertainty,60,0.586606473051576,60,0
+overconfident_explorer,60,0.542607352219278,60,0

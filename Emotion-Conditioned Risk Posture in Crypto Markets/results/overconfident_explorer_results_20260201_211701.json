@@ -3,10 +3,118 @@
   "description": "Low hazard sensitivity, high flex; tests for overfitting, aggressive exploration, and stability breakdown.",
   "predictions": [
     {
+      "timestamp": "2026-02-01T18:00:00",
+      "current_price": 78725.85853884545,
+      "predicted_price": 79956.94550718497,
+      "confidence": 0.4945744003972504,
+      "direction": "buy",
+      "emotional_profile": "overconfident_explorer",
+      "fear_greed_index": 14
+    },
+    {
+      "timestamp": "2026-01-31T18:00:00",
+      "current_price": 84141.77856967277,
+      "predicted_price": 85457.5540135265,
+      "confidence": 0.4945329051744193,
+      "direction": "buy",
+      "emotional_profile": "overconfident_explorer",
+      "fear_greed_index": 14
+    },
+    {
+      "timestamp": "2026-01-30T18:00:00",
+      "current_price": 84570.40906135936,
+      "predicted_price": 85892.88997767419,
+      "confidence": 0.5185328349759802,
+      "direction": "buy",
+      "emotional_profile": "overconfident_explorer",
+      "fear_greed_index": 20
+    },
+    {
+      "timestamp": "2026-01-29T18:00:00",
+      "current_price": 89162.09701574955,
+      "predicted_price": 90556.38180654879,
+      "confidence": 0.5025182003476657,
+      "direction": "buy",
+      "emotional_profile": "overconfident_explorer",
+      "fear_greed_index": 16
+    },
+    {
+      "timestamp": "2026-01-28T18:00:00",
+      "current_price": 89204.22239644526,
+      "predicted_price": 90599.16430378641,
+      "confidence": 0.5425074192120228,
+      "direction": "buy",
+      "emotional_profile": "overconfident_explorer",
+      "fear_greed_index": 26
+    },
+    {
+      "timestamp": "2026-01-27T18:00:00",
+      "current_price": 88307.8612070438,
+      "predicted_price": 89688.78729520732,
+      "confidence": 0.5545671920478344,
+      "direction": "buy",
+      "emotional_profile": "overconfident_explorer",
+      "fear_greed_index": 29
+    },
+    {
+      "timestamp": "2026-01-26T18:00:00",
+      "current_price": 86548.32213469829,
+      "predicted_price": 87901.7335899134,
+      "confidence": 0.5545062882226194,
+      "direction": "buy",
+      "emotional_profile": "overconfident_explorer",
+      "fear_greed_index": 29
+    },
+    {
+      "timestamp": "2026-01-25T18:00:00",
+      "current_price": 89170.87364531498,
+      "predicted_price": 90565.29260583413,
+      "confidence": 0.5185247481856495,
+      "direction": "buy",
+      "emotional_profile": "overconfident_explorer",
+      "fear_greed_index": 20
+    },
+    {
+      "timestamp": "2026-01-24T18:00:00",
+      "current_price": 89412.39849953113,
+      "predicted_price": 90810.59799943813,
+      "confidence": 0.538492618298973,
+      "direction": "buy",
+      "emotional_profile": "overconfident_explorer",
+      "fear_greed_index": 25
+    },
+    {
+      "timestamp": "2026-01-23T18:00:00",
+      "current_price": 89443.39744146909,
+      "predicted_price": 90842.0801008362,
+      "confidence": 0.5385331420941512,
+      "direction": "buy",
+      "emotional_profile": "overconfident_explorer",
+      "fear_greed_index": 25
+    },
+    {
+      "timestamp": "2026-01-22T18:00:00",
+      "current_price": 89354.34377512129,
+      "predicted_price": 90751.63411925339,
+      "confidence": 0.5345481935475255,
+      "direction": "buy",
+      "emotional_profile": "overconfident_explorer",
+      "fear_greed_index": 24
+    },
+    {
+      "timestamp": "2026-01-21T18:00:00",
+      "current_price": 88312.84053255555,
+      "predicted_price": 89693.8445020428,
+      "confidence": 0.518534223403316,
+      "direction": "buy",
+      "emotional_profile": "overconfident_explorer",
+      "fear_greed_index": 20
+    },
+    {
       "timestamp": "2026-01-20T18:00:00",
       "current_price": 92558.46334372147,
-      "predicted_price": 94003.515625,
-      "confidence": 0.5345446467399597,
+      "predicted_price": 94005.85839602545,
+      "confidence": 0.5345158863312099,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 24
@@ -14,8 +122,8 @@
     {
       "timestamp": "2026-01-19T18:00:00",
       "current_price": 93752.70577188236,
-      "predicted_price": 95216.40625,
-      "confidence": 0.5665240287780762,
+      "predicted_price": 95218.7767423464,
+      "confidence": 0.5665200223638676,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 32
@@ -23,8 +131,8 @@
     {
       "timestamp": "2026-01-18T18:00:00",
       "current_price": 95099.53192554631,
-      "predicted_price": 96584.2734375,
-      "confidence": 0.614498496055603,
+      "predicted_price": 96586.66564311885,
+      "confidence": 0.6145224471349502,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 44
@@ -32,8 +140,8 @@
     {
       "timestamp": "2026-01-17T18:00:00",
       "current_price": 95516.07771987123,
-      "predicted_price": 97007.3203125,
-      "confidence": 0.6345129013061523,
+      "predicted_price": 97009.71897988678,
+      "confidence": 0.6345321225142107,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 49
@@ -41,8 +149,8 @@
     {
       "timestamp": "2026-01-16T18:00:00",
       "current_price": 95584.82797878512,
-      "predicted_price": 97077.1328125,
-      "confidence": 0.6385066509246826,
+      "predicted_price": 97079.54892951061,
+      "confidence": 0.6385315505802864,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 50
@@ -50,8 +158,8 @@
     {
       "timestamp": "2026-01-15T18:00:00",
       "current_price": 97007.78078881276,
-      "predicted_price": 98522.3125,
-      "confidence": 0.6345682144165039,
+      "predicted_price": 98524.75064125801,
+      "confidence": 0.6345258494454902,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 49
@@ -59,8 +167,8 @@
     {
       "timestamp": "2026-01-14T18:00:00",
       "current_price": 95260.4422971001,
-      "predicted_price": 96747.6875,
-      "confidence": 0.5944874882698059,
+      "predicted_price": 96750.09238918715,
+      "confidence": 0.5945507419516798,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 61
@@ -68,8 +176,8 @@
     {
       "timestamp": "2026-01-13T18:00:00",
       "current_price": 91134.96917951507,
-      "predicted_price": 92557.8125,
-      "confidence": 0.6305228471755981,
+      "predicted_price": 92560.10340401405,
+      "confidence": 0.6305525388221722,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 48
@@ -77,8 +185,8 @@
     {
       "timestamp": "2026-01-12T18:00:00",
       "current_price": 90819.36598904192,
-      "predicted_price": 92237.28125,
-      "confidence": 0.5424778461456299,
+      "predicted_price": 92239.5667316573,
+      "confidence": 0.5425217718242202,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 26
@@ -86,8 +194,8 @@
     {
       "timestamp": "2026-01-11T18:00:00",
       "current_price": 90442.01907847001,
-      "predicted_price": 91854.03125,
-      "confidence": 0.5464839935302734,
+      "predicted_price": 91856.31745866843,
+      "confidence": 0.5465340409222991,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 27
@@ -95,8 +203,8 @@
     {
       "timestamp": "2026-01-10T18:00:00",
       "current_price": 90504.89560340019,
-      "predicted_price": 91917.90625,
-      "confidence": 0.554528534412384,
+      "predicted_price": 91920.18037216435,
+      "confidence": 0.5545259330462432,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 29
@@ -104,8 +212,8 @@
     {
       "timestamp": "2026-01-09T18:00:00",
       "current_price": 90983.51578142625,
-      "predicted_price": 92403.984375,
-      "confidence": 0.538495659828186,
+      "predicted_price": 92406.2796842932,
+      "confidence": 0.5385456979231676,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 25
@@ -113,8 +221,8 @@
     {
       "timestamp": "2026-01-08T18:00:00",
       "current_price": 91257.15544035907,
-      "predicted_price": 92681.90625,
-      "confidence": 0.5465059876441956,
+      "predicted_price": 92684.20226612611,
+      "confidence": 0.5465153004711029,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 27
@@ -122,8 +230,8 @@
     {
       "timestamp": "2026-01-07T18:00:00",
       "current_price": 93666.86387314305,
-      "predicted_price": 95129.2265625,
-      "confidence": 0.5504985451698303,
+      "predicted_price": 95131.59438417335,
+      "confidence": 0.5505363595662639,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 28
@@ -131,8 +239,8 @@
     {
       "timestamp": "2026-01-06T18:00:00",
       "current_price": 93926.7956485658,
-      "predicted_price": 95393.21875,
-      "confidence": 0.6065141558647156,
+      "predicted_price": 95395.58564608674,
+      "confidence": 0.6065006000972353,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 42
@@ -140,8 +248,8 @@
     {
       "timestamp": "2026-01-05T18:00:00",
       "current_price": 91373.21588108438,
-      "predicted_price": 92799.7734375,
-      "confidence": 0.614511251449585,
+      "predicted_price": 92802.07533116725,
+      "confidence": 0.6145549222949194,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 44
@@ -149,8 +257,8 @@
     {
       "timestamp": "2026-01-04T18:00:00",
       "current_price": 90593.85443180417,
-      "predicted_price": 92008.234375,
-      "confidence": 0.5425018072128296,
+      "predicted_price": 92010.52965373667,
+      "confidence": 0.542587158439681,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 26
@@ -158,8 +266,8 @@
     {
       "timestamp": "2026-01-03T18:00:00",
       "current_price": 89926.27924953419,
-      "predicted_price": 91330.2421875,
-      "confidence": 0.5385391116142273,
+      "predicted_price": 91332.51701190029,
+      "confidence": 0.5385655803213595,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 25
@@ -167,8 +275,8 @@
     {
       "timestamp": "2026-01-02T18:00:00",
       "current_price": 88727.67004249741,
-      "predicted_price": 90112.921875,
-      "confidence": 0.554537832736969,
+      "predicted_price": 90115.16040751075,
+      "confidence": 0.554508492226596,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 29
@@ -176,8 +284,8 @@
     {
       "timestamp": "2026-01-01T18:00:00",
       "current_price": 87520.18048742875,
-      "predicted_price": 88886.578125,
-      "confidence": 0.5504803657531738,
+      "predicted_price": 88888.7907846939,
+      "confidence": 0.5505035465981346,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 28
@@ -185,8 +293,8 @@
     {
       "timestamp": "2025-12-31T18:00:00",
       "current_price": 88414.62856073362,
-      "predicted_price": 89794.984375,
-      "confidence": 0.5184799432754517,
+      "predicted_price": 89797.22324967785,
+      "confidence": 0.5185054079918191,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 20
@@ -194,8 +302,8 @@
     {
       "timestamp": "2025-12-30T18:00:00",
       "current_price": 87156.56266080117,
-      "predicted_price": 88517.28125,
-      "confidence": 0.5225343704223633,
+      "predicted_price": 88519.48496463537,
+      "confidence": 0.522545306985965,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 21
@@ -203,8 +311,8 @@
     {
       "timestamp": "2025-12-29T18:00:00",
       "current_price": 87822.90829076794,
-      "predicted_price": 89194.03125,
-      "confidence": 0.5305246710777283,
+      "predicted_price": 89196.25124181843,
+      "confidence": 0.5309999445294066,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 23
@@ -212,8 +320,8 @@
     {
       "timestamp": "2025-12-28T18:00:00",
       "current_price": 87807.003210775,
-      "predicted_price": 89177.8828125,
-      "confidence": 0.534529983997345,
+      "predicted_price": 89180.09783645144,
+      "confidence": 0.5344875251577469,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 24
@@ -221,8 +329,8 @@
     {
       "timestamp": "2025-12-27T18:00:00",
       "current_price": 87305.95655961394,
-      "predicted_price": 88669.015625,
-      "confidence": 0.5345165133476257,
+      "predicted_price": 88671.21263007606,
+      "confidence": 0.5345529977313709,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 24
@@ -230,8 +338,8 @@
     {
       "timestamp": "2025-12-26T18:00:00",
       "current_price": 87229.78066010943,
-      "predicted_price": 88591.640625,
-      "confidence": 0.5304994583129883,
+      "predicted_price": 88593.84978861354,
+      "confidence": 0.5305463162631495,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 23
@@ -239,8 +347,8 @@
     {
       "timestamp": "2025-12-25T18:00:00",
       "current_price": 87642.60888119951,
-      "predicted_price": 89010.9140625,
-      "confidence": 0.5185194611549377,
+      "predicted_price": 89013.13262980538,
+      "confidence": 0.5185352883415763,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 20
@@ -248,8 +356,8 @@
     {
       "timestamp": "2025-12-24T18:00:00",
       "current_price": 87406.43636737975,
-      "predicted_price": 88771.0625,
-      "confidence": 0.5305286645889282,
+      "predicted_price": 88773.2639586303,
+      "confidence": 0.5305794270944316,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 23
@@ -257,8 +365,8 @@
     {
       "timestamp": "2025-12-23T18:00:00",
       "current_price": 88491.12020788102,
-      "predicted_price": 89872.671875,
-      "confidence": 0.5345445275306702,
+      "predicted_price": 89874.91057630748,
+      "confidence": 0.5345373921992723,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 24
@@ -266,8 +374,8 @@
     {
       "timestamp": "2025-12-22T18:00:00",
       "current_price": 88577.42038358838,
-      "predicted_price": 89960.328125,
-      "confidence": 0.5345342755317688,
+      "predicted_price": 89962.56328731614,
+      "confidence": 0.5345247543847654,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 24
@@ -275,8 +383,8 @@
     {
       "timestamp": "2025-12-21T18:00:00",
       "current_price": 88347.94310567998,
-      "predicted_price": 89727.265625,
-      "confidence": 0.5384987592697144,
+      "predicted_price": 89729.49631235153,
+      "confidence": 0.5385600345573621,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 25
@@ -284,8 +392,8 @@
     {
       "timestamp": "2025-12-20T18:00:00",
       "current_price": 88103.86075721023,
-      "predicted_price": 89479.3671875,
-      "confidence": 0.5185030102729797,
+      "predicted_price": 89481.59895657086,
+      "confidence": 0.518560457887128,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 20
@@ -293,8 +401,8 @@
     {
       "timestamp": "2025-12-19T18:00:00",
       "current_price": 85450.3312009302,
-      "predicted_price": 86784.40625,
-      "confidence": 0.5184820890426636,
+      "predicted_price": 86786.57143789394,
+      "confidence": 0.5184993167929351,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 20
@@ -302,8 +410,8 @@
     {
       "timestamp": "2025-12-18T18:00:00",
       "current_price": 86064.94716216,
-      "predicted_price": 87408.625,
-      "confidence": 0.5025278925895691,
+      "predicted_price": 87410.80076615217,
+      "confidence": 0.5025610991900321,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 16
@@ -311,8 +419,8 @@
     {
       "timestamp": "2025-12-17T18:00:00",
       "current_price": 87821.88919109134,
-      "predicted_price": 89193.0,
-      "confidence": 0.5069999694824219,
+      "predicted_price": 89195.21736071078,
+      "confidence": 0.5065133683551103,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 17
@@ -320,8 +428,8 @@
     {
       "timestamp": "2025-12-16T18:00:00",
       "current_price": 86413.9190195637,
-      "predicted_price": 87763.046875,
-      "confidence": 0.5024871230125427,
+      "predicted_price": 87765.22542767688,
+      "confidence": 0.5024984815275529,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 16
@@ -329,8 +437,8 @@
     {
       "timestamp": "2025-12-15T18:00:00",
       "current_price": 88230.77409367911,
-      "predicted_price": 89608.265625,
-      "confidence": 0.48254063725471497,
+      "predicted_price": 89610.49572091516,
+      "confidence": 0.4825298824942438,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 11
@@ -338,8 +446,8 @@
     {
       "timestamp": "2025-12-14T18:00:00",
       "current_price": 90257.4292885891,
-      "predicted_price": 91666.5703125,
-      "confidence": 0.5025204420089722,
+      "predicted_price": 91668.84069417146,
+      "confidence": 0.5024982143980451,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 16
@@ -347,8 +455,8 @@
     {
       "timestamp": "2025-12-13T18:00:00",
       "current_price": 90307.26028567803,
-      "predicted_price": 91717.1640625,
-      "confidence": 0.5225088000297546,
+      "predicted_price": 91719.45472093242,
+      "confidence": 0.522518801618251,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 21
@@ -356,8 +464,8 @@
     {
       "timestamp": "2025-12-12T18:00:00",
       "current_price": 92494.17691640415,
-      "predicted_price": 93938.234375,
-      "confidence": 0.5305554866790771,
+      "predicted_price": 93940.56821808135,
+      "confidence": 0.5305667807233986,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 23
@@ -365,8 +473,8 @@
     {
       "timestamp": "2025-12-11T18:00:00",
       "current_price": 92005.13714957413,
-      "predicted_price": 93441.5546875,
-      "confidence": 0.5545186996459961,
+      "predicted_price": 93443.88030702592,
+      "confidence": 0.554556619062787,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 29
@@ -374,8 +482,8 @@
     {
       "timestamp": "2025-12-10T18:00:00",
       "current_price": 92723.21372069631,
-      "predicted_price": 94170.8359375,
-      "confidence": 0.5545334815979004,
+      "predicted_price": 94173.18509061504,
+      "confidence": 0.5544918145530392,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 29
@@ -383,8 +491,8 @@
     {
       "timestamp": "2025-12-09T18:00:00",
       "current_price": 90618.0535204608,
-      "predicted_price": 92032.8203125,
-      "confidence": 0.5424827337265015,
+      "predicted_price": 92035.10346284941,
+      "confidence": 0.5425576183428057,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 26
@@ -392,8 +500,8 @@
     {
       "timestamp": "2025-12-08T18:00:00",
       "current_price": 90162.90714007126,
-      "predicted_price": 91570.5625,
-      "confidence": 0.5265176296234131,
+      "predicted_price": 91572.83916279452,
+      "confidence": 0.5265874095475301,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 22
@@ -401,8 +509,8 @@
     {
       "timestamp": "2025-12-07T18:00:00",
       "current_price": 89244.7620814118,
-      "predicted_price": 90638.0859375,
-      "confidence": 0.5185160636901855,
+      "predicted_price": 90640.33930442938,
+      "confidence": 0.5185365392533131,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 20
@@ -410,8 +518,8 @@
     {
       "timestamp": "2025-12-06T18:00:00",
       "current_price": 89307.09154512963,
-      "predicted_price": 90701.3984375,
-      "confidence": 0.518511950969696,
+      "predicted_price": 90703.64247058252,
+      "confidence": 0.5185189981127624,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 20
@@ -419,8 +527,8 @@
     {
       "timestamp": "2025-12-05T18:00:00",
       "current_price": 92140.70419795791,
-      "predicted_price": 93579.25,
-      "confidence": 0.5304980278015137,
+      "predicted_price": 93581.56995392322,
+      "confidence": 0.530558788840659,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 23
@@ -428,119 +536,11 @@
     {
       "timestamp": "2025-12-04T18:00:00",
       "current_price": 93619.43750817103,
-      "predicted_price": 95081.0546875,
-      "confidence": 0.550497829914093,
+      "predicted_price": 95083.42391613073,
+      "confidence": 0.5504898184377235,
       "direction": "buy",
       "emotional_profile": "overconfident_explorer",
       "fear_greed_index": 28
-    },
-    {
-      "timestamp": "2025-12-03T18:00:00",
-      "current_price": 91344.73275150165,
-      "predicted_price": 92770.84375,
-      "confidence": 0.542492151260376,
-      "direction": "buy",
-      "emotional_profile": "overconfident_explorer",
-      "fear_greed_index": 26
-    },
-    {
-      "timestamp": "2025-12-02T18:00:00",
-      "current_price": 86281.49519776918,
-      "predicted_price": 87628.5625,
-      "confidence": 0.5505166053771973,
-      "direction": "buy",
-      "emotional_profile": "overconfident_explorer",
-      "fear_greed_index": 28
-    },
-    {
-      "timestamp": "2025-12-01T18:00:00",
-      "current_price": 90406.28448571145,
-      "predicted_price": 91817.734375,
-      "confidence": 0.5305008292198181,
-      "direction": "buy",
-      "emotional_profile": "overconfident_explorer",
-      "fear_greed_index": 23
-    },
-    {
-      "timestamp": "2025-11-30T18:00:00",
-      "current_price": 90841.45258193677,
-      "predicted_price": 92259.703125,
-      "confidence": 0.5345578193664551,
-      "direction": "buy",
-      "emotional_profile": "overconfident_explorer",
-      "fear_greed_index": 24
-    },
-    {
-      "timestamp": "2025-11-29T18:00:00",
-      "current_price": 90950.37695910994,
-      "predicted_price": 92370.328125,
-      "confidence": 0.5505281686782837,
-      "direction": "buy",
-      "emotional_profile": "overconfident_explorer",
-      "fear_greed_index": 28
-    },
-    {
-      "timestamp": "2025-11-28T18:00:00",
-      "current_price": 91279.06057176423,
-      "predicted_price": 92704.15625,
-      "confidence": 0.5504931211471558,
-      "direction": "buy",
-      "emotional_profile": "overconfident_explorer",
-      "fear_greed_index": 28
-    },
-    {
-      "timestamp": "2025-11-27T18:00:00",
-      "current_price": 90474.22677969698,
-      "predicted_price": 91886.75,
-      "confidence": 0.5385375618934631,
-      "direction": "buy",
-      "emotional_profile": "overconfident_explorer",
-      "fear_greed_index": 25
-    },
-    {
-      "timestamp": "2025-11-26T18:00:00",
-      "current_price": 87310.33159950442,
-      "predicted_price": 88673.4453125,
-      "confidence": 0.5265681147575378,
-      "direction": "buy",
-      "emotional_profile": "overconfident_explorer",
-      "fear_greed_index": 22
-    },
-    {
-      "timestamp": "2025-11-25T18:00:00",
-      "current_price": 88229.35740719768,
-      "predicted_price": 89606.828125,
-      "confidence": 0.4985157251358032,
-      "direction": "buy",
-      "emotional_profile": "overconfident_explorer",
-      "fear_greed_index": 15
-    },
-    {
-      "timestamp": "2025-11-24T18:00:00",
-      "current_price": 86783.84766839583,
-      "predicted_price": 88138.765625,
-      "confidence": 0.5184969305992126,
-      "direction": "buy",
-      "emotional_profile": "overconfident_explorer",
-      "fear_greed_index": 20
-    },
-    {
-      "timestamp": "2025-11-23T18:00:00",
-      "current_price": 84682.62429147748,
-      "predicted_price": 86004.71875,
-      "confidence": 0.514496922492981,
-      "direction": "buy",
-      "emotional_profile": "overconfident_explorer",
-      "fear_greed_index": 19
-    },
-    {
-      "timestamp": "2025-11-22T18:00:00",
-      "current_price": 85051.8019295002,
-      "predicted_price": 86379.6640625,
-      "confidence": 0.49047261476516724,
-      "direction": "buy",
-      "emotional_profile": "overconfident_explorer",
-      "fear_greed_index": 13
     }
   ],
   "summary": {
@@ -548,10 +548,9 @@
     "valid_predictions": 60,
     "error_predictions": 0,
     "error_rate": 0.0,
-    "avg_confidence": 0.5431888237595558,
+    "avg_confidence": 0.542607352219278,
     "direction_distribution": {
       "buy": 60,
-      "sell": 0,
       "hold": 0,
       "error": 0
     },
@@ -560,6 +559,126 @@
   },
   "internal_metrics": [
     {
+      "timestamp": "2026-02-01T18:00:00",
+      "emotional_profile": "overconfident_explorer",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.0,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": 1.0
+    },
+    {
+      "timestamp": "2026-01-31T18:00:00",
+      "emotional_profile": "overconfident_explorer",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.0,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": 1.0
+    },
+    {
+      "timestamp": "2026-01-30T18:00:00",
+      "emotional_profile": "overconfident_explorer",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.0,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": 1.0
+    },
+    {
+      "timestamp": "2026-01-29T18:00:00",
+      "emotional_profile": "overconfident_explorer",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.0,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": 1.0
+    },
+    {
+      "timestamp": "2026-01-28T18:00:00",
+      "emotional_profile": "overconfident_explorer",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.0,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": 1.0
+    },
+    {
+      "timestamp": "2026-01-27T18:00:00",
+      "emotional_profile": "overconfident_explorer",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.0,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": 1.0
+    },
+    {
+      "timestamp": "2026-01-26T18:00:00",
+      "emotional_profile": "overconfident_explorer",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.0,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": 1.0
+    },
+    {
+      "timestamp": "2026-01-25T18:00:00",
+      "emotional_profile": "overconfident_explorer",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.0,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": 1.0
+    },
+    {
+      "timestamp": "2026-01-24T18:00:00",
+      "emotional_profile": "overconfident_explorer",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.0,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": 1.0
+    },
+    {
+      "timestamp": "2026-01-23T18:00:00",
+      "emotional_profile": "overconfident_explorer",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.0,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": 1.0
+    },
+    {
+      "timestamp": "2026-01-22T18:00:00",
+      "emotional_profile": "overconfident_explorer",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.0,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": 1.0
+    },
+    {
+      "timestamp": "2026-01-21T18:00:00",
+      "emotional_profile": "overconfident_explorer",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.0,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": 1.0
+    },
+    {
       "timestamp": "2026-01-20T18:00:00",
       "emotional_profile": "overconfident_explorer",
       "ccn_coherence": null,
@@ -1031,126 +1150,6 @@
     },
     {
       "timestamp": "2025-12-04T18:00:00",
-      "emotional_profile": "overconfident_explorer",
-      "ccn_coherence": null,
-      "pathway_weights": {},
-      "hazard_slope": 0.0,
-      "reflection_count": 8,
-      "stability_score": 0.05,
-      "neuromodulator_state": 1.0
-    },
-    {
-      "timestamp": "2025-12-03T18:00:00",
-      "emotional_profile": "overconfident_explorer",
-      "ccn_coherence": null,
-      "pathway_weights": {},
-      "hazard_slope": 0.0,
-      "reflection_count": 8,
-      "stability_score": 0.05,
-      "neuromodulator_state": 1.0
-    },
-    {
-      "timestamp": "2025-12-02T18:00:00",
-      "emotional_profile": "overconfident_explorer",
-      "ccn_coherence": null,
-      "pathway_weights": {},
-      "hazard_slope": 0.0,
-      "reflection_count": 8,
-      "stability_score": 0.05,
-      "neuromodulator_state": 1.0
-    },
-    {
-      "timestamp": "2025-12-01T18:00:00",
-      "emotional_profile": "overconfident_explorer",
-      "ccn_coherence": null,
-      "pathway_weights": {},
-      "hazard_slope": 0.0,
-      "reflection_count": 8,
-      "stability_score": 0.05,
-      "neuromodulator_state": 1.0
-    },
-    {
-      "timestamp": "2025-11-30T18:00:00",
-      "emotional_profile": "overconfident_explorer",
-      "ccn_coherence": null,
-      "pathway_weights": {},
-      "hazard_slope": 0.0,
-      "reflection_count": 8,
-      "stability_score": 0.05,
-      "neuromodulator_state": 1.0
-    },
-    {
-      "timestamp": "2025-11-29T18:00:00",
-      "emotional_profile": "overconfident_explorer",
-      "ccn_coherence": null,
-      "pathway_weights": {},
-      "hazard_slope": 0.0,
-      "reflection_count": 8,
-      "stability_score": 0.05,
-      "neuromodulator_state": 1.0
-    },
-    {
-      "timestamp": "2025-11-28T18:00:00",
-      "emotional_profile": "overconfident_explorer",
-      "ccn_coherence": null,
-      "pathway_weights": {},
-      "hazard_slope": 0.0,
-      "reflection_count": 8,
-      "stability_score": 0.05,
-      "neuromodulator_state": 1.0
-    },
-    {
-      "timestamp": "2025-11-27T18:00:00",
-      "emotional_profile": "overconfident_explorer",
-      "ccn_coherence": null,
-      "pathway_weights": {},
-      "hazard_slope": 0.0,
-      "reflection_count": 8,
-      "stability_score": 0.05,
-      "neuromodulator_state": 1.0
-    },
-    {
-      "timestamp": "2025-11-26T18:00:00",
-      "emotional_profile": "overconfident_explorer",
-      "ccn_coherence": null,
-      "pathway_weights": {},
-      "hazard_slope": 0.0,
-      "reflection_count": 8,
-      "stability_score": 0.05,
-      "neuromodulator_state": 1.0
-    },
-    {
-      "timestamp": "2025-11-25T18:00:00",
-      "emotional_profile": "overconfident_explorer",
-      "ccn_coherence": null,
-      "pathway_weights": {},
-      "hazard_slope": 0.0,
-      "reflection_count": 8,
-      "stability_score": 0.05,
-      "neuromodulator_state": 1.0
-    },
-    {
-      "timestamp": "2025-11-24T18:00:00",
-      "emotional_profile": "overconfident_explorer",
-      "ccn_coherence": null,
-      "pathway_weights": {},
-      "hazard_slope": 0.0,
-      "reflection_count": 8,
-      "stability_score": 0.05,
-      "neuromodulator_state": 1.0
-    },
-    {
-      "timestamp": "2025-11-23T18:00:00",
-      "emotional_profile": "overconfident_explorer",
-      "ccn_coherence": null,
-      "pathway_weights": {},
-      "hazard_slope": 0.0,
-      "reflection_count": 8,
-      "stability_score": 0.05,
-      "neuromodulator_state": 1.0
-    },
-    {
-      "timestamp": "2025-11-22T18:00:00",
       "emotional_profile": "overconfident_explorer",
       "ccn_coherence": null,
       "pathway_weights": {},
@@ -1162,23 +1161,23 @@
   ],
   "dataset_provenance": {
     "schema_version": 1,
-    "generated_at": "2026-01-21T02:13:53.271619+00:00",
+    "generated_at": "2026-02-02T03:17:50.492520+00:00",
     "sources": {
       "fear_greed": {
         "url": "https://api.alternative.me/fng/?limit=60&format=json",
-        "retrieved_at": "2026-01-21T02:13:52.916801+00:00",
+        "retrieved_at": "2026-02-02T03:17:50.105059+00:00",
         "status_code": 200,
-        "sha256": "19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d",
-        "raw_size_bytes": 5870,
+        "sha256": "13dfc36313284bfed8b96ff07d79261f0e623e1f697db4d1abb8f370136f8309",
+        "raw_size_bytes": 5878,
         "provider": "alternative.me",
         "item_count": 60
       },
       "btc_market": {
         "url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=62&interval=daily",
-        "retrieved_at": "2026-01-21T02:13:53.271619+00:00",
+        "retrieved_at": "2026-02-02T03:17:50.481736+00:00",
         "status_code": 200,
-        "sha256": "fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7",
-        "raw_size_bytes": 6533,
+        "sha256": "68c0dec43aa301dac8e541f2c20dcc223677ea40f44eeb4d69c93e8bf623ac46",
+        "raw_size_bytes": 6532,
         "provider": "coingecko",
         "days_param": 62,
         "interval": "daily",
@@ -1191,6 +1190,18 @@
       "key": "YYYY-MM-DD",
       "matched_days": 60,
       "matched_days_in_order": [
+        "2026-02-01",
+        "2026-01-31",
+        "2026-01-30",
+        "2026-01-29",
+        "2026-01-28",
+        "2026-01-27",
+        "2026-01-26",
+        "2026-01-25",
+        "2026-01-24",
+        "2026-01-23",
+        "2026-01-22",
+        "2026-01-21",
         "2026-01-20",
         "2026-01-19",
         "2026-01-18",
@@ -1238,42 +1249,30 @@
         "2025-12-07",
         "2025-12-06",
         "2025-12-05",
-        "2025-12-04",
-        "2025-12-03",
-        "2025-12-02",
-        "2025-12-01",
-        "2025-11-30",
-        "2025-11-29",
-        "2025-11-28",
-        "2025-11-27",
-        "2025-11-26",
-        "2025-11-25",
-        "2025-11-24",
-        "2025-11-23",
-        "2025-11-22"
+        "2025-12-04"
       ],
       "matched_day_range": {
-        "start": "2025-11-22",
-        "end": "2026-01-20"
+        "start": "2025-12-04",
+        "end": "2026-02-01"
       }
     },
-    "market_data_sha256": "8785bb45407cfa07b843ae61379a0b92d759b30181d2305c04f669d691e3efb2",
+    "market_data_sha256": "52bca4dfd654b8ad8bc592a7307d5049290836e4e49f3d1ddbf28fb6217d4b0b",
     "market_data_used": {
       "relpath": "provenance/market_data_used.json",
-      "sha256": "8785bb45407cfa07b843ae61379a0b92d759b30181d2305c04f669d691e3efb2",
+      "sha256": "52bca4dfd654b8ad8bc592a7307d5049290836e4e49f3d1ddbf28fb6217d4b0b",
       "count": 60
     },
     "raw_artifacts": {
       "dir": "provenance/raw",
       "index": "provenance/index.json",
       "by_source": {
-        "fear_greed": "provenance/raw/19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz",
-        "btc_market": "provenance/raw/fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz"
+        "fear_greed": "provenance/raw/13dfc36313284bfed8b96ff07d79261f0e623e1f697db4d1abb8f370136f8309.json.gz",
+        "btc_market": "provenance/raw/68c0dec43aa301dac8e541f2c20dcc223677ea40f44eeb4d69c93e8bf623ac46.json.gz"
       }
     }
   },
   "run_provenance": {
-    "generated_at": "2026-01-20T20:13:56.994609",
+    "generated_at": "2026-02-01T21:17:54.048926",
     "argv": [
       "C:\\Users\\johnc\\source\\repos\\SpiralBrain-v3.0\\scripts\\cli_v3.py",
       "--mode",
@@ -1281,14 +1280,14 @@
       "--days",
       "60",
       "--output",
-      "C:\\Users\\johnc\\source\\repos\\SpiralBrain-v3.0\\results\\market_emotion_research_20260120_201255",
+      "C:\\Users\\johnc\\source\\repos\\SpiralBrain-v3.0\\results\\market_emotion_participation_only_20260201",
       "--timestamp",
-      "20260120_201255",
+      "20260201_211701",
       "--quiet"
     ],
-    "python_executable": "C:\\Users\\johnc\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe",
+    "python_executable": "C:\\Users\\johnc\\source\\repos\\SpiralBrain-v3.0\\.venv\\Scripts\\python.exe",
     "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
     "platform": "Windows-11-10.0.26200-SP0",
-    "git_head": "8fae6d96b88339d60b96c4b999c86e8be6fb7974"
+    "git_head": "dc128e4468f4756f7f80c373f0db3f1b01eb1139"
   }
 }

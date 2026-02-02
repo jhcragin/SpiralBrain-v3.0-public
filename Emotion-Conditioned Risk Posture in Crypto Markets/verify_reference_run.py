@@ -160,18 +160,18 @@ def verify_reference_run(root: Path) -> List[CheckResult]:
     results.extend(verify_manifest(root))
 
     # 2) Summary report structure
-    summary_path = root / "summary_report.json"
-    require(summary_path, "summary_report.json")
+    summary_path = root / "participation_summary.json"
+    require(summary_path, "participation_summary.json")
     summary = load_json(summary_path)
 
-    total_profiles = get_required(summary, "total_profiles", "summary_report.json")
-    market_data_points = get_required(summary, "market_data_points", "summary_report.json")
+    total_profiles = get_required(summary, "total_profiles", "participation_summary.json")
+    market_data_points = get_required(summary, "market_data_points", "participation_summary.json")
     if total_profiles != 6:
         raise VerificationError(f"total_profiles expected 6, got {total_profiles}")
     if market_data_points != 60:
         raise VerificationError(f"market_data_points expected 60, got {market_data_points}")
 
-    dataset_prov = get_required(summary, "dataset_provenance", "summary_report.json")
+    dataset_prov = get_required(summary, "dataset_provenance", "participation_summary.json")
     sources = get_required(dataset_prov, "sources", "dataset_provenance")
     alignment = get_required(dataset_prov, "alignment", "dataset_provenance")
     matched_days_in_order = get_required(alignment, "matched_days_in_order", "alignment")
@@ -221,10 +221,10 @@ def verify_reference_run(root: Path) -> List[CheckResult]:
     results.append(CheckResult("market_data_sha256", True, expected_market_sha))
 
     # 5) Verify predictions + posture distributions from per-profile result files
-    results_summary = get_required(summary, "results_summary", "summary_report.json")
+    results_summary = get_required(summary, "results_summary", "participation_summary.json")
 
     for profile, expected_profile_summary in results_summary.items():
-        results_path = root / f"{profile}_results.json"
+        results_path = root / f"{profile}_results_20260201_211701.json"
         require(results_path, f"{profile}_results.json")
 
         profile_obj = load_json(results_path)
@@ -274,7 +274,7 @@ def verify_reference_run(root: Path) -> List[CheckResult]:
 
 def main(argv: List[str]) -> int:
     parser = argparse.ArgumentParser(description="Verify canonized reference run offline.")
-    parser.add_argument("fixture_dir", nargs='?', default='results/market_emotion_research_20260120_201255', type=str, help="Path to the reference run directory (default: results/market_emotion_research_20260120_201255)")
+    parser.add_argument("fixture_dir", nargs='?', default='results/market_emotion_participation_only_20260201', type=str, help="Path to the reference run directory (default: results/market_emotion_participation_only_20260201)")
     parser.add_argument(
         "--write-manifest",
         action="store_true",

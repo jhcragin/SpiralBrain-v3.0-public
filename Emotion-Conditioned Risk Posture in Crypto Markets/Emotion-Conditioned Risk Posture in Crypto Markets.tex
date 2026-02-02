@@ -169,7 +169,7 @@ Emotional profiles in SpiralBrain are instantiated as fixed regulatory parameter
 
 \section{Conceptual Framework (Theory)}
 
-We treat an ``emotional profile'' as a controlled internal condition that changes the system's regulatory weighting of risk signals, without changing the external input stream. An emotional profile is instantiated by an injected \texttt{emotional\_state} parameter vector that modulates regulatory weighting. Let $x_t$ denote the aligned market input at day $t$ (fear/greed, price, volume). Let $\theta$ denote an emotional profile setting. The system emits a discrete posture $y_t \in \{\text{buy}, \text{hold}, \text{sell}\}$ and a confidence value $c_t \in [0,1]$. The confidence value $c_t$ is treated here as a system-internal certainty signal, not a calibrated probability of market correctness.
+...onal profile'' as a controlled internal condition that changes the system's regulatory weighting of risk signals, without changing the external input stream. An emotional profile is instantiated by an injected \texttt{emotional\_state} parameter vector that modulates regulatory weighting. Let $x_t$ denote the aligned market input at day $t$ (fear/greed, price, volume). Let $\theta$ denote an emotional profile setting. The system emits a discrete posture $y_t \in \{\text{buy}, \text{hold}\}$ and a confidence value $c_t \in [0,1]$. The confidence value $c_t$ is treated here as a system-internal certainty signal, not a calibrated probability of market correctness.
 
 The core theoretical claim is not about market forecasting. It is about conditional decision policy:
 
@@ -222,7 +222,6 @@ In financial practice, posture decisions govern institutional participation, not
 \begin{itemize}
 	\item \textbf{Buy}: Increase exposure (e.g., allocate capital to risk despite uncertainty).
 	\item \textbf{Hold}: Refuse incremental exposure (e.g., maintain existing positions but decline new risk).
-	\item \textbf{Sell}: Active de-risking (e.g., reduce exposure to cut losses) - \emph{not implemented in this experiment}.
 \end{itemize}
 
 Banks, funds, tax advisors, and compliance teams routinely \emph{hold} even when bullish—citing governance, liquidity, or regulatory thresholds. This is not indecision; it is participation control. Our experiment models this behavior: in the SpiralBrain system evaluated here, refusal to act is implemented as an explicit, auditable decision outcome.
@@ -269,7 +268,7 @@ Inputs are derived from:
 	\item Bitcoin market chart (price and volume, USD) via CoinGecko \citep{CoinGeckoMarketChart}
 \end{itemize}
 
-For \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results}{market_emotion_research_20260120_201255}, the dataset spans 60 matched UTC days, from \texttt{2025-11-22} through \texttt{2026-01-20}, inclusive. The integrator matches sources by a UTC day key formatted as \texttt{YYYY-MM-DD}.
+For \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results}{market_emotion_participation_only_20260201}, the dataset spans 60 matched UTC days, from \texttt{2025-12-04} through \texttt{2026-02-01}, inclusive. The integrator matches sources by a UTC day key formatted as \texttt{YYYY-MM-DD}.
 
 \section{Market Window Visualization}
 
@@ -282,73 +281,73 @@ For \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/Emotion-
     ylabel={BTC Price (USD)},
     ylabel style={color=blue},
     xtick={0,10,20,30,40,50,59},
-    xticklabels={2025-11-22,2025-12-02,2025-12-12,2025-12-22,2026-01-01,2026-01-11,2026-01-20},
+    xticklabels={2025-12-04,2025-12-14,2025-12-24,2026-01-03,2026-01-13,2026-01-23,2026-02-01},
     xticklabel style={rotate=45},
     legend pos=north east,
     ymajorgrids=true,
     grid style=dashed,
 ]
 \addplot[color=blue, mark=none] coordinates {
-    (0, 78725.86)
-    (1, 84141.78)
-    (2, 84570.41)
-    (3, 89162.10)
-    (4, 89204.22)
-    (5, 88307.86)
-    (6, 86548.32)
-    (7, 89170.87)
-    (8, 89412.40)
-    (9, 89443.40)
-    (10, 89354.34)
-    (11, 88312.84)
-    (12, 92558.46)
-    (13, 93752.71)
-    (14, 95099.53)
-    (15, 95516.08)
-    (16, 95584.83)
-    (17, 97007.78)
-    (18, 95260.44)
-    (19, 91134.97)
-    (20, 90819.37)
-    (21, 90442.02)
-    (22, 90504.90)
-    (23, 90983.52)
-    (24, 91257.16)
-    (25, 93666.86)
-    (26, 93926.80)
-    (27, 91373.22)
-    (28, 90593.85)
-    (29, 89926.28)
-    (30, 88727.67)
-    (31, 87520.18)
-    (32, 88414.63)
-    (33, 87156.56)
-    (34, 87822.91)
-    (35, 87807.00)
-    (36, 87305.96)
-    (37, 87229.78)
-    (38, 87642.61)
-    (39, 87406.44)
-    (40, 88491.12)
-    (41, 88577.42)
-    (42, 88347.94)
-    (43, 88103.86)
-    (44, 85450.33)
-    (45, 86064.95)
-    (46, 87821.89)
-    (47, 86413.92)
-    (48, 88230.77)
-    (49, 90257.43)
-    (50, 90307.26)
-    (51, 92494.18)
-    (52, 92005.14)
-    (53, 92723.21)
-    (54, 90618.05)
-    (55, 90162.91)
-    (56, 89244.76)
-    (57, 89307.09)
-    (58, 92140.70)
-    (59, 93619.44)
+    (0, 93619.44)
+    (1, 92140.70)
+    (2, 89307.09)
+    (3, 89244.76)
+    (4, 90162.91)
+    (5, 90618.05)
+    (6, 92723.21)
+    (7, 92005.14)
+    (8, 92494.18)
+    (9, 90307.26)
+    (10, 90257.43)
+    (11, 88230.77)
+    (12, 86413.92)
+    (13, 87821.89)
+    (14, 86064.95)
+    (15, 85450.33)
+    (16, 88103.86)
+    (17, 88347.94)
+    (18, 88577.42)
+    (19, 88491.12)
+    (20, 87406.44)
+    (21, 87642.61)
+    (22, 87229.78)
+    (23, 87305.96)
+    (24, 87807.00)
+    (25, 87822.91)
+    (26, 87156.56)
+    (27, 88414.63)
+    (28, 87520.18)
+    (29, 88727.67)
+    (30, 89926.28)
+    (31, 90593.85)
+    (32, 91373.22)
+    (33, 93926.80)
+    (34, 93666.86)
+    (35, 91257.16)
+    (36, 90983.52)
+    (37, 90504.90)
+    (38, 90442.02)
+    (39, 90819.37)
+    (40, 91134.97)
+    (41, 95260.44)
+    (42, 97007.78)
+    (43, 95584.83)
+    (44, 95516.08)
+    (45, 95099.53)
+    (46, 93752.71)
+    (47, 92558.46)
+    (48, 88312.84)
+    (49, 89354.34)
+    (50, 89443.40)
+    (51, 89412.40)
+    (52, 89170.87)
+    (53, 86548.32)
+    (54, 88307.86)
+    (55, 89204.22)
+    (56, 89162.10)
+    (57, 84570.41)
+    (58, 84141.78)
+    (59, 78725.86)
 };
 \addlegendentry{BTC Price (USD)}
 \end{axis}
@@ -363,66 +362,66 @@ For \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/Emotion-
     legend pos=north west,
 ]
 \addplot[color=red, mark=none] coordinates {
-    (0, 14)
-    (1, 14)
+    (0, 28)
+    (1, 23)
     (2, 20)
-    (3, 16)
-    (4, 26)
-    (5, 29)
+    (3, 20)
+    (4, 22)
+    (5, 26)
     (6, 29)
-    (7, 20)
-    (8, 25)
-    (9, 25)
-    (10, 24)
-    (11, 20)
-    (12, 24)
-    (13, 32)
-    (14, 44)
-    (15, 49)
-    (16, 50)
-    (17, 49)
-    (18, 61)
-    (19, 48)
-    (20, 26)
-    (21, 27)
-    (22, 29)
-    (23, 25)
-    (24, 27)
-    (25, 28)
-    (26, 42)
-    (27, 44)
-    (28, 26)
-    (29, 25)
-    (30, 29)
-    (31, 28)
-    (32, 20)
-    (33, 21)
-    (34, 23)
-    (35, 24)
-    (36, 24)
-    (37, 23)
-    (38, 20)
-    (39, 23)
-    (40, 24)
-    (41, 24)
-    (42, 25)
-    (43, 20)
-    (44, 20)
-    (45, 16)
-    (46, 17)
-    (47, 16)
-    (48, 11)
-    (49, 16)
-    (50, 21)
-    (51, 23)
-    (52, 29)
+    (7, 29)
+    (8, 23)
+    (9, 21)
+    (10, 16)
+    (11, 11)
+    (12, 16)
+    (13, 17)
+    (14, 16)
+    (15, 20)
+    (16, 20)
+    (17, 25)
+    (18, 24)
+    (19, 24)
+    (20, 23)
+    (21, 20)
+    (22, 23)
+    (23, 24)
+    (24, 24)
+    (25, 23)
+    (26, 21)
+    (27, 20)
+    (28, 28)
+    (29, 29)
+    (30, 25)
+    (31, 26)
+    (32, 44)
+    (33, 42)
+    (34, 28)
+    (35, 27)
+    (36, 25)
+    (37, 29)
+    (38, 27)
+    (39, 26)
+    (40, 48)
+    (41, 61)
+    (42, 49)
+    (43, 50)
+    (44, 49)
+    (45, 44)
+    (46, 32)
+    (47, 24)
+    (48, 20)
+    (49, 24)
+    (50, 25)
+    (51, 25)
+    (52, 20)
     (53, 29)
-    (54, 26)
-    (55, 22)
-    (56, 20)
+    (54, 29)
+    (55, 26)
+    (56, 16)
     (57, 20)
-    (58, 23)
-    (59, 28)
+    (58, 14)
+    (59, 14)
 };
 \addlegendentry{Fear \& Greed Index}
 \draw[dashed, gray] (axis cs:0,25) -- (axis cs:59,25);
@@ -432,7 +431,7 @@ For \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/Emotion-
 \caption{BTC Price (USD) and Fear \& Greed Index timeline for the experimental window (Nov 22, 2025 – Jan 20, 2026). Dashed lines indicate Fear/Neutral (25) and Greed (75) thresholds.}
 \end{figure}
 
-This visualization provides context for the experimental window (Nov 22, 2025 – Jan 20, 2026) by jointly displaying Bitcoin price (USD) and the Fear \& Greed Index. The period corresponds to post-correction consolidation, with sentiment transitioning from Extreme Fear toward Fear/Neutral dominance.
+This visualization provides context for the experimental window (Dec 4, 2025 – Feb 1, 2026) by jointly displaying Bitcoin price (USD) and the Fear \& Greed Index. The period corresponds to post-correction consolidation, with sentiment transitioning from Extreme Fear toward Fear/Neutral dominance.
 
 
 \section{Audit Infrastructure and Provenance}
@@ -449,7 +448,7 @@ This work is designed to be verifiable offline. Each run records:
 	\item A deterministic SHA-256 hash of \texttt{market\_data\_used.json}
 \end{itemize}
 
-For \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results}{market_emotion_research_20260120_201255}, the recorded provenance hashes are directly verifiable from the linked files.
+For \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results}{market_emotion_participation_only_20260201}, the recorded provenance hashes are directly verifiable from the linked files.
 
 The run metadata records the exact command-line invocation used to generate artifacts.
 
@@ -471,7 +470,7 @@ SpiralBrain v3.0 is treated as an instrumented regulatory cognitive system. The 
 
 \subsection{Profiles}
 
-The following six profiles are tested in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results}{market_emotion_research_20260120_201255}:
+The following six profiles are tested in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results}{market_emotion_participation_only_20260201}:
 \texttt{control\_neutral}, \texttt{high\_hazard\_alert}, \texttt{overconfident\_explorer}, \texttt{high\_uncertainty}, \texttt{complacent}, \texttt{defensive}.
 
 Profiles differ only in the injected \texttt{emotional\_state} parameters (valence, arousal, hazard pressure, neuromodulator flexibility); no profile alters external inputs, feature extraction, or the output contract.
@@ -504,16 +503,16 @@ The confirmatory run produced 1,200 predictions (20 profiles × 60 days) with id
 
 \begin{table}[H]
 \centering
-\begin{tabular}{lrrrrr}
+\begin{tabular}{lrrrr}
 \hline
-Profile & N & AvgConf & Buy & Hold & Sell \\
+Profile & N & AvgConf & Buy & Hold \\
 \hline
-complacent              & 60 & 0.597 & 60 & 0  & 0 \\
-control\_neutral        & 60 & 0.611 & 60 & 0  & 0 \\
-defensive               & 60 & 0.547 & 0  & 60 & 0 \\
-high\_hazard\_alert     & 60 & 0.559 & 0  & 60 & 0 \\
-overconfident\_explorer & 60 & 0.605 & 60 & 0  & 0 \\
-high\_uncertainty       & 60 & 0.601 & 60 & 0  & 0 \\
+complacent              & 60 & 0.597 & 60 & 0 \\
+control\_neutral        & 60 & 0.611 & 60 & 0 \\
+defensive               & 60 & 0.547 & 0  & 60 \\
+high\_hazard\_alert     & 60 & 0.559 & 0  & 60 \\
+overconfident\_explorer & 60 & 0.543 & 60 & 0 \\
+high\_uncertainty       & 60 & 0.587 & 60 & 0 \\
 \hline
 \end{tabular}
 \caption{Posture selection counts across 60 aligned days under identical inputs, by emotional profile. AvgConf reflects the system's internal certainty signal for the posture actually selected (Buy or Hold), and is not intended for cross-posture comparison.}
@@ -532,7 +531,7 @@ Table \ref{tab:posture_dist} summarizes per-profile posture behavior over $N=60$
 
 \begin{itemize}
 	\item \textbf{N}: number of daily predictions generated for that profile.
-	\item \textbf{Buy/Hold/Sell}: counts of discrete posture outputs across the 60 days.
+	\item \textbf{Buy/Hold}: counts of discrete posture outputs across the 60 days.
 	\item \textbf{AvgConf}: mean of the per-day confidence values $c_t \in [0,1]$ emitted by the system for that profile. As stated in the conceptual framework, this confidence is a system-internal certainty signal; it is not claimed to be a calibrated probability of market correctness.
 \end{itemize}
 
@@ -543,18 +542,17 @@ A qualitative summary from the same run artifacts:
 \begin{itemize}
 	\item \texttt{high\_hazard\_alert} and \texttt{defensive} produced a hold posture on every aligned day in the 60-day window.
 	\item \texttt{control\_neutral}, \texttt{overconfident\_explorer}, \texttt{high\_uncertainty}, and \texttt{complacent} produced a buy posture on every aligned day in the same window.
-	\item No profile emitted a sell posture on any of the 60 aligned days (\emph{by experimental design, as this study isolates participation gating rather than exit behavior}).
 \end{itemize}
 
-For example, on each calendar day from 2025-11-22 through 2026-01-20, the defensive profile evaluated the same market data as the neutral profile yet declined incremental exposure, resulting in a hold posture on every day in the window.
+For example, on each calendar day from 2025-12-04 through 2026-02-01, the defensive profile evaluated the same market data as the neutral profile yet declined incremental exposure, resulting in a hold posture on every day in the window.
 
-The absence of sell postures in this window reflects a high de-risking threshold rather than bullish bias, consistent with governance-oriented participation control.
+The exclusive use of buy and hold postures reflects participation control thresholds rather than bullish bias, consistent with governance-oriented participation control.
 
 \section{Discussion}
 
 This paper should be read as an existence proof for emotion-conditioned participation gating, not as a market modeling or trading study.
 
-When exposed to the same aligned 60-day market time series, the system exhibits a clean separation in participation behavior: hazard-biased profiles consistently refuse new exposure (\emph{hold}), while neutral and exploratory profiles consistently accept exposure (\emph{buy}). This separation is observed in run \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results}{market_emotion_research_20260120_201255}. This observation supports hypothesis H1 for this run. The emotional state is modulating the threshold for action rather than the certainty of the underlying belief.
+When exposed to the same aligned 60-day market time series, the system exhibits a clean separation in participation behavior: hazard-biased profiles consistently refuse new exposure (\emph{hold}), while neutral and exploratory profiles consistently accept exposure (\emph{buy}). This separation is observed in run \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results}{market_emotion_participation_only_20260201}. This observation supports hypothesis H1 for this run. The emotional state is modulating the threshold for action rather than the certainty of the underlying belief.
 This experiment is designed to test separation, not calibration; graded effects are not necessary to falsify the null hypothesis—clean separation under byte-identical inputs is sufficient.
 
 Clean separation under byte-identical inputs falsifies the null hypothesis ("emotion does not matter") more strongly than any graded or noisy effect could. For an existence proof, posture purity is therefore diagnostic rather than limiting—binary outcomes provide decisive evidence of causal regulation, not threshold saturation.
@@ -562,14 +560,14 @@ The consistency of postures within each profile (all-hold or all-buy) is an obse
 
 We make no claim that this behavior generalizes beyond the tested setup; generalization is an open question that requires additional falsifiable tests across assets, windows, and profile sets.
 
-This experiment isolates participation choice as a first-class control variable under uncertainty, rather than a modeling failure, complementing prior work on stability-first regulation and real-time coherence preservation. (e.g., absence of sell despite visible drawdowns reinforces the high bar for active de-risking).
+This experiment isolates participation choice as a first-class control variable under uncertainty, rather than a modeling failure, complementing prior work on stability-first regulation and real-time coherence preservation.
 
-The absence of \emph{sell} postures in this window reflects the selected market regime and de-risking thresholds; the system does emit sell decisions in other regimes, which are outside the scope of this run.
+The binary posture space of \{buy, hold\} reflects the selected market regime and participation control thresholds; this run focuses exclusively on participation gating without considering exit strategies.
 
 \section{Measurement Scope and Output Semantics}
 
 This paper evaluates a single observable outcome: discrete risk posture selection
-(\emph{buy}, \emph{hold}, \emph{sell}) under identical aligned market inputs.
+(\emph{buy}, \emph{hold}) under identical aligned market inputs.
 Posture outputs are treated as the sole measurement used to support the empirical claim.
 
 SpiralBrain v3.0 internally computes additional regulatory signals during execution
@@ -605,29 +603,29 @@ regulatory bias in a verifiable and falsifiable manner.
 
 \section{Verification Summary (Artifact-Level Claims)}
 
-This paper makes the following claims. Each claim is either directly verifiable from artifacts in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results}{market_emotion_research_20260120_201255} or is explicitly falsifiable.
+This paper makes the following claims. Each claim is either directly verifiable from artifacts in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results}{market_emotion_participation_only_20260201} or is explicitly falsifiable.
 
 \subsection{Artifact-Verifiable Claims}
 
 \begin{itemize}
-	\item \textbf{C1 (Run identity)}: The analyzed run \\ \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results}{market_emotion_research_20260120_201255}. \\
-	\emph{Verification:} read \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report_20260120_201255.json}{summary_report_20260120_201255.json}.
+	\item \textbf{C1 (Run identity)}: The analyzed run \\ \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/tree/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results}{market_emotion_participation_only_20260201}. \\
+	\emph{Verification:} read \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/participation_summary.json}{participation_summary.json}.
 
-	\item \textbf{C2 (Dataset size and alignment)}: The run uses 60 matched days in UTC with start \texttt{2025-11-22} and end \texttt{2026-01-20}. \\
-	\emph{Verification:} read \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report_20260120_201255.json}{summary_report_20260120_201255.json} for the \texttt{dataset\_provenance.alignment.matched\_days}, \texttt{matched\_day\_range}, and the explicit list \texttt{matched\_days\_in\_order}.
+	\item \textbf{C2 (Dataset size and alignment)}: The run uses 60 matched days in UTC with start \texttt{2025-12-04} and end \texttt{2026-02-01}. \\
+	\emph{Verification:} read \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/participation_summary.json}{participation_summary.json} for the \texttt{dataset\_provenance.alignment.matched\_days}, \texttt{matched\_day\_range}, and the explicit list \texttt{matched\_days\_in\_order}.
 
 	\item \textbf{C3 (Audit-bundled upstream payloads)}: The run stores gzipped raw upstream payloads whose SHA-256 hashes match the recorded \\ \texttt{dataset\_provenance.sources.*.sha256}. \\
-	\emph{Verification:} recompute SHA-256 over the decompressed UTF-8 text of \\ \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/provenance/raw/19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz}{19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz} and \\ \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/provenance/raw/fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz}{fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz} and compare to \texttt{sources.*.sha256}.
+	\emph{Verification:} recompute SHA-256 over the decompressed UTF-8 text of \\ \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/provenance/raw/13dfc36313284bfed8b96ff07d79261f0e623e1f697db4d1abb8f370136f8309.json.gz}{13dfc36313284bfed8b96ff07d79261f0e623e1f697db4d1abb8f370136f8309.json.gz} and \\ \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/provenance/raw/68c0dec43aa301dac8e541f2c20dcc223677ea40f44eeb4d69c93e8bf623ac46.json.gz}{68c0dec43aa301dac8e541f2c20dcc223677ea40f44eeb4d69c93e8bf623ac46.json.gz} and compare to \texttt{sources.*.sha256}.
 
 	\item \textbf{C4 (Exact model input captured)}: The exact aligned input time series used for inference is stored as \texttt{provenance/market\_data\_used.json} and its deterministic SHA-256 equals \texttt{dataset\_provenance.market\_data\_sha256}. \\
 	\emph{Verification:} hash the canonical JSON encoding of \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/provenance/market_data_used.json}{market_data_used.json} and compare to the recorded SHA-256.
 
 	\item \textbf{C5 (Prediction counts)}: The run produces 6 profiles $\times$ 60 days $=$ 360 predictions, and 0 prediction errors. \\
 	\emph{Verification:} read \texttt{total\_profiles}, \texttt{market\_data\_points}, \\
-    and \texttt{results\_summary.<profile>.error\_predictions} in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report_20260120_201255.json}{summary_report_20260120_201255.json}.
+    and \texttt{results\_summary.<profile>.error\_predictions} in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/participation_summary.json}{participation_summary.json}.
 
-	\item \textbf{C6 (Observed posture distributions)}: In this run, \texttt{high\_hazard\_alert} and \texttt{defensive} selected hold on every aligned day in the 60-day window; the other four profiles selected buy on every aligned day in the same window; no profile selected sell on any aligned day (\emph{by experimental design—only buy and hold postures are implemented}). \\
-	\emph{Verification:} read \texttt{results\_summary.<profile>.direction\_distribution} in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report_20260120_201255.json}{summary_report_20260120_201255.json} or the generated table included in this document.
+	\item \textbf{C6 (Observed posture distributions)}: In this run, \texttt{high\_hazard\_alert} and \texttt{defensive} selected hold on every aligned day in the 60-day window; the other four profiles selected buy on every aligned day in the same window. \\
+	\emph{Verification:} read \texttt{results\_summary.<profile>.direction\_distribution} in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/participation_summary.json}{participation_summary.json} or the generated table included in this document.
 
 	\item \textbf{C7 (Upstream request parameters and status)}: In this run, upstream providers return HTTP status code 200, and the CoinGecko request is \texttt{vs\_currency=usd}, \texttt{days=62}, \texttt{interval=daily}.
 	\emph{Verification:} read \\ \texttt{dataset\_provenance.sources.fear\_greed.status\_code}, \\ \texttt{dataset\_provenance.sources.btc\_market.status\_code}, and the recorded \texttt{url} fields under \texttt{dataset\_provenance.sources} in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report_20260120_201255.json}{summary_report_20260120_201255.json}.
@@ -638,10 +636,10 @@ This paper makes the following claims. Each claim is either directly verifiable 
 The following files are directly referenced in this paper. Each filename links to its exact location in the public verification repository.
 
 \begin{itemize}
-  \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report_20260120_201255.json}{summary_report_20260120_201255.json}
+  \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/participation_summary.json}{participation_summary.json}
   \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/provenance/market_data_used.json}{market_data_used.json}
-  \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/provenance/raw/19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz}{19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz}
-  \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/provenance/raw/fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz}{fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz}
+  \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/provenance/raw/13dfc36313284bfed8b96ff07d79261f0e623e1f697db4d1abb8f370136f8309.json.gz}{13dfc36313284bfed8b96ff07d79261f0e623e1f697db4d1abb8f370136f8309.json.gz}
+  \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/provenance/raw/68c0dec43aa301dac8e541f2c20dcc223677ea40f44eeb4d69c93e8bf623ac46.json.gz}{68c0dec43aa301dac8e541f2c20dcc223677ea40f44eeb4d69c93e8bf623ac46.json.gz}
   \item \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/VERIFY.sha256}{VERIFY.sha256}
 \end{itemize}
 
@@ -651,8 +649,8 @@ The following files are directly referenced in this paper. Each filename links t
 	\item Single-asset focus (BTC) and a 60-day window; higher-volatility assets may amplify hazard gating effects.
 	\item No backtesting, transaction-cost modeling, or PnL claims.
 	\item One instrumented architecture; results may be architecture-specific.
-	\item Absence of sell signals may reflect the dataset's lack of sustained downtrends (as discussed in Results); future windows including bear phases would test de-risking thresholds.
-	\item A complementary assay enabling sell actions would allow de-risking thresholds to be studied separately; this constitutes a distinct experimental question and is left to future work.
+	\item The binary posture space may reflect the dataset's lack of sustained downtrends; future experiments could explore different market regimes.
+	\item De-risking thresholds constitute a distinct experimental question and are left to future work.
 \end{itemize}
 
 \section{Verification and Regeneration}
@@ -724,7 +722,6 @@ Verbatim excerpt from \texttt{fixtures/market\_emotion/reference\_run/summary\_r
 			"avg_confidence": 0.6112038850784302,
 			"direction_distribution": {
 				"buy": 60,
-				"sell": 0,
 				"hold": 0,
 				"error": 0
 			}

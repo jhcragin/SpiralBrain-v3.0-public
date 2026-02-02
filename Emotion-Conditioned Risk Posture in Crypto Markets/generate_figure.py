@@ -1,33 +1,16 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from datetime import datetime, timedelta
+from datetime import datetime
+import json
 
-# Generate synthetic data for the window Nov 22, 2025 – Jan 20, 2026 (60 days)
-start_date = datetime(2025, 11, 22)
-dates = [start_date + timedelta(days=i) for i in range(60)]
+# Load real data from the experiment run
+with open('c:/Users/johnc/source/repos/SpiralBrain-v3.0/results/market_emotion_research_20260201_204741/provenance/market_data_used.json', 'r') as f:
+    market_data = json.load(f)
 
-# Synthetic BTC price: starts at ~84.6k, recovers to ~88-97k, ends at ~88.3k, choppy
-btc_prices = []
-current_price = 84648
-for i in range(60):
-    if i < 10:
-        current_price += np.random.uniform(-500, 1000)  # initial recovery
-    elif i < 30:
-        current_price += np.random.uniform(-1000, 1500)  # mid recovery
-    else:
-        current_price += np.random.uniform(-1500, 500)  # choppy end
-    btc_prices.append(current_price)
-
-# Synthetic Fear & Greed: starts at 10-13 (Extreme Fear), transitions to 20-50 (Fear/Neutral)
-fng_values = []
-for i in range(60):
-    if i < 10:
-        fng = np.random.uniform(10, 15)
-    elif i < 30:
-        fng = np.random.uniform(20, 40)
-    else:
-        fng = np.random.uniform(30, 50)
-    fng_values.append(fng)
+# Extract data
+dates = [datetime.fromisoformat(item['timestamp'][:-6]) for item in market_data]  # Remove timezone offset
+btc_prices = [item['btc_price'] for item in market_data]
+fng_values = [item['fear_greed_index'] for item in market_data]
 
 # Plot
 fig, ax1 = plt.subplots(figsize=(12, 6))
@@ -44,7 +27,7 @@ ax2.tick_params(axis='y', labelcolor='red')
 ax2.axhline(y=25, color='gray', linestyle='--', alpha=0.5, label='Fear/Neutral Threshold')
 ax2.axhline(y=75, color='gray', linestyle='--', alpha=0.5, label='Greed Threshold')
 
-fig.suptitle('BTC Price and Fear & Greed Index (Nov 22, 2025 – Jan 20, 2026)')
+fig.suptitle('BTC Price and Fear & Greed Index (Dec 4, 2025 – Feb 1, 2026)')
 ax1.legend(loc='upper left')
 ax2.legend(loc='upper right')
 

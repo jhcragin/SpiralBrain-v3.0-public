@@ -236,10 +236,10 @@ def verify_reference_run(root: Path) -> List[CheckResult]:
                 f"{results_path.name}: expected 60 predictions, got {len(preds)}"
             )
 
-        dist = {"buy": 0, "hold": 0, "sell": 0, "error": 0}
+        dist = {"buy": 0, "hold": 0, "error": 0}
         for p in preds:
             direction = p.get("direction")
-            if direction in ("buy", "hold", "sell"):
+            if direction in ("buy", "hold"):
                 dist[direction] += 1
             else:
                 dist["error"] += 1

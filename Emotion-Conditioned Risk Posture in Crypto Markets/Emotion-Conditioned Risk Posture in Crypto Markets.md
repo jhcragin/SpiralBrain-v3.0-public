@@ -14,7 +14,7 @@ This complements prior work on stability-first regulation and real-time coherenc
 
 Readers primarily interested in the decision phenomenon may skim Sections 7–9 on auditability and return for results and discussion.
 
-No claims of trading alpha, profitability, or universality are made. All quantitative statements in this paper are grounded in the recorded artifacts for run [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/). Any non-quantitative interpretation is stated as a hypothesis with explicit falsification criteria.
+No claims of trading alpha, profitability, or universality are made. All quantitative statements in this paper are grounded in the recorded artifacts for run [market_emotion_research_20260201_204741](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/). Any non-quantitative interpretation is stated as a hypothesis with explicit falsification criteria.
 
 ## Problem Statement
 
@@ -22,7 +22,7 @@ Market behavior is frequently modeled as a function of ``information'' alone. In
 
 > Given the same real market inputs, do different emotional profiles induce different discrete risk posture outputs?
 
-We operationalize posture as a discrete decision variable in {buy, hold, sell}. We do not attempt to backtest or optimize a trading strategy.
+We operationalize posture as a discrete decision variable in {buy, hold}. This experiment implements a pure participation control system—only buy and hold postures are possible, focusing exclusively on participation gating under uncertainty.
 
 ## Conceptual Framework (Theory)
 
@@ -43,15 +43,16 @@ $$
 
 ## Buy and Hold as Risk Postures
 
-In this experiment, *buy* and *hold* are treated as discrete **risk postures**, not trading recommendations or forecasts. A *buy* posture represents willingness to engage with market exposure under uncertainty—i.e., to accept volatility in exchange for potential upside. A *hold* posture represents deliberate non-participation: the system elects to remain exposed only to existing positions and declines additional risk despite available signals. Importantly, *hold* is not indecision or failure to act; it is an active regulatory choice indicating that perceived hazard outweighs exploratory opportunity.
+In this experiment, we implement a **participation control system** that produces only *buy* and *hold* postures. This design isolates participation gating as the core regulatory mechanism.
+
+*buy* and *hold* are treated as discrete **risk postures**, not trading recommendations or forecasts. A *buy* posture represents willingness to engage with market exposure under uncertainty—i.e., to accept volatility in exchange for potential upside. A *hold* posture represents deliberate non-participation: the system elects to remain exposed only to existing positions and declines additional risk despite available signals. Importantly, *hold* is not indecision or failure to act; it is an active regulatory choice indicating that perceived hazard outweighs exploratory opportunity.
 
 ## Risk Posture as Institutional Participation Control
 
-In financial practice, posture decisions govern institutional participation, not just individual trades:
+In financial practice, posture decisions govern institutional participation:
 
 - **Buy**: Increase exposure (e.g., allocate capital to risk despite uncertainty).
 - **Hold**: Refuse incremental exposure (e.g., maintain existing positions but decline new risk).
-- **Sell**: Active de-risking (e.g., reduce exposure to cut losses).
 
 Banks, funds, tax advisors, and compliance teams routinely *hold* even when bullish—citing governance, liquidity, or regulatory thresholds. This is not indecision; it is participation control. Our experiment models this behavior: in the SpiralBrain system evaluated here, refusal to act is implemented as an explicit, auditable decision outcome.
 
@@ -106,15 +107,15 @@ Inputs are derived from:
 - Crypto Fear & Greed Index API (alternative.me) [1]
 - Bitcoin market chart (price and volume, USD) via CoinGecko [2]
 
-For [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results), the dataset spans 60 matched UTC days, from `2025-11-22` through `2026-01-20`, inclusive. The integrator matches sources by a UTC day key formatted as `YYYY-MM-DD`.
+For [market_emotion_research_20260201_204741](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results), the dataset spans 60 matched UTC days, from `2025-12-04` through `2026-02-01`, inclusive. The integrator matches sources by a UTC day key formatted as `YYYY-MM-DD`.
 
 ## Market Window Visualization
 
 To provide visual context for the experimental window (Nov 22, 2025 – Jan 20, 2026), Figure 1 overlays Bitcoin price (USD) with the Fear & Greed Index. This period represents post-correction consolidation, with sentiment transitioning from Extreme Fear to Fear/Neutral dominance, supporting the interpretation that hazard-biased profiles gated participation despite signals sufficient for engagement under neutral regulation.
 
-![BTC Price (USD) and Fear & Greed Index timeline for the experimental window (Nov 22, 2025 – Jan 20, 2026). Dashed lines indicate Fear/Neutral (25) and Greed (75) thresholds.](figures/btc_fng_timeline.png)
+![BTC Price (USD) and Fear & Greed Index timeline for the experimental window (Dec 4, 2025 – Feb 1, 2026). Dashed lines indicate Fear/Neutral (25) and Greed (75) thresholds.](figures/btc_fng_timeline.png)
 
-*Figure 1: BTC Price (USD) and Fear & Greed Index timeline for the experimental window (Nov 22, 2025 – Jan 20, 2026). Dashed lines indicate Fear/Neutral (25) and Greed (75) thresholds.*
+*Figure 1: BTC Price (USD) and Fear & Greed Index timeline for the experimental window (Dec 4, 2025 – Feb 1, 2026). Dashed lines indicate Fear/Neutral (25) and Greed (75) thresholds.*
 
 ## Audit Bundle and Provenance
 
@@ -126,7 +127,7 @@ This work is designed to be verifiable offline. Each run records:
 - The exact aligned `market_data_used.json` passed into the system
 - A deterministic SHA-256 hash of `market_data_used.json`
 
-For [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results), the recorded provenance hashes are:^[Fear & Greed payload SHA-256: `19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d`; BTC market payload SHA-256: `fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7`; `market_data_used.json` SHA-256: `8785bb45407cfa07b843ae61379a0b92d759b30181d2305c04f669d691e3efb2`]
+For [market_emotion_research_20260201_204741](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results), the recorded provenance hashes are:^[Fear & Greed payload SHA-256: `8028b73c81187d5c35a7a8e4c4bc09b0e7420afca6a6b6da363ad1874f12c31e`; BTC market payload SHA-256: `3f315d8f48bbf2c80fdb4dc40d21e103c922930580924388216568f97e1819a6`; `market_data_used.json` SHA-256: `52bca4dfd654b8ad8bc592a7307d5049290836e4e49f3d1ddbf28fb6217d4b0b`]
 
 The run metadata records the exact command-line invocation used to generate artifacts.
 
@@ -146,7 +147,7 @@ SpiralBrain v3.0 is treated as an instrumented regulatory cognitive system. The 
 
 ### Profiles
 
-The following six profiles are tested in [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results): `control_neutral`, `high_hazard_alert`, `overconfident_explorer`, `high_uncertainty`, `complacent`, `defensive`.
+The following six profiles are tested in [market_emotion_research_20260201_204741](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results): `control_neutral`, `high_hazard_alert`, `overconfident_explorer`, `high_uncertainty`, `complacent`, `defensive`.
 
 Profiles differ only in the injected `emotional_state` parameters (valence, arousal, hazard pressure, neuromodulator flexibility); no profile alters external inputs, feature extraction, or the output contract.
 
@@ -160,20 +161,20 @@ Under an identical 60-day market input series, different emotional profiles prod
 
 The run consists of 60 market days and 6 profiles, producing 360 predictions, all of which are valid (0 errors).
 
-This window (Nov 22, 2025 – Jan 20, 2026) represents post-correction consolidation with Fear-to-neutral sentiment dominance, strengthening the regulatory-lens interpretation: hazard-biased profiles gated participation despite not being in full capitulation territory.
+This window (Dec 4, 2025 – Feb 1, 2026) represents post-correction consolidation with Fear-to-neutral sentiment dominance, strengthening the regulatory-lens interpretation: hazard-biased profiles gated participation despite not being in full capitulation territory.
 
 All counts in this section refer to the number of aligned days over which a given posture was selected, not to prediction correctness or performance.
 
 In this run, emotional profiles bifurcate cleanly into two participation regimes: some profiles select *buy* on every day, while others select *hold* on every day, despite identical inputs.
 
-| Profile | N | AvgConf | Buy | Hold | Sell |
-|---------|---|---------|-----|------|------|
-| complacent | 60 | 0.597 | 60 | 0 | 0 |
-| control_neutral | 60 | 0.611 | 60 | 0 | 0 |
-| defensive | 60 | 0.547 | 0 | 60 | 0 |
-| high_hazard_alert | 60 | 0.559 | 0 | 60 | 0 |
-| overconfident_explorer | 60 | 0.605 | 60 | 0 | 0 |
-| high_uncertainty | 60 | 0.601 | 60 | 0 | 0 |
+| Profile | N | AvgConf | Buy | Hold |
+|---------|---|---------|-----|------|
+| complacent | 60 | 0.597 | 60 | 0 |
+| control_neutral | 60 | 0.611 | 60 | 0 |
+| defensive | 60 | 0.547 | 0 | 60 |
+| high_hazard_alert | 60 | 0.559 | 0 | 60 |
+| overconfident_explorer | 60 | 0.605 | 60 | 0 |
+| high_uncertainty | 60 | 0.601 | 60 | 0 |
 
 *Table 1: Posture selection counts across 60 aligned days under identical inputs, by emotional profile. AvgConf reflects the system's internal certainty signal for the posture actually selected (Buy or Hold), and is not intended for cross-posture comparison.*
 
@@ -195,25 +196,23 @@ A qualitative summary from the same run artifacts:
 
 - `high_hazard_alert` and `defensive` produced a hold posture on every aligned day in the 60-day window.
 - `control_neutral`, `overconfident_explorer`, `high_uncertainty`, and `complacent` produced a buy posture on every aligned day in the same window.
-- No profile emitted a sell posture on any of the 60 aligned days.
-
-For example, on each calendar day from 2025-11-22 through 2026-01-20, the defensive profile evaluated the same market data as the neutral profile yet declined incremental exposure, resulting in a hold posture on every day in the window.
+For example, on each calendar day from 2025-12-04 through 2026-02-01, the defensive profile evaluated the same market data as the neutral profile yet declined incremental exposure, resulting in a hold posture on every day in the window.
 
 The absence of sell postures in this window reflects a high de-risking threshold rather than bullish bias, consistent with governance-oriented participation control.
 
 ## Discussion
 
-When exposed to the same aligned 60-day market time series, the system exhibits a clean separation in participation behavior: hazard-biased profiles consistently refuse new exposure (*hold*), while neutral and exploratory profiles consistently accept exposure (*buy*). This separation is observed in run [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results). This observation supports hypothesis H1 for this run. The emotional state is modulating the threshold for action rather than the certainty of the underlying belief.
+When exposed to the same aligned 60-day market time series, the system exhibits a clean separation in participation behavior: hazard-biased profiles consistently refuse new exposure (*hold*), while neutral and exploratory profiles consistently accept exposure (*buy*). This separation is observed in run [market_emotion_research_20260201_204741](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results). This observation supports hypothesis H1 for this run. The emotional state is modulating the threshold for action rather than the certainty of the underlying belief.
 
 This experiment is designed to test separation, not calibration; graded effects are not necessary to falsify the null hypothesis—clean separation under byte-identical inputs is sufficient.
+
+For an existence proof, posture purity is therefore diagnostic rather than limiting—binary outcomes provide decisive evidence of causal regulation, not threshold saturation.
 
 The consistency of postures within each profile (all-hold or all-buy) is an observed outcome of this specific run, not a hard-coded decision rule. In this benchmark, the same inference pipeline processes the same input data; only the injected emotional state differs across profiles, yet the outputs differ. A stronger objection remains possible: the system's mapping may saturate under this particular window and asset. That objection is falsifiable by repeating the run on other time windows or assets and checking whether posture distributions change under the same profiles.
 
 We make no claim that this behavior generalizes beyond the tested setup; generalization is an open question that requires additional falsifiable tests across assets, windows, and profile sets.
 
-This experiment isolates participation choice as a first-class control variable under uncertainty, rather than a modeling failure, complementing prior work on stability-first regulation and real-time coherence preservation. (e.g., absence of sell despite visible drawdowns reinforces the high bar for active de-risking).
-
-The absence of *sell* postures in this window reflects the selected market regime and de-risking thresholds; the system does emit sell decisions in other regimes, which are outside the scope of this run.
+This experiment isolates participation choice as a first-class control variable under uncertainty, rather than a modeling failure, complementing prior work on stability-first regulation and real-time coherence preservation.
 
 ## Verification Summary (Auditability)
 
@@ -221,32 +220,32 @@ This paper makes the following claims. Each claim is either directly verifiable 
 
 ### Artifact-Verifiable Claims
 
-- **C1 (Run identity)**: The analyzed run [market_emotion_research_20260120_201255](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results).  
-  *Verification:* read [summary_report.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report.json).
+- **C1 (Run identity)**: The analyzed run [market_emotion_research_20260201_204741](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results).  
+  *Verification:* read [summary_report_20260120_201255.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report_20260120_201255.json).
 
-- **C2 (Dataset size and alignment)**: The run uses 60 matched days in UTC with start `2025-11-22` and end `2026-01-20`.  
-  *Verification:* read [summary_report.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report.json) for the `dataset_provenance.alignment.matched_days`, `matched_day_range`, and the explicit list `matched_days_in_order`.
+- **C2 (Dataset size and alignment)**: The run uses 60 matched days in UTC with start `2025-12-04` and end `2026-02-01`.  
+  *Verification:* read [summary_report_20260120_201255.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report_20260120_201255.json) for the `dataset_provenance.alignment.matched_days`, `matched_day_range`, and the explicit list `matched_days_in_order`.
 
 - **C3 (Audit-bundled upstream payloads)**: The run stores gzipped raw upstream payloads whose SHA-256 hashes match the recorded `dataset_provenance.sources.*.sha256`.  
-  *Verification:* recompute SHA-256 over the decompressed UTF-8 text of [19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/provenance/raw/19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz) and [fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/provenance/raw/fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz) and compare to `sources.*.sha256`.^[Offline verification (no network, no inference) is provided by `verify_reference_run.py` for the canonized fixture specimen.]
+  *Verification:* recompute SHA-256 over the decompressed UTF-8 text of [8028b73c81187d5c35a7a8e4c4bc09b0e7420afca6a6b6da363ad1874f12c31e.json.gz](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/provenance/raw/8028b73c81187d5c35a7a8e4c4bc09b0e7420afca6a6b6da363ad1874f12c31e.json.gz) and [3f315d8f48bbf2c80fdb4dc40d21e103c922930580924388216568f97e1819a6.json.gz](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/provenance/raw/3f315d8f48bbf2c80fdb4dc40d21e103c922930580924388216568f97e1819a6.json.gz) and compare to `sources.*.sha256`.^[Offline verification (no network, no inference) is provided by `verify_reference_run.py` for the canonized fixture specimen.]
 
 - **C4 (Exact model input captured)**: The exact aligned input time series used for inference is stored as `provenance/market_data_used.json` and its deterministic SHA-256 equals `dataset_provenance.market_data_sha256`.  
   *Verification:* hash the canonical JSON encoding of [market_data_used.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/provenance/market_data_used.json) and compare to the recorded SHA-256.^[Offline verification (no network, no inference) is provided by `verify_reference_run.py` for the canonized fixture specimen.]
 
 - **C5 (Prediction counts)**: The run produces 6 profiles × 60 days = 360 predictions, and 0 prediction errors.  
-  *Verification:* read `total_profiles`, `market_data_points`, and `results_summary.<profile>.error_predictions` in [summary_report.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report.json).
+  *Verification:* read `total_profiles`, `market_data_points`, and `results_summary.<profile>.error_predictions` in [summary_report_20260120_201255.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report_20260120_201255.json).
 
-- **C6 (Observed posture distributions)**: In this run, `high_hazard_alert` and `defensive` selected hold on every aligned day in the 60-day window; the other four profiles selected buy on every aligned day in the same window; no profile selected sell on any aligned day.  
-  *Verification:* read `results_summary.<profile>.direction_distribution` in [summary_report.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report.json) or the generated table included in this document.
+- **C6 (Observed posture distributions)**: In this run, `high_hazard_alert` and `defensive` selected hold on every aligned day in the 60-day window; the other four profiles selected buy on every aligned day in the same window.  
+  *Verification:* read `results_summary.<profile>.direction_distribution` in [summary_report_20260120_201255.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report_20260120_201255.json) or the generated table included in this document.
 
 - **C7 (Upstream request parameters and status)**: In this run, upstream providers return HTTP status code 200, and the CoinGecko request is `vs_currency=usd`, `days=62`, `interval=daily`.  
-  *Verification:* read `dataset_provenance.sources.fear_greed.status_code`, `dataset_provenance.sources.btc_market.status_code`, and the recorded `url` fields under `dataset_provenance.sources` in [summary_report.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report.json).
+  *Verification:* read `dataset_provenance.sources.fear_greed.status_code`, `dataset_provenance.sources.btc_market.status_code`, and the recorded `url` fields under `dataset_provenance.sources` in [summary_report_20260120_201255.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report_20260120_201255.json).
 
 ### Referenced Artifacts
 
 The following files are directly referenced in this paper. Each filename links to its exact location in the public verification repository.
 
-- [summary_report.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report.json)
+- [summary_report_20260120_201255.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report_20260120_201255.json)
 - [market_data_used.json](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/provenance/market_data_used.json)
 - [19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/provenance/raw/19a11878e84203466013594cf49eb5584a1f69e8702e5383fc3d9053e3759e0d.json.gz)
 - [fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz](https://github.com/jhcragin/SpiralBrain-v3.0-public/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/provenance/raw/fc7db290bff8c070e92c40fad1ff8ee08e2a259dbd726749749a342bc63a86b7.json.gz)
@@ -257,7 +256,7 @@ The following files are directly referenced in this paper. Each filename links t
 - Single-asset focus (BTC) and a 60-day window; higher-volatility assets may amplify hazard gating effects.
 - No backtesting, transaction-cost modeling, or PnL claims.
 - One instrumented architecture; results may be architecture-specific.
-- Absence of sell signals may reflect the dataset's lack of sustained downtrends (as discussed in Results); future windows including bear phases would test de-risking thresholds.
+- A complementary assay enabling sell actions would allow de-risking thresholds to be studied separately; this constitutes a distinct experimental question and is left to future work.
 
 ## Reproducibility
 

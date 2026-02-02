@@ -2,7 +2,7 @@
 
 ## Overview
 
-This paper reports a *reproducible, audit-bundled* experiment: SpiralBrain v3.0 is exposed to real market context (Fear \& Greed sentiment + BTC price/volume) and emits a discrete market posture decision (buy/hold/sell) under multiple emotional profiles.
+This paper reports a *reproducible, audit-bundled* experiment: SpiralBrain v3.0 is exposed to real market context (Fear \& Greed sentiment + BTC price/volume) and emits a discrete market posture decision (buy/hold/sell) under multiple emotional profiles. However, this experiment implements only *buy* and *hold* postures to focus on participation control—*sell* signals are excluded by design.
 
 The objective is not price-prediction performance. The objective is to measure how emotion-conditioned regulation changes *risk posture selection* given the same external market context.
 

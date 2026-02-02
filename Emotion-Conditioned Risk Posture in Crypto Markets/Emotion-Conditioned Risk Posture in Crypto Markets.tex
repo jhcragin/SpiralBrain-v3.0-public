@@ -628,7 +628,7 @@ This paper makes the following claims. Each claim is either directly verifiable 
 	\emph{Verification:} read \texttt{results\_summary.<profile>.direction\_distribution} in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/participation_summary.json}{participation_summary.json} or the generated table included in this document.
 
 	\item \textbf{C7 (Upstream request parameters and status)}: In this run, upstream providers return HTTP status code 200, and the CoinGecko request is \texttt{vs\_currency=usd}, \texttt{days=62}, \texttt{interval=daily}.
-	\emph{Verification:} read \\ \texttt{dataset\_provenance.sources.fear\_greed.status\_code}, \\ \texttt{dataset\_provenance.sources.btc\_market.status\_code}, and the recorded \texttt{url} fields under \texttt{dataset\_provenance.sources} in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/participation_summary.json}{participation_summary.json}.
+	\emph{Verification:} read \\ \texttt{dataset\_provenance.sources.fear\_greed.status\_code}, \\ \texttt{dataset\_provenance.sources.btc\_market.status\_code}, and the recorded \texttt{url} fields under \texttt{dataset\_provenance.sources} in \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/Emotion-Conditioned%20Risk%20Posture%20in%20Crypto%20Markets/results/summary_report_20260120_201255.json}{summary_report_20260120_201255.json}.
 \end{itemize}
 
 \subsection*{Referenced Artifacts}
@@ -701,11 +701,13 @@ For full reproducibility, the public verification package also includes a comple
 
 This manifest allows an offline reader to confirm the integrity of all files—verifying that each artifact matches the published hash—without running inference, downloading external dependencies, or relying on network access. In combination, the excerpts and manifest provide a transparent, audit‑ready snapshot of the evidence base underlying the study.
 
-\subsection{Run Summary (participation\_summary.json)}
+\subsection{Run Summary (summary\_report.json)}
 
 The run summary is a single JSON file that binds together provenance, alignment, and per-profile result aggregates.
 
-Verbatim excerpt from \texttt{fixtures/market\_emotion/reference\_run/participation\_summary.json}:
+\pagebreak
+
+Verbatim excerpt from \texttt{fixtures/market\_emotion/reference\_run/summary\_report.json}:
 
 \begin{Verbatim}[fontsize=\small,breaklines=true,breakanywhere=true]
 {

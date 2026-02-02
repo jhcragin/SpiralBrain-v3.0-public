@@ -1,0 +1,1195 @@
+{
+  "emotional_profile": "random_emotion_11",
+  "description": "Randomly generated emotional profile 11 (seed 42)",
+  "predictions": [
+    {
+      "timestamp": "2026-02-01T18:00:00",
+      "current_price": 78725.85853884545,
+      "predicted_price": 79644.2421875,
+      "confidence": 0.5441410541534424,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 14
+    },
+    {
+      "timestamp": "2026-01-31T18:00:00",
+      "current_price": 84141.77856967277,
+      "predicted_price": 85123.3359375,
+      "confidence": 0.5441778898239136,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 14
+    },
+    {
+      "timestamp": "2026-01-30T18:00:00",
+      "current_price": 84570.40906135936,
+      "predicted_price": 85556.96875,
+      "confidence": 0.5681066513061523,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 20
+    },
+    {
+      "timestamp": "2026-01-29T18:00:00",
+      "current_price": 89162.09701574955,
+      "predicted_price": 90202.2109375,
+      "confidence": 0.552130401134491,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 16
+    },
+    {
+      "timestamp": "2026-01-28T18:00:00",
+      "current_price": 89204.22239644526,
+      "predicted_price": 90244.8359375,
+      "confidence": 0.5921308994293213,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 26
+    },
+    {
+      "timestamp": "2026-01-27T18:00:00",
+      "current_price": 88307.8612070438,
+      "predicted_price": 89338.0078125,
+      "confidence": 0.6041215062141418,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 29
+    },
+    {
+      "timestamp": "2026-01-26T18:00:00",
+      "current_price": 86548.32213469829,
+      "predicted_price": 87557.953125,
+      "confidence": 0.6041386127471924,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 29
+    },
+    {
+      "timestamp": "2026-01-25T18:00:00",
+      "current_price": 89170.87364531498,
+      "predicted_price": 90211.09375,
+      "confidence": 0.5681177377700806,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 20
+    },
+    {
+      "timestamp": "2026-01-24T18:00:00",
+      "current_price": 89412.39849953113,
+      "predicted_price": 90455.4453125,
+      "confidence": 0.5881237387657166,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 25
+    },
+    {
+      "timestamp": "2026-01-23T18:00:00",
+      "current_price": 89443.39744146909,
+      "predicted_price": 90486.8046875,
+      "confidence": 0.5881006121635437,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 25
+    },
+    {
+      "timestamp": "2026-01-22T18:00:00",
+      "current_price": 89354.34377512129,
+      "predicted_price": 90396.7109375,
+      "confidence": 0.5841403007507324,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 24
+    },
+    {
+      "timestamp": "2026-01-21T18:00:00",
+      "current_price": 88312.84053255555,
+      "predicted_price": 89343.0625,
+      "confidence": 0.568148672580719,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 20
+    },
+    {
+      "timestamp": "2026-01-20T18:00:00",
+      "current_price": 92558.46334372147,
+      "predicted_price": 93638.2109375,
+      "confidence": 0.5841189026832581,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 24
+    },
+    {
+      "timestamp": "2026-01-19T18:00:00",
+      "current_price": 93752.70577188236,
+      "predicted_price": 94846.3828125,
+      "confidence": 0.6161603331565857,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 32
+    },
+    {
+      "timestamp": "2026-01-18T18:00:00",
+      "current_price": 95099.53192554631,
+      "predicted_price": 96208.921875,
+      "confidence": 0.6641234159469604,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 44
+    },
+    {
+      "timestamp": "2026-01-17T18:00:00",
+      "current_price": 95516.07771987123,
+      "predicted_price": 96630.3203125,
+      "confidence": 0.684159517288208,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 49
+    },
+    {
+      "timestamp": "2026-01-16T18:00:00",
+      "current_price": 95584.82797878512,
+      "predicted_price": 96699.8671875,
+      "confidence": 0.6881259083747864,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 50
+    },
+    {
+      "timestamp": "2026-01-15T18:00:00",
+      "current_price": 97007.78078881276,
+      "predicted_price": 98139.421875,
+      "confidence": 0.6841293573379517,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 49
+    },
+    {
+      "timestamp": "2026-01-14T18:00:00",
+      "current_price": 95260.4422971001,
+      "predicted_price": 96371.703125,
+      "confidence": 0.644149124622345,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 61
+    },
+    {
+      "timestamp": "2026-01-13T18:00:00",
+      "current_price": 91134.96917951507,
+      "predicted_price": 92198.1015625,
+      "confidence": 0.6801379919052124,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 48
+    },
+    {
+      "timestamp": "2026-01-12T18:00:00",
+      "current_price": 90819.36598904192,
+      "predicted_price": 91878.8203125,
+      "confidence": 0.5921459197998047,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 26
+    },
+    {
+      "timestamp": "2026-01-11T18:00:00",
+      "current_price": 90442.01907847001,
+      "predicted_price": 91497.0625,
+      "confidence": 0.5961498022079468,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 27
+    },
+    {
+      "timestamp": "2026-01-10T18:00:00",
+      "current_price": 90504.89560340019,
+      "predicted_price": 91560.6796875,
+      "confidence": 0.6046183109283447,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 29
+    },
+    {
+      "timestamp": "2026-01-09T18:00:00",
+      "current_price": 90983.51578142625,
+      "predicted_price": 92044.8828125,
+      "confidence": 0.5881314277648926,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 25
+    },
+    {
+      "timestamp": "2026-01-08T18:00:00",
+      "current_price": 91257.15544035907,
+      "predicted_price": 92321.7109375,
+      "confidence": 0.5961726903915405,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 27
+    },
+    {
+      "timestamp": "2026-01-07T18:00:00",
+      "current_price": 93666.86387314305,
+      "predicted_price": 94759.53125,
+      "confidence": 0.6001506447792053,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 28
+    },
+    {
+      "timestamp": "2026-01-06T18:00:00",
+      "current_price": 93926.7956485658,
+      "predicted_price": 95022.5,
+      "confidence": 0.6561156511306763,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 42
+    },
+    {
+      "timestamp": "2026-01-05T18:00:00",
+      "current_price": 91373.21588108438,
+      "predicted_price": 92439.1328125,
+      "confidence": 0.6641415357589722,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 44
+    },
+    {
+      "timestamp": "2026-01-04T18:00:00",
+      "current_price": 90593.85443180417,
+      "predicted_price": 91650.671875,
+      "confidence": 0.5921675562858582,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 26
+    },
+    {
+      "timestamp": "2026-01-03T18:00:00",
+      "current_price": 89926.27924953419,
+      "predicted_price": 90975.3203125,
+      "confidence": 0.5880753993988037,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 25
+    },
+    {
+      "timestamp": "2026-01-02T18:00:00",
+      "current_price": 88727.67004249741,
+      "predicted_price": 89762.71875,
+      "confidence": 0.6041066646575928,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 29
+    },
+    {
+      "timestamp": "2026-01-01T18:00:00",
+      "current_price": 87520.18048742875,
+      "predicted_price": 88541.140625,
+      "confidence": 0.6001695990562439,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 28
+    },
+    {
+      "timestamp": "2025-12-31T18:00:00",
+      "current_price": 88414.62856073362,
+      "predicted_price": 89446.03125,
+      "confidence": 0.5681321620941162,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 20
+    },
+    {
+      "timestamp": "2025-12-30T18:00:00",
+      "current_price": 87156.56266080117,
+      "predicted_price": 88173.296875,
+      "confidence": 0.572115421295166,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 21
+    },
+    {
+      "timestamp": "2025-12-29T18:00:00",
+      "current_price": 87822.90829076794,
+      "predicted_price": 88847.3984375,
+      "confidence": 0.5801073908805847,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 23
+    },
+    {
+      "timestamp": "2025-12-28T18:00:00",
+      "current_price": 87807.003210775,
+      "predicted_price": 88831.3125,
+      "confidence": 0.5841189026832581,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 24
+    },
+    {
+      "timestamp": "2025-12-27T18:00:00",
+      "current_price": 87305.95655961394,
+      "predicted_price": 88324.4296875,
+      "confidence": 0.584114670753479,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 24
+    },
+    {
+      "timestamp": "2025-12-26T18:00:00",
+      "current_price": 87229.78066010943,
+      "predicted_price": 88247.3671875,
+      "confidence": 0.5801321864128113,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 23
+    },
+    {
+      "timestamp": "2025-12-25T18:00:00",
+      "current_price": 87642.60888119951,
+      "predicted_price": 88665.0,
+      "confidence": 0.5681412220001221,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 20
+    },
+    {
+      "timestamp": "2025-12-24T18:00:00",
+      "current_price": 87406.43636737975,
+      "predicted_price": 88426.0703125,
+      "confidence": 0.5801844000816345,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 23
+    },
+    {
+      "timestamp": "2025-12-23T18:00:00",
+      "current_price": 88491.12020788102,
+      "predicted_price": 89523.4140625,
+      "confidence": 0.5841241478919983,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 24
+    },
+    {
+      "timestamp": "2025-12-22T18:00:00",
+      "current_price": 88577.42038358838,
+      "predicted_price": 89610.7265625,
+      "confidence": 0.5841022729873657,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 24
+    },
+    {
+      "timestamp": "2025-12-21T18:00:00",
+      "current_price": 88347.94310567998,
+      "predicted_price": 89378.578125,
+      "confidence": 0.5881280899047852,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 25
+    },
+    {
+      "timestamp": "2025-12-20T18:00:00",
+      "current_price": 88103.86075721023,
+      "predicted_price": 89131.6328125,
+      "confidence": 0.5681849718093872,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 20
+    },
+    {
+      "timestamp": "2025-12-19T18:00:00",
+      "current_price": 85450.3312009302,
+      "predicted_price": 86447.15625,
+      "confidence": 0.5681648254394531,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 20
+    },
+    {
+      "timestamp": "2025-12-18T18:00:00",
+      "current_price": 86064.94716216,
+      "predicted_price": 87068.9296875,
+      "confidence": 0.5520903468132019,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 16
+    },
+    {
+      "timestamp": "2025-12-17T18:00:00",
+      "current_price": 87821.88919109134,
+      "predicted_price": 88846.3828125,
+      "confidence": 0.5561412572860718,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 17
+    },
+    {
+      "timestamp": "2025-12-16T18:00:00",
+      "current_price": 86413.9190195637,
+      "predicted_price": 87421.9921875,
+      "confidence": 0.5521716475486755,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 16
+    },
+    {
+      "timestamp": "2025-12-15T18:00:00",
+      "current_price": 88230.77409367911,
+      "predicted_price": 89260.0390625,
+      "confidence": 0.5321422219276428,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 11
+    },
+    {
+      "timestamp": "2025-12-14T18:00:00",
+      "current_price": 90257.4292885891,
+      "predicted_price": 91310.3359375,
+      "confidence": 0.552151620388031,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 16
+    },
+    {
+      "timestamp": "2025-12-13T18:00:00",
+      "current_price": 90307.26028567803,
+      "predicted_price": 91360.734375,
+      "confidence": 0.5721652507781982,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 21
+    },
+    {
+      "timestamp": "2025-12-12T18:00:00",
+      "current_price": 92494.17691640415,
+      "predicted_price": 93573.1640625,
+      "confidence": 0.5801482796669006,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 23
+    },
+    {
+      "timestamp": "2025-12-11T18:00:00",
+      "current_price": 92005.13714957413,
+      "predicted_price": 93078.421875,
+      "confidence": 0.6041399240493774,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 29
+    },
+    {
+      "timestamp": "2025-12-10T18:00:00",
+      "current_price": 92723.21372069631,
+      "predicted_price": 93804.8828125,
+      "confidence": 0.6041524410247803,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 29
+    },
+    {
+      "timestamp": "2025-12-09T18:00:00",
+      "current_price": 90618.0535204608,
+      "predicted_price": 91675.1640625,
+      "confidence": 0.5921350717544556,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 26
+    },
+    {
+      "timestamp": "2025-12-08T18:00:00",
+      "current_price": 90162.90714007126,
+      "predicted_price": 91214.7109375,
+      "confidence": 0.5761348009109497,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 22
+    },
+    {
+      "timestamp": "2025-12-07T18:00:00",
+      "current_price": 89244.7620814118,
+      "predicted_price": 90285.84375,
+      "confidence": 0.568172037601471,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 20
+    },
+    {
+      "timestamp": "2025-12-06T18:00:00",
+      "current_price": 89307.09154512963,
+      "predicted_price": 90348.9140625,
+      "confidence": 0.5681571960449219,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 20
+    },
+    {
+      "timestamp": "2025-12-05T18:00:00",
+      "current_price": 92140.70419795791,
+      "predicted_price": 93215.578125,
+      "confidence": 0.5801420211791992,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 23
+    },
+    {
+      "timestamp": "2025-12-04T18:00:00",
+      "current_price": 93619.43750817103,
+      "predicted_price": 94711.5546875,
+      "confidence": 0.6001582145690918,
+      "direction": "buy",
+      "emotional_profile": "random_emotion_11",
+      "fear_greed_index": 28
+    }
+  ],
+  "summary": {
+    "total_predictions": 60,
+    "valid_predictions": 60,
+    "error_predictions": 0,
+    "error_rate": 0.0,
+    "avg_confidence": 0.5922130137681961,
+    "direction_distribution": {
+      "buy": 60,
+      "hold": 0,
+      "error": 0
+    },
+    "avg_ccn_coherence": null,
+    "avg_reflection_count": 8.0
+  },
+  "internal_metrics": [
+    {
+      "timestamp": "2026-02-01T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-31T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-30T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-29T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-28T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-27T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-26T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-25T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-24T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-23T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-22T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-21T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-20T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-19T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-18T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-17T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-16T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-15T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-14T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-13T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-12T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-11T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-10T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-09T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-08T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-07T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-06T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-05T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-04T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-03T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-02T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2026-01-01T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-31T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-30T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-29T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-28T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-27T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-26T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-25T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-24T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-23T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-22T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-21T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-20T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-19T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-18T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-17T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-16T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-15T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-14T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-13T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-12T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-11T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-10T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-09T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-08T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-07T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-06T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-05T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    },
+    {
+      "timestamp": "2025-12-04T18:00:00",
+      "emotional_profile": "random_emotion_11",
+      "ccn_coherence": null,
+      "pathway_weights": {},
+      "hazard_slope": 0.22789827565154686,
+      "reflection_count": 8,
+      "stability_score": 0.05,
+      "neuromodulator_state": -0.42122407279578566
+    }
+  ],
+  "dataset_provenance": {
+    "market_data_sha256": "52bca4dfd654b8ad8bc592a7307d5049290836e4e49f3d1ddbf28fb6217d4b0b",
+    "market_data_used": {
+      "relpath": "provenance/market_data_used.json",
+      "sha256": "52bca4dfd654b8ad8bc592a7307d5049290836e4e49f3d1ddbf28fb6217d4b0b",
+      "count": 60
+    }
+  },
+  "run_provenance": {
+    "generated_at": "2026-02-01T22:44:18.685147",
+    "argv": [
+      "C:\\Users\\johnc\\source\\repos\\SpiralBrain-v3.0\\scripts\\cli_v3.py",
+      "--mode",
+      "research",
+      "--days",
+      "60",
+      "--output",
+      "C:\\Users\\johnc\\source\\repos\\SpiralBrain-v3.0\\results\\market_emotion_random_20_profiles",
+      "--timestamp",
+      "20260201_224358",
+      "--quiet",
+      "--dataset",
+      "results/market_emotion_participation_only_20260201/provenance/market_data_used.json",
+      "--num-profiles",
+      "20",
+      "--seed",
+      "42"
+    ],
+    "python_executable": "C:\\Users\\johnc\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe",
+    "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "git_head": "c2f1b9e97009bf7e5e4b555ff9dc18d23e9f78c6"
+  }
+}

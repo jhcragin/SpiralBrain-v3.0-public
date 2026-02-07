@@ -1,0 +1,80 @@
+\begin{thebibliography}{10}
+
+\bibitem{ElasticCognition2026}
+John~H. Cragin.
+\newblock Elastic cognition and the spiral architecture, 2026.
+\newblock Preprint, available at
+  \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}.
+
+\bibitem{EmotionControlSignal2026}
+John~H. Cragin.
+\newblock Emotion as a control signal for symbolic stability, 2026.
+\newblock Preprint, available at
+  \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}.
+
+\bibitem{CognitiveIntegrity2026}
+John~H. Cragin.
+\newblock Measuring cognitive integrity under uncertainty, 2026.
+\newblock Preprint, available at
+  \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}.
+
+\bibitem{PhaseLockOptimization2026}
+John~H. Cragin.
+\newblock Phase lock optimization in regulatory cognitive architectures, 2026.
+\newblock Preprint, available at
+  \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}.
+
+\bibitem{RIAsSubstrate2026}
+John~H. Cragin.
+\newblock Regulatory intelligence as a foundational layer for safe cognitive
+  systems, 2026.
+\newblock Preprint, available at
+  \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}.
+
+\bibitem{Cragin2026RI}
+John~H. Cragin.
+\newblock The regulatory intelligence paradigm, 2026.
+\newblock Preprint, available at \url{https://doi.org/10.5281/zenodo.18295507}.
+
+\bibitem{RegulatoryIntelligenceParadigm2026}
+John~H. Cragin.
+\newblock The regulatory intelligence paradigm (extended thesis version), 2026.
+\newblock Thesis, available at
+  \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}.
+
+\bibitem{SpiralBrainV3}
+John~H. Cragin.
+\newblock Spiralbrain v3.0: A neurosymbolic agent for regulatory intelligence,
+  2026.
+\newblock GitHub repository:
+  \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}.
+
+\bibitem{Kuramoto1975}
+Yoshiki Kuramoto.
+\newblock Self-entrainment of a population of coupled non-linear oscillators.
+\newblock {\em International Symposium on Mathematical Problems in Theoretical
+  Physics}, pages 420--422, 1975.
+
+\bibitem{Lyapunov1992}
+Aleksandr~Mikhailovich Lyapunov.
+\newblock {\em The General Problem of the Stability of Motion}.
+\newblock Taylor \& Francis, 1992.
+
+\bibitem{Newell1972}
+Allen Newell and Herbert~A. Simon.
+\newblock {\em Human Problem Solving}.
+\newblock Prentice-Hall, 1972.
+
+\bibitem{Rabinovich2006}
+Mikhail~I. Rabinovich, Pablo Varona, Allen~I. Selverston, and Henry D.~I.
+  Abarbanel.
+\newblock Dynamical principles in neuroscience.
+\newblock {\em Reviews of Modern Physics}, 78(4):1213--1265, 2006.
+
+\bibitem{Russell2019}
+Stuart Russell.
+\newblock {\em Human Compatible: Artificial Intelligence and the Problem of
+  Control}.
+\newblock Viking, 2019.
+
+\end{thebibliography}

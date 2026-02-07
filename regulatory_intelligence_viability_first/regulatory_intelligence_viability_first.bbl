@@ -1,0 +1,31 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ashby(1958)]{ashby1958requisite}
+W.~Ross Ashby.
+\newblock Requisite variety and its implications for the control of complex
+  systems.
+\newblock \emph{Cybernetica}, 1\penalty0 (2):\penalty0 83--99, 1958.
+
+\bibitem[Cannon(1932)]{cannon1932wisdom}
+Walter~B Cannon.
+\newblock \emph{The wisdom of the body}.
+\newblock W.W. Norton \& Company, 1932.
+
+\bibitem[Cragin(2026)]{Cragin2026RI}
+John~H. Cragin.
+\newblock The regulatory intelligence paradigm, 2026.
+\newblock Preprint, available at \url{https://doi.org/10.5281/zenodo.18295507}.
+
+\bibitem[Maturana and Varela(1972)]{maturana1972autopoiesis}
+Humberto~R Maturana and Francisco~J Varela.
+\newblock Autopoiesis: the organization of living systems, its characterization
+  and a model.
+\newblock \emph{Currents in Modern Biology}, 5\penalty0 (4):\penalty0 289--344,
+  1972.
+
+\end{thebibliography}

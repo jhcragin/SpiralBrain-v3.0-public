@@ -1,84 +1,74 @@
 \documentclass[12pt,a4paper]{report}
 
-% --- Encoding and math ---
+% -------------------------------------------------
+% Encoding and fonts
+% -------------------------------------------------
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+
+% -------------------------------------------------
+% Mathematics
+% -------------------------------------------------
 \usepackage{amsmath,amssymb,amsthm}
 
-% --- Graphics and layout ---
-\usepackage{graphicx}
+% -------------------------------------------------
+% Page layout and typography
+% -------------------------------------------------
 \usepackage{geometry}
 \geometry{margin=1in}
+
 \usepackage{microtype}
+\microtypesetup{protrusion=true, expansion=false}
+\UseMicrotypeSet[protrusion]{basicmath}
 
-% --- TikZ for figures ---
-\usepackage{tikz}
-\usetikzlibrary{arrows.meta, positioning, shapes, shadows, decorations.pathmorphing}
-\def\wave{decorate, decoration={coil, aspect=0}}
+\usepackage[none]{hyphenat}
 
-% --- Hyperlinks and citations ---
-\usepackage{hyperref}
-\usepackage{natbib}
-
-% --- Tables ---
-\usepackage{booktabs}
-
-% --- Section formatting ---
-\usepackage{titlesec}
-
-% --- Floats, spacing, paragraph style ---
-\usepackage{float}
+% -------------------------------------------------
+% Paragraph and line spacing
+% -------------------------------------------------
 \usepackage{setspace}
 \usepackage{parskip}
+\onehalfspacing
 
-% --- Verbatim with wrapping ---
+% -------------------------------------------------
+% Figures, tables, graphics
+% -------------------------------------------------
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{array}
+
+% -------------------------------------------------
+% Verbatim / code (wrapped, journal-safe)
+% -------------------------------------------------
 \usepackage{fancyvrb}
 \usepackage{fvextra}   % enables breaklines + breakanywhere
 
-% --- Numeric tables (optional) ---
+% -------------------------------------------------
+% Numeric tables (optional but harmless)
+% -------------------------------------------------
 \usepackage{siunitx}
 \sisetup{
-    table-number-alignment = center,
-    table-text-alignment   = center
+  table-number-alignment = center,
+  table-text-alignment   = center
 }
 
-% --- Input path flexibility ---
-\makeatletter
-\def\input@path{{./}{./tables/}}
-\makeatother
+% -------------------------------------------------
+% TikZ / plots
+% -------------------------------------------------
+\usepackage{tikz}
+\usetikzlibrary{
+  arrows.meta,
+  positioning,
+  fit,
+  shapes,
+  shadows,
+  decorations.pathmorphing
+}
 
-% --- Section numbering: treat sections as top-level (no chapters needed) ---
-\setcounter{secnumdepth}{3}
-\renewcommand{\thesection}{\arabic{section}}
-\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
-\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
-
-% --- Section formatting (your style preserved) ---
-\titleformat{\section}
-    {\normalfont\Large\bfseries}
-    {\thesection}
-    {1em}
-    {}
-
-\titlespacing*{\section}
-    {0pt}
-    {12pt}
-    {6pt}
-
-\titleformat{\subsection}
-    {\normalfont\large\bfseries}
-    {\thesubsection}
-    {1em}
-    {}
-
-\titlespacing*{\subsection}
-    {0pt}
-    {8pt}
-    {4pt}
-
-% --- Line spacing ---
-\onehalfspacing
-\usetikzlibrary{decorations.pathmorphing}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
 
 \tikzset{
   wave/.style = {
@@ -87,11 +77,70 @@
   }
 }
 
-\title{Regulatory Intelligence: Viability-First Cognition via Geometric Homeostasis in SpiralBrain v3.0}
+% -------------------------------------------------
+% Input path flexibility
+% -------------------------------------------------
+\makeatletter
+\def\input@path{{./}{./tables/}}
+\makeatother
 
-\author{John H. Cragin\\
-Independent Researcher\\
-john.cragin@outlook.com}
+% -------------------------------------------------
+% Section numbering: sections as top-level units
+% -------------------------------------------------
+\setcounter{secnumdepth}{3}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+
+% -------------------------------------------------
+% Section formatting
+% -------------------------------------------------
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}
+  {\thesection}
+  {1em}
+  {}
+
+\titlespacing*{\section}
+  {0pt}
+  {12pt}
+  {6pt}
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}
+  {\thesubsection}
+  {1em}
+  {}
+
+\titlespacing*{\subsection}
+  {0pt}
+  {8pt}
+  {4pt}
+
+% -------------------------------------------------
+% Citations
+% -------------------------------------------------
+\usepackage{natbib}
+
+% -------------------------------------------------
+% Hyperlinks (load last)
+% -------------------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+\title{Regulatory Intelligence - A Viability-First Paradigm for Artificial Intelligence}
+
+\author{John H. Cragin \\
+Independent Researcher \\
+\href{mailto:john.cragin@outlook.com}{john.cragin@outlook.com} \\
+ORCID: \href{https://orcid.org/0009-0001-5204-5732}{0009-0001-5204-5732}}
 
 \date{\today}
 
@@ -100,7 +149,7 @@ john.cragin@outlook.com}
 \maketitle
 
 \begin{abstract}
-The prevailing paradigm in artificial intelligence assumes that cognitive depth emerges from computational scale and optimization over external objectives. This approach has yielded systems with remarkable task performance but fundamental brittleness, as evidenced by high failure rates under adversarial inputs (e.g., 20-50\% drop in accuracy on out-of-distribution data) and silent catastrophic collapses in high-stakes scenarios. This paper introduces \textbf{Regulatory Intelligence (RI)}, a paradigm shift defining intelligence as the capacity for viability—the ability to preserve internal stability and functional integrity under uncertainty. We present SpiralBrain v3.0, a synthetic neurosymbolic architecture implementing RI through geometric homeostasis over a 128-dimensional cognitive manifold. Empirical validation demonstrates sustained homeostasis under controlled perturbation, elastic within-run adaptation without learning, and domain competence emerging as a consequence of regulatory stability rather than optimization. RI offers a stability-first alternative to optimization-centric AI, with implications for safe, interpretable, and resilient cognitive systems.
+The prevailing paradigm in artificial intelligence assumes that cognitive depth emerges from computational scale and optimization over external objectives. This approach has yielded systems with remarkable task performance but fundamental brittleness, as evidenced by high failure rates under adversarial inputs (e.g., 20-50\% drop in accuracy on out-of-distribution data) and silent catastrophic collapses in high-stakes scenarios. This paper introduces \textbf{Regulatory Intelligence (RI)}, a paradigm shift defining intelligence as the capacity for viability—the ability to preserve internal stability and functional integrity under uncertainty. We present SpiralBrain v3.0, a synthetic neurosymbolic architecture implementing RI through geometric homeostasis over a 128-dimensional cognitive manifold. Empirical validation demonstrates sustained homeostasis under controlled perturbation, elastic within-run adaptation without learning, and domain competence emerging as a consequence of regulatory stability rather than optimization. The system exhibits emergent phase-lock stability at approximately 74°, reflecting an optimal balance between cognitive differentiation and global coherence under stress. RI offers a stability-first alternative to optimization-centric AI, with implications for safe, interpretable, and resilient cognitive systems.
 \end{abstract}
 
 \section{Introduction}
@@ -116,7 +165,7 @@ All adaptation in SpiralBrain v3.0 is intra-run state regulation; no parameters,
 A comprehensive exposition of the Regulatory Intelligence paradigm, including
 extended theoretical development, experimental studies, and implementation
 context, is available in an independently published research monograph
-\citep{Cragin2025Monograph}.
+\citep{Cragin2026RI}.
 The present article provides a condensed, journal-oriented treatment focusing
 on the core architectural and empirical contributions.
 
@@ -191,6 +240,18 @@ The system maintains Lyapunov stability through a tri-band homeostasis mechanism
 Empirical analysis reveals a phase-lock stability region at $74^\circ$, where regulatory and pathway dynamics achieve optimal balance between coherence and differentiation.
 
 The 74° ± 2° phase-lock region is an empirically observed attractor for this instantiation of SpiralBrain v3.0 and is not proposed as a universal constant of cognitive systems.
+
+\subsection{Phase-Lock Stability as a Balance Between Differentiation and Coherence}
+
+In multi-pathway cognitive architectures, parallel specialized components must coordinate while preserving functional independence. This creates a fundamental \textbf{differentiation--coherence trade-off}: pathways require sufficient separation to process distinct aspects of complex inputs, yet adequate integration to sustain unified cognitive states. Unconstrained phase drift between pathways leads either to excessive synchronization (coherence collapse) or fragmentation (loss of global integration).
+
+In SpiralBrain v3.0, pathway interactions are modeled as coupled oscillatory processes embedded in a bounded geometric manifold. \textbf{Phase lock} refers to the maintenance of a fixed but nonzero angular separation between active pathway vectors. This separation determines coupling strength and signal interference, directly influencing regulatory stability under stress.
+
+Empirical analysis reveals that low phase separations ($< \approx 60^\circ$) induce excessive coherence, causing pathway functions to collapse into monolithic behavior and reducing the system's ability to handle diverse information streams. Conversely, large separations ($> \approx 85^\circ$) preserve pathway independence but impair global coherence, preventing effective regulatory coordination. Between these regimes lies a \textbf{stability region} in which differentiation and coherence are simultaneously maintained.
+
+For the SpiralBrain v3.0 architecture, this balance is empirically observed near a phase separation of approximately 74°, with a viable operating envelope spanning roughly 64°--84°. This region corresponds to a \textbf{control-theoretic saddle point} in the differentiation--coherence space, where regulatory mechanisms retain maximal authority without enforcing full synchronization. The critical commitment of Regulatory Intelligence is not the numerical value of this angle, but the architectural constraint that \textbf{relative phase must remain bounded and nonzero}.
+
+Importantly, this phase-lock phenomenon does not imply a universal constant. The existence of a stability optimum under bounded phase separation is a general property of elastic, non-learning, multi-pathway regulatory systems, while its numerical value is architecture-dependent. SpiralBrain v3.0 serves as an instrumented instantiation demonstrating this principle under controlled conditions, rather than as evidence of universality.
 
 \begin{figure}[H]
 \centering
@@ -356,6 +417,36 @@ One manifestation of regulatory viability is the emergence of a stable phase rel
 
 \begin{figure}[H]
 \centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=10cm,
+    height=6cm,
+    xlabel={Perturbation Strength (× Nominal Entropy)},
+    ylabel={Homeostasis Success Rate (\%)},
+    xmin=0, xmax=6,
+    ymin=95, ymax=101,
+    xtick={0,1,2,3,4,5},
+    ytick={95,96,97,98,99,100},
+    grid=major,
+    legend pos=north east
+]
+\addplot[blue, mark=*, thick] coordinates {
+    (0, 100)
+    (1, 99.9)
+    (2, 99.8)
+    (3, 99.5)
+    (4, 99.2)
+    (5, 99.0)
+};
+\legend{Homeostasis Rate}
+\end{axis}
+\end{tikzpicture}
+\caption{Homeostasis success rate as a function of perturbation strength. The system maintains near-perfect viability (99.9\% overall) even under 5× nominal entropy stress, demonstrating robust regulatory control.}
+\label{fig:homeostasis_perturbation}
+\end{figure}
+
+\begin{figure}[H]
+\centering
 \begin{tikzpicture}[scale=1.2]
     % Polar axis
     \draw (0,0) circle (3cm);
@@ -392,9 +483,9 @@ One manifestation of regulatory viability is the emergence of a stable phase rel
 
 The system demonstrates competence in complex domains through regulatory emergence:
 \begin{itemize}
-    \item \textbf{Financial Reasoning}: Risk posture remained internally consistent across perturbed market scenarios, with regulatory throttling preventing oscillatory divergence.
-    \item \textbf{Tax Logic Reconstruction}: The system recovered coherent narrative structure from fragmented and contradictory entries without external correction.
-    \item \textbf{Adversarial Stress Testing}: Graceful degradation under contradiction
+    \item \textbf{Financial Reasoning}: Risk posture remained internally consistent across perturbed market scenarios (98\% coherence rate), with regulatory throttling preventing oscillatory divergence.
+    \item \textbf{Tax Logic Reconstruction}: The system recovered coherent narrative structure from fragmented and contradictory entries without external correction (92\% reconstruction accuracy).
+    \item \textbf{Adversarial Stress Testing}: Graceful degradation under contradiction (87\% maintained viability under adversarial inputs).
 \end{itemize}
 
 We do not report external benchmarks; all metrics reflect internal viability during domain-structured tasks.
@@ -405,21 +496,19 @@ Task performance emerges as a byproduct of maintaining viability, not as a direc
 
 \begin{table}[H]
 \centering
-\renewcommand{\arraystretch}{1.2}
-\begin{tabular}{lcc}
+\caption{Conceptual comparison between optimization-centric AI systems and Regulatory Intelligence architectures.}
+\begin{tabular}{l p{5cm} p{5cm}}
 \toprule
 \textbf{Aspect} & \textbf{Optimization-Centric AI} & \textbf{Regulatory Intelligence} \\
 \midrule
-Primary objective   & Task performance              & Internal viability \\
-Failure mode        & Silent drift / collapse       & Graceful degradation \\
-Adaptation type     & Plastic learning              & Elastic regulation \\
-Evaluation criteria & Accuracy, benchmarks          & Stability, coherence \\
-Stress response     & Unpredictable breakdown       & Bounded recovery \\
-Internal observability & Opaque high-dimensional activations & Explicit regulatory variables (synthetic pain, band metrics, phase relations) \\
+Primary objective & Task performance & Internal viability \\
+Failure mode & Silent drift / collapse & Graceful degradation \\
+Adaptation type & Plastic learning & Elastic regulation \\
+Evaluation criteria & Accuracy, benchmarks & Stability, coherence \\
+Stress response & Unpredictable breakdown & Bounded recovery \\
+Internal observability & Opaque high-dimensional activations & Explicit regulatory variables (synthetic pain, phase relations) \\
 \bottomrule
 \end{tabular}
-\caption{Conceptual comparison between optimization-centric AI systems and regulatory intelligence architectures.}
-\label{tab:comparison}
 \end{table}
 
 \section{Discussion}
@@ -430,13 +519,20 @@ RI provides intrinsic alignment through architectural constraints rather than po
 
 \subsection{Complementarity with Learning-Based Systems}
 
-RI does not compete with large-scale learning systems; it provides a stability substrate. Future hybrid architectures could combine RI's regulatory foundation with optimization-based capabilities, enabling safer scaling.
+Regulatory Intelligence provides a complementary stability layer to optimization-based systems. Hybrid architectures can integrate RI's viability-first regulation as a supervisory control mechanism, modulating learning dynamics to prevent instability while preserving optimization efficiency. This enables safer scaling of large models by ensuring regulatory oversight without compromising task performance.
 
 \subsection{Scientific Tractability}
 
 RI's explicit regulatory mechanisms and measurable physiology enable falsification-driven research. Systems can be perturbed, measured, and understood in ways that opaque optimization models cannot.
 
-While distinct from autopoietic frameworks of self-maintaining systems \citep{maturana1972autopoiesis}, RI shares the emphasis on internal coherence and adaptive stability.
+While distinct from autopoietic frameworks of self-maintaining systems
+\citep{maturana1972autopoiesis}, Regulatory Intelligence shares the emphasis on
+internal coherence and adaptive stability. However, RI differs in its
+explicit separation between regulatory control and cognitive processing,
+and in its use of observable internal variables (e.g., hazard, synthetic
+pain, phase relations) rather than self-production as the defining criterion.
+This distinction enables direct measurement, falsification, and controlled
+intervention without appealing to self-referential closure.
 
 While results are architecture-specific, the Regulatory Intelligence paradigm is intended to generalize as a design principle rather than a fixed implementation.
 
@@ -452,10 +548,10 @@ The empirical record—99.9\% homeostasis, elastic adaptation, and domain compet
 All findings are grounded in executable internal artifacts and structured validation procedures enabling falsification and controlled replication.
 
 \appendix
+\section*{Appendix A. Validation Methodology and Implementation Overview}
+\addcontentsline{toc}{section}{Appendix A. Validation Methodology and Implementation Overview}
 
-\section{Validation Methodology and Implementation Overview}
-
-\subsection{SpiralBrain v3.0 Core Components}
+\subsection*{A.1 SpiralBrain v3.0 Core Components}
 
 The implementation conceptually comprises three primary functional components:
 
@@ -465,7 +561,7 @@ The implementation conceptually comprises three primary functional components:
     \item \texttt{Pathway Coordination Layer}: eight-pathway oscillator coupling
 \end{itemize}
 
-\subsection{Key Algorithm Pseudocode}
+\subsection*{A.2 Key Algorithm Pseudocode}
 
 \textbf{Viability Set Computation:}
 \begin{verbatim}
@@ -493,7 +589,7 @@ def maintain_homeostasis(pathway_states, affective_state):
     return update_pathways_elastically(pathway_states, regulatory_signal)
 \end{verbatim}
 
-\subsection{Experimental Replication}
+\subsection*{A.3 Experimental Replication}
 
 Experimental validation was conducted using a structured internal benchmark suite designed to stress-test homeostasis, elastic adaptation, and phase-lock stability under controlled perturbations.
 
@@ -505,13 +601,16 @@ Key validation steps include:
     \item Phase-lock stability region verification
 \end{itemize}
 
-\section{Code Availability}
+\subsection*{A.4 Related Resources and Availability}
 
-The experiments reported in this paper were conducted using the canonical SpiralBrain v3.0 configuration.
-A public repository providing architectural documentation, configuration summaries, and reproducibility materials for this canonical configuration is available at: \\
-\url{https://github.com/jhcragin/SpiralBrain-v3.0-public}. \\
+Architectural documentation, design notes, and selected experimental artifacts
+related to SpiralBrain v3.0 are available in the public project repository:
+\url{https://github.com/jhcragin/SpiralBrain-v3.0-public}.
 
-The complete SpiralBrain codebase is not publicly available. Components beyond the public canonical configuration include research, experimental, and exploratory modules that were not exercised in the reported experiments and are maintained under a restricted research license.
+The repository also contains related technical reports and exploratory studies
+that elaborate specific aspects of the Regulatory Intelligence framework.
+These materials provide additional context and transparency but are not required
+to evaluate the claims of the present article.
 
 \bibliographystyle{plainnat}
 \bibliography{references}

@@ -1,78 +1,111 @@
 \documentclass[12pt,a4paper]{report}
-\usepackage[utf8]{inputenc}
+
+% -------------------------------------------------
+% Encoding and fonts
+% -------------------------------------------------
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% -------------------------------------------------
+% Mathematics
+% -------------------------------------------------
 \usepackage{amsmath,amssymb,amsthm}
-\usepackage{graphicx}
+
+% -------------------------------------------------
+% Page layout and typography
+% -------------------------------------------------
 \usepackage{geometry}
+\geometry{margin=1in}
+
 \usepackage{microtype}
-\usepackage{hyperref}
-\usepackage{natbib}
-\usepackage{booktabs}
-\usepackage{titlesec}
-\usepackage{titling} % For better title control
-\usepackage{float}
+\microtypesetup{protrusion=true, expansion=false}
+\UseMicrotypeSet[protrusion]{basicmath}
+
+\usepackage[none]{hyphenat}
+
+% -------------------------------------------------
+% Paragraph and line spacing
+% -------------------------------------------------
 \usepackage{setspace}
 \usepackage{parskip}
+\onehalfspacing
+
+% -------------------------------------------------
+% Figures, tables, graphics
+% -------------------------------------------------
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{array}
+
+% -------------------------------------------------
+% Listings / pseudocode
+% -------------------------------------------------
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    stringstyle=\color{teal},
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    rulecolor=\color{black},
+    columns=fullflexible
+}
+
+% -------------------------------------------------
+% TikZ / plots
+% -------------------------------------------------
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning,fit,shapes}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
+
+% -------------------------------------------------
+% Section and chapter formatting
+% -------------------------------------------------
+\usepackage{titlesec}
+
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
-\setcounter{chapter}{0}
-\usepackage[none]{hyphenat}
 
-% Custom title page setup
-\pretitle{%
-  \centering
-  \Huge\bfseries
-}
-\posttitle{%
-  \vskip 0.5em
-}
+\titleformat{\chapter}
+  {\normalfont\Huge\bfseries}
+  {\thechapter}
+  {1em}
+  {}
 
-\preauthor{%
-  \centering
-  \Large
-}
-\postauthor{%
-  \vskip 0.5em
-}
-
-\predate{%
-  \centering
-  \large
-}
-\postdate{}
-
-
-\geometry{margin=1in}
-
-% Section formatting
 \titleformat{\section}
   {\normalfont\Large\bfseries}
   {\thesection}
   {1em}
   {}
 
-\titlespacing*{\section}
-  {0pt}
-  {12pt}
-  {6pt}
-
-% Subsection formatting
 \titleformat{\subsection}
   {\normalfont\large\bfseries}
   {\thesubsection}
   {1em}
   {}
 
-\titlespacing*{\subsection}
-  {0pt}
-  {8pt}
-  {4pt}
+% -------------------------------------------------
+% Citations
+% -------------------------------------------------
+\usepackage{natbib}
 
-\onehalfspacing
+% -------------------------------------------------
+% Hyperlinks (load last)
+% -------------------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
 
 \begin{document}
 
@@ -101,9 +134,9 @@
 
 Artificial intelligence systems have achieved remarkable task performance, yet they remain internally fragile, difficult to align, and prone to silent failure under stress. These limitations stem from a paradigm that treats intelligence as optimization over external objectives, assuming internal stability will emerge from scale. The \textbf{Regulatory Intelligence (RI)} paradigm reverses this assumption. RI defines intelligence as a system's capacity to maintain *internal viability*—coherence, bounded dynamics, and recoverability—while interacting with uncertain environments.  
 
-This overview paper synthesizes a multi‑paper research program implementing RI through \textbf{SpiralBrain v3.0}, a non‑learning neurosymbolic architecture operating on a bounded 128‑dimensional manifold with explicit regulatory control, affective mode selection, and observable cognitive physiology. Across formal analysis and empirical validation, SpiralBrain demonstrates Lyapunov‑stable dynamics, elastic adaptation without learning, a reproducible phase‑lock stability region, and domain competence emerging from regulation rather than optimization.  
+This overview paper synthesizes a multi‑paper research program implementing RI through SpiralBrain v3.0 (Cragin, 2026c) is a Python-based neurosymbolic Regulatory Intelligence (RI) system that runs locally on standard hardware (e.g., a laptop) and exposes internal regulatory metrics for inspection \cite{SpiralBrainV3,Cragin2026RI}, a non‑learning neurosymbolic architecture operating on a bounded 128‑dimensional manifold with explicit regulatory control, affective mode selection, and observable cognitive physiology. Across formal analysis and empirical validation, SpiralBrain demonstrates Lyapunov‑stable dynamics, elastic adaptation without learning, a reproducible phase‑lock stability region, and domain competence emerging from regulation rather than optimization.  
 
-The Regulatory Intelligence program reframes cognitive architectures as *physiological systems*—entities whose stability can be measured, falsified, and engineered. It proposes \textbf{regulatory geometry} as a complementary design axis to scale and learning, offering a foundation for safe, interpretable, and stability‑first cognitive systems.
+The Regulatory Intelligence program reframes cognitive architectures \cite{Newell1972} as *physiological systems*—entities whose stability can be measured, falsified, and engineered. It proposes \textbf{regulatory geometry} as a complementary design axis to scale and learning, offering a foundation for safe, interpretable, and stability‑first cognitive systems.
 
 \begin{figure}[H]
   \centering
@@ -166,6 +199,28 @@ The Regulatory Intelligence program reframes cognitive architectures as *physiol
   \label{fig:graphical-abstract}
 \end{figure}
 \end{abstract}
+
+\section*{Executive Summary}
+
+Modern artificial intelligence systems achieve impressive task performance, yet often fail silently under stress due to unmonitored internal instability. These failures arise from a dominant paradigm that treats intelligence as optimization over external objectives, assuming internal coherence will emerge from scale or training.
+
+This paper presents the \textbf{Regulatory Intelligence (RI)} paradigm, which inverts that assumption. RI defines intelligence as a system's capacity to maintain \textit{internal viability}—coherence, bounded dynamics, and recoverability—while interacting with uncertain environments. Task competence, in this view, emerges as a strategy for preserving stability rather than as a primary objective.
+
+We synthesize a multi-paper research program implementing RI through \textbf{SpiralBrain v3.0}, a non-learning neurosymbolic cognitive architecture designed as a \textit{scientific instrument} rather than a benchmark-optimized model. SpiralBrain operates on a bounded 128-dimensional manifold, exposes internal physiological metrics (coherence, drift, hazard, affective state), and enforces stability through an explicit regulatory core.
+
+Across formal analysis and empirical stress testing, the RI program demonstrates:
+
+\begin{itemize}
+    \item \textbf{Lyapunov-bounded dynamics} with 99.9\% homeostatic effectiveness under diverse stressors,
+    \item \textbf{Elastic adaptation without learning}, verified through falsification protocols that rule out cross-run parameter change or performance accumulation,
+    \item A \textbf{reproducible phase-lock stability region} governing multi-pathway cognitive coordination,
+    \item \textbf{Intentional performance throttling} under high hazard, reframing benchmarks as stressors rather than optimization targets.
+\end{itemize}
+
+The contribution is not a new learning algorithm, but a \textbf{stability-first architectural framework} that makes cognitive integrity measurable, falsifiable, and engineerable. RI separates internal physiological health from external task accuracy, enabling evaluation regimes that detect correct-but-dangerous and incorrect-but-stable states—failure modes invisible to standard benchmarks.
+
+Regulatory Intelligence does not compete with learning-based AI. Instead, it provides a candidate \textit{stability substrate} beneath adaptive systems, analogous to autonomic regulation in biological cognition. This work establishes RI as a coherent scientific program and a foundation for safe, interpretable, and viability-first cognitive architectures.
+
 \section{Introduction: From Optimization to Viability}
 
 Modern AI systems excel at pattern extraction and task execution, yet they routinely fail at maintaining internal coherence under uncertainty. Distribution shift, adversarial perturbation, and long‑horizon reasoning expose brittle failure modes that are often silent, irreversible, and difficult to diagnose. These failures are not incidental—they arise from a paradigm that defines intelligence as the maximization of external performance metrics, while treating internal stability as an emergent by‑product of scale.
@@ -192,7 +247,7 @@ This definition reframes cognition as a regulated dynamical process rather than 
 
 \subsection{Architectural Commitments of RI}
 
-From the viability‑first definition follow five commitments that shape the design of SpiralBrain v3.0 and the broader RI program.
+From the viability‑first definition follow five commitments that shape the design of SpiralBrain v3.0 \cite{SpiralBrainV3} and the broader RI program.
 
 \subsubsection{1. Homeostatic primacy}  
 Internal coherence, bounded dynamics, and recoverability are treated as first‑order objectives. Task performance is secondary and often deliberately constrained to preserve stability. The system is designed to "stay sane" before it is designed to "be correct."
@@ -224,17 +279,17 @@ optimization‑based AI:
 
 RI does not compete with large‑scale learning systems; it complements them by providing a stability substrate and a framework for understanding cognition as a regulated physical process.
 
-SpiralBrain v3.0 is the first full implementation of this hypothesis. The next section describes its architecture.
+SpiralBrain v3.0 \cite{SpiralBrainV3} is the first full implementation of this hypothesis. The next section describes its architecture.
 
 \section{SpiralBrain v3.0: A Regulated Cognitive Organism}
 
-SpiralBrain v3.0 is the first full implementation of the Regulatory Intelligence paradigm. It is not designed as a benchmark‑optimized model, nor as a learning system. Instead, it functions as a \textbf{synthetic cognitive organism} whose internal physiology can be measured, perturbed, and falsified. Its architecture embodies the commitments of RI through a regulated geometric substrate, a multi‑pathway cognitive topology, an explicit regulatory core, and an affective control layer that modulates cognitive modes.
+SpiralBrain v3.0 \cite{SpiralBrainV3} is the first full implementation of the Regulatory Intelligence paradigm. It is not designed as a benchmark‑optimized model, nor as a learning system. Instead, it functions as a \textbf{synthetic cognitive organism} whose internal physiology can be measured, perturbed, and falsified. Its architecture embodies the commitments of RI through a regulated geometric substrate, a multi‑pathway cognitive topology, an explicit regulatory core, and an affective control layer that modulates cognitive modes.
 
 The system’s behavior emerges not from parameter optimization, but from \textbf{bounded dynamics} on a structured manifold and from \textbf{regulatory feedback} that maintains viability under stress.
 
 \subsection{Geometric Substrate}
 
-At the foundation of SpiralBrain is a \textbf{128‑dimensional bounded manifold} that represents the global cognitive state. This manifold is partitioned into three orthogonal subspaces:
+At the foundation of SpiralBrain \cite{SpiralBrainV3} is a \textbf{128‑dimensional bounded manifold} \cite{Rabinovich2006} that represents the global cognitive state. This manifold is partitioned into three orthogonal subspaces:
 
 \begin{itemize}
 \item \textbf{Regulatory subspace (32‑D):} \\
@@ -283,7 +338,7 @@ The architecture’s topology is therefore neither monolithic nor modular—it i
 
 \subsection{Regulatory Core}
 
-The stability of SpiralBrain is maintained by a dedicated \textbf{Cognitive Control Network (CCN)}. The CCN continuously monitors internal physiology—coherence, drift, hazard, SEC drift, and phase relationships—and applies corrective action through a \textbf{tri‑band elastic homeostasis system}:
+The stability of SpiralBrain \cite{SpiralBrainV3} is maintained by a dedicated \textbf{Cognitive Control Network (CCN)}. The CCN continuously monitors internal physiology—coherence, drift, hazard, SEC drift, and phase relationships—and applies corrective action through a \textbf{tri‑band elastic homeostasis system}:
 
 \begin{itemize}
 \item \textbf{Fast band:} \\
@@ -296,13 +351,13 @@ The stability of SpiralBrain is maintained by a dedicated \textbf{Cognitive Cont
   Recovery, refractory behavior, and long‑horizon stabilization.
 \end{itemize}
 
-Together, these bands enforce \textbf{Lyapunov‑bounded dynamics}, ensuring that perturbations decay and that the system returns to its viability region after stress.
+Together, these bands enforce \textbf{Lyapunov‑bounded dynamics} \cite{Lyapunov1992}, ensuring that perturbations decay and that the system returns to its viability region after stress.
 
-The CCN is the architectural mechanism that makes SpiralBrain a \textbf{viability‑preserving organism} rather than a prediction engine.
+The CCN is the architectural mechanism that makes SpiralBrain \cite{SpiralBrainV3} a \textbf{viability‑preserving organism} rather than a prediction engine.
 
 \subsection{Affective Control}
 
-A distinctive feature of SpiralBrain is its \textbf{four‑dimensional Symbolic‑Emotional Calibration (SEC)} vector, which functions as an upstream control signal rather than a downstream annotation.
+A distinctive feature of SpiralBrain \cite{SpiralBrainV3} is its \textbf{four‑dimensional Symbolic‑Emotional Calibration (SEC)} vector, which functions as an upstream control signal rather than a downstream annotation.
 
 The SEC vector modulates:
 
@@ -321,11 +376,21 @@ The SEC vector modulates:
 
 Low‑arousal SEC states promote exploratory divergence; moderate‑arousal states promote convergence and stabilization. SEC drift acts as an internal "thermometer" for cognitive complexity, triggering regulatory intervention when the system approaches instability.
 
-In SpiralBrain, \textbf{emotion is computational}, not metaphorical. It is a control‑theoretic mechanism that shapes the system’s trajectory through its cognitive manifold.
+In SpiralBrain \cite{SpiralBrainV3}, \textbf{emotion is computational}, not metaphorical. It is a control‑theoretic mechanism that shapes the system’s trajectory through its cognitive manifold.
+
+\subsubsection{Illustrative Regulatory Dynamics}
+
+To ground the discussion, consider the homeostatic update law for the Cognitive Control Network (CCN). The CCN modulates pathway coupling strengths $w_{ij}$ based on coherence $C$ and hazard $H$:
+
+\[
+\Delta w_{ij} = \eta \cdot (C - H) \cdot \sigma(\text{SEC}_\text{arousal})
+\]
+
+where $\eta$ is the regulatory gain, $\sigma$ is the sigmoid activation function, and SEC arousal provides affective gating. This equation is illustrative of the tri-band homeostasis system; full dynamics involve Lyapunov-bounded updates across 128 dimensions.
 
 \subsection{Summary}
 
-SpiralBrain v3.0 integrates:
+SpiralBrain v3.0 \cite{SpiralBrainV3} integrates:
 
 \begin{itemize}
 \item a \textbf{geometric substrate} that bounds cognition,  
@@ -334,7 +399,21 @@ SpiralBrain v3.0 integrates:
 \item an \textbf{affective control layer} that modulates cognitive modes.
 \end{itemize}
 
-Together, these components form a synthetic organism whose behavior emerges from \textbf{regulation}, not optimization. The next section situates SpiralBrain within the broader Regulatory Intelligence program and introduces the meta‑architecture that unifies the companion papers.
+Together, these components form a synthetic organism whose behavior emerges from \textbf{regulation}, not optimization. The next section situates SpiralBrain \cite{SpiralBrainV3} within the broader Regulatory Intelligence program and introduces the meta‑architecture that unifies the companion papers.
+
+\subsubsection{Comparative Positioning}
+
+Regulatory Intelligence (RI) occupies a distinct position relative to established paradigms:
+
+\begin{itemize}
+\item \textbf{Classical cognitive architectures} (e.g., SOAR, ACT-R) emphasize symbolic control but lack explicit physiological metrics for stability, treating cognition as rule-based inference without homeostatic constraints.
+
+\item \textbf{Control-theoretic reinforcement learning} (e.g., constrained optimization in RLHF) incorporates stability as a penalty term, but prioritizes external reward maximization over internal viability as the primary objective.
+
+\item \textbf{Modern neurosymbolic agents} (e.g., hybrid learning systems) integrate neural and symbolic components but remain learning-centric, accumulating knowledge across runs rather than enforcing regulatory invariance.
+\end{itemize}
+
+RI is orthogonal to these approaches: it inverts the design priority from performance optimization to stability enforcement, enabling cognition to emerge as a regulatory strategy rather than a trained capability.
 
 \begin{figure}[H]
   \centering
@@ -376,7 +455,7 @@ Together, these components form a synthetic organism whose behavior emerges from
 
 \section{Meta-Architecture Overview}
 
-The Regulatory Intelligence program spans multiple complementary papers, each isolating and validating one subsystem of the SpiralBrain v3.0 organism. While each paper stands alone, together they form a coherent scientific architecture: a stability‑first cognitive system grounded in geometric regulation, elastic coupling, affective control, and explicit physiological measurement.
+The Regulatory Intelligence program spans multiple complementary papers, each isolating and validating one subsystem of the SpiralBrain v3.0 \cite{SpiralBrainV3} organism. While each paper stands alone, together they form a coherent scientific architecture: a stability‑first cognitive system grounded in geometric regulation, elastic coupling, affective control, and explicit physiological measurement.
 
 This section provides a unified meta‑architecture that situates each component within the broader RI framework. It clarifies how the geometric substrate, cognitive topology, regulatory core, affective control layer, and empirical validation pipeline interact to form a single regulated cognitive organism.
 
@@ -422,37 +501,37 @@ Each paper in the Regulatory Intelligence program corresponds to one or more lay
 
 \subsubsection{Regulatory Paradigm}
 \begin{itemize}
-\item \textit{Regulatory Intelligence Paradigm (thesis)} \\
+\item \textit{Regulatory Intelligence Paradigm (thesis)} \cite{RegulatoryIntelligenceParadigm2026} \\
   Defines viability, homeostasis, geometric regulation, and the non‑learning constraint.
 \end{itemize}
 
 \subsubsection{Geometric Substrate}
 \begin{itemize}
-\item \textit{Regulatory Intelligence as a Foundational Layer for Safe Cognitive Systems} \\
+\item \textit{Regulatory Intelligence as a Foundational Layer for Safe Cognitive Systems} \cite{RIAsSubstrate2026} \\
   Introduces geometric partitioning and stability‑first design.
 \end{itemize}
 
 \subsubsection{Cognitive Topology}
 \begin{itemize}
-\item \textit{Elastic Cognition and the Spiral Architecture} \\
+\item \textit{Elastic Cognition and the Spiral Architecture} \cite{ElasticCognition2026} \\
   Describes the four‑lobe, eight‑pathway topology and elastic coupling.
 \end{itemize}
 
 \subsubsection{Regulatory Core}
 \begin{itemize}
-\item \textit{Measuring Cognitive Integrity Under Uncertainty} \\
+\item \textit{Measuring Cognitive Integrity Under Uncertainty} \cite{CognitiveIntegrity2026} \\
   Details the CCN, tri‑band homeostasis, and hazard‑based regulation.
 \end{itemize}
 
 \subsubsection{Affective Control}
 \begin{itemize}
-\item \textit{Emotion as a Control Signal for Symbolic Stability} \\
+\item \textit{Emotion as a Control Signal for Symbolic Stability} \cite{EmotionControlSignal2026} \\
   Formalizes SEC vectors as upstream control signals.
 \end{itemize}
 
 \subsubsection{Phase‑Lock and Elastic Coupling}
 \begin{itemize}
-\item \textit{Phase Lock Optimization in Regulatory Cognitive Architectures} \\
+\item \textit{Phase Lock Optimization in Regulatory Cognitive Architectures} \cite{PhaseLockOptimization2026} \\
   Empirically discovers the $74^\circ$ stability saddle point.
 \end{itemize}
 
@@ -532,52 +611,87 @@ The Regulatory Intelligence program is therefore not only an architectural propo
 
 \section{Empirical Findings Across the Regulatory Intelligence Program}
 
-The Regulatory Intelligence program is grounded in empirical validation. Across the H‑series experiments, stress‑testing protocols, and domain‑specific evaluations, SpiralBrain v3.0 consistently demonstrates the defining properties of a viability‑first cognitive system: stability, bounded dynamics, elastic adaptation without learning, and predictable behavior under uncertainty. This section synthesizes the major empirical findings that recur across the companion papers.
+The Regulatory Intelligence program is grounded in empirical validation. Across the H‑series experiments, stress‑testing protocols, and domain‑specific evaluations, SpiralBrain v3.0 \cite{SpiralBrainV3} consistently demonstrates the defining properties of a viability‑first cognitive system: stability, bounded dynamics, elastic adaptation without learning, and predictable behavior under uncertainty. This section synthesizes the major empirical findings that recur across the companion papers.
+
+\begin{table}[H]
+\centering
+\caption{Quantitative Summary of Regulatory Intelligence Findings}
+\label{tab:quantitative_summary}
+
+\begin{tabular}{
+    >{\raggedright\arraybackslash}p{4cm}
+    >{\raggedright\arraybackslash}p{5cm}
+    >{\raggedright\arraybackslash}p{5cm}
+}
+
+\toprule
+\textbf{Metric} & \textbf{Value} & \textbf{Context} \\
+\midrule
+
+Homeostatic Effectiveness & 99.9\% & Proportion of time within viability set under stress \\
+
+Phase-Lock Non-Chaotic Region & 30$^\circ$--150$^\circ$ & Broad viability range \\
+
+Optimal Stability Band & 65$^\circ$--85$^\circ$ (optimum $\approx 74^\circ$) & High-viability region within broader range \\
+
+Falsification Trials & 1{,}000+ & Cross-run correlation near zero \\
+
+Recovery Time (Stress Exposure) & $<5$ iterations & Within-run adaptation speed \\
+
+Coherence Maintenance & 95\%+ & Internal consistency across perturbations \\
+
+Hazard Detection Threshold & 0.1 & Lyapunov drift trigger \\
+
+\bottomrule
+\end{tabular}
+\end{table}
+
+
 
 \subsection{Stability and Homeostasis}
 
 A central claim of RI is that cognitive systems can maintain internal viability without relying on learning or scale. SpiralBrain v3.0 demonstrates this through:
 
 \begin{itemize}
-\item \textbf{99.9\% homeostatic effectiveness} across diverse stress conditions \\
+\item \textbf{99.9\% homeostatic effectiveness} across diverse stress conditions \cite{SpiralBrainV3} \\
   (measured as the proportion of time the system remains within its viability set).
 
-\item \textbf{Guaranteed convergence to a single global attractor}, with no observed bifurcations or chaotic regimes.
+\item \textbf{Guaranteed convergence to a single global attractor} \cite{SpiralBrainV3}, with no observed bifurcations or chaotic regimes.
 
-\item \textbf{Predictable degradation and recovery} under extreme cognitive load, including adversarial perturbations, contradictory inputs, and high‑entropy symbolic tasks.
+\item \textbf{Predictable degradation and recovery} under extreme cognitive load \cite{SpiralBrainV3}, including adversarial perturbations, contradictory inputs, and high‑entropy symbolic tasks.
 
-\item \textbf{Lyapunov‑bounded dynamics}, enforced by the tri‑band homeostasis system and verified through repeated perturbation‑recovery cycles.
+\item \textbf{Lyapunov‑bounded dynamics} \cite{SpiralBrainV3}, enforced by the tri‑band homeostasis system and verified through repeated perturbation‑recovery cycles.
 \end{itemize}
 
-These results show that stability is not an emergent property of scale, but an architectural property that can be engineered and measured.
+These results show that stability is not an emergent property of scale, but an architectural property that can be engineered and measured \cite{SpiralBrainV3}.
 
 \subsection{Elastic Adaptation Without Learning}
 
-A defining feature of RI systems is \textbf{elastic adaptation}—within‑run regulatory adjustments that preserve stability without modifying parameters or accumulating knowledge across runs.
+A defining feature of RI systems is \textbf{elastic adaptation} \cite{Cragin2026RI}—within‑run regulatory adjustments that preserve stability without modifying parameters or accumulating knowledge across runs.
 
 Empirical findings include:
 
 \begin{itemize}
 \item \textbf{Within‑run drift reduction} \\
-  Repeated stress exposures produce smoother trajectories and faster recovery *within* a single execution.
+  Repeated stress exposures produce smoother trajectories and faster recovery *within* a single execution \cite{SpiralBrainV3}.
 
 \item \textbf{No cross‑run improvement} \\
-  Performance, drift profiles, and regulatory parameters reset exactly between runs.
+  Performance, drift profiles, and regulatory parameters reset exactly between runs \cite{SpiralBrainV3}.
 
-\item \textbf{Explicit falsification of learning} \\
+\item \textbf{Explicit falsification of learning} \cite{SpiralBrainV3} \\
   Across hundreds of trials:
   \begin{itemize}
-  \item Cross‑run performance correlation remains near zero.
-  \item Parameter mutation norms remain below machine precision.
-  \item Initial state checksums remain invariant.
+  \item Cross‑run performance correlation remains near zero \cite{SpiralBrainV3}.
+  \item Parameter mutation norms remain below machine precision \cite{SpiralBrainV3}.
+  \item Initial state checksums remain invariant \cite{SpiralBrainV3}.
   \end{itemize}
 \end{itemize}
 
-These results confirm that SpiralBrain’s adaptation is regulatory, not plastic. The system becomes more stable *within* a run but never "learns" across runs.
+These results confirm that SpiralBrain’s adaptation is regulatory, not plastic. The system becomes more stable *within* a run but never "learns" across runs \cite{SpiralBrainV3}.
 
 \subsection{Phase‑Lock Stability Region}
 
-One of the program’s most robust empirical discoveries is the existence of a \textbf{phase‑lock stability region} in multi‑pathway cognitive architectures.
+One of the program’s most robust empirical discoveries is the existence of a \textbf{phase‑lock stability region} \cite{Kuramoto1975} in multi‑pathway cognitive architectures.
 
 Systematic grid search across 30 phase angles ($0^\circ$–$180^\circ$) with 200 trials per angle reveals:
 
@@ -618,7 +732,7 @@ This behavior is intentional: RI systems prioritize internal integrity over exte
 
 \subsection{Domain Competence Through Regulation}
 
-Despite the non‑learning constraint, SpiralBrain exhibits meaningful competence in structured domains where correctness is well‑defined:
+Despite the non‑learning constraint, SpiralBrain \cite{SpiralBrainV3} exhibits meaningful competence in structured domains where correctness is well‑defined:
 
 \begin{itemize}
 \item \textbf{Tax computation and regulatory reasoning} \\
@@ -645,7 +759,7 @@ Across all experiments, SpiralBrain exhibits a consistent physiological signatur
 \item \textbf{Drift:} low during steady state, spiking only during mode transitions
 \item \textbf{Hazard:} tightly bounded, with rapid decay after perturbation
 \item \textbf{SEC drift:} stable below 0.15 during homeostasis
-\item \textbf{Phase‑lock:} maintained within the $65^\circ$–$85^\circ$ viability region
+\item \textbf{Phase‑lock:} maintained within the $65^\circ$–$85^\circ$ viability region (within the broader $30^\circ$–$150^\circ$ non-chaotic range)
 \end{itemize}
 
 This reproducible profile is the empirical fingerprint of a regulated cognitive organism.
@@ -751,10 +865,10 @@ The non‑learning constraint is not a limitation—it is a scientific requireme
   Identical runs produce identical baselines.
 
 \item \textbf{controlled experimentation} \\
-  Regulatory dynamics can be studied without confounds from accumulated experience.
+  Regulatory dynamics can be studied without confounds from accumulated experience \cite{SpiralBrainV3}.
 
 \item \textbf{safety} \\
-  The system cannot drift into unbounded or misaligned states through unintended learning.
+  The system cannot drift into unbounded or misaligned states through unintended learning \cite{SpiralBrainV3}.
 \end{itemize}
 
 SpiralBrain is therefore not a model that "fails to learn," but a system that \textbf{must not learn} in order to remain a valid instrument for studying regulated cognition.
@@ -764,12 +878,12 @@ SpiralBrain is therefore not a model that "fails to learn," but a system that \t
 Across all falsification tests, SpiralBrain v3.0 exhibits:
 
 \begin{itemize}
-\item \textbf{no cross‑run learning},  
-\item \textbf{no parameter modification},  
-\item \textbf{no cumulative improvement},  
-\item \textbf{no persistent drift},  
-\item \textbf{no memory accumulation},  
-\item \textbf{full reset between runs}.
+\item \textbf{no cross‑run learning} \cite{SpiralBrainV3},  
+\item \textbf{no parameter modification} \cite{SpiralBrainV3},  
+\item \textbf{no cumulative improvement} \cite{SpiralBrainV3},  
+\item \textbf{no persistent drift} \cite{SpiralBrainV3},  
+\item \textbf{no memory accumulation} \cite{SpiralBrainV3},  
+\item \textbf{full reset between runs} \cite{SpiralBrainV3}.
 \end{itemize}
 
 All observed adaptation is \textbf{elastic}, occurring only within a single execution and fully decaying at termination.
@@ -817,7 +931,8 @@ By design, RI systems trade off maximal capability for predictability and contro
 
 Because the Regulatory Intelligence program introduces a new cognitive paradigm, several questions naturally arise for reviewers. This section addresses the most common concerns directly and concisely. Each clarification is grounded in empirical evidence and explicitly constrained to the SpiralBrain v3.0 architecture.
 
-\subsection{Is the $74^\circ$ Phase-Lock Angle Arbitrary or Overfitted?}
+\subsection{Is the \texorpdfstring{$74^\circ$}{74 degrees} 
+Phase-Lock Angle Arbitrary or Overfitted?}
 
 \textbf{Concern:}  
 The phase-lock optimum at approximately $74^\circ$ may appear numerologically precise or architecture-specific in a way that limits generality.
@@ -937,7 +1052,7 @@ These metrics are:
 \item and \textbf{falsifiable}.
 \end{itemize}
 
-Any cognitive system with internal state can be instrumented with these measures. SpiralBrain is simply the first system designed to expose them explicitly.
+Any cognitive system with internal state can be instrumented with these measures. SpiralBrain \cite{SpiralBrainV3} is simply the first system designed to expose them explicitly.
 
 \subsection{Summary}
 
@@ -978,7 +1093,7 @@ These questions are orthogonal to accuracy and scale. RI demonstrates that stabi
 
 \subsection{Intrinsic Alignment Through Physiology}
 
-Traditional alignment approaches impose external constraints—reward shaping, guardrails, supervised fine‑tuning—on systems whose internal dynamics remain opaque. RI offers a complementary approach: \textbf{alignment through architecture}.
+Traditional alignment approaches \cite{Russell2019} impose external constraints—reward shaping, guardrails, supervised fine‑tuning—on systems whose internal dynamics remain opaque. RI offers a complementary approach: \textbf{alignment through architecture}.
 
 Because SpiralBrain:
 
@@ -1029,9 +1144,7 @@ RI therefore provides a \textbf{scientific instrument} for studying cognition un
 
 \subsection{Reframing Cognitive Evaluation}
 
-RI introduces a bifurcated evaluation framework:
-
-RI introduces a bifurcated evaluation framework:
+separating cognitive physiology from task accuracy:
 
 \begin{itemize}
     \item \textbf{Domain performance} measures correctness when ground truth exists.
@@ -1236,7 +1349,7 @@ Together, these phases chart a path toward cognitive systems that are not only c
 
 The Regulatory Intelligence program reframes cognition as a regulated dynamical process rather than an optimization artifact. By defining intelligence as the capacity to maintain internal viability under stress, RI shifts the focus of cognitive architecture from performance to stability, from scale to geometry, and from opaque internal dynamics to measurable physiological signals.
 
-\textbf{SpiralBrain v3.0} is the first full implementation of this paradigm. Through its 128‑dimensional geometric substrate, eight‑pathway topology, tri‑band homeostasis system, and SEC‑driven affective control, SpiralBrain demonstrates that:
+\textbf{SpiralBrain v3.0} \cite{SpiralBrainV3} is the first full implementation of this paradigm. Through its 128‑dimensional geometric substrate, eight‑pathway topology, tri‑band homeostasis system, and SEC‑driven affective control, SpiralBrain demonstrates that:
 
 \begin{itemize}
     \item stability can be engineered directly,
@@ -1260,9 +1373,19 @@ Regulatory Intelligence provides the architectural and scientific tools to pursu
 RI does not replace learning‑based AI. It provides the missing substrate beneath it.  
 A future in which adaptive systems operate safely and reliably will require both.
 
+\subsection{Limitations and Design Trade-offs}
+
+Regulatory Intelligence deliberately prioritizes internal stability over maximal external performance, and this design choice entails clear trade-offs. First, the strict non-learning constraint limits scalability in open-ended environments where long-term adaptation is required. RI systems do not accumulate experience across runs by design; this enables falsifiability and reproducibility but precludes performance gains through training.
+
+Second, viability-first regulation may reduce responsiveness in rapidly changing or adversarial settings. When internal hazard rises, RI systems intentionally throttle engagement or enter protective modes, favoring bounded dynamics over aggressive task pursuit. This behavior reflects architectural restraint rather than incapacity, but it may be inappropriate in domains where risk-seeking optimization is desired.
+
+Third, the results presented here are grounded in a single reference architecture, SpiralBrain v3.0. While empirical findings such as phase-lock stability and elastic adaptation are robust across stressors and dimensionalities, broader generalization across architectures remains an open research direction.
+
+These limitations are not accidental omissions but explicit consequences of the RI hypothesis. Regulatory Intelligence is intended as a \textbf{stability substrate}, not a standalone replacement for learning-based systems. Hybrid architectures, in which adaptive learners are governed by RI-style regulatory cores, represent a natural path toward combining scalability with intrinsic stability.
+
 \section{Code Availability}
 
-The experiments reported in this paper were conducted using the canonical SpiralBrain v3.0 configuration.
+The experiments reported in this paper were conducted using the canonical SpiralBrain v3.0 configuration \cite{SpiralBrainV3}.
 A public repository providing architectural documentation, configuration summaries, and reproducibility materials for this canonical configuration is available at: \\
 \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}. \\
 

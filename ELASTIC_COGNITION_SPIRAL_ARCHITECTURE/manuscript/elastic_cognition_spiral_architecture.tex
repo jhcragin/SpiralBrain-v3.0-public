@@ -159,7 +159,18 @@ SpiralBrain v3.0 is a Python-based neurosymbolic Regulatory Intelligence (RI) sy
 
 SpiralBrain v3.0 is a synthetic cognitive architecture designed to investigate how coherence and integrative responsiveness emerge from elastic coupling and temporal regulation rather than computational scale. Built on the SpiralCode framework---a recursive symbolic control mechanism that modulates coupling and coherence across semi-autonomous cognitive subsystems---the architecture models neurodivergent-style information processing via four interacting lobes (Cortex, Codex, Nexus, and Sensus) coupled through symbolic torque equations and Symbolic--Emotional Calibration (SEC) layers.
 
-Across multiple validation runs, SpiralBrain v3.0 exhibited stable spiraling attractor dynamics, quantifiable emotional regulation, and self-correcting ethical behavior as defined by compliance metrics and recovery tests in Section~\ref{sec:methods}. Nine reproducible empirical regularities were observed: (1) empirical attractors deviate from theoretical optima (\( \lambda^{*} \approx 0.25 \) vs.\ 0.115), (2) integration-driven coherence tracks coupling quality rather than computational magnitude, (3) temporal hierarchies (\( \tau \approx 1:3:10 \)) mirror cortical rhythm ratios, (4) ethical reasoning benefits from slower channels (\( \tau_{\text{ethics}}/\tau_{\text{emotion}} \ge 10 \)), (5) emotional intelligence is quantifiable via SEC drift \( < 0.15 \), (6) reflective homeostasis yields recovery within \( < 300 \) steps, (7) partial phase-lock (\( \phi_{\text{lock}} \approx 74^\circ \)) optimizes differentiation and coherence, (8) a single global attractor governs dynamics across tested regimes, and (9) emotion functions as a core regulatory substrate with reproducible emotional coherence (0.431). External MMLU validation confirms that task performance throttling preserves internal integrity (coherence > 0.95) \cite{mmlu_cognitive_integrity}.
+Across multiple validation runs, SpiralBrain v3.0 exhibited stable spiraling attractor dynamics, quantifiable emotional regulation, and self-correcting ethical behavior as defined by compliance metrics and recovery tests in Section~\ref{sec:methods}. Nine reproducible empirical regularities were observed:
+\begin{enumerate}
+\item empirical attractors deviate from theoretical optima (\( \lambda^{*} \approx 0.25 \) vs.\ 0.115)\label{reg1}
+\item integration-driven coherence tracks coupling quality rather than computational magnitude\label{reg2}
+\item temporal hierarchies (\( \tau \approx 1:3:10 \)) mirror cortical rhythm ratios\label{reg3}
+\item ethical reasoning benefits from slower channels (\( \tau_{\text{ethics}}/\tau_{\text{emotion}} \ge 10 \))\label{reg4}
+\item emotional intelligence is quantifiable via SEC drift \( < 0.15 \)\label{reg5}
+\item reflective homeostasis yields recovery within \( < 300 \) steps\label{reg6}
+\item partial phase-lock (\( \phi_{\text{lock}} \approx 74^\circ \)) optimizes differentiation and coherence\label{reg7}
+\item a single global attractor governs dynamics across tested regimes\label{reg8}
+\item emotion functions as a core regulatory substrate with reproducible emotional coherence (0.431)\label{reg9}
+\end{enumerate} External MMLU validation confirms that task performance throttling preserves internal integrity (coherence > 0.95) \cite{mmlu_cognitive_integrity}.
 
 These findings show that SpiralBrain v3.0 serves as an empirical platform for cognitive science, capable of discovering temporal and integrative laws governing its own integrative responsiveness. They support a view of synthetic integrative responsiveness as a dynamic negotiation between differentiation and coherence rather than a monotonic function of scale.
 \end{abstract}
@@ -528,7 +539,7 @@ This parallels neuroscientific theories of metastability and global workspace dy
 \caption{External Domain Extensions Corroborating SpiralBrain Regularities \cite{mmlu_cognitive_integrity}}
 \label{tab:extensions}
 \renewcommand{\arraystretch}{1.3}
-\begin{tabular}{L{4cm} L{4cm} L{4cm} L{3cm}}
+\begin{tabular}{L{3cm} L{4cm} L{4cm} L{3cm}}
 \toprule
 External Domain &
 External Input Type &
@@ -537,17 +548,17 @@ Evidence Type \\
 \midrule
 MMLU benchmark
 & Standardized multi-task knowledge queries
-& Coherence depends on coupling, not magnitude (\#2)
+& Coherence depends on coupling, not magnitude (\ref{reg2})
 & Bounded coherence under stress \\
 
 Financial / tax reasoning
 & Real-world regulatory scenarios with missing or adversarial records
-& Ethical reasoning requires slower temporal layers (\#4)
+& Ethical reasoning requires slower temporal layers (\ref{reg4})
 & Stable, uncertainty-aware behavior \\
 
 Cryptocurrency markets
 & Historical BTC price, volume, and sentiment time series
-& Emotion functions as regulatory substrate (\#9)
+& Emotion functions as regulatory substrate (\ref{reg9})
 & Deterministic posture separation \\
 
 \bottomrule

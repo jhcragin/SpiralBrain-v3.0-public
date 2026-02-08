@@ -1,49 +1,27 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{1}
 
 \bibitem{baars1988neuroscience}
 Bernard~J Baars.
 \newblock {\em A cognitive theory of consciousness}.
 \newblock Cambridge University Press, 1988.
 
-\bibitem{Cragin2026EmbodiedRI}
-John~H. Cragin.
-\newblock Embodied regulatory intelligence in chaotic physical systems, 2026.
-\newblock Preprint, available at \url{https://doi.org/10.5281/zenodo.18444713}.
-
-\bibitem{Cragin2026EmotionControl}
-John~H. Cragin.
-\newblock Emotion as a control signal for symbolic stability, 2026.
-\newblock Preprint, available at \url{https://doi.org/10.5281/zenodo.18446434}.
-
 \bibitem{emotion_conditioned_risk_posture}
 John~H. Cragin.
-\newblock Emotion-conditioned risk posture in crypto markets, 2026.
-\newblock Preprint, forthcoming.
+\newblock Emotion-conditioned risk posture in crypto markets: Audit-bundled
+  evidence from btc price and sentiment data, 2026.
+\newblock Preprint, available at \url{https://doi.org/10.5281/zenodo.18476480}.
 
 \bibitem{mmlu_cognitive_integrity}
 John~H. Cragin.
-\newblock Mmlu and cognitive integrity, 2026.
-\newblock Preprint, forthcoming.
+\newblock Mmlu and cognitive integrity: Clarifying benchmark interpretation in
+  regulatory architectures, 2026.
+\newblock Preprint, available at \url{https://doi.org/10.5281/zenodo.18446550}.
 
 \bibitem{Cragin2026Finance}
 John~H. Cragin.
-\newblock Regulatory intelligence in finance, 2026.
-\newblock Preprint, available at \url{https://doi.org/10.5281/zenodo.18446550}.
-
-\bibitem{Cragin2026RI}
-John~H. Cragin.
-\newblock The regulatory intelligence paradigm, 2026.
-\newblock Preprint, available at \url{https://doi.org/10.5281/zenodo.18295507}.
-
-\bibitem{Cragin2026Program}
-John~H. Cragin.
-\newblock Regulatory intelligence program, 2026.
-\newblock Preprint, forthcoming.
-
-\bibitem{Cragin2026Integrity}
-John~H. Cragin.
-\newblock Synthetic emotional calibration sec, 2026.
-\newblock Preprint, available at \url{https://doi.org/10.5281/zenodo.18370539}.
+\newblock Regulatory intelligence in finance: Stability-first ai for tax and
+  financial reasoning, 2026.
+\newblock Preprint, available at \url{https://doi.org/10.5281/zenodo.18444713}.
 
 \bibitem{friston2010free}
 Karl Friston.

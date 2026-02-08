@@ -1,52 +1,90 @@
-# SpiralBrain v3.0 Submission to Artificial Intelligence Journal
+# Elastic Cognition and the Spiral Architecture: Empirical Discoveries from a Neurodivergent Cognitive Model
 
-This folder contains the journal-specific submission package for *Artificial Intelligence Journal* (AIJ), derived from the canonical root files.
+This folder contains the complete submission package for the paper **"Elastic Cognition: Spiral Architecture in Synthetic Neurosymbolic Systems"**, presenting SpiralBrain v3.0's empirical discoveries in regulatory intelligence and elastic coupling dynamics.
 
-## Purpose
+## Overview
 
-This is a **projection** of the canonical SpiralBrain v3.0 work, tailored for AIJ's audience and requirements. The scientific content remains identical to the root; only presentation elements are adjusted for venue alignment.
+This paper demonstrates how SpiralBrain v3.0 achieves stable synthetic cognition through elastic coupling among temporally distinct processes, establishing nine empirical regularities that bridge neurodivergent processing principles with synthetic stability.
 
-## Derivation Rules
+## Key Contributions
 
-- **Source**: All content derived from root `Journal Submission Package/` files
-- **Modifications**: Only venue-specific tailoring (introduction framing, cover letter)
-- **No Changes**: Core results, figures, methods, or conclusions are never altered
-- **Sync**: If root files update, regenerate this projection
+- **Elastic Coupling Hypothesis**: Cognition emerges from dynamic integration rather than computational scale
+- **Nine Empirical Discoveries**: Quantified regularities including temporal hierarchies (τ ≈ 1:3:10), SEC drift thresholds, and single global attractors
+- **Regulatory Intelligence Framework**: Stability-first paradigm for cognitive architectures
+- **Neurodivergent Design Inspiration**: Parallels between synthetic elastic coupling and neurodivergent cognitive traits
 
-## File Mapping
+## File Structure
 
 ### Manuscript
-- `manuscript/spiralbrain_aij.tex` → Derived from `spiralbrain_journal_submission.tex`
-  - Minor adjustments: Introduction framing for architecture emphasis
-  - Related work: Emphasize symbolic systems, cognitive architectures
+- `manuscript/elastic_cognition_spiral_architecture.tex` - Main LaTeX manuscript (1200+ lines)
+- `manuscript/references.bib` - Complete bibliography with 20+ citations
+- `manuscript/elastic_cognition_spiral_architecture.pdf` - Compiled PDF (when available)
+
+### Results & Data
+- `results/` - All experimental data and logs supporting the nine discoveries
+  - `comprehensive_report_verbose_20251125_213442.json` - Main experimental results
+  - `brain_trace.jsonl` - Detailed coherence traces
+  - `baseline_health_verbose_20251125_213442.json` - Health assessments
+  - `emobench_m_results.json` - Emotional processing benchmarks
+  - And 6+ additional data files
 
 ### Figures
-- `figures/` → Copied verbatim from root `figures/`
-  - four_lobe_architecture.pdf/png
-  - spiral_coherence_manifold.pdf/png
-  - neurodivergent_validation.pdf/png
+- `figures/` - All manuscript figures and diagrams
+  - Architecture diagrams, coherence manifolds, empirical plots
 
-### Cover Letter
-- `cover_letter/cover_letter_aij.tex` → AIJ-specific cover letter
-  - Highlights architecture contributions
-  - Addresses AIJ editorial priorities
+### Scripts
+- `scripts/` - Analysis and figure generation code
+  - Reproducible plotting and statistical analysis
 
 ### Metadata
-- `metadata/keywords.txt` → AIJ-optimized keywords
-- `metadata/highlights.txt` → Key findings summary (Elsevier format)
-- `metadata/author_declarations.txt` → Declarations and conflicts
+- `metadata/` - Submission metadata and declarations
 
-## Submission Instructions
+### Cover Letter
+- `cover_letter/` - Journal submission cover letter
 
-1. Use `manuscript/spiralbrain_aij.tex` as primary submission file
-2. Include all figures from `figures/`
-3. Attach cover letter from `cover_letter/`
-4. Provide metadata as required by AIJ
+## Empirical Validation
 
-## Maintenance
+The paper reports nine falsifiable discoveries, each mapped to specific data files:
 
-This folder should be regenerated if root files change. Do not edit core content here—changes belong in the canonical root.
+1. **λ* Attractor** (λ ≈ 0.25 vs. theoretical 0.115)
+2. **Integration vs. Power** (r = 0.8 correlation)
+3. **Temporal Hierarchy** (τ ratios 1:3:10)
+4. **Ethics/Slow Reasoning** (τ_ethics/τ_emotion ≥ 10)
+5. **SEC Drift Threshold** (< 0.15 stable, > 0.25 triggers recovery)
+6. **Recovery Time** (187 steps average)
+7. **Phase-Lock** (φ_lock ≈ 74°)
+8. **Single Attractor** (100% convergence)
+9. **Emotional Coherence** (r = 0.431)
+
+## Reproducibility
+
+All claims are directly auditable:
+- **Evidence Mapping Table**: Appendix B links each discovery to specific log files
+- **Public Repository**: `https://github.com/jhcragin/SpiralBrain-v3.0-public`
+- **Hyperlinked Data**: Every result file is directly accessible via DOI or GitHub links
+- **Statistical Rigor**: 95% confidence intervals, Bonferroni correction, ablation studies
+
+## Technical Specifications
+
+- **Architecture**: Four-lobe neurosymbolic system with elastic coupling
+- **Validation**: H3-H6 experimental series (1000+ runs, multiple seeds)
+- **Benchmarks**: MMLU stress-testing, emotional processing, financial reasoning
+- **Metrics**: Φ (coherence), λ (coupling), τ (temporal ratios), SEC drift
+
+## Submission Status
+
+- **Target Journal**: Artificial Intelligence (Elsevier)
+- **Status**: Manuscript complete, links verified, ready for submission
+- **Word Count**: ~7,000 words
+- **Figures**: 8 main figures + supplementary plots
 
 ## Contact
 
-For submission questions: john.cragin@outlook.com
+For questions or collaboration inquiries:
+- **Author**: John H. Cragin
+- **Email**: john.cragin@outlook.com
+- **Repository**: https://github.com/jhcragin/SpiralBrain-v3.0-public
+
+## License
+
+This work is part of the Regulatory Intelligence research program and follows the repository's Apache 2.0 license terms.

@@ -1,0 +1,8 @@
+{
+  "domain": "Financial / tax reasoning",
+  "coherence_range": [0.85, 1.00],
+  "sec_drift_bounds": [0.00, 0.10],
+  "recovery_times_steps": [100, 200],
+  "posture_separation_flags": true,
+  "notes": "Stability scores 0.945–1.0 with graceful degradation under tax complexity stress."
+}

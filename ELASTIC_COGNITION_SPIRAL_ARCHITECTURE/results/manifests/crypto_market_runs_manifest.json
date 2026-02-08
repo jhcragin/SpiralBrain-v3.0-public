@@ -1,0 +1,9 @@
+{
+  "experiment_id": "market_emotion_reference_run",
+  "domain": "Cryptocurrency markets",
+  "date": "2026-02-01",
+  "spiralbrain_version_hash": "SpiralBrain_v3.0",
+  "regularity_corroborated": "Emotion functions as regulatory substrate (#9)",
+  "runs_count": 300,
+  "notes": "Historical BTC price, volume, sentiment time series; reproducible participation regimes driven by internal regulatory state."
+}

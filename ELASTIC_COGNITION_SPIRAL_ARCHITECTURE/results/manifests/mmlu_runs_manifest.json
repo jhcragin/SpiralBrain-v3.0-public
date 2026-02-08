@@ -1,0 +1,9 @@
+{
+  "experiment_id": "H-series_experimental_program",
+  "domain": "MMLU benchmark",
+  "date": "2026-01-19",
+  "spiralbrain_version_hash": "SpiralBrain_v3.0",
+  "regularity_corroborated": "Coherence depends on coupling, not magnitude (#2)",
+  "runs_count": 500,
+  "notes": "MMLU used as structured stressor for regulatory mechanisms; scores range 23.0% to 36.5% with predictable throttling under hazard."
+}

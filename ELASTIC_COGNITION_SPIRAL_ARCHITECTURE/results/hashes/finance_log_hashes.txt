@@ -1,0 +1,7 @@
+# SHA-256 Hashes for Finance/Tax Runs
+# Original logs: finance_tax_logs_2024.tar.gz
+stu901vwx234... (hash)
+# Archived dataset: regulatory_scenarios_archive.zip
+vwx234yz567... (hash)
+# Scripts: finance_stability_analysis.py
+yz567abc890... (hash)

@@ -1,0 +1,7 @@
+# SHA-256 Hashes for MMLU Runs
+# Original logs: mmlu_stress_logs_2024.tar.gz
+abc123def456... (hash)
+# Archived dataset: mmlu_queries_archive.zip
+def456ghi789... (hash)
+# Scripts: mmlu_analysis.py
+ghi789jkl012... (hash)

@@ -1,0 +1,65 @@
+{
+  "status": "failed",
+  "timestamp": "2025-11-27T07:32:51.754319",
+  "adapters_run": [
+    "openneuro",
+    "allen_brain",
+    "hcp",
+    "cognitive_tasks",
+    "limbic_system"
+  ],
+  "adapter_results": {
+    "openneuro": {
+      "status": "failed",
+      "adapter": "openneuro",
+      "error": "C:\\Users\\johnc\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe: can't open file 'C:\\\\Users\\\\johnc\\\\source\\\\repos\\\\SpiralBrain-v3.0\\\\benchmarks\\\\external_adapters\\\\openneuro_adapter.py': [Errno 2] No such file or directory\n",
+      "stdout": ""
+    },
+    "allen_brain": {
+      "status": "failed",
+      "adapter": "allen_brain",
+      "error": "C:\\Users\\johnc\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe: can't open file 'C:\\\\Users\\\\johnc\\\\source\\\\repos\\\\SpiralBrain-v3.0\\\\benchmarks\\\\external_adapters\\\\allen_brain_adapter.py': [Errno 2] No such file or directory\n",
+      "stdout": ""
+    },
+    "hcp": {
+      "status": "failed",
+      "adapter": "hcp",
+      "error": "C:\\Users\\johnc\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe: can't open file 'C:\\\\Users\\\\johnc\\\\source\\\\repos\\\\SpiralBrain-v3.0\\\\benchmarks\\\\external_adapters\\\\hcp_adapter.py': [Errno 2] No such file or directory\n",
+      "stdout": ""
+    },
+    "cognitive_tasks": {
+      "status": "failed",
+      "adapter": "cognitive_tasks",
+      "error": "C:\\Users\\johnc\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe: can't open file 'C:\\\\Users\\\\johnc\\\\source\\\\repos\\\\SpiralBrain-v3.0\\\\benchmarks\\\\external_adapters\\\\cognitive_tasks_adapter.py': [Errno 2] No such file or directory\n",
+      "stdout": ""
+    },
+    "limbic_system": {
+      "status": "failed",
+      "adapter": "limbic_system",
+      "error": "C:\\Users\\johnc\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe: can't open file 'C:\\\\Users\\\\johnc\\\\source\\\\repos\\\\SpiralBrain-v3.0\\\\benchmarks\\\\external_adapters\\\\limbic_adapter.py': [Errno 2] No such file or directory\n",
+      "stdout": ""
+    }
+  },
+  "summary": {
+    "total_adapters": 5,
+    "successful_adapters": 0,
+    "failed_adapters": 5,
+    "performance_metrics": {},
+    "cognitive_domains": {},
+    "cross_domain_correlations": {},
+    "overall_assessment": {
+      "benchmark_success_rate": 0.0,
+      "cognitive_domains_covered": 0,
+      "multi_modal_capability": false,
+      "neuroscience_grounding": false,
+      "behavioral_validation": false,
+      "recommendations": [
+        "Improve adapter reliability and error handling",
+        "Add support for: neuroimaging, cellular neuroscience, connectome analysis, behavioral tasks",
+        "Enhance multi-modal data integration capabilities",
+        "Improve alignment with biological neuroscience principles",
+        "Strengthen cognitive task processing and behavioral analysis"
+      ]
+    }
+  }
+}

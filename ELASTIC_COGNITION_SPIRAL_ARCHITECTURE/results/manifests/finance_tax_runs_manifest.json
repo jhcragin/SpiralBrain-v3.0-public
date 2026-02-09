@@ -1,9 +1,0 @@
-{
-  "experiment_id": "financial_cognition_stability_probe",
-  "domain": "Financial / tax reasoning",
-  "date": "2025-12-22",
-  "spiralbrain_version_hash": "SpiralBrain_v3.0",
-  "regularity_corroborated": "Ethical reasoning requires slower temporal layers (#4)",
-  "runs_count": 400,
-  "notes": "Real-world regulatory scenarios with missing/adversarial records; stability scores 0.945–1.0 with graceful degradation."
-}

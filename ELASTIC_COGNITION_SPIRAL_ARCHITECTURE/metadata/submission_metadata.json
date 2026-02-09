@@ -1,0 +1,22 @@
+{
+  "title": "Elastic Cognition and the Spiral Architecture: A Neurosymbolic Framework for Autonomous Intelligence",
+  "authors": ["John H. Cragin"],
+  "affiliation": "Independent Researcher",
+  "email": "john.cragin@outlook.com",
+  "submission_date": "2026-02-08",
+  "target_journal": "Artificial Intelligence Journal",
+  "word_count": 15000,
+  "figure_count": 8,
+  "keywords": [
+    "neurosymbolic AI",
+    "cognitive architecture",
+    "elastic coupling",
+    "temporal hierarchies",
+    "regulatory intelligence",
+    "autonomous cognition"
+  ],
+  "data_availability": "All data and code available at https://github.com/jhcragin/SpiralBrain-v3.0-public",
+  "funding": "Self-funded research",
+  "conflict_of_interest": "None declared",
+  "acknowledgments": "Special thanks to the open-source AI community and neurodiversity advocates whose insights inspired this work."
+}

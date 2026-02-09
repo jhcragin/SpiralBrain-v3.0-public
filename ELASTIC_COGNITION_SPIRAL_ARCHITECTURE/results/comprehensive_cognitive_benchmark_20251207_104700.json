@@ -1,0 +1,87 @@
+{
+  "status": "completed",
+  "timestamp": "2025-12-07T10:46:58.415733",
+  "adapters_run": [
+    "comfact",
+    "crypto",
+    "mmlu",
+    "piqa",
+    "goemotion"
+  ],
+  "adapter_results": {
+    "comfact": {
+      "status": "success",
+      "adapter": "comfact",
+      "results": {
+        "raw_output": "ComFact not installed; skipping benchmark.\nInstall with: pip install git+https://github.com/declare-lab/ComFact.git\n"
+      },
+      "stdout": "ComFact not installed; skipping benchmark.\nInstall with: pip install git+https://github.com/declare-lab/ComFact.git\n"
+    },
+    "crypto": {
+      "status": "success",
+      "adapter": "crypto",
+      "results": {
+        "raw_output": "\u00f0\u0178\u201d\u00ac Fetching cryptocurrency data...\n\u00e2\u0153\u2026 Cryptocurrency data analysis complete!\n   Analyzed 10 cryptocurrencies\n   Best performer: XRP\n   Total market cap: $2,808,702,914,302\n   Results saved to: results/crypto_data_eval.json\n"
+      },
+      "stdout": "\u00f0\u0178\u201d\u00ac Fetching cryptocurrency data...\n\u00e2\u0153\u2026 Cryptocurrency data analysis complete!\n   Analyzed 10 cryptocurrencies\n   Best performer: XRP\n   Total market cap: $2,808,702,914,302\n   Results saved to: results/crypto_data_eval.json\n"
+    },
+    "mmlu": {
+      "status": "failed",
+      "adapter": "mmlu",
+      "error": "C:\\Users\\johnc\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe: can't open file 'C:\\\\Users\\\\johnc\\\\source\\\\repos\\\\SpiralBrain-v3.0\\\\benchmarks\\\\adapters\\\\mmlu_adapter.py': [Errno 2] No such file or directory\n",
+      "stdout": ""
+    },
+    "piqa": {
+      "status": "failed",
+      "adapter": "piqa",
+      "error": "C:\\Users\\johnc\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe: can't open file 'C:\\\\Users\\\\johnc\\\\source\\\\repos\\\\SpiralBrain-v3.0\\\\benchmarks\\\\adapters\\\\piqa_adapter.py': [Errno 2] No such file or directory\n",
+      "stdout": ""
+    },
+    "goemotion": {
+      "status": "failed",
+      "adapter": "goemotion",
+      "error": "C:\\Users\\johnc\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe: can't open file 'C:\\\\Users\\\\johnc\\\\source\\\\repos\\\\SpiralBrain-v3.0\\\\benchmarks\\\\adapters\\\\goemotion_adapter.py': [Errno 2] No such file or directory\n",
+      "stdout": ""
+    }
+  },
+  "summary": {
+    "total_adapters": 5,
+    "successful_adapters": 2,
+    "failed_adapters": 3,
+    "performance_metrics": {
+      "multi_modal_integration": 0.0,
+      "cognitive_processing": 0.0,
+      "financial_analysis": 0.0
+    },
+    "cognitive_domains": {
+      "reasoning": {
+        "commonsense_tasks": 0,
+        "reasoning_accuracy": 0,
+        "factual_consistency": 0,
+        "inference_quality": 0
+      },
+      "financial": {
+        "market_analyses": 0,
+        "prediction_accuracy": 0,
+        "risk_assessment": 0,
+        "temporal_patterns": 0
+      }
+    },
+    "cross_domain_correlations": {},
+    "overall_assessment": {
+      "benchmark_success_rate": 0.4,
+      "cognitive_domains_covered": 2,
+      "multi_modal_capability": false,
+      "reasoning_capability": true,
+      "knowledge_capability": false,
+      "emotional_intelligence": false,
+      "financial_analysis": true,
+      "recommendations": [
+        "Improve adapter reliability and error handling",
+        "Add support for: knowledge assessment, physical reasoning, emotional intelligence",
+        "Enhance multi-modal data integration capabilities",
+        "Strengthen cognitive task processing and reasoning capabilities"
+      ]
+    }
+  }
+}

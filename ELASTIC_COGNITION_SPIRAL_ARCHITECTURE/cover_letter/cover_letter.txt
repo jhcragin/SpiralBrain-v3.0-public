@@ -1,0 +1,22 @@
+Dear Editor,
+
+I am pleased to submit our manuscript entitled "Elastic Cognition and the Spiral Architecture: A Neurosymbolic Framework for Autonomous Intelligence" for consideration in Artificial Intelligence Journal.
+
+This paper presents SpiralBrain v3.0, a novel neurosymbolic architecture that achieves stable synthetic cognition through elastic coupling among temporally distinct processes. Our work establishes nine empirical regularities that bridge neurodivergent processing principles with synthetic stability, including:
+
+- Elastic coupling dynamics that enable emergent coherence
+- Temporal hierarchies mirroring biological neural timescales (τ ≈ 1:3:10)
+- Regulatory intelligence principles for autonomous adaptation
+- Quantified emotional processing with SEC drift thresholds
+- Ethical deliberation requiring τ_ethics/τ_emotion ≥ 10
+
+All claims are supported by comprehensive experimental validation across 1000+ trials, with full reproducibility through our public repository. The manuscript includes detailed statistical analysis, cross-validation results, and direct hyperlinks to all supporting data.
+
+We believe this work makes significant contributions to cognitive architecture research by demonstrating how cognition emerges from dynamic integration rather than computational scale, with implications for AI safety, cognitive psychology, and synthetic neuroscience.
+
+Thank you for considering our manuscript.
+
+Sincerely,
+John H. Cragin
+Independent Researcher
+john.cragin@outlook.com

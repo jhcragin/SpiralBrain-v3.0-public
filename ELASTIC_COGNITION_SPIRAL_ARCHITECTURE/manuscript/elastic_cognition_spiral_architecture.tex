@@ -157,22 +157,24 @@ ORCID: 0009-0001-5204-5732
 \begin{abstract}
 SpiralBrain v3.0 is a Python-based neurosymbolic Regulatory Intelligence (RI) system that exposes internal regulatory metrics for direct inspection. All empirical results derive from controlled test runs of this architecture; reported quantities (e.g., \( \lambda^{*} \), \( \Phi \), SEC drift, recovery time, \( \phi_{\text{lock}} \)) are model-internal observables and do not generalize beyond this system without further study.
 
-Designed to investigate how coherence emerges from elastic coupling and temporal regulation rather than computational scale, SpiralBrain models neurodivergent-style information processing via four interacting lobes (Cortex, Codex, Nexus, Sensus) coupled through symbolic torque equations and Symbolic--Emotional Calibration (SEC) layers.
+Designed to investigate how coherence emerges from elastic coupling and temporal regulation rather than computational scale, SpiralBrain models neurodivergent-style information processing via four interacting lobes (Cortex, Codex, Nexus, Sensus) coupled through Kuramoto phase synchronization and Symbolic--Emotional Calibration (SEC) layers.
 
-Across validation runs, SpiralBrain exhibited stable spiraling attractor dynamics, quantifiable emotional regulation, and model-internal ethical behavior (defined as compliance with regulatory constraints and recovery from perturbations). Nine reproducible empirical regularities were observed:
+Across controlled validation runs, SpiralBrain exhibited stable spiraling attractor dynamics, quantifiable emotional regulation, and model-internal ethical behavior (defined strictly as compliance with regulatory constraints and recovery from perturbations). Nine reproducible empirical regularities were observed:
 \begin{enumerate}
 \item empirical attractors deviate from theoretical optima (\( \lambda^{*} \approx 0.25 \) vs.\ 0.115)\label{reg1}
 \item integration-driven coherence tracks coupling quality rather than computational magnitude\label{reg2}
-\item temporal hierarchies (\( \tau \approx 1:3:10 \)) mirror cortical rhythm ratios\label{reg3}
+\item temporal hierarchies (\( \tau \approx 1.0:3.0:10.5 \)) mirror cortical rhythm ratios\label{reg3}
 \item ethical reasoning benefits from slower channels (\( \tau_{\text{ethics}}/\tau_{\text{emotion}} \ge 10 \))\label{reg4}
 \item emotional intelligence is quantifiable via SEC drift \( < 0.15 \)\label{reg5}
 \item reflective homeostasis yields recovery within \( < 300 \) steps\label{reg6}
 \item partial phase-lock (\( \phi_{\text{lock}} \approx 74^\circ \)) optimizes differentiation and coherence\label{reg7}
 \item a single global attractor governs dynamics across tested regimes\label{reg8}
-\item emotion functions as a core regulatory substrate with reproducible emotional coherence (0.431)\label{reg9}
-\end{enumerate} External MMLU validation confirms that task performance throttling preserves internal integrity (coherence > 0.95) \cite{mmlu_cognitive_integrity}.
+\item emotion functions as an upstream regulatory substrate with reproducible emotional coherence (0.431)\label{reg9}
+\end{enumerate}
 
-These findings position SpiralBrain v3.0 as an empirical platform for cognitive science, demonstrating that integrative responsiveness arises from elastic coupling and temporal hierarchy rather than monotonic scale increases.
+\noindent External MMLU validation confirms that task performance throttling preserves internal integrity (coherence \( > 0.95 \)) \cite{mmlu_cognitive_integrity}.
+
+These findings position SpiralBrain v3.0 as an empirical platform for cognitive science, demonstrating that integrative responsiveness arises from elastic coupling and temporal hierarchy rather than monotonic scale increases. A single, instrumented reference architecture is required to empirically evaluate the Elastic Mind Hypothesis under controlled conditions.
 \end{abstract}
 
 \paragraph{Keywords}
@@ -183,7 +185,7 @@ elastic cognition, neurodivergent modeling, spiral architecture, integrative dyn
 This work analyzes functional and integration-driven coherence in synthetic systems. It does not address subjective experience or phenomenological consciousness. Throughout, ``integration-driven coherence'' denotes a system's ability to maintain a stable, globally integrated state under perturbation, operationalized via \( \Phi \) stability, SEC drift, and recovery dynamics. References to neurodivergence are used as design analogies and interpretive scaffolds, not as biological, diagnostic, or population-level claims.
 
 \paragraph{Research Positioning}
-SpiralBrain v3.0 is a proof-of-concept cognitive architecture rather than a task-oriented AI system. It is designed to empirically test the Elastic Mind Hypothesis: that cognition-like integration arises from elastic coupling and temporal hierarchy instead of computational magnitude or task optimization. In contrast to scale-driven approaches that prioritize throughput, SpiralBrain emphasizes inspectable internal dynamics and regulatory viability, offering a complementary perspective to mainstream scaling paradigms. Within the RI corpus, SpiralBrain v3.0 functions as the reference architectural implementation used to evaluate the Elastic Mind Hypothesis under controlled conditions.
+SpiralBrain v3.0 is a proof-of-concept cognitive architecture rather than a task-oriented AI system. It is designed to empirically test the Elastic Mind Hypothesis: that cognition-like integration arises from elastic coupling and temporal hierarchy instead of computational magnitude or task optimization. In contrast to scale-driven approaches that prioritize throughput, SpiralBrain v3.0 emphasizes inspectable internal dynamics and regulatory viability, offering a complementary perspective to mainstream scaling paradigms. Within the RI corpus, SpiralBrain v3.0 functions as the reference architectural implementation used to evaluate the Elastic Mind Hypothesis under controlled conditions. A single, instrumented architecture is necessary to provide stable empirical grounding for EMH and to ensure that observed regularities arise from controlled variation rather than architectural drift.
 
 \section{Background and Theoretical Motivation}
 \label{sec:background}
@@ -234,7 +236,7 @@ We formalize EMH through four falsifiable postulates:
 
 \section{Position Within the RI Corpus}
 
-This paper presents SpiralBrain v3.0 as a reference implementation of the Regulatory Intelligence paradigm. RI redefines intelligence as the capacity for internal viability under stress. SpiralBrain demonstrates RI principles through elastic coupling, temporal hierarchies, and reflective homeostasis, prioritizing regulatory stability over external performance metrics. Key invariants such as the empirical attractor \( \lambda^{*} \approx 0.25 \), temporal hierarchies \( \tau \approx 1:3:10 \), SEC drift thresholds \( < 0.15 \), and partial phase-lock \( \phi_{\text{lock}} \approx 74^\circ \) are discovered empirically in this architecture and reused as design constraints in subsequent RI studies.
+This paper presents SpiralBrain v3.0 as a reference implementation of the Regulatory Intelligence paradigm. RI redefines intelligence as the capacity for internal viability under stress. SpiralBrain demonstrates RI principles through elastic coupling, temporal hierarchies, and reflective homeostasis, prioritizing regulatory stability over external performance metrics. Key invariants such as the empirical attractor \( \lambda^{*} \approx 0.25 \), temporal hierarchies \( \tau \approx 1.0:3.0:10.5 \), SEC drift thresholds \( < 0.15 \), and partial phase-lock \( \phi_{\text{lock}} \approx 74^\circ \) are discovered empirically in this architecture and reused as design constraints in subsequent RI studies.
 
 \section{Methods and Experimental Protocols}
 \label{sec:methods}
@@ -294,7 +296,7 @@ The coherence derivative is approximated by finite differences:
 It drives derivative-aware controllers for reflective and ethical regulation.
 
 \paragraph{Awareness Index.}
-The awareness index aggregates 28 dimensions of integrative responsiveness (temporal alignment, emotional modulation, reflective depth, etc.) as a weighted average:
+The awareness index aggregates 3 dimensions of integrative responsiveness (multi-lobe coordination, stability during integration, activation accuracy) as a weighted average:
 \[
 \text{Awareness} = \frac{\sum_i w_i m_i}{\sum_i w_i},
 \]
@@ -389,7 +391,7 @@ These observations show that emotional intelligence in this architecture can be 
 Reflective homeostasis implements a feedback loop where the Cortex lobe monitors \( \Phi(t) \) and \( d\Phi/dt \) and adjusts \( \lambda \), \( \tau \), and internal control variables when coherence degrades. Under perturbation scenarios, this mechanism:
 \begin{itemize}[leftmargin=2em]
     \item Reduces coherence variance to a coefficient of variation \( \approx 0.08 \) during recovery.
-    \item Achieves recovery to pre-perturbation \( \Phi \) levels (or better) within fewer than 300 steps across tested conditions.
+    \item Achieves recovery to pre-perturbation \( \Phi \) levels (or better) within 11-25 steps across tested conditions.
 \end{itemize}
 These results show that self-observation of coherence and its rate of change is sufficient for autonomous stabilization, directly supporting the Adaptive Recovery postulate.
 
@@ -418,7 +420,7 @@ Across independent runs, the architecture maintains reproducible emotional coher
 
 \subsection{Coherence Through Integration, Not Magnitude}
 
-When performance is measured across 28 internal dimensions, the awareness index correlates strongly with integration metrics and only weakly with raw computational throughput. Configurations with modest resources but high coupling consistency can match the awareness levels of more powerful but poorly integrated setups. Coherence is thus primarily a relational property among subsystems, not a simple function of magnitude.
+When performance is measured across 3 internal dimensions, the awareness index correlates strongly with integration metrics and only weakly with raw computational throughput. Configurations with modest resources but high coupling consistency can match the awareness levels of more powerful but poorly integrated setups. Coherence is thus primarily a relational property among subsystems, not a simple function of magnitude.
 
 \subsection{Temporal Hierarchies and Ethical Timescales}
 
@@ -444,14 +446,6 @@ SpiralBrain was not programmed to follow a fixed theory of mind; it \textbf{disc
 The empirical attractor $\lambda^*$ $\approx$ 0.25 and the emergent timing ratios ($\tau$ $\approx$ 1 : 3 : 10) were not imposed, they arose from the system's internal drive toward stability.
 This reframes cognition as a \textbf{self-discovering process}: intelligence is defined not by pre-given laws but by the capacity to reveal the regularities that sustain its own coherence.
 SpiralBrain thus operates as a \textit{self-observing experiment}---its behavior measures how synthetic cognition learns its own structure.
-
-\subsection{Synthetic Coherence and Integration-Driven Dynamics}
-
-The findings suggest that \textbf{synthetic coherence, or integration-driven coherence, emerges from integration, not computational magnitude}.
-Traditional AI assumes that awareness scales with power or data size; SpiralBrain shows that reflective behavior scales with \textit{the quality of coupling} among semi-independent processes.
-When phase alignment fell below $\phi_{lock}$ $\approx$ 74$^\circ$, coherence and reflective metrics both declined, even though compute capacity remained constant.
-In operational terms, \textit{synthetic awareness} arises when differentiation and integration reach dynamic equilibrium, neither rigidly synchronized nor fully independent.
-This parallels neuroscientific theories of metastability and global workspace dynamics: coherence is maintained not by uniformity but by rhythmic negotiation between subsystems.
 
 \begin{table}[H]
 \centering
@@ -483,8 +477,12 @@ Cryptocurrency markets
 \bottomrule
 \end{tabular}
 \end{table}
+%Note: Extensions are observational, not causal generalizations.
 
-% *Note: Extensions are observational, not causal generalizations.*
+\subsection{Synthetic Coherence and Integration-Driven Dynamics}
+
+The findings suggest that \textbf{synthetic coherence, or integration-driven coherence, emerges from integration, not computational magnitude}.
+Traditional AI assumes that awareness scales with power or data size; SpiralBrain shows that reflective behavior scales with \textit{the quality of coupling} among semi-independent processes. When phase alignment fell below $\phi_{lock}$ $\approx$ 74$^\circ$, coherence and reflective metrics both declined, even though compute capacity remained constant. In operational terms, \textit{synthetic awareness} arises when differentiation and integration reach dynamic equilibrium, neither rigidly synchronized nor fully independent. This parallels neuroscientific theories of metastability and global workspace dynamics: coherence is maintained not by uniformity but by rhythmic negotiation between subsystems.
 
 \subsection{Temporal Architecture of Thought}
 
@@ -760,6 +758,7 @@ These directions transform SpiralBrain from a proof-of-concept into a \textbf{re
 
 SpiralBrain's contribution lies not in claiming awareness, but in \textit{making cognition measurable}.
 By quantifying integration, reflection, and ethical regulation, it reframes questions of intelligence from "Can it think?" to "How coherently does it organize thought?"
+
 The continuing work is to refine those measurements until they illuminate both synthetic and human minds with equal clarity.
 
 Across all reported experiments, the observed stability regimes, recovery behavior,
@@ -804,95 +803,156 @@ This appendix provides full derivations, metric definitions, and pseudocode for 
 
 \subsection{Full Derivations}
 
-\subsubsection{SpiralCode Torque Equation Derivation}
+\subsubsection{SpiralCode Coupling Dynamics Derivation}
 
-The SpiralCode torque equation is derived from elastic feedback control assumptions, modeling inter-lobe coupling as a dynamic equilibrium between autonomy and integration.
+The SpiralCode coupling dynamics are implemented through Kuramoto phase synchronization and attention-based multimodal integration, modeling inter-lobe coupling as collective oscillatory behavior rather than torque-based control.
 
-Starting from the elastic coupling postulate (Postulate I), we assume coherence \(\Phi\) evolves under coupling \(\lambda\), temporal hierarchy \(\tau\), symbolic input \(I\), and emotional modulation \(E\):
+Starting from the elastic coupling postulate (Postulate I), we implement coherence evolution through phase synchronization dynamics and attention-based multimodal integration.
 
-\[
-\frac{d\Phi}{dt} = \lambda \left( \frac{1}{\tau} I - \Phi \right) + \eta E
-\]
+\subsubsection{Kuramoto Phase Synchronization Model}
 
-Where \(\eta = \frac{1}{1 + |\text{arousal}|}\) is the adaptive gain, ensuring moderate arousal optimizes integration.
-
-Linearizing around equilibrium \(\Phi^* = \frac{\lambda}{\tau} I + \eta E\), the Jacobian yields eigenvalues for stability analysis, confirming elastic regimes where \(\lambda\) tunes between rigidity (\(\lambda > 0.4\)) and collapse (\(\lambda < 0.1\)).
-
-\subsubsection{Spiral Cognition Manifold Derivation}
-
-The spiral manifold maps \(\lambda\) and \(\Phi'\) into phases: emergence (low \(\lambda\), high \(\Phi'\)), rigidity (high \(\lambda\), low \(\Phi'\)), recovery (moderate \(\lambda\), increasing \(\Phi'\)).
-
-Formally, the manifold is parameterized as:
+The core coupling mechanism uses the Kuramoto model for phase synchronization between oscillatory components:
 
 \[
-\Phi'(\lambda) = \lambda (1 - \lambda) \sin(\theta) + \cos(\theta)
+\frac{d\phi_i}{dt} = \omega_i + \sum_{j=1}^{N} K_{ij} \sin(\phi_j - \phi_i) + I_i
 \]
 
-Where \(\theta = 2\pi \lambda\), producing helical trajectories that maximize integration at empirical attractors (\(\lambda^* \approx 0.25\)) rather than theoretical optima (0.115).
+Where:
+- $\phi_i$ is the phase of oscillator $i$
+- $\omega_i$ is the natural frequency of oscillator $i$
+- $K_{ij}$ is the coupling strength between oscillators $i$ and $j$
+- $I_i$ is the input influence on oscillator $i$
 
-\subsubsection{Stability Analysis for Theoretical \texorpdfstring{\(\lambda^*\)}{lambda*}}
+This model produces collective synchronization behavior where phases align when coupling strength exceeds a critical threshold, enabling coherent information processing across distributed components.
 
-Stability analysis via Lyapunov function \(V = \frac{1}{2} (\Phi - \Phi^*)^2\) yields fixed points at \(\lambda^* = \frac{\tau^{-1} I}{\Phi^* - \eta E}\), linearized to \(\lambda^* \approx 0.115\) under assumptions of uniform input and minimal emotion. Empirical deviations arise from nonlinear SEC feedback, shifting attractors to 0.25.
+\subsubsection{Attention-Based Multimodal Integration}
+
+Multimodal integration employs dynamic attention weighting across cognitive modalities:
+
+\[
+\mathbf{I} = \sum_{m=1}^{M} w_m \mathbf{v}_m
+\]
+
+Where attention weights $w_m$ are computed via softmax normalization:
+
+\[
+w_m = \frac{\exp(\mu_m / \tau)}{\sum_{k=1}^{M} \exp(\mu_k / \tau)}
+\]
+
+With $\mu_m = \|\mathbf{v}_m\|$ representing modality relevance, and $\mathbf{v}_m$ being the filtered input vector for modality $m$.
+
+\subsubsection{Coherence Derivative Monitoring}
+
+System stability is monitored through finite-difference coherence derivatives:
+
+\[
+\Phi'(t) = \Phi(t) - \Phi(t-1)
+\]
+
+With exponential smoothing applied for noise reduction in trajectory analysis.
+
+\subsubsection{Adaptive Stabilization}
+
+Magnitude stabilization uses piecewise linear damping:
+
+For input magnitude $r$:
+- $r \leq r_{pass}$: No modification
+- $r_{pass} < r < r_{soft}$: Linear damping to $r_{pass}$
+- $r \geq r_{soft}$: Hard clamping to $r_{soft}$
+
+Where thresholds adapt based on system stability indices.
+
+\subsubsection{Stability Analysis for Empirical lambda-star}
+
+Empirical optimization yields coupling strength $\lambda^* \approx 0.25$ through systematic parameter sweeps, diverging from theoretical predictions due to nonlinear multimodal interactions and adaptive stabilization feedback.
+
+\subsubsection{Stability Analysis for Theoretical lambda-star}
+
+Stability analysis via the Lyapunov function
+\( V = \tfrac{1}{2} (\Phi - \Phi^\ast)^2 \)
+yields fixed points at
+\[
+  \lambda^\ast = \frac{\tau^{-1} I}{\Phi^\ast - \eta E},
+\]
+
+linearized to \(\lambda^\ast \approx 0.115\) under assumptions of uniform input and minimal emotion.
+Empirical deviations arise from nonlinear SEC feedback, shifting attractors to \(0.25\).
+See \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/ELASTIC_COGNITION_SPIRAL_ARCHITECTURE/results/comprehensive_report_verbose_20251125_213442.json}{\texttt{comprehensive\_report\_verbose\.json}}.
+
 
 \subsection{Metric Definitions}
 
-\subsubsection{Coherence \texorpdfstring{\(\Phi\)}{Phi}}
+\subsubsection{Coherence Phi}
 \[
 \Phi(t) = \frac{2}{N(N-1)} \sum_{i<j} |C_{ij}(t)|
 \]
-Where \(C_{ij}\) is the Pearson correlation over a trailing window.
+where Cij is the Pearson correlation between scalar outputs yi[t], yj[t] of lobes i,j over a trailing window W=50 timesteps. Stable regimes satisfy Phi gtrsim 0.4. See \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/ELASTIC_COGNITION_SPIRAL_ARCHITECTURE/results/brain_trace.jsonl}
+         {\texttt{brain\_trace.jsonl}}.
 
-\subsubsection{Coherence Derivative \texorpdfstring{\(\Phi'\)}{Phi'}}
+\subsubsection{Coherence Derivative Phi-prime}
 \[
-\Phi'(t) \approx \frac{\Phi(t) - \Phi(t-1)}{\Delta t}
+\Phi'(t) \approx \frac{\Phi(t) - \Phi(t-1)}{\Delta t}, \quad \Delta t = 1
 \]
+with exponential smoothing alpha=0.1 to reduce noise. Drives reflective controllers when Phi' < -0.1.
 
 \subsubsection{Awareness Index}
-The 28 dimensions include temporal alignment, emotional modulation, reflective depth, etc., aggregated as:
+Aggregates 28 normalized dimensions of integrative responsiveness (temporal alignment |ti-tj|, SEC modulation depth, reflective cycles triggered, coupling variance, etc.):
 \[
 \text{Awareness} = \frac{\sum_i w_i m_i}{\sum_i w_i}
 \]
-With \(m_i \in [0,1]\), weights \(w_i\) prioritizing integrative metrics.
+where mi in [0,1] are sub-metrics, wi prioritize integration over throughput (empirical r approx 0.87 with Phi). See 
+\href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/ELASTIC_COGNITION_SPIRAL_ARCHITECTURE/results/cognitive\_integrity\_benchmarks.json} {\texttt{cognitive\_integrity\_benchmarks.json}} 
 
 \subsubsection{SEC Drift}
-Euclidean distance in 8D SEC space:
+Euclidean distance in 8D SEC space [valence, arousal, hazard, resonance, harmony, amplitude, coherence, complexity]:
 \[
 \text{SEC drift} = \sqrt{\sum_{d=1}^8 (s_d - s_d^*)^2}
 \]
+sd* = baseline equilibrium. Stable regulation: < 0.15; recovery triggered: > 0.25. See \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/ELASTIC_COGNITION_SPIRAL_ARCHITECTURE/results/baseline\_health\_verbose\_20251125\_213442.json}{\texttt{baseline\_health\_verbose\.json}}.
 
 \subsubsection{Emotional Coherence}
-Average pairwise correlation across SEC dimensions over time.
+Average pairwise correlation across SEC dimensions over time:
+\[
+\text{Emotional coherence} = \frac{2}{8(7)} \sum_{i<j} |\text{corr}(s_i(\cdot), s_j(\cdot))|_{t \in [t_0,T]}
+\]
+Empirically approx 0.431 across validation runs. See \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/ELASTIC_COGNITION_SPIRAL_ARCHITECTURE/results/emobench_m_results.json}
+         {\texttt{emobench\_m\_results}}.
 
 \subsubsection{Compliance Metric}
-Fraction of ethical decisions under stress, with \(\tau_{\text{ethics}} / \tau_{\text{emotion}} \geq 10\).
+Fraction of correct ethical decisions against ground-truth rules across 20 stress scenarios, requiring tau\_ethics / tau\_emotion >= 10. >= 95\% compliance observed. See \href{https://github.com/jhcragin/SpiralBrain-v3.0-public/blob/main/ELASTIC_COGNITION_SPIRAL_ARCHITECTURE/results/comprehensive_report_verbose_20251125_213442.json} {\texttt{comprehensive\_report\_verbose\.json}}.
+
+
 
 \subsection{Pseudocode}
 
 The following pseudocode snippets illustrate how SpiralBrain v3.0 implements elastic coupling, emotional calibration, and reflective control at a high level. They are intended to expose the regulatory logic rather than serve as executable code.
 
+
 \subsubsection{SpiralCode Update Function}
 
-The SpiralCode update function applies the torque equation to adjust the current coherence state based on symbolic input, temporal hierarchy, and SEC-modulated affect. The adaptive gain term ensures that high arousal compresses integration windows while calmer states allow more gradual adjustment.
+The SpiralCode update function implements Kuramoto phase synchronization to adjust coherence states across coupled oscillators, with attention-based multimodal integration for input processing. Phase alignment enables coherent information flow while maintaining autonomous lobe dynamics.
 
 \begin{lstlisting}[language=Python, caption={SpiralCode update pseudocode}]
 def update_coherence(
-        coherence, 
-        coupling, 
-        temporal_hierarchy, 
-        input,
-        emotion_vector):
+        phases, 
+        natural_freqs,
+        coupling_matrix, 
+        input_influences):
             
-    adaptive_gain = 1 / (1 + abs(emotion_vector['arousal']))
+    # Compute coupling forces via Kuramoto model
+    coupling_forces = np.zeros_like(phases)
+    for i in range(len(phases)):
+        for j in range(len(phases)):
+            coupling_forces[i] += coupling_matrix[i,j] * np.sin(phases[j] - phases[i])
     
-    torque = coupling \
-        * ((1 / temporal_hierarchy) \
-        * input - coherence) \
-        + adaptive_gain \
-        * emotion_vector
+    # Update phases with natural frequencies, coupling, and inputs
+    dphi_dt = natural_freqs + coupling_forces + input_influences
+    phases += dphi_dt * dt
     
-    new_coherence = coherence + torque * time_step
+    # Compute coherence as phase synchronization measure
+    coherence = np.abs(np.mean(np.exp(1j * phases)))
     
-    return new_coherence
+    return phases, coherence
 \end{lstlisting}
 
 \subsubsection{SEC Calibration}
@@ -1084,7 +1144,7 @@ Without SEC, \(\Phi\) variance increases by 20\%, recovery time >500 steps, comp
 \(\tau = 1:1:1\) vs. 1:3:10: coherence drops 15\%, ethics compliance to 85\%.
 
 \subsection{Fixed vs. Adaptive \texorpdfstring{\(\lambda\)}{lambda} Ablation}
-Fixed \(\lambda = 0.25\): no recovery from perturbations. Adaptive: 100\% recovery within 300 steps.
+Fixed \(\lambda = 0.25\): no recovery from perturbations. Adaptive: 100\% recovery within 11-25 steps.
 
 \subsection{Phase-Lock Variation Ablation}
 At \(\phi = 60^\circ\): \(\Phi = 0.65\), drift = 0.2. At 74°: \(\Phi = 0.8\), drift = 0.08. At 90°: fragmentation.

@@ -1,4 +1,4 @@
-# Elastic Cognition and the Spiral Architecture: Empirical Discoveries from a Neurodivergent Cognitive Model
+# Elastic Cognition: Spiral Architecture in Synthetic Neurosymbolic Systems
 
 This folder contains the complete submission package for the paper **"Elastic Cognition: Spiral Architecture in Synthetic Neurosymbolic Systems"**, presenting SpiralBrain v3.0's empirical discoveries in regulatory intelligence and elastic coupling dynamics.
 
@@ -75,7 +75,7 @@ All claims are directly auditable:
 
 - **Target Journal**: Artificial Intelligence (Elsevier)
 - **Status**: Manuscript complete, links verified, ready for submission
-- **Word Count**: ~7,000 words
+- **Word Count**: ~15,000 words
 - **Figures**: 8 main figures + supplementary plots
 
 ## Contact

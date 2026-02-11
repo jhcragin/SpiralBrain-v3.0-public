@@ -1,0 +1,52 @@
+\begin{thebibliography}{1}
+
+\bibitem{Cragin2026RI}
+John~H. Cragin.
+\newblock The regulatory intelligence paradigm: Geometric homeostasis and
+  elastic cognition in synthetic neurosymbolic systems, 2026.
+\newblock Preprint, available at \url{https://doi.org/10.5281/zenodo.18295507}.
+
+\bibitem{SpiralBrainV3}
+John~H. Cragin.
+\newblock {SpiralBrain v3.0}: A neurosymbolic agent for regulatory
+  intelligence, 2026.
+\newblock GitHub repository:
+  \url{https://github.com/jhcragin/SpiralBrain-v3.0-public}.
+
+\bibitem{Hochreiter1997}
+Sepp Hochreiter and J{\"u}rgen Schmidhuber.
+\newblock Long short-term memory.
+\newblock {\em Neural Computation}, 9(8):1735--1780, 1997.
+
+\bibitem{Jaeger2001}
+Herbert Jaeger.
+\newblock The "echo state" approach to analysing and training recurrent neural
+  networks.
+\newblock {\em German National Research Center for Information Technology GMD
+  Report}, 148:1--13, 2001.
+
+\bibitem{Mnih2015}
+Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Andrei~A Rusu, Joel Veness,
+  Marc~G Bellemare, Alex Graves, Martin Riedmiller, Andreas~K Fidjeland, Georg
+  Ostrovski, et~al.
+\newblock Human-level control through deep reinforcement learning.
+\newblock {\em Nature}, 518(7540):529--533, 2015.
+
+\bibitem{Ott2002}
+Edward Ott.
+\newblock {\em Chaos in Dynamical Systems}.
+\newblock Cambridge University Press, 2002.
+
+\bibitem{Radford2019}
+Alec Radford, Jeff Wu, Rewon Child, David Luan, Dario Amodei, and Ilya
+  Sutskever.
+\newblock Language models are unsupervised multitask learners.
+\newblock {\em OpenAI blog}, 1(8):9, 2019.
+
+\bibitem{Strogatz2018}
+Steven~H. Strogatz.
+\newblock {\em Nonlinear Dynamics and Chaos: With Applications to Physics,
+  Biology, Chemistry, and Engineering}.
+\newblock CRC Press, 2018.
+
+\end{thebibliography}
